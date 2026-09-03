@@ -1,0 +1,23 @@
+quantity,probability
+P(C) at cut-0 (shared baseline),0.12
+P(E) at cut-0 (shared baseline),0.8
+P(other or None) at cut-0,0.08
+"P(C|C-trace, cut at 15)",0.24
+"P(C|C-trace, cut at 29)",0.12
+"P(C|C-trace, cut at 44)",0.6
+"P(C|C-trace, cut at 58)",0.48
+"P(C|C-trace, cut at 59)",0.6
+"P(C|C-trace, cut at 60)",0.88
+"P(C|C-trace, cut at 61)",0.88
+"P(C|C-trace, cut at 62)",1.0
+"P(C|C-trace, cut at 63)",0.88
+"P(C|C-trace, cut at 64)",0.88
+"P(C|C-trace, cut at 67)",1.0
+"P(C|C-trace, cut at 68)",1.0
+"P(C|C-trace, cut at 69)",1.0
+"P(E|E-trace, cut at 60)",0.96
+"P(E|E-trace, cut at 61)",0.96
+"P(E|E-trace, cut at 62)",1.0
+"P(E|E-trace, cut at 63)",1.0
+"P(E|E-trace, cut at 64)",1.0
+"P(E|E-trace, cut at 65)",0.92

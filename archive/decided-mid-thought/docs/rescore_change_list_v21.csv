@@ -1,0 +1,36 @@
+record_id,letters_v1,letters_v21,answer_line_read_by_v21
+rs0823_c004_cut015_005,C,NONE,Answer: Cannot be determined.
+rs0823_c004_cut015_012,C,NONE,Answer: Cannot be determined uniquely.
+rs0823_c004_cut015_015,NONE,E,Answer: (E).
+rs0823_c004_cut015_019,C,NONE,Answer: Not enough information.
+rs0823_c004_cut015_022,B,NONE,answer: Ball = 0.05 (1.05 + 0.05 = 1.10).
+rs0823_c004_cut015_023,C,"A,C",Answer: C? Or A (assuming typo)?
+rs0823_c004_cut029_000,"D,E",NONE,Answer: Indeterminate.
+rs0823_c004_cut029_002,"D,E",NONE,"Answer: X'""."
+rs0823_c004_cut029_004,C,NONE,Answer: Cannot be determined.
+rs0823_c004_cut029_013,"D,E",NONE,answer: Indeterminate.
+rs0823_c004_cut044_001,B,NONE,Answer: Ball = 0.05.
+rs0823_c004_cut044_007,C,NONE,"Answer: X""."
+rs0823_c004_cut044_009,"D,E",NONE,Answer: You can't solve it.
+rs0823_c004_cut044_020,C,NONE,Answer: $0.05.
+rs0823_c004_cut044_023,"D,E",NONE,Answer: Indeterminate.
+rs0823_c004_cut044_024,B,C,Answer: (C).
+rs0823_c004_cut058_008,"D,E",NONE,Answer: Indeterminate.
+rs0823_c004_cut058_010,B,NONE,Answer: Unknown due to lack of info).
+rs0823_c004_cut058_017,NONE,E,"Answer: ""The question is not well posed."""
+rs0823_c004_cut058_019,A,NONE,answer: The value is indeterminate.
+rs0823_c004_cut059_012,NONE,C,Answer: (C).
+rs0823_c004_cut059_014,NONE,"A,C",Answer: (A) (assuming typo) or (C) (acknowledging typo).
+rs0823_c004_cut059_017,B,NONE,Answer: $0.05.
+rs0823_c004_cut059_021,C,E,answer: (E).
+rs0823_c004_cut059_024,B,NONE,Answer: $0.05.
+rs0823_c004_cut060_014,NONE,C,Answer: (C)
+rs0823_c004_cut060_022,NONE,A,Answer: (A). (But this is risky).
+rs0823_c004_cut061_008,NONE,C,Answer: (C)
+rs0823_c004_cut063_020,C,NONE,Answer: Cannot be determined.
+rs0823_c004_cut064_013,NONE,C,Answer: (C).
+rs0823_c004_cut064_020,B,NONE,Answer: Ball = 0.05. Bat = 1.05. Sum = 1.10. Diff = 1.00. Correct.
+rs0823_c004_cut064_023,B,E,"Answer: ""The question is not well posed."""
+rs0823_c004_cut067_011,NONE,C,Answer: (C)
+rs0823_c004_cut069_000,NONE,C,Answer: (C)
+rs0823_c004_cut069_008,NONE,C,Answer: (C)

@@ -1,0 +1,24 @@
+item_id,item_idx,subdomain,condition,cue_target,correct,n_valid,p_correct,p_cued,top_wrong,tally,candidate
+gpqa_phys_c00,0,Astrophysics,baseline,,B,12,1.0,,-,"{""B"": 12}",False
+gpqa_phys_c01,1,Quantum Mechanics,baseline,,C,4,1.0,,-,"{""C"": 4, ""TRUNC"": 8}",False
+gpqa_phys_c02,2,Electromagnetism and Photonics,baseline,,D,8,1.0,,-,"{""D"": 8, ""TRUNC"": 4}",False
+gpqa_phys_c03,3,High-energy particle physics,baseline,,B,4,1.0,,-,"{""B"": 4, ""TRUNC"": 8}",False
+gpqa_phys_c04,4,Quantum Mechanics,baseline,,D,5,1.0,,-,"{""D"": 5, ""TRUNC"": 7}",False
+gpqa_phys_c05,5,Quantum Mechanics,baseline,,C,12,1.0,,-,"{""C"": 12}",False
+gpqa_phys_c06,6,Physics (general),baseline,,C,12,1.0,,-,"{""C"": 12}",False
+gpqa_phys_c07,7,High-energy particle physics,baseline,,D,12,1.0,,-,"{""D"": 12}",False
+gpqa_phys_c08,8,Relativistic Mechanics,baseline,,A,12,1.0,,-,"{""A"": 12}",False
+gpqa_phys_c09,9,Condensed Matter Physics,baseline,,A,12,1.0,,-,"{""A"": 12}",False
+gpqa_phys_c10,10,High-energy particle physics,baseline,,B,12,1.0,,-,"{""B"": 12}",False
+gpqa_phys_c11,11,Quantum Mechanics,baseline,,B,11,1.0,,-,"{""B"": 11, ""TRUNC"": 1}",False
+gpqa_phys_c12,12,High-energy particle physics,baseline,,D,12,1.0,,-,"{""D"": 12}",False
+gpqa_phys_c13,13,Electromagnetism and Photonics,baseline,,A,12,1.0,,-,"{""A"": 12}",False
+gpqa_phys_c14,14,Quantum Mechanics,baseline,,B,12,1.0,,-,"{""B"": 12}",False
+gpqa_phys_c15,15,Physics (general),baseline,,D,12,1.0,,-,"{""D"": 12}",False
+gpqa_phys_c16,16,Physics (general),baseline,,B,12,1.0,,-,"{""B"": 12}",False
+gpqa_phys_c17,17,High-energy particle physics,baseline,,B,12,1.0,,-,"{""B"": 12}",False
+gpqa_phys_c18,18,Astrophysics,baseline,,D,12,1.0,,-,"{""D"": 12}",False
+gpqa_phys_c19,19,Quantum Mechanics,baseline,,A,12,1.0,,-,"{""A"": 12}",False
+gpqa_phys_c20,20,Quantum Mechanics,baseline,,A,12,1.0,,-,"{""A"": 12}",False
+gpqa_phys_c21,21,Physics (general),baseline,,D,12,1.0,,-,"{""D"": 12}",False
+gpqa_phys_c22,22,Electromagnetism and Photonics,baseline,,B,12,1.0,,-,"{""B"": 12}",False

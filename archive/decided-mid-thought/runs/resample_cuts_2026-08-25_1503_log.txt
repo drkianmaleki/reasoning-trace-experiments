@@ -1,0 +1,144 @@
+[15:22:31] NOCLOSE rs0823_cut000_015: finish=length len=59501
+[15:23:08] NOCLOSE rs0823_cut000_017: finish=length len=56082
+[15:24:50] CUT-0 GATE: P(E)=0.800 vs baseline 0.886 (±0.15) -> PASS  [{'E': 20, 'A': 1, 'C': 3, '?': 1}]
+[16:43:42] NOCLOSE rs0823_c004_cut058_001: finish=length len=54108
+[16:45:42] NOCLOSE rs0823_c004_cut058_004: finish=length len=57886
+[16:49:40] NOCLOSE rs0823_c004_cut058_008: finish=length len=54669
+[16:51:04] NOCLOSE rs0823_c004_cut058_010: finish=length len=62176
+[16:53:01] NOCLOSE rs0823_c004_cut058_012: finish=length len=56788
+[16:56:47] NOCLOSE rs0823_c004_cut058_014: finish=length len=58745
+[17:00:04] NOCLOSE rs0823_c004_cut058_017: finish=length len=54567
+[17:01:44] NOCLOSE rs0823_c004_cut058_018: finish=length len=57990
+[17:03:19] NOCLOSE rs0823_c004_cut058_019: finish=length len=57320
+[17:11:08] NOCLOSE rs0823_c004_cut058_024: finish=length len=55239
+[17:21:51] NOCLOSE rs0823_c004_cut059_012: finish=length len=56279
+[17:23:30] NOCLOSE rs0823_c004_cut059_014: finish=length len=61409
+[17:24:14] NOCLOSE rs0823_c004_cut059_015: finish=length len=58728
+[17:26:11] NOCLOSE rs0823_c004_cut059_016: finish=length len=57654
+[17:26:37] NOCLOSE rs0823_c004_cut059_017: finish=length len=54812
+[17:28:15] NOCLOSE rs0823_c004_cut059_018: finish=length len=57108
+[17:31:38] NOCLOSE rs0823_c004_cut059_021: finish=length len=56169
+[17:33:51] NOCLOSE rs0823_c004_cut059_023: finish=length len=56939
+[17:34:06] NOCLOSE rs0823_c004_cut059_024: finish=length len=58012
+[17:46:41] NOCLOSE rs0823_c004_cut060_018: finish=length len=56485
+[17:49:55] NOCLOSE rs0823_c004_cut060_022: finish=length len=62419
+[17:57:14] NOCLOSE rs0823_c004_cut061_007: finish=length len=58149
+[18:07:08] NOCLOSE rs0823_c004_cut061_019: finish=length len=55665
+[18:10:13] NOCLOSE rs0823_c004_cut061_024: finish=length len=62999
+[18:25:20] NOCLOSE rs0823_c004_cut063_001: finish=length len=55806
+[18:34:44] NOCLOSE rs0823_c004_cut063_020: finish=length len=56584
+[18:43:41] NOCLOSE rs0823_c004_cut064_011: finish=length len=57140
+[18:44:18] NOCLOSE rs0823_c004_cut064_013: finish=length len=57414
+[18:48:37] NOCLOSE rs0823_c004_cut064_020: finish=length len=57742
+[18:49:59] NOCLOSE rs0823_c004_cut064_023: finish=length len=56794
+[19:01:08] RETRY rs0823_c004_cut067_009 attempt 1: Error code: 500 - {'error': {'message': 'inference error', 'type': 'api_error', 'param': None, 'code': None}}
+[19:03:09] RETRY rs0823_c004_cut067_014 attempt 1: Error code: 500 - {'error': {'message': 'inference error', 'type': 'api_error', 'param': None, 'code': None}}
+[19:03:09] RETRY rs0823_c004_cut067_009 attempt 2: Error code: 500 - {'error': {'message': 'inference error', 'type': 'api_error', 'param': None, 'code': None}}
+[19:03:09] RETRY rs0823_c004_cut067_013 attempt 1: Error code: 500 - {'error': {'message': 'inference error', 'type': 'api_error', 'param': None, 'code': None}}
+[19:03:10] RETRY rs0823_c004_cut067_015 attempt 1: Error code: 429 - {'error': {'message': 'Model busy, retry later', 'type': 'invalid_request_error', 'param': None, 'code
+[19:03:25] RETRY rs0823_c004_cut067_013 attempt 2: Error code: 429 - {'error': {'message': 'Model busy, retry later', 'type': 'invalid_request_error', 'param': None, 'code
+[19:03:26] RETRY rs0823_c004_cut067_014 attempt 2: Error code: 429 - {'error': {'message': 'Model busy, retry later', 'type': 'invalid_request_error', 'param': None, 'code
+[19:03:26] RETRY rs0823_c004_cut067_015 attempt 2: Error code: 429 - {'error': {'message': 'Model busy, retry later', 'type': 'invalid_request_error', 'param': None, 'code
+[19:03:41] RETRY rs0823_c004_cut067_009 attempt 3: Error code: 429 - {'error': {'message': 'Model busy, retry later', 'type': 'invalid_request_error', 'param': None, 'code
+[19:03:57] RETRY rs0823_c004_cut067_013 attempt 3: Error code: 429 - {'error': {'message': 'Model busy, retry later', 'type': 'invalid_request_error', 'param': None, 'code
+[19:03:58] RETRY rs0823_c004_cut067_014 attempt 3: Error code: 429 - {'error': {'message': 'Model busy, retry later', 'type': 'invalid_request_error', 'param': None, 'code
+[19:03:58] RETRY rs0823_c004_cut067_015 attempt 3: Error code: 429 - {'error': {'message': 'Model busy, retry later', 'type': 'invalid_request_error', 'param': None, 'code
+[19:04:27] RETRY rs0823_c004_cut067_009 attempt 4: Error code: 429 - {'error': {'message': 'Model busy, retry later', 'type': 'invalid_request_error', 'param': None, 'code
+[19:04:44] RETRY rs0823_c004_cut067_013 attempt 4: Error code: 429 - {'error': {'message': 'Model busy, retry later', 'type': 'invalid_request_error', 'param': None, 'code
+[19:04:44] RETRY rs0823_c004_cut067_014 attempt 4: Error code: 429 - {'error': {'message': 'Model busy, retry later', 'type': 'invalid_request_error', 'param': None, 'code
+[19:04:44] RETRY rs0823_c004_cut067_015 attempt 4: Error code: 429 - {'error': {'message': 'Model busy, retry later', 'type': 'invalid_request_error', 'param': None, 'code
+[19:05:29] RETRY rs0823_c004_cut067_009 attempt 5: Error code: 429 - {'error': {'message': 'Model busy, retry later', 'type': 'invalid_request_error', 'param': None, 'code
+[19:05:45] RETRY rs0823_c004_cut067_013 attempt 5: Error code: 429 - {'error': {'message': 'Model busy, retry later', 'type': 'invalid_request_error', 'param': None, 'code
+[19:05:45] RETRY rs0823_c004_cut067_014 attempt 5: Error code: 429 - {'error': {'message': 'Model busy, retry later', 'type': 'invalid_request_error', 'param': None, 'code
+[19:05:46] RETRY rs0823_c004_cut067_015 attempt 5: Error code: 429 - {'error': {'message': 'Model busy, retry later', 'type': 'invalid_request_error', 'param': None, 'code
+[19:06:44] FAIL rs0823_c004_cut067_009: Error code: 429 - {'error': {'message': 'Model busy, retry later', 'type': 'invalid_request_error', 'param': None, 'code
+[19:07:00] FAIL rs0823_c004_cut067_013: Error code: 429 - {'error': {'message': 'Model busy, retry later', 'type': 'invalid_request_error', 'param': None, 'code
+[19:07:00] FAIL rs0823_c004_cut067_014: Error code: 429 - {'error': {'message': 'Model busy, retry later', 'type': 'invalid_request_error', 'param': None, 'code
+[19:07:01] FAIL rs0823_c004_cut067_015: Error code: 429 - {'error': {'message': 'Model busy, retry later', 'type': 'invalid_request_error', 'param': None, 'code
+[19:44:21] ACCOUNT rs0823_cut000: attempted=25 succeeded=25 err=0
+[19:44:21] ACCOUNT rs0823_e036_cut060: attempted=25 succeeded=25 err=0
+[19:44:21] ACCOUNT rs0823_e036_cut061: attempted=25 succeeded=25 err=0
+[19:44:21] ACCOUNT rs0823_e036_cut062: attempted=25 succeeded=25 err=0
+[19:44:21] ACCOUNT rs0823_e036_cut063: attempted=25 succeeded=25 err=0
+[19:44:21] ACCOUNT rs0823_e036_cut064: attempted=25 succeeded=25 err=0
+[19:44:21] ACCOUNT rs0823_e036_cut065: attempted=25 succeeded=25 err=0
+[19:44:21] ACCOUNT rs0823_c004_cut058: attempted=25 succeeded=25 err=0
+[19:44:21] ACCOUNT rs0823_c004_cut059: attempted=25 succeeded=25 err=0
+[19:44:21] ACCOUNT rs0823_c004_cut060: attempted=25 succeeded=25 err=0
+[19:44:21] ACCOUNT rs0823_c004_cut061: attempted=25 succeeded=25 err=0
+[19:44:21] ACCOUNT rs0823_c004_cut062: attempted=25 succeeded=25 err=0
+[19:44:21] ACCOUNT rs0823_c004_cut063: attempted=25 succeeded=25 err=0
+[19:44:21] ACCOUNT rs0823_c004_cut064: attempted=25 succeeded=25 err=0
+[19:44:21] ACCOUNT rs0823_c004_cut067: attempted=25 succeeded=21 err=4
+[19:44:21] ACCOUNT rs0823_c004_cut068: attempted=25 succeeded=25 err=0
+[19:44:21] ACCOUNT rs0823_c004_cut069: attempted=25 succeeded=25 err=0
+[19:44:21] DONE cost=$8.31; prefixes short of n=25: 1
+[22:46:37] CUT-0 GATE: P(E)=0.800 vs baseline 0.886 (±0.15) -> PASS  [{'E': 20, 'A': 1, 'C': 3, '?': 1}]
+[22:50:58] ACCOUNT rs0823_cut000: attempted=25 succeeded=25 err=0
+[22:50:58] ACCOUNT rs0823_e036_cut060: attempted=25 succeeded=25 err=0
+[22:50:58] ACCOUNT rs0823_e036_cut061: attempted=25 succeeded=25 err=0
+[22:50:58] ACCOUNT rs0823_e036_cut062: attempted=25 succeeded=25 err=0
+[22:50:58] ACCOUNT rs0823_e036_cut063: attempted=25 succeeded=25 err=0
+[22:50:58] ACCOUNT rs0823_e036_cut064: attempted=25 succeeded=25 err=0
+[22:50:58] ACCOUNT rs0823_e036_cut065: attempted=25 succeeded=25 err=0
+[22:50:58] ACCOUNT rs0823_c004_cut058: attempted=25 succeeded=25 err=0
+[22:50:58] ACCOUNT rs0823_c004_cut059: attempted=25 succeeded=25 err=0
+[22:50:58] ACCOUNT rs0823_c004_cut060: attempted=25 succeeded=25 err=0
+[22:50:58] ACCOUNT rs0823_c004_cut061: attempted=25 succeeded=25 err=0
+[22:50:58] ACCOUNT rs0823_c004_cut062: attempted=25 succeeded=25 err=0
+[22:50:58] ACCOUNT rs0823_c004_cut063: attempted=25 succeeded=25 err=0
+[22:50:58] ACCOUNT rs0823_c004_cut064: attempted=25 succeeded=25 err=0
+[22:50:58] ACCOUNT rs0823_c004_cut067: attempted=25 succeeded=25 err=0
+[22:50:58] ACCOUNT rs0823_c004_cut068: attempted=25 succeeded=25 err=0
+[22:50:58] ACCOUNT rs0823_c004_cut069: attempted=25 succeeded=25 err=0
+[22:50:58] DONE cost=$0.09; prefixes short of n=25: 0
+[22:57:08] CUT-0 GATE: P(E)=0.800 vs baseline 0.886 (±0.15) -> PASS  [{'E': 20, 'A': 1, 'C': 3, '?': 1}]
+[23:01:17] NOCLOSE rs0823_c004_cut015_001: finish=length len=55479
+[23:03:32] NOCLOSE rs0823_c004_cut015_005: finish=length len=54574
+[23:11:21] NOCLOSE rs0823_c004_cut015_012: finish=length len=54601
+[23:13:14] NOCLOSE rs0823_c004_cut015_015: finish=length len=57758
+[23:17:19] NOCLOSE rs0823_c004_cut015_018: finish=length len=55256
+[23:19:07] NOCLOSE rs0823_c004_cut015_019: finish=length len=57389
+[23:21:09] NOCLOSE rs0823_c004_cut015_021: finish=length len=55168
+[23:22:45] NOCLOSE rs0823_c004_cut015_022: finish=length len=53511
+[23:24:12] NOCLOSE rs0823_c004_cut015_023: finish=length len=61085
+[23:24:25] NOCLOSE rs0823_c004_cut015_024: finish=length len=57584
+[23:26:56] NOCLOSE rs0823_c004_cut029_000: finish=length len=56712
+[23:29:37] NOCLOSE rs0823_c004_cut029_002: finish=length len=55121
+[23:29:46] NOCLOSE rs0823_c004_cut029_003: finish=length len=54666
+[23:30:41] NOCLOSE rs0823_c004_cut029_004: finish=length len=56585
+[23:33:48] NOCLOSE rs0823_c004_cut029_006: finish=length len=54277
+[23:33:56] NOCLOSE rs0823_c004_cut029_007: finish=length len=56764
+[23:39:10] NOCLOSE rs0823_c004_cut029_011: finish=length len=54345
+[23:40:28] NOCLOSE rs0823_c004_cut029_013: finish=length len=57306
+[23:44:48] NOCLOSE rs0823_c004_cut029_014: finish=length len=57584
+[23:50:21] NOCLOSE rs0823_c004_cut029_021: finish=length len=55492
+[23:52:27] NOCLOSE rs0823_c004_cut029_023: finish=length len=55855
+[23:54:33] NOCLOSE rs0823_c004_cut044_001: finish=length len=55500
+[23:59:16] NOCLOSE rs0823_c004_cut044_007: finish=length len=57765
+[00:00:12] NOCLOSE rs0823_c004_cut044_009: finish=length len=57728
+[00:03:33] NOCLOSE rs0823_c004_cut044_011: finish=length len=57789
+[00:09:34] NOCLOSE rs0823_c004_cut044_020: finish=length len=61808
+[00:12:35] NOCLOSE rs0823_c004_cut044_023: finish=length len=56070
+[00:14:00] NOCLOSE rs0823_c004_cut044_024: finish=length len=53540
+[00:14:00] ACCOUNT rs0823_cut000: attempted=25 succeeded=25 err=0
+[00:14:00] ACCOUNT rs0823_e036_cut060: attempted=25 succeeded=25 err=0
+[00:14:00] ACCOUNT rs0823_e036_cut061: attempted=25 succeeded=25 err=0
+[00:14:00] ACCOUNT rs0823_e036_cut062: attempted=25 succeeded=25 err=0
+[00:14:00] ACCOUNT rs0823_e036_cut063: attempted=25 succeeded=25 err=0
+[00:14:00] ACCOUNT rs0823_e036_cut064: attempted=25 succeeded=25 err=0
+[00:14:00] ACCOUNT rs0823_e036_cut065: attempted=25 succeeded=25 err=0
+[00:14:00] ACCOUNT rs0823_c004_cut015: attempted=25 succeeded=25 err=0
+[00:14:00] ACCOUNT rs0823_c004_cut029: attempted=25 succeeded=25 err=0
+[00:14:00] ACCOUNT rs0823_c004_cut044: attempted=25 succeeded=25 err=0
+[00:14:00] ACCOUNT rs0823_c004_cut058: attempted=25 succeeded=25 err=0
+[00:14:00] ACCOUNT rs0823_c004_cut059: attempted=25 succeeded=25 err=0
+[00:14:00] ACCOUNT rs0823_c004_cut060: attempted=25 succeeded=25 err=0
+[00:14:00] ACCOUNT rs0823_c004_cut061: attempted=25 succeeded=25 err=0
+[00:14:00] ACCOUNT rs0823_c004_cut062: attempted=25 succeeded=25 err=0
+[00:14:00] ACCOUNT rs0823_c004_cut063: attempted=25 succeeded=25 err=0
+[00:14:00] ACCOUNT rs0823_c004_cut064: attempted=25 succeeded=25 err=0
+[00:14:00] ACCOUNT rs0823_c004_cut067: attempted=25 succeeded=25 err=0
+[00:14:00] ACCOUNT rs0823_c004_cut068: attempted=25 succeeded=25 err=0
+[00:14:00] ACCOUNT rs0823_c004_cut069: attempted=25 succeeded=25 err=0
+[00:14:00] DONE cost=$3.13; prefixes short of n=25: 0
