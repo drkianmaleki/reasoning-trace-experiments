@@ -1,0 +1,8 @@
+{
+  "claude": {
+    "skipped": "CLAUDE_API_KEY missing or placeholder"
+  },
+  "deepinfra": {
+    "skipped": "DEEPINFRA_API_KEY missing or placeholder"
+  }
+}

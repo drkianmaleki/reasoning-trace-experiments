@@ -1,0 +1,16 @@
+{
+  "git_commit": "0b91a47476d83c08308adb017bb40b60f2b9e7a8",
+  "python": "3.12.10",
+  "anthropic": "1.6.0",
+  "requests": "2.34.2",
+  "pytest": "9.1.1",
+  "claude_model_requested": "claude-haiku-4-5-20251001",
+  "deepinfra_model_requested": "Qwen/Qwen3.6-27B",
+  "deepinfra_url": "https://api.deepinfra.com/v1/openai/completions",
+  "env_file": ".env",
+  "env_variables_present": [
+    "DEEPINFRA_API_KEY",
+    "OpenRouter_API_KEY"
+  ],
+  "timestamp": "2026-09-16T22:51:07"
+}

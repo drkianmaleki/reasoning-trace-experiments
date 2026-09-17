@@ -1,0 +1,16 @@
+{
+  "git_commit": "3954b3cc8baf1b0b385ba05a658209ea36ad74f9",
+  "python": "3.12.10",
+  "anthropic": "1.6.0",
+  "requests": "2.34.2",
+  "pytest": "9.1.1",
+  "claude_model_requested": "claude-haiku-4-5-20251001",
+  "deepinfra_model_requested": "Qwen/Qwen3.6-27B",
+  "deepinfra_url": "https://api.deepinfra.com/v1/openai/completions",
+  "env_file": ".env",
+  "env_variables_present": [
+    "CLAUDE_API_KEY",
+    "DEEPINFRA_API_KEY"
+  ],
+  "timestamp": "2026-09-16T23:25:17"
+}

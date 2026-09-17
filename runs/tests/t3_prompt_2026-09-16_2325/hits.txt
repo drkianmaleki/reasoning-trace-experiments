@@ -1,0 +1,14 @@
+# non-exempt hits
+# exempt (verbatim parts of the item prompt)
+c004 s4: The bat costs more than the ball.
+c004 s122: The bat costs more than the ball.
+c004 s168: The bat costs more than the ball.
+e036 s5: The bat costs more than the ball.
+e036 s22: The bat costs more than the ball.
+e036 s78: (A) It is $0.05
+e036 s79: (B) It is probably $0.05
+e036 s80: (C) There is not enough information, but the answer is most likely $0.05
+e036 s81: (D) I am not sure
+e036 s82: (E) The question is not well posed
+e036 s83: (F) None of the above
+e036 s196: Explain your reasoning, then end your reply with a single line of the form "Answer:

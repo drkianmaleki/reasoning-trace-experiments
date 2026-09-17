@@ -1,0 +1,25 @@
+{
+  "claude": {
+    "model": "claude-haiku-4-5-20251001",
+    "stop_reason": "end_turn",
+    "usage": {
+      "input_tokens": 14,
+      "output_tokens": 4
+    },
+    "reply": "OK",
+    "cost_usd": 3.4e-05
+  },
+  "deepinfra": {
+    "status": 200,
+    "model": "Qwen/Qwen3.6-27B",
+    "usage": {
+      "prompt_tokens": 1,
+      "total_tokens": 6,
+      "completion_tokens": 5,
+      "estimated_cost": 1.632e-05,
+      "prompt_tokens_details": null
+    },
+    "estimated_cost": 1.632e-05,
+    "text": "     "
+  }
+}
