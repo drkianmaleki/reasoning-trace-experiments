@@ -1,0 +1,2 @@
+I need to fix the errors starting around line 337 and reconstruct the full corrected list through the end, preserving what was already correct.
+

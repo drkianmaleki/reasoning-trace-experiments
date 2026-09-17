@@ -1,0 +1,2 @@
+I see there's an overlap at index 9 - lines 7-9 are marked as Pl.gp while line 9 is also Pl.lp. I need to fix this so lines 7-8 are Pl.gp and line 9 is Pl.lp.
+

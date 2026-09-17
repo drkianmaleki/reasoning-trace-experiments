@@ -1,0 +1,6 @@
+I'm going through the options, double-checking my reasoning against common pitfalls before settling on the answer.
+
+I'm weighing whether "not well posed" could actually be the wrong framing, then working through recall of relevant knowledge before checking consistency multiple times. I move into planning the response structure and drafting language for the answer, running several rounds of relevance-checking and refining the language and phrasing across multiple passes before settling into final consistency checks and recall.
+
+I'm continuing to work through the sequence of coded reasoning steps, tracking patterns across reflection, planning, and knowledge categories as I move toward resolving the task.
+

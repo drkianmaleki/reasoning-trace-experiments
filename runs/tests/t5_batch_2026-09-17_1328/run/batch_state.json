@@ -1,0 +1,35 @@
+{
+ "collection": null,
+ "batches": [
+  {
+   "batch_id": "msgbatch_01TDbMyFkL1DaR7wWaqrcfvQ",
+   "attempt": 1,
+   "n_entries": 3,
+   "custom_ids": [
+    "rs0823_c004_cut068_016",
+    "rs0823_cut000_002",
+    "rs0823_e036_cut063_016"
+   ],
+   "submitted": "2026-09-17T13:28:36",
+   "ended": "2026-09-17T13:33:10",
+   "request_counts": {
+    "processing": 0,
+    "succeeded": 3,
+    "errored": 0,
+    "canceled": 0,
+    "expired": 0
+   },
+   "poll_seconds": 30,
+   "api_created_at": "2026-09-17 18:28:37.159716+00:00",
+   "api_ended_at": "2026-09-17 18:32:54.739336+00:00"
+  }
+ ],
+ "custom_ids": {
+  "rs0823_cut000_002": "rs0823_cut000_002",
+  "rs0823_e036_cut063_016": "rs0823_e036_cut063_016",
+  "rs0823_c004_cut068_016": "rs0823_c004_cut068_016"
+ },
+ "status": "ended",
+ "started": "2026-09-17T13:28:35",
+ "ended": "2026-09-17T13:33:10"
+}

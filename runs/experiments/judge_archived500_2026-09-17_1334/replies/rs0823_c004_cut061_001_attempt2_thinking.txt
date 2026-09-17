@@ -1,0 +1,2 @@
+I'm sorting out the numbering overlap around lines 117-121, figuring out how the heading, list marker, and "Problem:" label should be split into separate plan segments.
+

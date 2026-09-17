@@ -1,0 +1,8 @@
+I'm quickly labeling each segment by category—some as expressing opinions, some as factual reporting, others as quoting classic question-answer material—to classify the type of content being handled in each piece.
+
+I'm working through the numbered list, treating each bare digit as attached to the plan step that follows it, and labeling those steps as planning items describing the math for the classic version, concluding intermediate results, and finally matching the answer to option E.
+
+From there I move into drafting: outlining the response structure, referencing multiple options (C, E, F) while steering the reasoning, then reaching a conclusion. I repeat and reassemble the classic-version content across several steps, review option E, correct an error, revisit the logical alignment, then walk through all the answer options again (A through F) before assessing and drafting a final answer, wrapping up with a knowledge point about the problem and one more logical-alignment check.
+
+I'm working through the remaining classification codes, checking meta-observations and confirming answers, then moving to finalize the numbering scheme and merge consistent runs together.
+

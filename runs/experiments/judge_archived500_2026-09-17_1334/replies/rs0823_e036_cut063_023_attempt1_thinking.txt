@@ -1,0 +1,8 @@
+I'm working through the standard test design considerations, weighing what's worth pointing out before planning the next verification step.
+
+I'm weighing whether the answer could be option F, then comparing it against E to see which fits better, before circling back to restate the reasoning and check my final answer against the original question one more time.
+
+I'm marking that c85-86 is actually an intermediate conclusion rather than the true final answer, since that comes later at c139-140. Continuing through the sequence, I'm tracking more planning steps, option evaluations comparing E and A, logical reasoning, and further conclusion checkpoints, along with repeated reformatting and restating of the answer through several more steps.
+
+I keep working through the calculations, checking each result against expectations, and adjusting my approach where the numbers don't line up. I go back to double-check the reasoning behind a few steps before consolidating everything into a coherent explanation of why the answer holds.
+

@@ -1,0 +1,14 @@
+I'm mapping out each segment's classification, going through them one by one and labeling their category codes to build a structured breakdown of the content.
+
+I'm restating and checking my reasoning again, confirming the logic holds together before laying out my final plan for how to structure the answer, including deciding to end with a clear "Answer: E" line.
+
+I keep drafting and redrafting the response, checking option strength again, confirming with a quick "Yes," then looping back through more planning, another check-in question, and further draft revisions before settling closer to a final answer.
+
+I'm working through the sequence of coded steps, tracking corrections, reflections, and planning phases, then starting to assemble everything into a final combined list with run-length encoding for output.
+
+I'm drawing on background knowledge for fixed points and constraints, then planning how to organize the response. I check requirements again, consider dividing into declarative and calculation sections, and give an example before double-checking coherence. Then I plan the overall structure once more and start refining the message through several passes.
+
+I'm continuing to code these annotations, moving through more evaluation categories and rating patterns across the remaining items.
+
+Continuing through the labeled sequence, I'm now looking to merge consecutive identical labels into grouped runs to simplify the pattern.
+

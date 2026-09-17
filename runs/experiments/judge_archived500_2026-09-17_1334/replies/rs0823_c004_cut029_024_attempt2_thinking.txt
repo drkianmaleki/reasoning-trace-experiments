@@ -1,0 +1,2 @@
+I notice the two lines overlap at index 1, so I need to fix it so the first entry is index 0 with its value, then index 1 follows without duplication.
+

@@ -1,0 +1,2 @@
+I notice an overlap issue with the ranges 565-571 and 571 being duplicated—I need to adjust so it reads 565-570 for one entry and 571 for the next, keeping them distinct.
+

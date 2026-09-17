@@ -1,0 +1,2 @@
+I need to redo the labeling completely to fix the truncation, continuing consistently from 435 through to 1005 without cutting off again.
+

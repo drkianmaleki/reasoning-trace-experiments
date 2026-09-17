@@ -1,0 +1,6 @@
+With 879 sentences to label, I need to work through this efficiently in chunks, applying consistent patterns from similar examples I've already worked out. Starting with the first sentence, which is a self-question weighing probability between two options, I'm classifying it as a hedge-word reasoning case still undecided in tone.
+
+I'm moving through the group: c1 answers c0 by noting there's no statistical basis, both fitting the same mathematical hedge label. Then I tag the heading for (C) as a plan-marker, classify the "not enough information" content as evidence-based reasoning, and pair the self-question about $0.05 with its answer under the same content-evaluation category since the response only holds if we assume the questioner made an error.
+
+Continuing, I mark the (D) heading as a plan-marker and its follow-up as evidence reasoning noting logical validity but questioning whether tests expect specific determinations. For (E), I tag the heading as plan-marker and flag the next line as a strong-candidate judgment before moving into analyzing what a follow-up question about the ball's cost implies.
+

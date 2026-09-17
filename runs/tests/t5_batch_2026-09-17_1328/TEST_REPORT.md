@@ -1,0 +1,38 @@
+# TEST_REPORT — t5_batch — 2026-09-17 13:28
+
+Test of pipeline step (5/9), batch mode of the judge (`scripts/s1_judge.py --mode batch`, Message Batches API), per pipeline v2 Section 9 item 7. Git commit `cb372474119b2ee1a5b5caa031c6225a0cefd133`; model `claude-sonnet-5` (sonnet); prompt v3; thinking low; batch prices (Sonnet 5: $1 / $5 per million input / output, cache read $0.10, cache write $1.25); polling every 30 s (the pilot polls every 60 s). Sentences `C:/Users/kianu/Dropbox/Projects/Ongoing/reasoning-trace-experiments/runs/experiments/s0_split_2026-09-17_1046/sentences_archived500.jsonl`. Run folder `runs/tests/t5_batch_2026-09-17_1328/run`. Cost $0.082526 (usage: input 14709, cache read 17168, cache write 8584, output 11074 of which thinking 7820; thinking tokens per labeled sentence 20.5). Batch ids: msgbatch_01TDbMyFkL1DaR7wWaqrcfvQ; wall time 275 s.
+
+## Result: PASS (6/6 checks passed)
+
+## Checks
+
+- PASS — check 1, three archived continuations from three different cuts (the shortest of each arm) — rs0823_cut000_002: arm shared, cut 0, 131 sentences; rs0823_c004_cut068_016: arm c004, cut 68, 166 sentences; rs0823_e036_cut063_016: arm e036, cut 63, 84 sentences; written to sentences_archived3.jsonl
+- PASS — check 2, dry run: continuation requests — rs0823_cut000_002: prefix part absent with 0 labeled sentences (expected 0: old_s <= 0 of shared); c-indices 0..130 once: True; max_tokens 24000; about 7558 input tokens; rs0823_c004_cut068_016: prefix part present with 76 labeled sentences (expected 76: old_s <= 68 of c004); c-indices 0..165 once: True; max_tokens 24000; about 9718 input tokens; rs0823_e036_cut063_016: prefix part present with 70 labeled sentences (expected 70: old_s <= 63 of e036); c-indices 0..83 once: True; max_tokens 24000; about 8139 input tokens
+- PASS — check 3, batch submitted, polled, downloaded and parsed — batch msgbatch_01TDbMyFkL1DaR7wWaqrcfvQ (attempt 1, 3 entries): submitted 2026-09-17T13:28:36, ended 2026-09-17T13:33:10, request_counts {"processing": 0, "succeeded": 3, "errored": 0, "canceled": 0, "expired": 0}; wall time 275 s; valid 3 of 3; failures {}; thinking files 3; custom_ids.json True; batch_state.json status ended
+- PASS — check 4, records — rs0823_cut000_002: 131 label records (expected 131), fields present True, batch_id msgbatch_01TDbMyFkL1DaR7wWaqrcfvQ, custom_id rs0823_cut000_002, attempt 1, stop_reason end_turn, thinking tokens 3539, usage {"input_tokens": 3033, "cache_read_input_tokens": 8584, "output_tokens": 4582, "thinking_tokens": 3539, "cache_creation_input_tokens": 0}, cost $0.026801 (= usage at batch prices: True); R4 sentences 4, labels changed by enforcement 0; rs0823_c004_cut068_016: 166 label records (expected 166), fields present True, batch_id msgbatch_01TDbMyFkL1DaR7wWaqrcfvQ, custom_id rs0823_c004_cut068_016, attempt 1, stop_reason end_turn, thinking tokens 2318, usage {"input_tokens": 7309, "cache_read_input_tokens": 0, "output_tokens": 3734, "thinking_tokens": 2318, "cache_creation_input_tokens": 8584}, cost $0.036709 (= usage at batch prices: True); R4 sentences 2, labels changed by enforcement 0; rs0823_e036_cut063_016: 84 label records (expected 84), fields present True, batch_id msgbatch_01TDbMyFkL1DaR7wWaqrcfvQ, custom_id rs0823_e036_cut063_016, attempt 1, stop_reason end_turn, thinking tokens 1963, usage {"input_tokens": 4367, "cache_read_input_tokens": 8584, "output_tokens": 2758, "thinking_tokens": 1963, "cache_creation_input_tokens": 0}, cost $0.019015 (= usage at batch prices: True); R4 sentences 1, labels changed by enforcement 0
+- PASS — check 5, derivation with R4: blocks records, first new node, block sequences, pnext and psource files — rs0823_cut000_002: first new node Pl₀¹(4) (Planning, opens block True), 22 blocks from the cut, 76 nodes; rs0823_c004_cut068_016: first new node Rf₉³ (Reflection, opens block False), 23 blocks from the cut, 115 nodes; rs0823_e036_cut063_016: first new node Re₆⁵(3) (Reasoning, opens block False), 13 blocks from the cut, 55 nodes; pnext_archived3.csv rows 3; psource_c004.csv 46 cuts, psource_e036.csv 37 cuts
+- PASS — check 6, pytest on scripts/tests — exit code 0; last line: 161 passed in 1.89s
+
+## Check 5: the three continuations
+
+| continuation | arm | cut | prefix sentences | continuation sentences | first new node | L1 | opens block (rule) | first sentence is Wait | block sequence from the cut |
+|---|---|---|---|---|---|---|---|---|---|
+| rs0823_cut000_002 | shared | 0 | 0 | 131 | Pl₀¹(4) | Planning | True (R1) | False | B0 (R1): Pl₀¹(4) Rs₀¹(3) Pl₀² Rs₀² Pl₀³ Rs₀³(2) \| B1 (R1): Pl₁¹(2) Kn₁ Pl₁² Re₁(2) \| B2 (R4): Pl₂ Re₂ \| B3 (R1): Pl₃¹ Rs₃(3) Re₃ Pl₃² Kn₃(4) \| B4 (R4): [Pl+As]₄ Re₄(2) Co₄¹ Ex₄(4) Co₄² Rs₄ \| B5 (R1): Pl₅ Rs₅(6) Re₅(3) \| B6 (R4): Pl₆ Re₆ Rs₆ Co₆ \| B7 (R1): Pl₇ Re₇¹ Co₇ Re₇² Kn₇ \| B8 (R1): Pl₈¹ Rs₈(4) Pl₈² Co₈ Rf₈ \| B9 (R1): Pl₉(2) Rf₉¹(2) Re₉¹ Rf₉² Re₉²(3) Co₉ \| B10 (R1): Pl₁₀(8) Rf₁₀ \| B11 (R1): Pl₁₁ Re₁₁¹(2) Kn₁₁ Re₁₁² Co₁₁ \| B12 (R1): Pl₁₂(2) [Rs+Co]₁₂ Co₁₂ \| B13 (R1): Pl₁₃(8) Rf₁₃ \| B14 (R1): Pl₁₄ Rf₁₄ \| B15 (R1): Pl₁₅ \| B16 (R4): Pl₁₆ Re₁₆(2) Kn₁₆ Rf₁₆ Co₁₆ \| B17 (R1): Pl₁₇ \| B18 (R3): Co₁₈ \| B19 (R1): Pl₁₉¹(3) Rs₁₉¹(3) Pl₁₉² Rs₁₉²(2) Co₁₉(2) \| B20 (R1): Pl₂₀ Rf₂₀(2) \| B21 (R1): Pl₂₁ |
+| rs0823_c004_cut068_016 | c004 | 68 | 76 | 166 | Rf₉³ | Reflection | False (None) | False | B9 (R1): Rf₉³ Pl₉⁶ Re₉⁴ \| B10 (R1): Pl₁₀¹(2) Re₁₀ Rs₁₀¹(2) Pl₁₀² Rs₁₀²(3) Pl₁₀³ Rs₁₀³ Co₁₀ Pl₁₀⁴ Rs₁₀⁴ \| B11 (R1): Pl₁₁¹ Re₁₁(2) Pl₁₁² Rs₁₁ Rf₁₁ \| B12 (R4): Pl₁₂¹ Rs₁₂(2) Pl₁₂² Kn₁₂(2) Re₁₂¹(2) Co₁₂ Ex₁₂(3) Re₁₂² Rf₁₂(2) \| B13 (R1): Pl₁₃ Kn₁₃ Re₁₃¹ Co₁₃ Re₁₃² Rf₁₃¹ Re₁₃³(5) Rf₁₃² \| B14 (R1): Pl₁₄¹ Kn₁₄ Re₁₄¹(2) Rf₁₄¹(2) Pl₁₄² Re₁₄²(3) Rf₁₄² Re₁₄³(2) Co₁₄ Re₁₄⁴ \| B15 (R1): Pl₁₅ Re₁₅ Rf₁₅ \| B16 (R1): Pl₁₆ Re₁₆ \| B17 (R4): [Pl+Re]₁₇ Re₁₇(4) Co₁₇ \| B18 (R1): Pl₁₈ Rs₁₈ Rf₁₈ \| B19 (R1): Pl₁₉¹(3) Re₁₉¹ Pl₁₉²(2) Rs₁₉¹ Pl₁₉³ Rs₁₉²(2) Pl₁₉⁴ Re₁₉² Pl₁₉⁵ Re₁₉³ Co₁₉¹ Pl₁₉⁶ Kn₁₉ Re₁₉⁴ Pl₁₉⁷ Co₁₉²(3) Pl₁₉⁸ Rf₁₉ \| B20 (R1): Pl₂₀(5) Re₂₀(2) \| B21 (R1): Pl₂₁ Re₂₁(4) \| B22 (R1): Pl₂₂ Rs₂₂ Rf₂₂ \| B23 (R1): Pl₂₃ Rs₂₃ Re₂₃¹ Rf₂₃ Re₂₃²(2) Co₂₃ \| B24 (R1): Pl₂₄(3) Rs₂₄(5) Co₂₄ \| B25 (R1): Pl₂₅ Re₂₅ \| B26 (R2): As₂₆ Re₂₆(4) \| B27 (R2): As₂₇ Re₂₇¹(4) Co₂₇¹ Re₂₇² Co₂₇² \| B28 (R3): Co₂₈ \| B29 (R1): Pl₂₉¹(2) Rs₂₉¹ Pl₂₉² Rs₂₉² Pl₂₉³ Kn₂₉ Rs₂₉³ Pl₂₉⁴ Rs₂₉⁴ Pl₂₉⁵ Rs₂₉⁵ Pl₂₉⁶ Rs₂₉⁶ \| B30 (R1): Pl₃₀ \| B31 (R3): Co₃₁ |
+| rs0823_e036_cut063_016 | e036 | 63 | 70 | 84 | Re₆⁵(3) | Reasoning | False (None) | False | B6 (R1): Re₆⁵(3) \| B7 (R1): Pl₇¹ Re₇¹ Rs₇¹ Re₇² Pl₇² Rs₇²(2) Kn₇ Rs₇³ Co₇ Rs₇⁴ \| B8 (R4): Pl₈¹ Rs₈ Re₈¹(4) Pl₈² Re₈² Co₈ \| B9 (R1): Pl₉ Rf₉(6) \| B10 (R1): Pl₁₀ Rs₁₀ Co₁₀ \| B11 (R1): Pl₁₁(3) Rs₁₁(2) \| B12 (R1): Pl₁₂¹(5) Re₁₂¹(2) Rs₁₂¹ Pl₁₂² Kn₁₂ Re₁₂² Co₁₂ Re₁₂³ Rs₁₂² \| B13 (R1): Pl₁₃ Co₁₃ \| B14 (R1): Pl₁₄¹ Rs₁₄¹(2) Pl₁₄²(3) Rs₁₄²(3) Pl₁₄³ Co₁₄ Rf₁₄ \| B15 (R1): Pl₁₅¹(2) Re₁₅(2) Pl₁₅² Rf₁₅(2) \| B16 (R1): Pl₁₆¹(2) Rs₁₆¹(2) [Rs+Rf]₁₆ Rf₁₆ Pl₁₆² Rs₁₆²(2) \| B17 (R1): Pl₁₇ Rf₁₇ \| B18 (R1): Pl₁₈ |
+### pnext_archived3.csv
+
+```
+prefix_id,trace_arm,cut,last_node_label,n,n_labeled,n_failed,next_Planning,next_Reasoning,next_Reflection,next_Knowledge,next_Restatement,next_Assumption,next_Example,next_Conclusion,opens_block,first_is_wait
+rs0823_cut000,shared,0,,1,1,0,1,0,0,0,0,0,0,0,1,0
+rs0823_c004_cut068,c004,68,Reasoning,1,1,0,0,0,1,0,0,0,0,0,0,0
+rs0823_e036_cut063,e036,63,Reasoning,1,1,0,0,1,0,0,0,0,0,0,0,0
+```
+## pytest output
+
+```
+........................................................................ [ 44%]
+........................................................................ [ 89%]
+.................                                                        [100%]
+161 passed in 1.89s
+```

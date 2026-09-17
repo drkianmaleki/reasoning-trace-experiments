@@ -1,0 +1,2 @@
+I need to fix the overlapping numbering around line 420, sorting out how the sentences about ambiguity, typos, and meta-options like (C) and (E) were originally indexed so the merge reflects the right sequence.
+

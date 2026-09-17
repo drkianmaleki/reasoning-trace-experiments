@@ -1,12 +1,17 @@
 #!/usr/bin/env python3
 """s1a_make_prompt.py -- pipeline step (3/9): the judge prompt and the label codes.
 
-Reads docs/shared/2026-09-16_labeling_scheme_v5.md (the source of everything the judge is told)
-and docs/shared/2026-09-16_action_summary_v5.md (Section 4, the verbatim item prompt), and writes
+Reads the labeling scheme (the source of everything the judge is told) and the action summary
+(Section 4, the verbatim item prompt) of the requested version -- scheme v5 and summary v5
+(archive/) for v1 and v2, scheme v6 and summary v6 (docs/shared/) for v3 -- and writes
 
-  prompts/judge_prompt_v1.md        the prompt (Sections 1-7, see build_prompt)
-  prompts/labels_v1.json            the inventory of allowed label paths with their codes
-  prompts/judge_prompt_v1.meta.json character count, estimated tokens, hashes, timestamp
+  prompts/judge_prompt_v<K>.md        the prompt (Sections 1-7, see build_prompt)
+  prompts/labels_v<K>.json            the inventory of allowed label paths with their codes
+  prompts/judge_prompt_v<K>.meta.json character count, estimated tokens, hashes, timestamp
+
+v3 (Kian, 2026-09-17; pipeline v2, decision 20) = v2 plus the rule R4 paragraph in the additional
+rules (R4_RULE), the two Level 3 leaves Wait (doubt marker) in the inventory (77 paths) and the
+Wait sentence of the train example carrying that leaf.
 
 Inventory (pipeline v1, step 3d/9): every Level 1 > Level 2 path of scheme Section 3 and every
 Level 1 > Level 2 > Level 3 path of Section 3a.  Level 2 is mandatory (Level 1 alone is not a
@@ -39,14 +44,19 @@ from datetime import datetime
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
-SCHEME = REPO / "docs" / "shared" / "2026-09-16_labeling_scheme_v5.md"
-SUMMARY = REPO / "docs" / "shared" / "2026-09-16_action_summary_v5.md"
+# Scheme and summary per prompt version.  v1 and v2 were generated from scheme v5 and summary v5
+# (now under archive/, read only); v3 (= v2 plus rule R4, pipeline v2 decision 20) from scheme v6
+# and summary v6.  The pinned v1/v2 files are never regenerated (Option A).
+SCHEME_V5 = REPO / "archive" / "docs" / "shared" / "2026-09-16_labeling_scheme_v5.md"
+SUMMARY_V5 = REPO / "archive" / "docs" / "shared" / "2026-09-16_action_summary_v5.md"
+SCHEME = REPO / "docs" / "shared" / "2026-09-17_labeling_scheme_v6.md"
+SUMMARY = REPO / "docs" / "shared" / "2026-09-17_action_summary_v6.md"
 PROMPTS_DIR = REPO / "prompts"
 OUT_PROMPT = PROMPTS_DIR / "judge_prompt_v1.md"
 OUT_LABELS = PROMPTS_DIR / "labels_v1.json"
 OUT_META = PROMPTS_DIR / "judge_prompt_v1.meta.json"
 VERSION = "v1"
-VERSIONS = ("v1", "v2")
+VERSIONS = ("v1", "v2", "v3")
 
 
 def prompt_paths(version: str, out_dir: Path = PROMPTS_DIR) -> tuple[Path, Path, Path]:
@@ -55,6 +65,13 @@ def prompt_paths(version: str, out_dir: Path = PROMPTS_DIR) -> tuple[Path, Path,
         raise ValueError(f"unknown prompt version {version!r}; known: {VERSIONS}")
     return (out_dir / f"judge_prompt_{version}.md", out_dir / f"labels_{version}.json",
             out_dir / f"judge_prompt_{version}.meta.json")
+
+
+def scheme_files(version: str) -> tuple[Path, Path]:
+    """(scheme, summary) the prompt version is generated from."""
+    if version not in VERSIONS:
+        raise ValueError(f"unknown prompt version {version!r}; known: {VERSIONS}")
+    return (SCHEME_V5, SUMMARY_V5) if version in ("v1", "v2") else (SCHEME, SUMMARY)
 
 LEVEL1 = [("Planning", "Pl"), ("Reasoning", "Re"), ("Reflection", "Rf"), ("Knowledge", "Kn"),
           ("Restatement", "Rs"), ("Assumption", "As"), ("Example", "Ex"), ("Conclusion", "Co")]
@@ -139,6 +156,9 @@ def _split_level3_item(item: str) -> tuple[str, str]:
     item = item.strip()
     if re.fullmatch(r"\([A-Z]\)", item) or re.fullmatch(r"option \([A-Z]\)", item):
         return item, ""
+    m = re.fullmatch(r"(.+? \([^()]*\)) \((.+)\)", item)
+    if m:  # a name that itself ends in a parenthetical, then the gloss: "Wait (doubt marker) (a sentence ...)" (scheme v6)
+        return m.group(1), m.group(2)
     m = re.fullmatch(r"(.+?) \(([A-Z]+): (.+)\)", item)
     if m:
         return f"{m.group(1)} ({m.group(2)})", m.group(3)
@@ -520,8 +540,16 @@ EXAMPLES_V2: list[dict] = [
 ]
 
 
+# v3 (Kian, 2026-09-17): the v2 examples, with the "Wait" sentence of the train example
+# carrying the Level 3 leaf Wait (doubt marker) as rule R4 requires (a worked example that
+# contradicted the rule would mislead the judge; nothing else changes).
+EXAMPLES_V3: list[dict] = [dict(ex) for ex in EXAMPLES_V2]
+EXAMPLES_V3[1] = dict(EXAMPLES_V2[1], expected=EXAMPLES_V2[1]["expected"].replace("\n6 Pl.iv\n", "\n6 Pl.iv.wdm\n"))
+assert EXAMPLES_V3[1]["expected"] != EXAMPLES_V2[1]["expected"]
+
+
 def examples_for(version: str) -> list[dict]:
-    return EXAMPLES if version == "v1" else EXAMPLES_V2
+    return {"v1": EXAMPLES, "v2": EXAMPLES_V2, "v3": EXAMPLES_V3}[version]
 
 
 def example_input(ex: dict) -> str:
@@ -561,6 +589,23 @@ def additional_rules_v2() -> list[str]:
         "- For information only (you do not output blocks): the analysis derives blocks from your labels. A block opens at the first sentence of a Planning node unless every sentence of that node is Planning > local plan, at a sentence carrying Assumption > branching (case split), and at a sentence carrying Conclusion > final answer. "
         "This is why the distinction between global plan, initiate verification, initiate backtracking, announce the conclusion, announce output on one side and local plan on the other matters.",
     ]
+
+
+R4_RULE = (
+    "- \"Wait\" sentences (doubt marker): a sentence whose first word is \"Wait\" — \"But wait\", \"Oh wait\", \"Okay, wait\" included; leading list markers, markdown and parentheses ignored — "
+    "is Planning > initiate verification or Planning > initiate backtracking with the Level 3 leaf Wait (doubt marker): initiate verification when it announces a re-check "
+    "(\"Wait, was the departure 9:00 or 9:30?\" is Pl.iv.wdm), initiate backtracking when it abandons or reverses a line of reasoning (\"Wait, working forwards from day 1 was the wrong idea.\" is Pl.ib.wdm). "
+    "When such a sentence also carries content of its own — a recalled fact, a comparison, a calculation — it is a combined sentence with the doubt marker as the first code and that content as the second "
+    "(\"Wait, the classic lily-pad puzzle asks for half the lake, not a quarter.\" is Pl.iv.wdm+Kn.wk). Such a sentence always opens a block in the analysis, whatever precedes it."
+)
+
+
+def additional_rules_v3() -> list[str]:
+    """The v2 rules plus the rule R4 paragraph (Kian, 2026-09-17; pipeline v2, decision 20),
+    placed before the labeling order."""
+    rules = additional_rules_v2()
+    k = next(i for i, r in enumerate(rules) if r.startswith("- Labeling order"))
+    return rules[:k] + [R4_RULE] + rules[k:]
 
 
 # ----------------------------------------------------------------------------
@@ -606,7 +651,12 @@ def build_prompt(scheme_text: str, summary_text: str, inventory: list[dict], ver
         p.append(f"   Test: {tests[name]}")
     p.append("")
     p.append("Additional rules:")
-    if version == "v2":
+    if version == "v3":
+        for c in ("Pl.iv.wdm", "Pl.ib.wdm", "Kn.wk"):
+            if c not in codes:
+                raise RuntimeError(f"the R4 rule names a code outside the inventory: {c}")
+        p.extend(additional_rules_v3())
+    elif version == "v2":
         p.extend(additional_rules_v2())
     else:
         p.extend(additional_rules_v1())
@@ -700,14 +750,15 @@ def main(argv=None) -> int:
     out_dir = Path(args.out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
     version = args.version
-    scheme_text = SCHEME.read_text(encoding="utf-8")
-    summary_text = SUMMARY.read_text(encoding="utf-8")
+    scheme_file, summary_file = scheme_files(version)
+    scheme_text = scheme_file.read_text(encoding="utf-8")
+    summary_text = summary_file.read_text(encoding="utf-8")
     inventory = build_inventory(scheme_text)
     prompt = build_prompt(scheme_text, summary_text, inventory, version)
-    scheme_sha = sha256_of_file(SCHEME)
+    scheme_sha = sha256_of_file(scheme_file)
     labels = {
         "version": version,
-        "scheme": SCHEME.name,
+        "scheme": scheme_file.name,
         "scheme_sha256": scheme_sha,
         "level1": {code: name for name, code in LEVEL1},
         "paths": [{"code": e["code"], "path": e["path"]} for e in inventory],
@@ -723,10 +774,10 @@ def main(argv=None) -> int:
         "characters": len(prompt) + 1,
         "estimated_tokens": round((len(prompt) + 1) / 4),
         "paths": len(inventory),
-        "scheme": SCHEME.name,
+        "scheme": scheme_file.name,
         "scheme_sha256": scheme_sha,
-        "summary": SUMMARY.name,
-        "summary_sha256": sha256_of_file(SUMMARY),
+        "summary": summary_file.name,
+        "summary_sha256": sha256_of_file(summary_file),
         "script": Path(__file__).resolve().relative_to(REPO).as_posix(),
         "script_sha256": sha256_of_file(Path(__file__).resolve()),
         "git_commit": git_head(),
@@ -735,7 +786,7 @@ def main(argv=None) -> int:
     with open(meta_path, "w", encoding="utf-8", newline="\n") as fh:
         json.dump(meta, fh, indent=2, ensure_ascii=False)
         fh.write("\n")
-    print(f"s1a_make_prompt: scheme={SCHEME.name} sha256={scheme_sha[:12]} paths={len(inventory)} "
+    print(f"s1a_make_prompt: version={version} scheme={scheme_file.name} sha256={scheme_sha[:12]} paths={len(inventory)} "
           f"prompt={prompt_path} characters={meta['characters']} est_tokens={meta['estimated_tokens']} git={meta['git_commit']}")
     return 0
 

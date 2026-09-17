@@ -1,0 +1,6 @@
+I'm quickly cycling through possible interpretations here, weighing whether this is a known trick or misquote, considering the likely intent behind the test, and checking my recollection against reasonable alternatives before settling on an answer.
+
+Then I recognize the classic version of this problem, walk through the setup, reason step by step to reach the answer, and double-check my work for errors before wrapping up.
+
+I'm drafting the actual response now, restating the conclusion I've been building toward, then settling on the final format and answer before wrapping up.
+

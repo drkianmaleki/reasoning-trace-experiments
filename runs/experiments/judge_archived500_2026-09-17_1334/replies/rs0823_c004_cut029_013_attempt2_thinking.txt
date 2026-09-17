@@ -1,0 +1,2 @@
+I spot a duplicate index issue between two entries and need to separate them properly. Given the sheer scale of the task—1127 sentences total—I'll need to work through the remaining indices systematically while keeping the labeling style consistent throughout.
+

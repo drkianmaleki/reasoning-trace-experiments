@@ -1,0 +1,589 @@
+{
+  "version": "v3",
+  "scheme": "2026-09-17_labeling_scheme_v6.md",
+  "scheme_sha256": "23b86eefd9442bde8637d2b9f7697d36cf7fa95c6f9b5b9fccf90dae3697d0a9",
+  "level1": {
+    "Pl": "Planning",
+    "Re": "Reasoning",
+    "Rf": "Reflection",
+    "Kn": "Knowledge",
+    "Rs": "Restatement",
+    "As": "Assumption",
+    "Ex": "Example",
+    "Co": "Conclusion"
+  },
+  "paths": [
+    {
+      "code": "Pl.gp",
+      "path": [
+        "Planning",
+        "global plan"
+      ]
+    },
+    {
+      "code": "Pl.iv",
+      "path": [
+        "Planning",
+        "initiate verification"
+      ]
+    },
+    {
+      "code": "Pl.iv.wdm",
+      "path": [
+        "Planning",
+        "initiate verification",
+        "Wait (doubt marker)"
+      ]
+    },
+    {
+      "code": "Pl.ib",
+      "path": [
+        "Planning",
+        "initiate backtracking"
+      ]
+    },
+    {
+      "code": "Pl.ib.wdm",
+      "path": [
+        "Planning",
+        "initiate backtracking",
+        "Wait (doubt marker)"
+      ]
+    },
+    {
+      "code": "Pl.lp",
+      "path": [
+        "Planning",
+        "local plan"
+      ]
+    },
+    {
+      "code": "Pl.atc",
+      "path": [
+        "Planning",
+        "announce the conclusion"
+      ]
+    },
+    {
+      "code": "Pl.ao",
+      "path": [
+        "Planning",
+        "announce output"
+      ]
+    },
+    {
+      "code": "Pl.un",
+      "path": [
+        "Planning",
+        "unspecified"
+      ]
+    },
+    {
+      "code": "Re.ca",
+      "path": [
+        "Reasoning",
+        "calculation"
+      ]
+    },
+    {
+      "code": "Re.ca.al",
+      "path": [
+        "Reasoning",
+        "calculation",
+        "algebra"
+      ]
+    },
+    {
+      "code": "Re.lr",
+      "path": [
+        "Reasoning",
+        "logical reasoning"
+      ]
+    },
+    {
+      "code": "Re.lr.al",
+      "path": [
+        "Reasoning",
+        "logical reasoning",
+        "algebra"
+      ]
+    },
+    {
+      "code": "Re.cr",
+      "path": [
+        "Reasoning",
+        "commonsense reasoning"
+      ]
+    },
+    {
+      "code": "Re.sp",
+      "path": [
+        "Reasoning",
+        "speculation"
+      ]
+    },
+    {
+      "code": "Re.sp.iot",
+      "path": [
+        "Reasoning",
+        "speculation",
+        "intent of the question writer"
+      ]
+    },
+    {
+      "code": "Re.ds",
+      "path": [
+        "Reasoning",
+        "defining symbols"
+      ]
+    },
+    {
+      "code": "Re.ds.al",
+      "path": [
+        "Reasoning",
+        "defining symbols",
+        "algebra"
+      ]
+    },
+    {
+      "code": "Re.ofe",
+      "path": [
+        "Reasoning",
+        "observation from examples"
+      ]
+    },
+    {
+      "code": "Re.co",
+      "path": [
+        "Reasoning",
+        "comparison"
+      ]
+    },
+    {
+      "code": "Re.co.pvo",
+      "path": [
+        "Reasoning",
+        "comparison",
+        "prompt vs original text"
+      ]
+    },
+    {
+      "code": "Re.co.ovo",
+      "path": [
+        "Reasoning",
+        "comparison",
+        "option vs option"
+      ]
+    },
+    {
+      "code": "Re.oe",
+      "path": [
+        "Reasoning",
+        "option evaluation"
+      ]
+    },
+    {
+      "code": "Re.oe.A",
+      "path": [
+        "Reasoning",
+        "option evaluation",
+        "(A)"
+      ]
+    },
+    {
+      "code": "Re.oe.B",
+      "path": [
+        "Reasoning",
+        "option evaluation",
+        "(B)"
+      ]
+    },
+    {
+      "code": "Re.oe.C",
+      "path": [
+        "Reasoning",
+        "option evaluation",
+        "(C)"
+      ]
+    },
+    {
+      "code": "Re.oe.D",
+      "path": [
+        "Reasoning",
+        "option evaluation",
+        "(D)"
+      ]
+    },
+    {
+      "code": "Re.oe.E",
+      "path": [
+        "Reasoning",
+        "option evaluation",
+        "(E)"
+      ]
+    },
+    {
+      "code": "Re.oe.F",
+      "path": [
+        "Reasoning",
+        "option evaluation",
+        "(F)"
+      ]
+    },
+    {
+      "code": "Re.hwa",
+      "path": [
+        "Reasoning",
+        "hedge word analysis"
+      ]
+    },
+    {
+      "code": "Re.hwa.er",
+      "path": [
+        "Reasoning",
+        "hedge word analysis",
+        "everyday reading"
+      ]
+    },
+    {
+      "code": "Re.hwa.mr",
+      "path": [
+        "Reasoning",
+        "hedge word analysis",
+        "mathematical reading"
+      ]
+    },
+    {
+      "code": "Re.hwa.un",
+      "path": [
+        "Reasoning",
+        "hedge word analysis",
+        "undecided"
+      ]
+    },
+    {
+      "code": "Re.un",
+      "path": [
+        "Reasoning",
+        "unspecified"
+      ]
+    },
+    {
+      "code": "Rf.meo",
+      "path": [
+        "Reflection",
+        "meta-evaluation of a step"
+      ]
+    },
+    {
+      "code": "Rf.meo.A",
+      "path": [
+        "Reflection",
+        "meta-evaluation of a step",
+        "option (A)"
+      ]
+    },
+    {
+      "code": "Rf.meo.B",
+      "path": [
+        "Reflection",
+        "meta-evaluation of a step",
+        "option (B)"
+      ]
+    },
+    {
+      "code": "Rf.meo.C",
+      "path": [
+        "Reflection",
+        "meta-evaluation of a step",
+        "option (C)"
+      ]
+    },
+    {
+      "code": "Rf.meo.D",
+      "path": [
+        "Reflection",
+        "meta-evaluation of a step",
+        "option (D)"
+      ]
+    },
+    {
+      "code": "Rf.meo.E",
+      "path": [
+        "Reflection",
+        "meta-evaluation of a step",
+        "option (E)"
+      ]
+    },
+    {
+      "code": "Rf.meo.F",
+      "path": [
+        "Reflection",
+        "meta-evaluation of a step",
+        "option (F)"
+      ]
+    },
+    {
+      "code": "Rf.eoi",
+      "path": [
+        "Reflection",
+        "emotion or impression"
+      ]
+    },
+    {
+      "code": "Rf.rp",
+      "path": [
+        "Reflection",
+        "rhetorical phrase"
+      ]
+    },
+    {
+      "code": "Rf.fi",
+      "path": [
+        "Reflection",
+        "filler"
+      ]
+    },
+    {
+      "code": "Rf.aoa",
+      "path": [
+        "Reflection",
+        "applicability of a knowledge item"
+      ]
+    },
+    {
+      "code": "Rf.un",
+      "path": [
+        "Reflection",
+        "unspecified"
+      ]
+    },
+    {
+      "code": "Kn.rot",
+      "path": [
+        "Knowledge",
+        "rule or theorem"
+      ]
+    },
+    {
+      "code": "Kn.cod",
+      "path": [
+        "Knowledge",
+        "concept or definition"
+      ]
+    },
+    {
+      "code": "Kn.cod.wp",
+      "path": [
+        "Knowledge",
+        "concept or definition",
+        "well-posedness"
+      ]
+    },
+    {
+      "code": "Kn.cou",
+      "path": [
+        "Knowledge",
+        "constant or unit"
+      ]
+    },
+    {
+      "code": "Kn.wk",
+      "path": [
+        "Knowledge",
+        "world knowledge"
+      ]
+    },
+    {
+      "code": "Kn.wk.fpc",
+      "path": [
+        "Knowledge",
+        "world knowledge",
+        "famous problem (CRT)"
+      ]
+    },
+    {
+      "code": "Kn.co",
+      "path": [
+        "Knowledge",
+        "commonsense"
+      ]
+    },
+    {
+      "code": "Kn.sk",
+      "path": [
+        "Knowledge",
+        "self-knowledge"
+      ]
+    },
+    {
+      "code": "Kn.sk.ro",
+      "path": [
+        "Knowledge",
+        "self-knowledge",
+        "role"
+      ]
+    },
+    {
+      "code": "Kn.sk.ec",
+      "path": [
+        "Knowledge",
+        "self-knowledge",
+        "evaluation context"
+      ]
+    },
+    {
+      "code": "Kn.un",
+      "path": [
+        "Knowledge",
+        "unspecified"
+      ]
+    },
+    {
+      "code": "Rs.rtp",
+      "path": [
+        "Restatement",
+        "rephrasing the prompt"
+      ]
+    },
+    {
+      "code": "Rs.rtp.qt",
+      "path": [
+        "Restatement",
+        "rephrasing the prompt",
+        "question text"
+      ]
+    },
+    {
+      "code": "Rs.rtp.ot",
+      "path": [
+        "Restatement",
+        "rephrasing the prompt",
+        "option text"
+      ]
+    },
+    {
+      "code": "Rs.rtp.afi",
+      "path": [
+        "Restatement",
+        "rephrasing the prompt",
+        "answer-format instruction"
+      ]
+    },
+    {
+      "code": "Rs.rae",
+      "path": [
+        "Restatement",
+        "rephrasing an earlier sentence"
+      ]
+    },
+    {
+      "code": "Rs.un",
+      "path": [
+        "Restatement",
+        "unspecified"
+      ]
+    },
+    {
+      "code": "As.aam",
+      "path": [
+        "Assumption",
+        "assuming a missing premise by common practice"
+      ]
+    },
+    {
+      "code": "As.aam.mo",
+      "path": [
+        "Assumption",
+        "assuming a missing premise by common practice",
+        "\"$1.00 more\""
+      ]
+    },
+    {
+      "code": "As.aau",
+      "path": [
+        "Assumption",
+        "assuming an uncertain fact"
+      ]
+    },
+    {
+      "code": "As.bcs",
+      "path": [
+        "Assumption",
+        "branching (case split)"
+      ]
+    },
+    {
+      "code": "As.bcs.al",
+      "path": [
+        "Assumption",
+        "branching (case split)",
+        "algebra"
+      ]
+    },
+    {
+      "code": "As.pbc",
+      "path": [
+        "Assumption",
+        "proof by contradiction"
+      ]
+    },
+    {
+      "code": "As.un",
+      "path": [
+        "Assumption",
+        "unspecified"
+      ]
+    },
+    {
+      "code": "Ex.pib",
+      "path": [
+        "Example",
+        "pattern induction by enumeration"
+      ]
+    },
+    {
+      "code": "Ex.nel",
+      "path": [
+        "Example",
+        "non-exhaustive listing"
+      ]
+    },
+    {
+      "code": "Ex.nel.al",
+      "path": [
+        "Example",
+        "non-exhaustive listing",
+        "algebra"
+      ]
+    },
+    {
+      "code": "Ex.re",
+      "path": [
+        "Example",
+        "rhetorical example"
+      ]
+    },
+    {
+      "code": "Ex.un",
+      "path": [
+        "Example",
+        "unspecified"
+      ]
+    },
+    {
+      "code": "Co.ic",
+      "path": [
+        "Conclusion",
+        "intermediate conclusion"
+      ]
+    },
+    {
+      "code": "Co.fa",
+      "path": [
+        "Conclusion",
+        "final answer"
+      ]
+    }
+  ]
+}

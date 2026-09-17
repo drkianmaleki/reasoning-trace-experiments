@@ -1,0 +1,2 @@
+I need to redo the full output from start to finish, fixing the truncation issue that happened partway through and making sure it runs all the way to completion this time.
+

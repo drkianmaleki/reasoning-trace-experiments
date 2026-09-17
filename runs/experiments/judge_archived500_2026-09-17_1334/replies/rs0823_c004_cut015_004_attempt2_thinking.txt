@@ -1,0 +1,18 @@
+I need to fix the labeling and re-check that section carefully: splitting the y=0.01, 0.05, 0.09 cases into their proper lines, each giving a valid x value (1.09, 1.05, 1.01 respectively).
+
+Now I'm also worried I applied combined labels across multi-line ranges elsewhere in my output where that's invalid, since combined codes should only apply to a single index. I need to scan back through the earlier ranges I labeled (364-366, 370-376, 378-383, 815-816, and 44-52) to check whether any of them incorrectly used a combined code across a range rather than a single line.
+
+I'm going through my prior output line by line looking for any place I combined codes with a "+" across a range instead of one index, since I need to split those into separate single-index lines with correct codes each.
+
+For c196-c199, since bare numbers like "1." attach to the sentence that follows and inherit its label, I need c196 to share c197's label rather than being combined. But then I realize this riddle content ("Bat+Ball=1.10") is likely recalled world knowledge rather than my "Re.ds.al" tag, so I need to reconsider what category actually fits.
+
+So I'm settling on labeling c195 through c199 as recalled world knowledge (the classic riddle), c200 as plan language for "Solution:", and c201 as world knowledge for the answer itself.
+
+Then moving to c202-208, I'm tagging c202 "The prompt given:" as plan language, and figuring out whether the equations restated from the prompt should carry a "restating prompt" label versus a "descriptive/al" label, trying to keep consistency with how I split earlier bare-number markers.
+
+I settle on: c203-204 as restating the prompt equation, c205-206 as restating the comparison, c207 as reasoning about the system having one equation, and c208 as the "infinite solutions" conclusion label.
+
+I then go back and apply similar fixes to several later blocks (44-52, 295-296, 364-366, 370-376, 378-383), consistently labeling the "If Ball=X" case assumptions as case-setup, the resulting Bat/Ball calculations as case-arithmetic, and any comparison or judgment statements (like "that violates..." or "equal, not more") as either comparison-reasoning or an evaluative judgment tag, working through each difference-in-cents scenario (1 cent, 2 cents, up to 104 cents) the same way.
+
+I do a final sweep checking for other ranges I might have mislabeled with combined "+" tags, but most remaining entries turn out to be single indices or valid repeated-label runs (like the existence/uniqueness/stability sequence), so they don't need correction. With that confirmed, I'm ready to assemble the complete corrected list, substituting in the expanded single-line entries for the problematic ranges while keeping the rest of the original labeling intact and index-aligned.
+

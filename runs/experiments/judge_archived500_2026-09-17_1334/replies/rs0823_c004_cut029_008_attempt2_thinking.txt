@@ -1,0 +1,2 @@
+There's an overlap issue at index 2 - c0 and c1 cover indices 0-2 for "Re.ca.al" while c2 covers just index 2 for "Re.lr.al", which is the "No" answer. I need to fix the range so c0/c1 only cover 0-1, leaving index 2 solely for c2.
+

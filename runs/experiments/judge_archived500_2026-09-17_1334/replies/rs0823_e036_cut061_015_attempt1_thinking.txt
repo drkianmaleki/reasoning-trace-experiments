@@ -1,0 +1,12 @@
+I'm going through each item and tagging it with a shorthand code describing its category—knowledge gaps, reasoning types, planning steps, or core issues—to organize how I'll approach the response.
+
+I'm drafting the structure of my final response, planning to end with a clear answer statement pointing to E, then double-checking my reasoning once more before committing to that choice.
+
+I'm working through more self-checks and reasoning steps, weighing what's known against what's being planned, and circling back to refine the approach before finalizing.
+
+Continuing to merge the sequence of labeled codes into a run-length compressed list, collapsing repeated consecutive entries into single grouped runs.
+
+I keep going back and forth, checking my reasoning against the letters again, considering alternate interpretations, and verifying consistency before settling on my final answer.
+
+I'm continuing to work through this coded sequence, tracking patterns across reasoning types, plan revisions, and reference checks as I move through each labeled step.
+

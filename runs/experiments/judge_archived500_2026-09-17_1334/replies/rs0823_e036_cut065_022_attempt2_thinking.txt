@@ -1,0 +1,2 @@
+I need to fix the overlap at index 106 — that "Answer:" line should stand alone rather than being part of the earlier run, so I'll adjust the range to end at 105 and treat 106 separately before the final segment.
+

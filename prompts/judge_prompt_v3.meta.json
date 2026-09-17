@@ -1,0 +1,15 @@
+{
+  "prompt_file": "judge_prompt_v3.md",
+  "labels_file": "labels_v3.json",
+  "characters": 23280,
+  "estimated_tokens": 5820,
+  "paths": 77,
+  "scheme": "2026-09-17_labeling_scheme_v6.md",
+  "scheme_sha256": "23b86eefd9442bde8637d2b9f7697d36cf7fa95c6f9b5b9fccf90dae3697d0a9",
+  "summary": "2026-09-17_action_summary_v6.md",
+  "summary_sha256": "a1220acf1acd9813a6a9d25fc76974f9981b3dffa4ffaeb9d156525a6da70a73",
+  "script": "scripts/s1a_make_prompt.py",
+  "script_sha256": "8dd1850c506261042d993067e5c8914e1281bdfa1cfb249d0f0d82fb6dcdc755",
+  "git_commit": "cb372474119b2ee1a5b5caa031c6225a0cefd133",
+  "generated": "2026-09-17T13:08:06"
+}

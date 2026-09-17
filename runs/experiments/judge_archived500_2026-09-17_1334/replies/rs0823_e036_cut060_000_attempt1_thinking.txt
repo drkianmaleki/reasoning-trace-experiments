@@ -1,0 +1,6 @@
+I'm trying to categorize each response into buckets based on what type of reasoning or behavior it reflects, like recognizing errors, following instructions literally, making hypothetical assumptions, or steering toward a particular answer.
+
+I keep going through the planning sequence, then hit another self-question about whether an interpretation could differ, treating it as a content-level check and answering "No." Next I notice another steering self-question start to form, wondering if the user made a typo.
+
+I'm finishing up the classification codes for the remaining segments, wrapping up patterns around confidence, planning, and reflection. Given the time constraints, I'll settle on this coding and move to finalize.
+

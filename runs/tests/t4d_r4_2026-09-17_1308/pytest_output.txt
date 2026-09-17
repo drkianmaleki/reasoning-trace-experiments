@@ -1,0 +1,93 @@
+...................F.................................FFF................ [ 52%]
+..................................................................       [100%]
+================================== FAILURES ===================================
+___________________ test_r4_regex[   \u23ce * _Wait_-True] ____________________
+
+text = '   ⏎ * _Wait_', hit = True
+
+    @pytest.mark.parametrize("text,hit", [
+        ("Wait, is that right?", True), ("But wait, the classic says $1.00 more.", True), ("⏎⏎    **Wait, hold on.**", True),
+        ("(Wait, the classic problem says …", True), ("Oh wait.", True), ("Oh, wait — no.", True), ("Okay, wait.", True), ("And wait, what?", True),
+        ("1. Wait a moment.", True), ("- wait, no", True), ("> WAIT", True), ("   ⏎ * _Wait_", True),
+        ("Actually, wait.", False), ("Waiting for the sum.", False), ("await the result", False), ("Let me wait.", False),
+        ("Hmm, wait.", False), ("", False), ("But", False), ("Wait", True), ("wait.", True),
+    ])
+    def test_r4_regex(text, hit):
+>       assert D.is_r4(text) is hit
+E       AssertionError: assert False is True
+E        +  where False = <function is_r4 at 0x00000253CCE10A40>('   ⏎ * _Wait_')
+E        +    where <function is_r4 at 0x00000253CCE10A40> = D.is_r4
+
+scripts\tests\test_derivation.py:112: AssertionError
+________________ test_every_reviewed_path_is_in_the_inventory _________________
+
+inv = <judge_codec.Inventory object at 0x00000253CCEFD0A0>
+
+    def test_every_reviewed_path_is_in_the_inventory(inv):
+>       used = {p for labels in reviewed_labels().values() for paths in labels for p in paths}
+                                ^^^^^^^^^^^^^^^^^
+
+scripts\tests\test_judge_codec.py:94: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def reviewed_labels() -> dict[str, list[list[str]]]:
+        """{trace: [[path, ...] per sentence]} from the listing's Node column."""
+        out: dict[str, list[list[str]]] = {"c004": [], "e036": []}
+        trace = None
+>       with open(LISTING, encoding="utf-8") as fh:
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\docs\\shared\\2026-09-16_source_traces_labeled_v3.md'
+
+scripts\tests\test_judge_codec.py:31: FileNotFoundError
+__________________ test_round_trip_reviewed_labels[c004-375] __________________
+
+inv = <judge_codec.Inventory object at 0x00000253CCEFD0A0>
+sentence_counts = {'c004': 375, 'e036': 254}, trace_id = 'c004'
+n_expected = 375
+
+    @pytest.mark.parametrize("trace_id,n_expected", [("c004", 375), ("e036", 254)])
+    def test_round_trip_reviewed_labels(inv, sentence_counts, trace_id, n_expected):
+>       labels = reviewed_labels()[trace_id]
+                 ^^^^^^^^^^^^^^^^^
+
+scripts\tests\test_judge_codec.py:106: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def reviewed_labels() -> dict[str, list[list[str]]]:
+        """{trace: [[path, ...] per sentence]} from the listing's Node column."""
+        out: dict[str, list[list[str]]] = {"c004": [], "e036": []}
+        trace = None
+>       with open(LISTING, encoding="utf-8") as fh:
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\docs\\shared\\2026-09-16_source_traces_labeled_v3.md'
+
+scripts\tests\test_judge_codec.py:31: FileNotFoundError
+__________________ test_round_trip_reviewed_labels[e036-254] __________________
+
+inv = <judge_codec.Inventory object at 0x00000253CCEFD0A0>
+sentence_counts = {'c004': 375, 'e036': 254}, trace_id = 'e036'
+n_expected = 254
+
+    @pytest.mark.parametrize("trace_id,n_expected", [("c004", 375), ("e036", 254)])
+    def test_round_trip_reviewed_labels(inv, sentence_counts, trace_id, n_expected):
+>       labels = reviewed_labels()[trace_id]
+                 ^^^^^^^^^^^^^^^^^
+
+scripts\tests\test_judge_codec.py:106: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def reviewed_labels() -> dict[str, list[list[str]]]:
+        """{trace: [[path, ...] per sentence]} from the listing's Node column."""
+        out: dict[str, list[list[str]]] = {"c004": [], "e036": []}
+        trace = None
+>       with open(LISTING, encoding="utf-8") as fh:
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\docs\\shared\\2026-09-16_source_traces_labeled_v3.md'
+
+scripts\tests\test_judge_codec.py:31: FileNotFoundError
+=========================== short test summary info ===========================
+FAILED scripts/tests/test_derivation.py::test_r4_regex[   \u23ce * _Wait_-True]
+FAILED scripts/tests/test_judge_codec.py::test_every_reviewed_path_is_in_the_inventory
+FAILED scripts/tests/test_judge_codec.py::test_round_trip_reviewed_labels[c004-375]
+FAILED scripts/tests/test_judge_codec.py::test_round_trip_reviewed_labels[e036-254]
+4 failed, 134 passed in 0.37s

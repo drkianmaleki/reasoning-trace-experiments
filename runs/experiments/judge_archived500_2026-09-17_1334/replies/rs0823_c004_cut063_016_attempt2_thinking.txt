@@ -1,0 +1,10 @@
+I'm labeling each sentence in this set, noting that this could be a trick question where the missing information was dropped intentionally, but concluding that "not enough info" remains the mathematically defensible answer either way.
+
+Working through the strict logic version, I set up the equations bat+ball=1.10 with bat>ball, which yields a range where ball can be anywhere from $0 to $0.55 — meaning the cost genuinely cannot be pinned down as stated, making the problem unsolvable.
+
+Then I contrast this with the actual Cognitive Reflection Test riddle, which specifies the bat costs exactly $1.00 more than the ball, yielding the unique solution of $0.05 — but since the prompt weakened "exactly $1.00 more" to just "more than," that unique solution no longer holds.
+
+I'm weighing whether option (C), which says "not enough information, but most likely $0.05," is better than (E)'s "not well posed," since (C) captures both the logical truth and a nod to the famous riddle's cultural context, while (E) is a more purely mathematical framing.
+
+I keep circling back to whether the prompt's wording is a typo for the classic riddle or a deliberate trick testing attention to detail — if it's a typo, $0.05 makes sense; if it's a trick, "cannot be determined" is the right call, and I'm trying to decide which framing the question designer intended based on how the options are worded.
+

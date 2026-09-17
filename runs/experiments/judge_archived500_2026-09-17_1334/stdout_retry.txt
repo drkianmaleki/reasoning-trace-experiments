@@ -1,0 +1,92 @@
+retrying 11 failed traces as one batch (attempt 3) with the format-check line
+submitted batch msgbatch_019Ly4igKHxc8JQeyKxZVXyt (attempt 3, 11 entries); status in_progress; request_counts {"processing": 11, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}
+batch msgbatch_019Ly4igKHxc8JQeyKxZVXyt: in_progress; request_counts {"processing": 11, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 0s
+batch msgbatch_019Ly4igKHxc8JQeyKxZVXyt: in_progress; request_counts {"processing": 11, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 61s
+batch msgbatch_019Ly4igKHxc8JQeyKxZVXyt: in_progress; request_counts {"processing": 11, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 121s
+batch msgbatch_019Ly4igKHxc8JQeyKxZVXyt: in_progress; request_counts {"processing": 11, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 181s
+batch msgbatch_019Ly4igKHxc8JQeyKxZVXyt: in_progress; request_counts {"processing": 11, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 242s
+batch msgbatch_019Ly4igKHxc8JQeyKxZVXyt: in_progress; request_counts {"processing": 11, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 302s
+batch msgbatch_019Ly4igKHxc8JQeyKxZVXyt: ended; request_counts {"processing": 0, "succeeded": 11, "errored": 0, "canceled": 0, "expired": 0}; elapsed 362s
+batch msgbatch_019Ly4igKHxc8JQeyKxZVXyt (attempt 3): 7 of 11 parsed; failures 4: {"overlap": 3, "unparsable": 1}
+{
+  "run_dir": "runs\\experiments\\judge_archived500_2026-09-17_1334",
+  "collection": "archived500",
+  "retried": [
+    "rs0823_c004_cut059_006",
+    "rs0823_c004_cut059_014",
+    "rs0823_c004_cut060_022",
+    "rs0823_c004_cut062_017",
+    "rs0823_c004_cut063_015",
+    "rs0823_c004_cut067_001",
+    "rs0823_c004_cut015_021",
+    "rs0823_c004_cut029_005",
+    "rs0823_c004_cut029_021",
+    "rs0823_c004_cut029_024",
+    "rs0823_c004_cut044_015"
+  ],
+  "parsed": [
+    "rs0823_c004_cut059_006",
+    "rs0823_c004_cut059_014",
+    "rs0823_c004_cut062_017",
+    "rs0823_c004_cut063_015",
+    "rs0823_c004_cut029_021",
+    "rs0823_c004_cut029_024",
+    "rs0823_c004_cut044_015"
+  ],
+  "failed": [
+    {
+      "trace_id": "rs0823_c004_cut060_022",
+      "error": "overlap: sentences 876..876 are covered twice at line 713: 876 Rf.meo.E"
+    },
+    {
+      "trace_id": "rs0823_c004_cut067_001",
+      "error": "unparsable: a combined sentence needs a single index, not a run at line 44: 56-57 Pl.iv.wdm+Kn.wk.fpc"
+    },
+    {
+      "trace_id": "rs0823_c004_cut015_021",
+      "error": "overlap: sentences 462..462 are covered twice at line 358: 462 Re.oe.C"
+    },
+    {
+      "trace_id": "rs0823_c004_cut029_005",
+      "error": "overlap: sentences 1..1 are covered twice at line 2: 1 Re.lr.al"
+    }
+  ],
+  "cost_usd": 2.1397124000000005,
+  "batches": [
+    {
+      "batch_id": "msgbatch_019Ly4igKHxc8JQeyKxZVXyt",
+      "attempt": 3,
+      "n_entries": 11,
+      "custom_ids": [
+        "rs0823_c004_cut015_021",
+        "rs0823_c004_cut029_005",
+        "rs0823_c004_cut029_021",
+        "rs0823_c004_cut029_024",
+        "rs0823_c004_cut044_015",
+        "rs0823_c004_cut059_006",
+        "rs0823_c004_cut059_014",
+        "rs0823_c004_cut060_022",
+        "rs0823_c004_cut062_017",
+        "rs0823_c004_cut063_015",
+        "rs0823_c004_cut067_001"
+      ],
+      "submitted": "2026-09-17T14:22:24",
+      "ended": "2026-09-17T14:28:26",
+      "request_counts": {
+        "processing": 0,
+        "succeeded": 11,
+        "errored": 0,
+        "canceled": 0,
+        "expired": 0
+      },
+      "poll_seconds": 60,
+      "api_created_at": "2026-09-17 19:22:25.440918+00:00",
+      "api_ended_at": "2026-09-17 19:28:11.562610+00:00"
+    }
+  ],
+  "stopped": null,
+  "extra_line": "Format check before you answer: every index from 0 to N\u22121 exactly once, runs in increasing order, one code per run (two codes joined by + only on a single-index line), codes only from the table.",
+  "thinking_tokens_per_labeled_sentence": 35.15470713606604,
+  "pnext_path": "runs\\experiments\\judge_archived500_2026-09-17_1334\\pnext_archived.csv",
+  "total_cost_usd": 61.067146799999996
+}

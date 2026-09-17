@@ -1,0 +1,10 @@
+{
+  "git_commit": "cb372474119b2ee1a5b5caa031c6225a0cefd133",
+  "listing": "docs/shared/2026-09-17_source_traces_labeled_v4.md",
+  "listing_v3": "archive/docs/shared/2026-09-16_source_traces_labeled_v3.md",
+  "sentences": "runs/tests/t2_split_2026-09-16_2224/sentences_source.jsonl",
+  "run": "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\experiments\\judge_source_sonnet_v2_thinklow_r1_2026-09-17_1017",
+  "r4_regex": "^[\\s\\u23ce*_#>\\d.)(-]*(?:but\\s+|and\\s+|oh,?\\s+|okay,?\\s+)?wait\\b",
+  "python": "3.12.10",
+  "timestamp": "2026-09-17T13:24:39"
+}

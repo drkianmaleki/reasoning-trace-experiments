@@ -1,0 +1,14 @@
+I'm working through whether this problem is actually well-posed, considering that it might lack a unique solution and that the fallback option could be the intended answer.
+
+I keep going back and forth between calling it technically correct but incomplete, versus recognizing this could just be a classic misquoted brainteaser—like a variant of the classic Cognitive Reflection Test problem, where the "obvious" answer is often wrong and the real answer requires more careful arithmetic.
+
+If it's meant as that standard version, the answer is $0.05, but as literally written the problem seems underdetermined. I'm torn between leaning toward the answer that flags this as unsolvable versus one that says none of the given options fit, though "not well-posed" still feels like the most defensible framing.
+
+Working through it with variables for bat and ball costs, the equations B+b=1.10 and B>b alone don't pin down a unique answer -- only the classic phrasing with "$1.00 more" gives 0.05 specifically. So I conclude the question as stated lacks sufficient information, which points toward the option calling this out directly rather than the one that just speculates the answer is probably 0.05 anyway. I'll go with that more precise choice as my final answer.
+
+Double-checking the classic setup: this really does match the well-known trick question phrasing where the answer can't be determined without more info, reinforcing my choice of E. I run through the equations once more—bat plus ball equals $1.10, with the bat costing more than the ball—confirming the underdetermined nature without the extra "$1.00 more" constraint.
+
+But the problem as stated only gives "more than" as a condition, not an exact difference, so substituting B=1.10-b into B>b just gives b<0.55, leaving the value underdetermined without an additional constraint like the classic bat-and-ball setup.
+
+Weighing the options, E correctly flags this ambiguity while C's acknowledgment of missing info still speculates without basis, so E is the most defensible answer. I double-check whether the question intends the classic $0.05 trick expecting A, but since I'm asked to pick the single best option and rigor favors pointing out the logical flaw, I'll stick with E as the only logically defensible choice.
+

@@ -1,0 +1,178 @@
+{
+  "collection": "archived3",
+  "run_id": "run",
+  "out_dir": "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\tests\\t5_batch_2026-09-17_1328\\run",
+  "traces": {
+    "rs0823_cut000_002": {
+      "n": 131,
+      "estimated_input_tokens": 7558,
+      "custom_id": "rs0823_cut000_002",
+      "prefix_n": 0,
+      "max_tokens": 24000,
+      "attempts": 1,
+      "valid": true,
+      "usage": {
+        "input_tokens": 3033,
+        "cache_read_input_tokens": 8584,
+        "output_tokens": 4582,
+        "thinking_tokens": 3539,
+        "cache_creation_input_tokens": 0
+      },
+      "cost_usd": 0.026801400000000003,
+      "model": "claude-sonnet-5",
+      "stop_reasons": [
+        "end_turn"
+      ],
+      "retry_message": null,
+      "error": null,
+      "warnings": [],
+      "thinking_tokens": 3539,
+      "leaks": [
+        false
+      ],
+      "final_stop_reason": "end_turn",
+      "thinking_chars": [
+        3164
+      ],
+      "batch_ids": [
+        "msgbatch_01TDbMyFkL1DaR7wWaqrcfvQ"
+      ],
+      "max_tokens_used": [
+        24000
+      ],
+      "nodes": 76,
+      "blocks": 22,
+      "r4_changed": 0
+    },
+    "rs0823_e036_cut063_016": {
+      "n": 84,
+      "estimated_input_tokens": 8139,
+      "custom_id": "rs0823_e036_cut063_016",
+      "prefix_n": 70,
+      "max_tokens": 24000,
+      "attempts": 1,
+      "valid": true,
+      "usage": {
+        "input_tokens": 4367,
+        "cache_read_input_tokens": 8584,
+        "output_tokens": 2758,
+        "thinking_tokens": 1963,
+        "cache_creation_input_tokens": 0
+      },
+      "cost_usd": 0.019015400000000002,
+      "model": "claude-sonnet-5",
+      "stop_reasons": [
+        "end_turn"
+      ],
+      "retry_message": null,
+      "error": null,
+      "warnings": [],
+      "thinking_tokens": 1963,
+      "leaks": [
+        false
+      ],
+      "final_stop_reason": "end_turn",
+      "thinking_chars": [
+        1910
+      ],
+      "batch_ids": [
+        "msgbatch_01TDbMyFkL1DaR7wWaqrcfvQ"
+      ],
+      "max_tokens_used": [
+        24000
+      ],
+      "nodes": 104,
+      "blocks": 19,
+      "r4_changed": 0
+    },
+    "rs0823_c004_cut068_016": {
+      "n": 166,
+      "estimated_input_tokens": 9718,
+      "custom_id": "rs0823_c004_cut068_016",
+      "prefix_n": 76,
+      "max_tokens": 24000,
+      "attempts": 1,
+      "valid": true,
+      "usage": {
+        "input_tokens": 7309,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 3734,
+        "thinking_tokens": 2318,
+        "cache_creation_input_tokens": 8584
+      },
+      "cost_usd": 0.036709,
+      "model": "claude-sonnet-5",
+      "stop_reasons": [
+        "end_turn"
+      ],
+      "retry_message": null,
+      "error": null,
+      "warnings": [],
+      "thinking_tokens": 2318,
+      "leaks": [
+        false
+      ],
+      "final_stop_reason": "end_turn",
+      "thinking_chars": [
+        1262
+      ],
+      "batch_ids": [
+        "msgbatch_01TDbMyFkL1DaR7wWaqrcfvQ"
+      ],
+      "max_tokens_used": [
+        24000
+      ],
+      "nodes": 147,
+      "blocks": 32,
+      "r4_changed": 0
+    }
+  },
+  "stopped": null,
+  "total_cost_usd": 0.08252580000000001,
+  "dry_run": false,
+  "model_key": "sonnet",
+  "model_id": "claude-sonnet-5",
+  "prompt_version": "v3",
+  "thinking_mode": "low",
+  "mode": "batch",
+  "continuations": true,
+  "batches": [
+    {
+      "batch_id": "msgbatch_01TDbMyFkL1DaR7wWaqrcfvQ",
+      "attempt": 1,
+      "n_entries": 3,
+      "custom_ids": [
+        "rs0823_c004_cut068_016",
+        "rs0823_cut000_002",
+        "rs0823_e036_cut063_016"
+      ],
+      "submitted": "2026-09-17T13:28:36",
+      "ended": "2026-09-17T13:33:10",
+      "request_counts": {
+        "processing": 0,
+        "succeeded": 3,
+        "errored": 0,
+        "canceled": 0,
+        "expired": 0
+      },
+      "poll_seconds": 30,
+      "api_created_at": "2026-09-17 18:28:37.159716+00:00",
+      "api_ended_at": "2026-09-17 18:32:54.739336+00:00"
+    }
+  ],
+  "batch_seconds": 275,
+  "labels_path": "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\tests\\t5_batch_2026-09-17_1328\\run\\labels_archived3_judge.jsonl",
+  "blocks_path": "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\tests\\t5_batch_2026-09-17_1328\\run\\blocks_archived3_judge.jsonl",
+  "traces_path": "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\tests\\t5_batch_2026-09-17_1328\\run\\traces_archived3_judge.jsonl",
+  "failures": {},
+  "n_valid": 3,
+  "usage": {
+    "input_tokens": 14709,
+    "cache_read_input_tokens": 17168,
+    "cache_creation_input_tokens": 8584,
+    "output_tokens": 11074,
+    "thinking_tokens": 7820
+  },
+  "thinking_tokens_per_labeled_sentence": 20.5249343832021,
+  "pnext_path": "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\tests\\t5_batch_2026-09-17_1328\\run\\pnext_archived3.csv"
+}

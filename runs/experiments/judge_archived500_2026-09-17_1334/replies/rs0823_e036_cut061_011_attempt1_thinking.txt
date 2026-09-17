@@ -1,0 +1,8 @@
+I'm going through each item and tagging them by category—things like quoted options, reference errors, plausibility issues, knowledge checks, and content issues—to classify what kind of problem each one represents.
+
+I keep weighing considerations, testing possible framings, and checking whether the response steers questions appropriately, before settling into planning the actual answer.
+
+I'm noticing this next segment restates the classic CRT equations and steps already established earlier, essentially echoing the same computation rather than adding new content.
+
+I keep circling back through the same reasoning, restating conclusions and reformulating the answer. At one point I wonder if there's a typo in the intended answer and consider whether (A) might actually be correct, then move to double-check that hypothesis before settling back into planning the final response format.
+

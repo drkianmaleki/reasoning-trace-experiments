@@ -1,5 +1,6 @@
 """Unit tests for scripts/s1_judge.py: request construction, parse-and-retry with a stubbed
 client, cost arithmetic, agreement arithmetic.  No API call.  Run: python -m pytest -q scripts/tests/test_s1_judge.py"""
+import json
 import math
 import re
 import sys
@@ -320,6 +321,11 @@ def test_rejection_message_format(inv):
                    "Output the complete labeling again, every index from 0 to 9 exactly once, one run per line, codes only.")
 
 
-def test_batch_mode_is_not_implemented():
-    with pytest.raises(NotImplementedError):
-        S.main(["--sentences", str(SENTENCES), "--mode", "batch", "--out", "x"])
+def test_batch_mode_dry_run_builds_the_requests(tmp_path):
+    summary = S.run_judge(SENTENCES, tmp_path / "x", ["e036"], dry_run=True, model_key="sonnet", prompt_version="v3",
+                          thinking_mode="low", mode="batch", log=lambda s: None)
+    assert summary["dry_run"] and summary["mode"] == "batch" and summary["traces"]["e036"]["custom_id"] == "e036"
+    assert (tmp_path / "x" / "custom_ids.json").exists() and (tmp_path / "x" / "requests" / "e036.json").exists()
+    config = json.loads((tmp_path / "x" / "config.json").read_text(encoding="utf-8"))
+    assert config["mode"] == "dry-run" and config["prices_usd_per_million"] == S.BATCH_PRICES["sonnet"] and config["batch"]["poll_seconds"] == 60
+    assert not (tmp_path / "x" / "batch_state.json").exists()  # nothing submitted

@@ -13,3 +13,7 @@ desktop.ini
 Thumbs.db
 # 37 MB, regenerated in seconds by scripts/s0_split.py --collection archived500
 runs/experiments/*/sentences_archived500.jsonl
+# Large files stay local (Kian, 2026-09-17); runs/LARGE_FILES_INDEX.md lists them with sizes, hashes and provenance
+runs/experiments/*/labels_archived500_judge.jsonl
+# judge labels of every future continuation run (steps 8/9 and later)
+runs/experiments/*/labels_continuations_*.jsonl

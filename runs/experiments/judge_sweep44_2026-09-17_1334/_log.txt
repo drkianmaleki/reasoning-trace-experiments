@@ -1,0 +1,67 @@
+# s1_judge run_id=judge_sweep44_2026-09-17_1334 mode=batch model=claude-sonnet-5 (sonnet) prompt=v3 thinking=low 2026-09-17T13:34:03
+# trace_id	attempts	valid	input	cache_read	cache_write	output	cost_usd	stop_reasons	thinking_tokens	leaks	batch_ids	error
+submitted batch msgbatch_01MUUy5eBMgaVowLNk941dbW (attempt 1, 44 entries); status in_progress; request_counts {"processing": 44, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}
+batch msgbatch_01MUUy5eBMgaVowLNk941dbW: in_progress; request_counts {"processing": 44, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 0s
+batch msgbatch_01MUUy5eBMgaVowLNk941dbW: in_progress; request_counts {"processing": 44, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 61s
+batch msgbatch_01MUUy5eBMgaVowLNk941dbW: in_progress; request_counts {"processing": 44, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 121s
+batch msgbatch_01MUUy5eBMgaVowLNk941dbW: in_progress; request_counts {"processing": 44, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 181s
+batch msgbatch_01MUUy5eBMgaVowLNk941dbW: in_progress; request_counts {"processing": 44, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 241s
+batch msgbatch_01MUUy5eBMgaVowLNk941dbW: in_progress; request_counts {"processing": 44, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 302s
+batch msgbatch_01MUUy5eBMgaVowLNk941dbW: in_progress; request_counts {"processing": 44, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 362s
+batch msgbatch_01MUUy5eBMgaVowLNk941dbW: in_progress; request_counts {"processing": 44, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 422s
+batch msgbatch_01MUUy5eBMgaVowLNk941dbW: in_progress; request_counts {"processing": 44, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 482s
+batch msgbatch_01MUUy5eBMgaVowLNk941dbW: in_progress; request_counts {"processing": 44, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 543s
+batch msgbatch_01MUUy5eBMgaVowLNk941dbW: ended; request_counts {"processing": 0, "succeeded": 44, "errored": 0, "canceled": 0, "expired": 0}; elapsed 603s
+batch msgbatch_01MUUy5eBMgaVowLNk941dbW (attempt 1): 39 of 44 parsed; failures 5: {"gap": 2, "unparsable": 1, "overlap": 2}
+submitted batch msgbatch_01LKNbWDQa6fKyeV4S6wVRC8 (attempt 2, 5 entries); status in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}
+batch msgbatch_01LKNbWDQa6fKyeV4S6wVRC8: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 0s
+batch msgbatch_01LKNbWDQa6fKyeV4S6wVRC8: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 61s
+batch msgbatch_01LKNbWDQa6fKyeV4S6wVRC8: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 121s
+batch msgbatch_01LKNbWDQa6fKyeV4S6wVRC8: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 181s
+batch msgbatch_01LKNbWDQa6fKyeV4S6wVRC8: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 242s
+batch msgbatch_01LKNbWDQa6fKyeV4S6wVRC8: ended; request_counts {"processing": 0, "succeeded": 5, "errored": 0, "canceled": 0, "expired": 0}; elapsed 302s
+batch msgbatch_01LKNbWDQa6fKyeV4S6wVRC8 (attempt 2): 5 of 5 parsed; failures 0: {}
+s0819_eval0multi0_001	1	True	3658	8584	0	6845	0.038741	['end_turn']	5781	[False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW']	
+s0819_eval0multi0_002	1	True	3988	0	8584	5506	0.042248	['end_turn']	4195	[False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW']	
+s0819_eval0multi0_003	1	True	4795	0	8584	8057	0.055810	['end_turn']	6513	[False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW']	
+s0819_eval0multi0_004	1	True	9413	8584	0	19607	0.108306	['end_turn']	16873	[False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW']	
+s0819_eval0multi0_005	1	True	7449	0	8584	12318	0.079769	['end_turn']	9578	[False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW']	
+s0819_eval0multi0_006	1	True	27775	0	8584	47440	0.275705	['end_turn']	39208	[False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW']	
+s0819_eval0multi0_007	1	True	21175	0	8584	30785	0.185830	['end_turn']	24310	[False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW']	
+s0819_eval0multi0_008	1	True	5194	8584	0	11017	0.061137	['end_turn']	9489	[False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW']	
+s0819_eval0multi0_009	2	True	31901	8584	8584	28618	0.186579	['max_tokens', 'end_turn']	21575	[False, False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW', 'msgbatch_01LKNbWDQa6fKyeV4S6wVRC8']	
+s0819_eval0multi0_010	1	True	3961	0	8584	5806	0.043721	['end_turn']	4512	[False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW']	
+s0819_eval0multi0_011	1	True	4858	0	8584	4070	0.035938	['end_turn']	2438	[False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW']	
+s0819_eval0multi0_012	2	True	28541	17168	0	51200	0.286258	['max_tokens', 'end_turn']	46778	[False, False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW', 'msgbatch_01LKNbWDQa6fKyeV4S6wVRC8']	
+s0819_eval0multi0_013	1	True	4153	8584	0	8028	0.045151	['end_turn']	6721	[False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW']	
+s0819_eval0multi0_014	1	True	3983	0	8584	3171	0.030568	['end_turn']	1924	[False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW']	
+s0819_eval0multi0_015	1	True	3272	8584	0	6309	0.035675	['end_turn']	5186	[False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW']	
+s0819_eval0multi0_016	1	True	5204	0	8584	8842	0.060144	['end_turn']	7043	[False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW']	
+s0819_eval0multi0_017	1	True	4129	0	8584	5084	0.040279	['end_turn']	3672	[False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW']	
+s0819_eval0multi0_018	1	True	6062	8584	0	8848	0.051160	['end_turn']	6715	[False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW']	
+s0819_eval0multi0_019	1	True	3982	8584	0	7295	0.041315	['end_turn']	6094	[False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW']	
+s0819_eval0multi0_020	1	True	23861	8584	0	47092	0.260179	['end_turn']	39990	[False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW']	
+s0819_eval0multi0_021	1	True	16357	8584	0	28627	0.160350	['end_turn']	23372	[False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW']	
+s0819_eval0multi0_022	1	True	3181	0	8584	4546	0.036641	['end_turn']	3495	[False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW']	
+s0819_eval0multi0_023	1	True	4343	0	8584	9722	0.063683	['end_turn']	8358	[False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW']	
+s0819_eval0multi0_024	1	True	4437	8584	0	3717	0.023880	['end_turn']	2312	[False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW']	
+s0819_eval0multi0_025	1	True	4363	0	8584	7622	0.053203	['end_turn']	6309	[False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW']	
+s0819_eval0multi0_026	1	True	3955	8584	0	8636	0.047993	['end_turn']	7366	[False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW']	
+s0819_eval0multi0_027	1	True	4519	0	8584	7550	0.052999	['end_turn']	6249	[False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW']	
+s0819_eval0multi0_028	1	True	27713	8584	0	41167	0.234406	['end_turn']	32690	[False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW']	
+s0819_eval0multi0_029	1	True	3684	0	8584	3148	0.030154	['end_turn']	1897	[False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW']	
+s0819_eval0multi0_030	1	True	3530	0	8584	6728	0.047900	['end_turn']	5594	[False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW']	
+s0819_eval0multi0_031	2	True	10965	8584	8584	9237	0.068738	['end_turn', 'end_turn']	5917	[False, False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW', 'msgbatch_01LKNbWDQa6fKyeV4S6wVRC8']	
+s0819_eval0multi0_032	2	True	9539	17168	0	6457	0.043541	['end_turn', 'end_turn']	3989	[False, False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW', 'msgbatch_01LKNbWDQa6fKyeV4S6wVRC8']	
+s0819_eval0multi0_033	1	True	16047	0	8584	25194	0.152747	['end_turn']	20144	[False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW']	
+s0819_eval0multi0_034	1	True	3862	0	8584	8014	0.054662	['end_turn']	6955	[False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW']	
+s0819_eval0multi0_035	1	True	4637	8584	0	5467	0.032830	['end_turn']	3995	[False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW']	
+s0819_eval0multi0_036	1	True	5645	8584	0	9213	0.052568	['end_turn']	7530	[False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW']	
+s0819_eval0multi0_037	1	True	3087	8584	0	2932	0.018605	['end_turn']	1956	[False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW']	
+s0819_eval0multi0_038	1	True	3942	8584	0	6308	0.036340	['end_turn']	5065	[False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW']	
+s0819_eval0multi0_039	1	True	3921	8584	0	7211	0.040834	['end_turn']	6205	[False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW']	
+s0819_eval0multi0_040	1	True	4241	8584	0	5640	0.033299	['end_turn']	4152	[False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW']	
+s0819_eval0multi0_041	1	True	4809	8584	0	6827	0.039802	['end_turn']	5382	[False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW']	
+s0819_eval0multi0_042	1	True	3958	0	8584	6594	0.047658	['end_turn']	5238	[False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW']	
+s0819_eval0multi0_043	1	True	25719	8584	0	19912	0.126137	['end_turn']	11446	[False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW']	
+s0819_eval0multi0_044	2	True	55707	17168	0	45436	0.284604	['end_turn', 'end_turn']	30922	[False, False]	['msgbatch_01MUUy5eBMgaVowLNk941dbW', 'msgbatch_01LKNbWDQa6fKyeV4S6wVRC8']	

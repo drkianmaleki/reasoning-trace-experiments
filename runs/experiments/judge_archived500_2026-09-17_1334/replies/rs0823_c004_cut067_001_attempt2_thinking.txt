@@ -1,0 +1,2 @@
+I notice there's a redundant overlapping line that duplicates ranges already covered separately, so I should remove it and keep the 5-7 and 8-10 groupings distinct.
+

@@ -1,0 +1,2 @@
+There's an overlap issue around measures 852-861 that I need to fix — I'll split it into 852-859 as Pl.lp, 860 as Kn.wk.fpc, and 861 as Pl.lp.
+

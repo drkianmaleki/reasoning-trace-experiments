@@ -1,0 +1,8 @@
+I'm quickly categorizing each step of the reasoning chain, tagging pieces as recalled facts, planning moves, or self-directed questions to see how the overall thought process is structured.
+
+I keep cycling through evaluating options, checking my reasoning against known facts, and planning the response structure before circling back to refine specific details and quality checks.
+
+Still coding through the classification labels...
+
+Now I'm working on merging these coded segments into continuous runs.
+

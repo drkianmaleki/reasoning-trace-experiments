@@ -1,0 +1,2 @@
+I need to output clean run-length labels for the full range without any stray formatting, so I'm reconstructing the sequence carefully before finalizing.
+

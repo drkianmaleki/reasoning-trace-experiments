@@ -1,0 +1,4 @@
+prefix_id,trace_arm,cut,last_node_label,n,n_labeled,n_failed,next_Planning,next_Reasoning,next_Reflection,next_Knowledge,next_Restatement,next_Assumption,next_Example,next_Conclusion,opens_block,first_is_wait
+rs0823_cut000,shared,0,,1,1,0,1,0,0,0,0,0,0,0,1,0
+rs0823_c004_cut068,c004,68,Reasoning,1,1,0,0,0,1,0,0,0,0,0,0,0
+rs0823_e036_cut063,e036,63,Reasoning,1,1,0,0,1,0,0,0,0,0,0,0,0

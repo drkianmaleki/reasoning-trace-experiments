@@ -1,0 +1,18 @@
+I'm working through the reasoning step by step, weighing what's implied by context, considering different options, and checking my own conclusions before settling on the most likely intent.
+
+I keep steering myself with questions, checking against rote memory versus reasoning, then cycling back through options A, E, and C again to see which best fits without relying on outside facts. I'm looking for an option that simply states something plainly rather than adding unnecessary conditions.
+
+I keep going through the sequence, tagging each step as logical reasoning, self-questioning, planning, or calculation, then land on a stretch of case analysis and comparisons before wrapping toward a final reasoning step near the end.
+
+I'm continuing to trace through this sequence of state transitions, following the pattern of self-questions, replays, and plan updates as I work through the reasoning chain.
+
+I'm working through more evaluation cases, comparing responses and checking reasoning patterns and knowledge coverage across examples.
+
+Continuing through the coding sequence, I'm tracking a long series of labeled steps spanning re-reads, planning, code interpretation, and repeated retrieval operations before landing on further comparison steps.
+
+Still tagging codes...
+
+I'm working through more claim reviews, checking learning rate adjustments and consistency across cases, then noting some concerns before moving into planning next steps.
+
+Still tracing through this classification sequence of codes...
+

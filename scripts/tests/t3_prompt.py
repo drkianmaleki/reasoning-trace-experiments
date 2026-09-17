@@ -68,8 +68,9 @@ def main(argv=None) -> int:
     shutil.copy(prompt_file, folder / prompt_file.name)
     shutil.copy(labels_file, folder / labels_file.name)
     inv = J.Inventory.load(labels_file)
-    scheme_text = P.SCHEME.read_text(encoding="utf-8")
-    summary_text = P.SUMMARY.read_text(encoding="utf-8")
+    scheme_file, summary_file = P.scheme_files(version)
+    scheme_text = scheme_file.read_text(encoding="utf-8")
+    summary_text = summary_file.read_text(encoding="utf-8")
 
     # ---- check 1: no-quote gate ----------------------------------------------------------
     norm_prompt = normalize(prompt)
@@ -111,7 +112,7 @@ def main(argv=None) -> int:
     by_len = {2: sum(1 for e in inventory if len(e["path"]) == 2), 3: sum(1 for e in inventory if len(e["path"]) == 3)}
     check(ok, "check 2, inventory and codes",
           f"{len(paths)} paths ({by_len[2]} at Level 2, {by_len[3]} at Level 3), {len(set(codes))} unique codes, "
-          f"each code decodes to its path and back; labels_v1.json matches the scheme parse")
+          f"each code decodes to its path and back; {labels_file.name} matches the parse of {scheme_file.name}")
 
     # ---- check 3: prompt contents --------------------------------------------------------
     missing_l1 = [n for n in P.L1_NAMES if n not in prompt]
@@ -154,8 +155,8 @@ def main(argv=None) -> int:
     config = {
         "git_commit": P.git_head(),
         "prompt_version": version,
-        "scheme": P.SCHEME.name, "scheme_sha256": P.sha256_of_file(P.SCHEME),
-        "summary": P.SUMMARY.name, "summary_sha256": P.sha256_of_file(P.SUMMARY),
+        "scheme": scheme_file.name, "scheme_sha256": P.sha256_of_file(scheme_file),
+        "summary": summary_file.name, "summary_sha256": P.sha256_of_file(summary_file),
         "prompt": prompt_file.name, "prompt_sha256": P.sha256_of_file(prompt_file),
         "labels": labels_file.name, "labels_sha256": P.sha256_of_file(labels_file),
         "sentences": SENTENCES.relative_to(REPO).as_posix(), "sentences_sha256": P.sha256_of_file(SENTENCES),
@@ -169,7 +170,7 @@ def main(argv=None) -> int:
         f"# TEST_REPORT — t3_prompt — {stamp:%Y-%m-%d %H:%M}",
         "",
         f"Gate test of pipeline step (3/9), the judge prompt and the label codes (`scripts/s1a_make_prompt.py`, `scripts/judge_codec.py`), per pipeline v1 Section 9 item 5. Prompt version {version} (`{prompt_file.name}`, `{labels_file.name}`). "
-        f"Git commit at run time: `{config['git_commit']}`. Scheme `{P.SCHEME.name}` sha256 `{config['scheme_sha256']}`; prompt sha256 `{config['prompt_sha256']}`. Python {config['python']}. Offline; API cost $0.",
+        f"Git commit at run time: `{config['git_commit']}`. Scheme `{scheme_file.name}` sha256 `{config['scheme_sha256']}`; prompt sha256 `{config['prompt_sha256']}`. Python {config['python']}. Offline; API cost $0.",
         "",
         f"## Result: {'PASS' if gate else 'FAIL'} ({sum(verdicts)}/{len(verdicts)} checks passed)",
         "",

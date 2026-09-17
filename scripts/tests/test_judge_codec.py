@@ -15,7 +15,11 @@ import judge_codec as J  # noqa: E402
 
 REPO = Path(__file__).resolve().parents[2]
 LABELS = REPO / "prompts" / "labels_v1.json"
-LISTING = REPO / "docs" / "shared" / "2026-09-16_source_traces_labeled_v3.md"
+# listing v3 (pre-R4, archived, read only) pairs with the v1/v2 inventory (75 paths); listing v4
+# (rule R4, the Wait (doubt marker) leaves) with the v3 inventory (77 paths)
+LISTINGS = {"v1": REPO / "archive" / "docs" / "shared" / "2026-09-16_source_traces_labeled_v3.md",
+            "v3": REPO / "docs" / "shared" / "2026-09-17_source_traces_labeled_v4.md"}
+LISTING = LISTINGS["v1"]
 SENTENCES = REPO / "runs" / "tests" / "t2_split_2026-09-16_2224" / "sentences_source.jsonl"
 
 ROW = re.compile(r"^\| s(\d+)\(new\)-s(\d+)\(old(?:, part (\d))?\) \| (.*?) \| (.*) \|\s*$")
@@ -24,11 +28,11 @@ SEP = re.compile(r" \\?\|\\?\| ")  # the listing's escaped `\|\|`
 NEW_LEAF = "Reasoning > logical reasoning > algebra"  # added to Section 3a in scheme v5 (item 17)
 
 
-def reviewed_labels() -> dict[str, list[list[str]]]:
+def reviewed_labels(listing: Path = LISTING) -> dict[str, list[list[str]]]:
     """{trace: [[path, ...] per sentence]} from the listing's Node column."""
     out: dict[str, list[list[str]]] = {"c004": [], "e036": []}
     trace = None
-    with open(LISTING, encoding="utf-8") as fh:
+    with open(listing, encoding="utf-8") as fh:
         for line in fh:
             if line.startswith("## C-trace"):
                 trace = "c004"
@@ -90,25 +94,30 @@ def test_inventory_shape(inv):
     assert "Pl" not in inv and "Re" not in inv  # Level 1 alone is not a label
 
 
-def test_every_reviewed_path_is_in_the_inventory(inv):
-    used = {p for labels in reviewed_labels().values() for paths in labels for p in paths}
+@pytest.mark.parametrize("version,n_used", [("v1", 44), ("v3", 46)])
+def test_every_reviewed_path_is_in_the_inventory(version, n_used):
+    inv = J.Inventory.load(REPO / "prompts" / f"labels_{version}.json")
+    used = {p for labels in reviewed_labels(LISTINGS[version]).values() for paths in labels for p in paths}
     missing = {p for p in used if p not in inv.path_to_code}
     assert missing == set(), missing
-    assert len(used) == 44
+    assert len(used) == n_used  # v4 adds the two Wait (doubt marker) paths
 
 
 # ----------------------------------------------------------------------------
 # Round trip on the reviewed labels of both source traces
 # ----------------------------------------------------------------------------
 
+@pytest.mark.parametrize("version", ["v1", "v3"])
 @pytest.mark.parametrize("trace_id,n_expected", [("c004", 375), ("e036", 254)])
-def test_round_trip_reviewed_labels(inv, sentence_counts, trace_id, n_expected):
-    labels = reviewed_labels()[trace_id]
+def test_round_trip_reviewed_labels(sentence_counts, version, trace_id, n_expected):
+    inv = J.Inventory.load(REPO / "prompts" / f"labels_{version}.json")
+    labels = reviewed_labels(LISTINGS[version])[trace_id]
     assert len(labels) == n_expected == sentence_counts[trace_id]
     text = J.encode(labels, inv)
     parsed, warnings = J.parse_reply_with_warnings(text, len(labels), inv)
     assert parsed == labels and warnings == []  # exact round trip, no special-casing
-    assert sum(1 for paths in labels if len(paths) == 2) == {"c004": 8, "e036": 5}[trace_id]
+    combined = {"v1": {"c004": 8, "e036": 5}, "v3": {"c004": 9, "e036": 5}}  # C s42 becomes combined under R4
+    assert sum(1 for paths in labels if len(paths) == 2) == combined[version][trace_id]
     n_new_leaf = sum(1 for paths in labels for p in paths if p == NEW_LEAF)
     assert n_new_leaf == {"c004": 14, "e036": 4}[trace_id]  # 18 in all, encoded as Re.lr.al
     assert text.count("Re.lr.al") >= 1

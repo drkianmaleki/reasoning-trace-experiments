@@ -1,0 +1,10 @@
+I'm working through the structure of the response, organizing several headings and points that build toward explaining why the system is underdetermined, then moving into a concluding section with supporting reasoning.
+
+I check known facts, weigh alternatives, and consider whether the prompt might be a trick question, testing that hypothesis against the reasoning I've laid out.
+
+I settle on a plan, walk through the logic again to confirm consistency, and lay out the final reasoning that supports my conclusion.
+
+I'm working through another heading and checking multiple methods against each other, adding a self-correction where I catch an earlier error in one of the methods. Then I move into reviewing calculated results, cross-checking against known solved cases, and assessing whether the calculations align with expectations.
+
+Continuing to tag through the remaining codes, then moving to compile the runs together.
+

@@ -1,0 +1,2 @@
+I realize I skipped labeling the example about "x + y = 10, x > y, find x" — the answer being "cannot be determined" — which is illustrating the same reasoning pattern, so I need to fold that in as an example case before concluding the point is incorrect.
+

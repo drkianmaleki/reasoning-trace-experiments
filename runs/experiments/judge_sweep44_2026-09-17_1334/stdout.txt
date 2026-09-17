@@ -1,0 +1,184 @@
+s1_judge: sentences=runs/experiments/s0_split_2026-09-16_2224/sentences_sweep44.jsonl collection=sweep44 mode=batch out=runs\experiments\judge_sweep44_2026-09-17_1334 model=claude-sonnet-5 (sonnet) thinking=low prompt=judge_prompt_v3.md sha256=e999f7081d5a dry_run=False git=cb372474119b2ee1a5b5caa031c6225a0cefd133
+request s0819_eval0multi0_001: 158 sentences, about 7944 input tokens (characters/4), max_tokens 24000
+request s0819_eval0multi0_002: 181 sentences, about 8086 input tokens (characters/4), max_tokens 24000
+request s0819_eval0multi0_003: 210 sentences, about 8634 input tokens (characters/4), max_tokens 24000
+request s0819_eval0multi0_004: 375 sentences, about 11108 input tokens (characters/4), max_tokens 24000
+request s0819_eval0multi0_005: 354 sentences, about 10019 input tokens (characters/4), max_tokens 24000
+request s0819_eval0multi0_006: 1178 sentences, about 21458 input tokens (characters/4), max_tokens 48000
+request s0819_eval0multi0_007: 839 sentences, about 17907 input tokens (characters/4), max_tokens 48000
+request s0819_eval0multi0_008: 215 sentences, about 8952 input tokens (characters/4), max_tokens 24000
+request s0819_eval0multi0_009: 576 sentences, about 14344 input tokens (characters/4), max_tokens 24000
+request s0819_eval0multi0_010: 177 sentences, about 8069 input tokens (characters/4), max_tokens 24000
+request s0819_eval0multi0_011: 212 sentences, about 8787 input tokens (characters/4), max_tokens 24000
+request s0819_eval0multi0_012: 581 sentences, about 14146 input tokens (characters/4), max_tokens 24000
+request s0819_eval0multi0_013: 169 sentences, about 8212 input tokens (characters/4), max_tokens 24000
+request s0819_eval0multi0_014: 172 sentences, about 8145 input tokens (characters/4), max_tokens 24000
+request s0819_eval0multi0_015: 153 sentences, about 7722 input tokens (characters/4), max_tokens 24000
+request s0819_eval0multi0_016: 237 sentences, about 8903 input tokens (characters/4), max_tokens 24000
+request s0819_eval0multi0_017: 180 sentences, about 8276 input tokens (characters/4), max_tokens 24000
+request s0819_eval0multi0_018: 262 sentences, about 9503 input tokens (characters/4), max_tokens 24000
+request s0819_eval0multi0_019: 172 sentences, about 8089 input tokens (characters/4), max_tokens 24000
+request s0819_eval0multi0_020: 1037 sentences, about 18858 input tokens (characters/4), max_tokens 48000
+request s0819_eval0multi0_021: 632 sentences, about 15284 input tokens (characters/4), max_tokens 48000
+request s0819_eval0multi0_022: 144 sentences, about 7642 input tokens (characters/4), max_tokens 24000
+request s0819_eval0multi0_023: 200 sentences, about 8300 input tokens (characters/4), max_tokens 24000
+request s0819_eval0multi0_024: 194 sentences, about 8382 input tokens (characters/4), max_tokens 24000
+request s0819_eval0multi0_025: 192 sentences, about 8402 input tokens (characters/4), max_tokens 24000
+request s0819_eval0multi0_026: 172 sentences, about 8235 input tokens (characters/4), max_tokens 24000
+request s0819_eval0multi0_027: 184 sentences, about 8547 input tokens (characters/4), max_tokens 24000
+request s0819_eval0multi0_028: 1124 sentences, about 21601 input tokens (characters/4), max_tokens 48000
+request s0819_eval0multi0_029: 162 sentences, about 7987 input tokens (characters/4), max_tokens 24000
+request s0819_eval0multi0_030: 162 sentences, about 7848 input tokens (characters/4), max_tokens 24000
+request s0819_eval0multi0_031: 201 sentences, about 8483 input tokens (characters/4), max_tokens 24000
+request s0819_eval0multi0_032: 162 sentences, about 8266 input tokens (characters/4), max_tokens 24000
+request s0819_eval0multi0_033: 644 sentences, about 14856 input tokens (characters/4), max_tokens 48000
+request s0819_eval0multi0_034: 161 sentences, about 8078 input tokens (characters/4), max_tokens 24000
+request s0819_eval0multi0_035: 206 sentences, about 8594 input tokens (characters/4), max_tokens 24000
+request s0819_eval0multi0_036: 254 sentences, about 9084 input tokens (characters/4), max_tokens 24000
+request s0819_eval0multi0_037: 132 sentences, about 7553 input tokens (characters/4), max_tokens 24000
+request s0819_eval0multi0_038: 177 sentences, about 8123 input tokens (characters/4), max_tokens 24000
+request s0819_eval0multi0_039: 164 sentences, about 8082 input tokens (characters/4), max_tokens 24000
+request s0819_eval0multi0_040: 174 sentences, about 8359 input tokens (characters/4), max_tokens 24000
+request s0819_eval0multi0_041: 194 sentences, about 8652 input tokens (characters/4), max_tokens 24000
+request s0819_eval0multi0_042: 163 sentences, about 8126 input tokens (characters/4), max_tokens 24000
+request s0819_eval0multi0_043: 1054 sentences, about 20236 input tokens (characters/4), max_tokens 48000
+request s0819_eval0multi0_044: 1005 sentences, about 19529 input tokens (characters/4), max_tokens 48000
+44 documents, 15295 sentences to label
+submitted batch msgbatch_01MUUy5eBMgaVowLNk941dbW (attempt 1, 44 entries); status in_progress; request_counts {"processing": 44, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}
+batch msgbatch_01MUUy5eBMgaVowLNk941dbW: in_progress; request_counts {"processing": 44, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 0s
+batch msgbatch_01MUUy5eBMgaVowLNk941dbW: in_progress; request_counts {"processing": 44, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 61s
+batch msgbatch_01MUUy5eBMgaVowLNk941dbW: in_progress; request_counts {"processing": 44, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 121s
+batch msgbatch_01MUUy5eBMgaVowLNk941dbW: in_progress; request_counts {"processing": 44, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 181s
+batch msgbatch_01MUUy5eBMgaVowLNk941dbW: in_progress; request_counts {"processing": 44, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 241s
+batch msgbatch_01MUUy5eBMgaVowLNk941dbW: in_progress; request_counts {"processing": 44, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 302s
+batch msgbatch_01MUUy5eBMgaVowLNk941dbW: in_progress; request_counts {"processing": 44, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 362s
+batch msgbatch_01MUUy5eBMgaVowLNk941dbW: in_progress; request_counts {"processing": 44, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 422s
+batch msgbatch_01MUUy5eBMgaVowLNk941dbW: in_progress; request_counts {"processing": 44, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 482s
+batch msgbatch_01MUUy5eBMgaVowLNk941dbW: in_progress; request_counts {"processing": 44, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 543s
+batch msgbatch_01MUUy5eBMgaVowLNk941dbW: ended; request_counts {"processing": 0, "succeeded": 44, "errored": 0, "canceled": 0, "expired": 0}; elapsed 603s
+batch msgbatch_01MUUy5eBMgaVowLNk941dbW (attempt 1): 39 of 44 parsed; failures 5: {"gap": 2, "unparsable": 1, "overlap": 2}
+submitted batch msgbatch_01LKNbWDQa6fKyeV4S6wVRC8 (attempt 2, 5 entries); status in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}
+batch msgbatch_01LKNbWDQa6fKyeV4S6wVRC8: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 0s
+batch msgbatch_01LKNbWDQa6fKyeV4S6wVRC8: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 61s
+batch msgbatch_01LKNbWDQa6fKyeV4S6wVRC8: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 121s
+batch msgbatch_01LKNbWDQa6fKyeV4S6wVRC8: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 181s
+batch msgbatch_01LKNbWDQa6fKyeV4S6wVRC8: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 242s
+batch msgbatch_01LKNbWDQa6fKyeV4S6wVRC8: ended; request_counts {"processing": 0, "succeeded": 5, "errored": 0, "canceled": 0, "expired": 0}; elapsed 302s
+batch msgbatch_01LKNbWDQa6fKyeV4S6wVRC8 (attempt 2): 5 of 5 parsed; failures 0: {}
+{
+  "collection": "sweep44",
+  "run_id": "judge_sweep44_2026-09-17_1334",
+  "out_dir": "runs\\experiments\\judge_sweep44_2026-09-17_1334",
+  "stopped": null,
+  "total_cost_usd": 3.7480952000000007,
+  "dry_run": false,
+  "model_key": "sonnet",
+  "model_id": "claude-sonnet-5",
+  "prompt_version": "v3",
+  "thinking_mode": "low",
+  "mode": "batch",
+  "continuations": false,
+  "batches": [
+    {
+      "batch_id": "msgbatch_01MUUy5eBMgaVowLNk941dbW",
+      "attempt": 1,
+      "n_entries": 44,
+      "custom_ids": [
+        "s0819_eval0multi0_001",
+        "s0819_eval0multi0_002",
+        "s0819_eval0multi0_003",
+        "s0819_eval0multi0_004",
+        "s0819_eval0multi0_005",
+        "s0819_eval0multi0_006",
+        "s0819_eval0multi0_007",
+        "s0819_eval0multi0_008",
+        "s0819_eval0multi0_009",
+        "s0819_eval0multi0_010",
+        "s0819_eval0multi0_011",
+        "s0819_eval0multi0_012",
+        "s0819_eval0multi0_013",
+        "s0819_eval0multi0_014",
+        "s0819_eval0multi0_015",
+        "s0819_eval0multi0_016",
+        "s0819_eval0multi0_017",
+        "s0819_eval0multi0_018",
+        "s0819_eval0multi0_019",
+        "s0819_eval0multi0_020",
+        "s0819_eval0multi0_021",
+        "s0819_eval0multi0_022",
+        "s0819_eval0multi0_023",
+        "s0819_eval0multi0_024",
+        "s0819_eval0multi0_025",
+        "s0819_eval0multi0_026",
+        "s0819_eval0multi0_027",
+        "s0819_eval0multi0_028",
+        "s0819_eval0multi0_029",
+        "s0819_eval0multi0_030",
+        "s0819_eval0multi0_031",
+        "s0819_eval0multi0_032",
+        "s0819_eval0multi0_033",
+        "s0819_eval0multi0_034",
+        "s0819_eval0multi0_035",
+        "s0819_eval0multi0_036",
+        "s0819_eval0multi0_037",
+        "s0819_eval0multi0_038",
+        "s0819_eval0multi0_039",
+        "s0819_eval0multi0_040",
+        "s0819_eval0multi0_041",
+        "s0819_eval0multi0_042",
+        "s0819_eval0multi0_043",
+        "s0819_eval0multi0_044"
+      ],
+      "submitted": "2026-09-17T13:34:09",
+      "ended": "2026-09-17T13:44:12",
+      "request_counts": {
+        "processing": 0,
+        "succeeded": 44,
+        "errored": 0,
+        "canceled": 0,
+        "expired": 0
+      },
+      "poll_seconds": 60,
+      "api_created_at": "2026-09-17 18:34:10.230225+00:00",
+      "api_ended_at": "2026-09-17 18:44:10.553591+00:00"
+    },
+    {
+      "batch_id": "msgbatch_01LKNbWDQa6fKyeV4S6wVRC8",
+      "attempt": 2,
+      "n_entries": 5,
+      "custom_ids": [
+        "s0819_eval0multi0_009",
+        "s0819_eval0multi0_012",
+        "s0819_eval0multi0_031",
+        "s0819_eval0multi0_032",
+        "s0819_eval0multi0_044"
+      ],
+      "submitted": "2026-09-17T13:44:16",
+      "ended": "2026-09-17T13:49:18",
+      "request_counts": {
+        "processing": 0,
+        "succeeded": 5,
+        "errored": 0,
+        "canceled": 0,
+        "expired": 0
+      },
+      "poll_seconds": 60,
+      "api_created_at": "2026-09-17 18:44:17.801575+00:00",
+      "api_ended_at": "2026-09-17 18:48:52.919637+00:00"
+    }
+  ],
+  "batch_seconds": 916,
+  "labels_path": "runs\\experiments\\judge_sweep44_2026-09-17_1334\\labels_sweep44_judge.jsonl",
+  "blocks_path": "runs\\experiments\\judge_sweep44_2026-09-17_1334\\blocks_sweep44_judge.jsonl",
+  "traces_path": "runs\\experiments\\judge_sweep44_2026-09-17_1334\\traces_sweep44_judge.jsonl",
+  "failures": {},
+  "n_valid": 44,
+  "usage": {
+    "input_tokens": 439515,
+    "cache_read_input_tokens": 240352,
+    "output_tokens": 611843,
+    "cache_creation_input_tokens": 180264,
+    "thinking_tokens": 485133
+  },
+  "thinking_tokens_per_labeled_sentence": 31.718404707420724
+}

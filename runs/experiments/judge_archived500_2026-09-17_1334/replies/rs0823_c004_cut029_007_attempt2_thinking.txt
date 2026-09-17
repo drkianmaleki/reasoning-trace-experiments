@@ -1,0 +1,2 @@
+I see there's an overlap issue in the ranges - I need to split them properly: 756-761 as one segment, 762 separately, and 763 as another.
+

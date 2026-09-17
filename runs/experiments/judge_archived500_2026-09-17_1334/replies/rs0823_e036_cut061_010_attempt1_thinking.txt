@@ -1,0 +1,8 @@
+I'm quickly labeling each candidate option, weighing things like clarity, logical strictness, and common misquotation, and noting that one option seems strictly more logically correct even though another might be more commonly cited.
+
+I check my confidence again, then start planning the actual response layout, deciding how to structure it and what to emphasize before finalizing the answer format.
+
+I keep working through the reasoning chain, checking knowledge, drafting and revising the answer, and cross-checking consistency before finalizing my response.
+
+I keep re-arriving at the same answer draft, but I notice a later "Final Answer" restatement appears further down, so this occurrence is still intermediate rather than the true conclusion. I need to keep tracking through the remaining checks before locking in the final choice.
+
