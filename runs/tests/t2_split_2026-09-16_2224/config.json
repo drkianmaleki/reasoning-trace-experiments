@@ -1,0 +1,27 @@
+{
+  "script": "scripts/s0_split.py",
+  "script_sha256": "6c8a735427240172ce9ca8bb4a3d08562125e006bc48aa9b7b181b0cb832313c",
+  "git_commit": "26ee14aa1acf5e3099bec71c83eab71858595ee7",
+  "git_dirty": true,
+  "python": "3.12.10",
+  "collections": {
+    "source": {
+      "collection": "source",
+      "output": "runs/tests/t2_split_2026-09-16_2224/sentences_source.jsonl",
+      "inputs": [
+        {
+          "path": "archive/decided-mid-thought/runs/sweep_items_batball_2026-08-19_1623.jsonl",
+          "sha256": "372b22e5d5a0871a3c1e52180250daf9e62ed4ac0e9ce6312b027c523bdb530e"
+        }
+      ],
+      "traces": 2,
+      "records": 629,
+      "sentences_per_trace": {
+        "min": 254,
+        "median": 314.5,
+        "max": 375
+      },
+      "timestamp": "2026-09-16T22:24:43"
+    }
+  }
+}
