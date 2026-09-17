@@ -46,6 +46,27 @@ def test_build_request_shape(sents):
     assert S.estimate_input_tokens(req) == round((len(prompt) + len(req["messages"][0]["content"])) / 4)
 
 
+def test_build_request_sonnet(sents):
+    prompt = "PROMPT"
+    req = S.build_request("e036", sents["e036"], prompt, "sonnet")
+    assert req["model"] == "claude-sonnet-5"
+    assert "extra_body" not in req and "temperature" not in req  # Sonnet 5 rejects sampling parameters
+    assert req["thinking"] == {"type": "disabled"}
+    req_h = S.build_request("e036", sents["e036"], prompt, "haiku")
+    assert "thinking" not in req_h and req_h["extra_body"] == {"temperature": 0}
+    with pytest.raises(KeyError):
+        S.build_request("e036", sents["e036"], prompt, "opus")
+
+
+def test_prompt_files_and_run_id():
+    p, l = S.prompt_files("v2")
+    assert p.name == "judge_prompt_v2.md" and l.name == "labels_v2.json"
+    with pytest.raises(ValueError):
+        S.prompt_files("v9")
+    from datetime import datetime
+    assert S.make_run_id("sonnet", "v2", datetime(2026, 9, 17, 8, 5)) == "judge_source_sonnet_v2_2026-09-17_0805"
+
+
 def test_load_sentences_checks_order(tmp_path):
     p = tmp_path / "sentences_x.jsonl"
     p.write_text('{"trace_id": "a", "s": 0, "text": "x"}\n{"trace_id": "a", "s": 2, "text": "y"}\n', encoding="utf-8")
@@ -66,6 +87,10 @@ def test_cost_arithmetic():
     u = {"input_tokens": 100, "output_tokens": 10, "cache_creation_input_tokens": 4000, "cache_read_input_tokens": 4000}
     assert S.cost_usd(u) == pytest.approx((100 * 1 + 10 * 5 + 4000 * 0.10 + 4000 * 1.25) / 1e6)
     assert S.add_usage({"input_tokens": 1}, {"input_tokens": 2, "output_tokens": 3}) == {"input_tokens": 3, "output_tokens": 3}
+    # Sonnet 5: $2 / $10 per million, cache write $2.50, cache read $0.20
+    u = {"input_tokens": 1_000_000, "output_tokens": 100_000, "cache_creation_input_tokens": 1_000_000, "cache_read_input_tokens": 1_000_000}
+    assert S.cost_usd(u, "sonnet") == pytest.approx(2.0 + 1.0 + 2.5 + 0.2)
+    assert S.cost_usd(u, "haiku") == pytest.approx(1.0 + 0.5 + 1.25 + 0.1)
 
 
 # ----------------------------------------------------------------------------
@@ -116,6 +141,16 @@ def test_retry_after_a_gap_then_valid(inv, tmp_path):
     assert res["usage"]["input_tokens"] == 200 and res["cost_usd"] == pytest.approx(2 * (100 + 50 + 62.5) / 1e6)
     assert (tmp_path / "replies" / "toy_attempt2.txt").exists()
     assert res["stop_reasons"] == ["end_turn", "end_turn"]
+
+
+def test_sonnet_call_shape_and_cost(inv, tmp_path):
+    stub = StubCreate([VALID])
+    res = S.judge_trace(stub, "toy", TOY, "PROMPT", inv, tmp_path / "replies", model_key="sonnet")
+    call = stub.calls[0]
+    assert call["model"] == "claude-sonnet-5" and call["thinking"] == {"type": "disabled"} and "extra_body" not in call
+    assert res["model_key"] == "sonnet" and res["cost_usd"] == pytest.approx((100 * 2 + 10 * 10 + 50 * 2.5) / 1e6)
+    recs = S.label_records(res, "run_y", "abc", "2026-09-17T00:00:00", "v2")
+    assert recs[0]["temperature"] is None and recs[0]["model_key"] == "sonnet" and recs[0]["prompt_file"] == "judge_prompt_v2.md"
 
 
 def test_two_failures_leave_the_trace_invalid(inv, tmp_path):

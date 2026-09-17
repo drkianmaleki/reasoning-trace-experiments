@@ -32,13 +32,20 @@ EXPECTED = {"e036": {"nodes": 146, "blocks": 37}, "c004": {"nodes": 193, "blocks
 ORDER = ["e036", "c004"]
 
 
-def main() -> int:
+def main(argv=None) -> int:
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    import argparse
+    ap = argparse.ArgumentParser(description="t4: the judge on the two source traces")
+    ap.add_argument("--model", choices=tuple(S.MODELS), default="haiku")
+    ap.add_argument("--prompt-version", choices=S.PROMPT_VERSIONS, default="v1")
+    args = ap.parse_args(argv)
+    model_key, version = args.model, args.prompt_version
     stamp = datetime.now()
-    folder = REPO / "runs" / "tests" / f"t4_judge_{stamp:%Y-%m-%d_%H%M}"
+    folder = REPO / "runs" / "tests" / f"t4_judge_{model_key}_{version}_{stamp:%Y-%m-%d_%H%M}"
     folder.mkdir(parents=True, exist_ok=True)
-    run_dir = REPO / "runs" / "experiments" / f"judge_source_{stamp:%Y-%m-%d_%H%M}"
+    run_dir = REPO / "runs" / "experiments" / S.make_run_id(model_key, version, stamp)
+    prompt_file, labels_file = S.prompt_files(version)
     lines: list[str] = []
     details: list[str] = []
     verdicts: list[bool] = []
@@ -54,8 +61,10 @@ def main() -> int:
             f"# TEST_REPORT — t4_judge — {stamp:%Y-%m-%d %H:%M}",
             "",
             f"Test of pipeline step (4/9), the judge on the two source traces (`scripts/s1_judge.py`, `scripts/derivation.py`), per pipeline v1 Section 9 item 6. "
-            f"Git commit `{S.git_head()}`; model `{S.MODEL}`, max_tokens {S.MAX_TOKENS}, temperature {S.TEMPERATURE} via extra_body; prompt sha256 `{S.sha256_of_file(S.PROMPT_FILE)}`; "
-            f"inventory sha256 `{S.sha256_of_file(S.LABELS_FILE)}`; sentences `{SENTENCES.relative_to(REPO).as_posix()}`. Run folder `{run_dir.relative_to(REPO).as_posix()}`.",
+            f"Git commit `{S.git_head()}`; model `{S.MODELS[model_key]['id']}` ({model_key}), max_tokens {S.MAX_TOKENS}, temperature {S.MODELS[model_key]['temperature']} "
+            f"({'via extra_body' if S.MODELS[model_key]['temperature'] is not None else 'not sent: the model rejects sampling parameters'}), thinking {S.MODELS[model_key]['thinking'] or 'omitted'}; "
+            f"prompt {version} sha256 `{S.sha256_of_file(prompt_file)}`; inventory sha256 `{S.sha256_of_file(labels_file)}`; sentences `{SENTENCES.relative_to(REPO).as_posix()}`. "
+            f"Run folder `{run_dir.relative_to(REPO).as_posix()}`.",
             "",
             f"## Result: {'PASS' if gate else 'FAIL'} ({sum(verdicts)}/{len(verdicts)} checks passed){'' if final else ' — STOPPED EARLY'}",
             "",
@@ -87,7 +96,8 @@ def main() -> int:
         return 1
 
     # ---- 2. dry run -----------------------------------------------------------------------------
-    dry = S.run_judge(SENTENCES, folder / "dry_run", ORDER, dry_run=True, log=lambda s: None)
+    dry = S.run_judge(SENTENCES, folder / "dry_run", ORDER, dry_run=True, log=lambda s: None,
+                      model_key=model_key, prompt_version=version)
     nums = []
     ok = True
     for tid in ORDER:
@@ -96,7 +106,10 @@ def main() -> int:
         idx = [int(m.group(1)) for l in content.split("\n") for m in [re.match(r"^s(\d+): ", l)] if m]
         n = dry["traces"][tid]["n"]
         once = idx == list(range(n))
-        ok &= once and req["system"][0]["cache_control"] == {"type": "ephemeral"} and req["extra_body"] == {"temperature": 0}
+        m = S.MODELS[model_key]
+        ok &= once and req["system"][0]["cache_control"] == {"type": "ephemeral"} and req["model"] == m["id"]
+        ok &= (req.get("extra_body") == {"temperature": m["temperature"]}) if m["temperature"] is not None else ("extra_body" not in req)
+        ok &= (req.get("thinking") == m["thinking"]) if m["thinking"] is not None else ("thinking" not in req)
         nums.append(f"{tid}: {n} sentences, about {dry['traces'][tid]['estimated_input_tokens']} input tokens (characters/4); "
                     f"every index exactly once in the user message: {once}")
     check(ok, "check 2, dry run (requests built, nothing called)", "; ".join(nums) + "; requests written to dry_run/requests/")
@@ -108,7 +121,8 @@ def main() -> int:
         check(False, "check 3, Claude client", f"cannot create the client: {e}")
         write_report(final=False)
         return 1
-    summary = S.run_judge(SENTENCES, run_dir, ORDER, dry_run=False, client=client, reviewed_path=D.LISTING)
+    summary = S.run_judge(SENTENCES, run_dir, ORDER, dry_run=False, client=client, reviewed_path=D.LISTING,
+                          model_key=model_key, prompt_version=version)
     for k, tid in enumerate(ORDER, start=3):
         t = summary["traces"].get(tid, {})
         if "valid" not in t:

@@ -1,0 +1,174 @@
+{
+  "haiku_v1": {
+    "dir": "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\experiments\\judge_source_2026-09-16_2347",
+    "pooled_levels": [
+      {
+        "level": 1,
+        "name": "Level 1",
+        "n": 629,
+        "exact_match": 0.48330683624801274,
+        "mean_jaccard": 0.4888712241653418,
+        "kappa": 0.2881318766821456,
+        "primary_agreement": 0.4912559618441971
+      },
+      {
+        "level": 2,
+        "name": "Level 1 > Level 2",
+        "n": 629,
+        "exact_match": 0.2702702702702703,
+        "mean_jaccard": 0.2742448330683625,
+        "kappa": 0.2276847020049437,
+        "primary_agreement": 0.27503974562798095
+      },
+      {
+        "level": 3,
+        "name": "full path",
+        "n": 629,
+        "exact_match": 0.25119236883942764,
+        "mean_jaccard": 0.25516693163751986,
+        "kappa": 0.2231042891678191,
+        "primary_agreement": 0.2559618441971383
+      }
+    ],
+    "classes": {
+      "global plan -> local plan": 26,
+      "rephrasing an earlier sentence -> anything else": 70,
+      "branching -> anything else": 5,
+      "option evaluation n_judge vs n_reviewed": [
+        213,
+        45
+      ],
+      "meta-evaluation -> emotion or impression": 12,
+      "announce output -> emotion or impression": 9
+    }
+  },
+  "haiku_v2": {
+    "dir": "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\experiments\\judge_source_haiku_v2_2026-09-17_0012",
+    "pooled_levels": [
+      {
+        "level": 1,
+        "name": "Level 1",
+        "n": 629,
+        "exact_match": 0.5182829888712241,
+        "mean_jaccard": 0.5246422893481717,
+        "kappa": 0.33613374424789966,
+        "primary_agreement": 0.5230524642289348
+      },
+      {
+        "level": 2,
+        "name": "Level 1 > Level 2",
+        "n": 629,
+        "exact_match": 0.2957074721780604,
+        "mean_jaccard": 0.2988871224165342,
+        "kappa": 0.2541421757110668,
+        "primary_agreement": 0.2988871224165342
+      },
+      {
+        "level": 3,
+        "name": "full path",
+        "n": 629,
+        "exact_match": 0.2384737678855326,
+        "mean_jaccard": 0.24085850556438793,
+        "kappa": 0.21003152916447718,
+        "primary_agreement": 0.24006359300476948
+      }
+    ],
+    "classes": {
+      "global plan -> local plan": 12,
+      "rephrasing an earlier sentence -> anything else": 54,
+      "branching -> anything else": 5,
+      "option evaluation n_judge vs n_reviewed": [
+        108,
+        45
+      ],
+      "meta-evaluation -> emotion or impression": 0,
+      "announce output -> emotion or impression": 0
+    }
+  },
+  "sonnet_v1": {
+    "dir": "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\experiments\\judge_source_sonnet_v1_2026-09-17_0008",
+    "pooled_levels": [
+      {
+        "level": 1,
+        "name": "Level 1",
+        "n": 629,
+        "exact_match": 0.7647058823529411,
+        "mean_jaccard": 0.7734499205087441,
+        "kappa": 0.7072390572390572,
+        "primary_agreement": 0.7758346581875993
+      },
+      {
+        "level": 2,
+        "name": "Level 1 > Level 2",
+        "n": 629,
+        "exact_match": 0.6120826709062003,
+        "mean_jaccard": 0.6176470588235294,
+        "kappa": 0.5931688149990703,
+        "primary_agreement": 0.6184419713831478
+      },
+      {
+        "level": 3,
+        "name": "full path",
+        "n": 629,
+        "exact_match": 0.5961844197138315,
+        "mean_jaccard": 0.6017488076311606,
+        "kappa": 0.5834757065020172,
+        "primary_agreement": 0.6025437201907791
+      }
+    ],
+    "classes": {
+      "global plan -> local plan": 21,
+      "rephrasing an earlier sentence -> anything else": 63,
+      "branching -> anything else": 2,
+      "option evaluation n_judge vs n_reviewed": [
+        89,
+        45
+      ],
+      "meta-evaluation -> emotion or impression": 0,
+      "announce output -> emotion or impression": 0
+    }
+  },
+  "sonnet_v2": {
+    "dir": "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\experiments\\judge_source_sonnet_v2_2026-09-17_0012",
+    "pooled_levels": [
+      {
+        "level": 1,
+        "name": "Level 1",
+        "n": 629,
+        "exact_match": 0.8298887122416534,
+        "mean_jaccard": 0.8367779544250133,
+        "kappa": 0.7956248290948865,
+        "primary_agreement": 0.8394276629570747
+      },
+      {
+        "level": 2,
+        "name": "Level 1 > Level 2",
+        "n": 629,
+        "exact_match": 0.712241653418124,
+        "mean_jaccard": 0.7167461579226285,
+        "kappa": 0.7008889249142146,
+        "primary_agreement": 0.7201907790143084
+      },
+      {
+        "level": 3,
+        "name": "full path",
+        "n": 629,
+        "exact_match": 0.6963434022257552,
+        "mean_jaccard": 0.7008479067302597,
+        "kappa": 0.6885069131049466,
+        "primary_agreement": 0.7042925278219396
+      }
+    ],
+    "classes": {
+      "global plan -> local plan": 0,
+      "rephrasing an earlier sentence -> anything else": 25,
+      "branching -> anything else": 2,
+      "option evaluation n_judge vs n_reviewed": [
+        69,
+        45
+      ],
+      "meta-evaluation -> emotion or impression": 1,
+      "announce output -> emotion or impression": 0
+    }
+  }
+}

@@ -40,6 +40,28 @@ MAX_TOKENS = 8000
 TEMPERATURE = 0
 PRICES = {"input": 1.0, "output": 5.0, "cache_read": 0.10, "cache_write": 1.25}  # USD per million tokens
 LEVEL_NAMES = {1: "Level 1", 2: "Level 1 > Level 2", 3: "full path"}
+PROMPT_VERSIONS = ("v1", "v2")
+# Per-model request options.  Haiku 4.5 accepts sampling parameters (temperature 0 via extra_body,
+# since anthropic 1.x has no temperature argument) and runs without thinking when the parameter is
+# omitted.  Sonnet 5 rejects sampling parameters with a 400 and runs adaptive thinking unless it is
+# disabled explicitly, so no temperature is sent and thinking is disabled.
+MODELS = {
+    "haiku": {"id": "claude-haiku-4-5-20251001", "temperature": 0, "thinking": None,
+              "prices": {"input": 1.0, "output": 5.0, "cache_read": 0.10, "cache_write": 1.25}},
+    "sonnet": {"id": "claude-sonnet-5", "temperature": None, "thinking": {"type": "disabled"},
+               "prices": {"input": 2.0, "output": 10.0, "cache_read": 0.20, "cache_write": 2.50}},
+}
+
+
+def prompt_files(version: str) -> tuple[Path, Path]:
+    if version not in PROMPT_VERSIONS:
+        raise ValueError(f"unknown prompt version {version!r}")
+    return REPO / "prompts" / f"judge_prompt_{version}.md", REPO / "prompts" / f"labels_{version}.json"
+
+
+def make_run_id(model_key: str, version: str, stamp: datetime | None = None) -> str:
+    stamp = stamp or datetime.now()
+    return f"judge_source_{model_key}_{version}_{stamp:%Y-%m-%d_%H%M}"
 
 
 # ----------------------------------------------------------------------------
@@ -107,14 +129,19 @@ def user_message(trace_id: str, sents: list[dict]) -> str:
     return "\n".join(lines)
 
 
-def build_request(trace_id: str, sents: list[dict], prompt_text: str) -> dict:
-    return {
-        "model": MODEL,
+def build_request(trace_id: str, sents: list[dict], prompt_text: str, model_key: str = "haiku") -> dict:
+    m = MODELS[model_key]
+    req = {
+        "model": m["id"],
         "max_tokens": MAX_TOKENS,
         "system": [{"type": "text", "text": prompt_text, "cache_control": {"type": "ephemeral"}}],
         "messages": [{"role": "user", "content": user_message(trace_id, sents)}],
-        "extra_body": {"temperature": TEMPERATURE},
     }
+    if m["temperature"] is not None:
+        req["extra_body"] = {"temperature": m["temperature"]}
+    if m["thinking"] is not None:
+        req["thinking"] = m["thinking"]
+    return req
 
 
 def estimate_input_tokens(request: dict) -> int:
@@ -146,11 +173,12 @@ def add_usage(a: dict, b: dict) -> dict:
     return {k: a.get(k, 0) + b.get(k, 0) for k in set(a) | set(b)}
 
 
-def cost_usd(usage: dict) -> float:
-    return (usage.get("input_tokens", 0) * PRICES["input"]
-            + usage.get("output_tokens", 0) * PRICES["output"]
-            + usage.get("cache_read_input_tokens", 0) * PRICES["cache_read"]
-            + usage.get("cache_creation_input_tokens", 0) * PRICES["cache_write"]) / 1e6
+def cost_usd(usage: dict, model_key: str = "haiku") -> float:
+    prices = MODELS[model_key]["prices"]
+    return (usage.get("input_tokens", 0) * prices["input"]
+            + usage.get("output_tokens", 0) * prices["output"]
+            + usage.get("cache_read_input_tokens", 0) * prices["cache_read"]
+            + usage.get("cache_creation_input_tokens", 0) * prices["cache_write"]) / 1e6
 
 
 def reply_text(response) -> str:
@@ -166,12 +194,13 @@ def make_client(env_path: Path = ENV_FILE):
 
 
 def judge_trace(create, trace_id: str, sents: list[dict], prompt_text: str, inventory,
-                replies_dir: Path | None = None) -> dict:
+                replies_dir: Path | None = None, model_key: str = "haiku") -> dict:
     """One trace: the call, the parse, one retry in the same conversation.
     `create` is client.messages.create (or a stub with the same interface)."""
     n = len(sents)
-    request = build_request(trace_id, sents, prompt_text)
+    request = build_request(trace_id, sents, prompt_text, model_key)
     messages = list(request["messages"])
+    fixed = {k: v for k, v in request.items() if k != "messages"}
     usage_total: dict = {}
     replies: list[str] = []
     result = {"trace_id": trace_id, "n": n, "attempts": 0, "valid": False, "labels": None,
@@ -179,8 +208,7 @@ def judge_trace(create, trace_id: str, sents: list[dict], prompt_text: str, inve
               "stop_reasons": [], "usage": {}, "cost_usd": 0.0, "replies": replies}
     for attempt in (1, 2):
         result["attempts"] = attempt
-        response = create(model=request["model"], max_tokens=request["max_tokens"], system=request["system"],
-                          messages=messages, extra_body=request["extra_body"])
+        response = create(**fixed, messages=messages)
         text = reply_text(response)
         replies.append(text)
         if replies_dir is not None:
@@ -200,7 +228,8 @@ def judge_trace(create, trace_id: str, sents: list[dict], prompt_text: str, inve
                 messages = messages + [{"role": "assistant", "content": text},
                                        {"role": "user", "content": result["retry_message"]}]
     result["usage"] = usage_total
-    result["cost_usd"] = cost_usd(usage_total)
+    result["cost_usd"] = cost_usd(usage_total, model_key)
+    result["model_key"] = model_key
     return result
 
 
@@ -220,14 +249,16 @@ def path_of(label: dict) -> str:
     return " > ".join(x for x in (label["L1"], label["L2"], label["L3"]) if x)
 
 
-def label_records(res: dict, run_id: str, prompt_sha: str, timestamp: str) -> list[dict]:
+def label_records(res: dict, run_id: str, prompt_sha: str, timestamp: str, prompt_version: str = "v1") -> list[dict]:
     recs = []
+    model_key = res.get("model_key", "haiku")
     for s, paths in enumerate(res["labels"]):
         first = s == 0
         recs.append({
             "trace_id": res["trace_id"], "s": s, "labels": label_dicts(paths), "combined": len(paths) == 2,
             "raw_reply": res["replies"][-1] if first else None,
-            "model": res["model"], "prompt_version": prompt_sha, "temperature": TEMPERATURE,
+            "model": res["model"], "model_key": model_key, "prompt_version": prompt_sha, "prompt_file": f"judge_prompt_{prompt_version}.md",
+            "temperature": MODELS[model_key]["temperature"],
             "run_id": run_id, "timestamp": timestamp,
             "usage": res["usage"] if first else None, "cost_usd": res["cost_usd"] if first else None,
             "attempt": res["attempts"], "valid": res["valid"],
@@ -319,27 +350,33 @@ def write_agreement(agr: dict, out_dir: Path, collection: str) -> tuple[Path, Pa
 # ----------------------------------------------------------------------------
 
 def run_judge(sentences_path: Path, out_dir: Path, traces: list[str] | None = None, dry_run: bool = False,
-              client=None, reviewed_path: Path | None = None, run_id: str | None = None, log=print) -> dict:
+              client=None, reviewed_path: Path | None = None, run_id: str | None = None, log=print,
+              model_key: str = "haiku", prompt_version: str = "v1") -> dict:
     """The whole step for one collection.  Returns a summary dict (per trace results, paths)."""
+    if model_key not in MODELS:
+        raise ValueError(f"unknown model {model_key!r}; known: {tuple(MODELS)}")
     sentences_path, out_dir = Path(sentences_path), Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
     collection = collection_name(sentences_path)
     run_id = run_id or out_dir.name
-    prompt_text = PROMPT_FILE.read_text(encoding="utf-8")
-    prompt_sha = sha256_of_file(PROMPT_FILE)
-    inventory = J.Inventory.load(LABELS_FILE)
+    prompt_file, labels_file = prompt_files(prompt_version)
+    prompt_text = prompt_file.read_text(encoding="utf-8")
+    prompt_sha = sha256_of_file(prompt_file)
+    inventory = J.Inventory.load(labels_file)
+    model = MODELS[model_key]
     all_sents = load_sentences(sentences_path)
     order = traces or list(all_sents)
     missing = [t for t in order if t not in all_sents]
     if missing:
         raise ValueError(f"traces not in the sentences file: {missing}")
     summary = {"collection": collection, "run_id": run_id, "out_dir": str(out_dir), "traces": {}, "stopped": None,
-               "total_cost_usd": 0.0, "dry_run": dry_run}
+               "total_cost_usd": 0.0, "dry_run": dry_run, "model_key": model_key, "model_id": model["id"],
+               "prompt_version": prompt_version}
     # dry run: build and write every request
     req_dir = out_dir / "requests"
     req_dir.mkdir(exist_ok=True)
     for tid in order:
-        req = build_request(tid, all_sents[tid], prompt_text)
+        req = build_request(tid, all_sents[tid], prompt_text, model_key)
         (req_dir / f"{tid}.json").write_text(json.dumps(req, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
         est = estimate_input_tokens(req)
         summary["traces"][tid] = {"n": len(all_sents[tid]), "estimated_input_tokens": est}
@@ -349,15 +386,22 @@ def run_judge(sentences_path: Path, out_dir: Path, traces: list[str] | None = No
     import pytest
     config = {
         "run_id": run_id, "collection": collection, "mode": "dry-run" if dry_run else "ordinary",
-        "model": MODEL, "max_tokens": MAX_TOKENS, "temperature": TEMPERATURE, "temperature_via": "extra_body",
-        "prompt": PROMPT_FILE.name, "prompt_sha256": prompt_sha,
-        "inventory": LABELS_FILE.name, "inventory_sha256": sha256_of_file(LABELS_FILE),
+        "model_key": model_key, "model": model["id"], "model_echoed": {}, "max_tokens": MAX_TOKENS,
+        "temperature": model["temperature"],
+        "temperature_via": "extra_body" if model["temperature"] is not None else "not sent (the model rejects sampling parameters)",
+        "thinking": model["thinking"] if model["thinking"] is not None else "omitted (the model runs without thinking by default)",
+        "prompt_version": prompt_version, "prompt": prompt_file.name, "prompt_sha256": prompt_sha,
+        "inventory": labels_file.name, "inventory_sha256": sha256_of_file(labels_file),
         "sentences": str(sentences_path), "sentences_sha256": sha256_of_file(sentences_path),
         "traces": order, "git_commit": git_head(), "python": sys.version.split()[0],
         "anthropic": anthropic.__version__, "requests": requests_lib.__version__, "pytest": pytest.__version__,
-        "prices_usd_per_million": PRICES, "timestamp": datetime.now().isoformat(timespec="seconds"),
+        "prices_usd_per_million": model["prices"], "timestamp": datetime.now().isoformat(timespec="seconds"),
     }
-    (out_dir / "config.json").write_text(json.dumps(config, indent=2) + "\n", encoding="utf-8")
+
+    def write_config():
+        (out_dir / "config.json").write_text(json.dumps(config, indent=2) + "\n", encoding="utf-8")
+
+    write_config()
     if dry_run:
         return summary
     if client is None:
@@ -368,11 +412,13 @@ def run_judge(sentences_path: Path, out_dir: Path, traces: list[str] | None = No
     judge_labels: dict[str, list[list[str]]] = {}
     with open(labels_path, "w", encoding="utf-8", newline="\n") as lf, open(blocks_path, "w", encoding="utf-8", newline="\n") as bf, \
             open(log_path, "a", encoding="utf-8", newline="\n") as lg:
-        lg.write(f"# s1_judge run_id={run_id} model={MODEL} {config['timestamp']}\n")
+        lg.write(f"# s1_judge run_id={run_id} model={model['id']} ({model_key}) prompt={prompt_version} {config['timestamp']}\n")
         lg.write("# trace_id\tattempts\tvalid\tinput\tcache_read\tcache_write\toutput\tcost_usd\tstop_reasons\n")
         for tid in order:
             timestamp = datetime.now().isoformat(timespec="seconds")
-            res = judge_trace(client.messages.create, tid, all_sents[tid], prompt_text, inventory, out_dir / "replies")
+            res = judge_trace(client.messages.create, tid, all_sents[tid], prompt_text, inventory, out_dir / "replies", model_key)
+            config["model_echoed"][tid] = res["model"]
+            write_config()
             u = res["usage"]
             lg.write(f"{tid}\t{res['attempts']}\t{res['valid']}\t{u.get('input_tokens', 0)}\t{u.get('cache_read_input_tokens', 0)}\t"
                      f"{u.get('cache_creation_input_tokens', 0)}\t{u.get('output_tokens', 0)}\t{res['cost_usd']:.6f}\t{res['stop_reasons']}\n")
@@ -388,7 +434,7 @@ def run_judge(sentences_path: Path, out_dir: Path, traces: list[str] | None = No
                 lg.write(f"# STOP: {tid} failed after {res['attempts']} attempts: {res['error']}\n")
                 log(f"STOP: {tid} failed after {res['attempts']} attempts: {res['error']}")
                 break
-            for rec in label_records(res, run_id, prompt_sha, timestamp):
+            for rec in label_records(res, run_id, prompt_sha, timestamp, prompt_version):
                 lf.write(json.dumps(rec, ensure_ascii=False) + "\n")
             judge_labels[tid] = res["labels"]
             der = D.derive(res["labels"], tid, "judge")
@@ -412,19 +458,24 @@ def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description="Pipeline step (4/9): the judge on a collection.")
     ap.add_argument("--sentences", required=True)
     ap.add_argument("--mode", choices=["ordinary", "batch"], default="ordinary")
-    ap.add_argument("--out", required=True)
+    ap.add_argument("--out", help="run folder (default runs/experiments/judge_<collection>_<model>_<version>_<date>_<hhmm>)")
     ap.add_argument("--trace", action="append", help="run this trace only (repeatable)")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--reviewed", help="the reviewed listing; writes the agreement and residue files")
+    ap.add_argument("--model", choices=tuple(MODELS), default="haiku")
+    ap.add_argument("--prompt-version", choices=PROMPT_VERSIONS, default="v1")
     args = ap.parse_args(argv)
     if args.mode == "batch":
         raise NotImplementedError("batch mode is pipeline step (5/9) (sweep44, archived500, the new continuations); "
                                   "not implemented in step (4/9), use --mode ordinary")
-    out_dir = Path(args.out)
-    print(f"s1_judge: sentences={args.sentences} out={out_dir} model={MODEL} max_tokens={MAX_TOKENS} temperature={TEMPERATURE} "
-          f"(extra_body) prompt={PROMPT_FILE.name} sha256={sha256_of_file(PROMPT_FILE)[:12]} dry_run={args.dry_run} git={git_head()}")
+    collection = collection_name(Path(args.sentences))
+    out_dir = Path(args.out) if args.out else REPO / "runs" / "experiments" / f"judge_{collection}_{args.model}_{args.prompt_version}_{datetime.now():%Y-%m-%d_%H%M}"
+    prompt_file, _ = prompt_files(args.prompt_version)
+    print(f"s1_judge: sentences={args.sentences} out={out_dir} model={MODELS[args.model]['id']} ({args.model}) max_tokens={MAX_TOKENS} "
+          f"temperature={MODELS[args.model]['temperature']} prompt={prompt_file.name} sha256={sha256_of_file(prompt_file)[:12]} dry_run={args.dry_run} git={git_head()}")
     summary = run_judge(Path(args.sentences), out_dir, args.trace, args.dry_run,
-                        reviewed_path=Path(args.reviewed) if args.reviewed else None)
+                        reviewed_path=Path(args.reviewed) if args.reviewed else None,
+                        model_key=args.model, prompt_version=args.prompt_version)
     print(json.dumps({k: v for k, v in summary.items() if k != "agreement"}, indent=2, default=str))
     return 0 if not summary["stopped"] else 1
 

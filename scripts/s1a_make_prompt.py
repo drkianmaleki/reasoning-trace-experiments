@@ -46,6 +46,15 @@ OUT_PROMPT = PROMPTS_DIR / "judge_prompt_v1.md"
 OUT_LABELS = PROMPTS_DIR / "labels_v1.json"
 OUT_META = PROMPTS_DIR / "judge_prompt_v1.meta.json"
 VERSION = "v1"
+VERSIONS = ("v1", "v2")
+
+
+def prompt_paths(version: str, out_dir: Path = PROMPTS_DIR) -> tuple[Path, Path, Path]:
+    """(prompt, labels, meta) file paths of a prompt version."""
+    if version not in VERSIONS:
+        raise ValueError(f"unknown prompt version {version!r}; known: {VERSIONS}")
+    return (out_dir / f"judge_prompt_{version}.md", out_dir / f"labels_{version}.json",
+            out_dir / f"judge_prompt_{version}.meta.json")
 
 LEVEL1 = [("Planning", "Pl"), ("Reasoning", "Re"), ("Reflection", "Rf"), ("Knowledge", "Kn"),
           ("Restatement", "Rs"), ("Assumption", "As"), ("Example", "Ex"), ("Conclusion", "Co")]
@@ -457,27 +466,122 @@ EXAMPLES: list[dict] = [
 ]
 
 
+EXAMPLES_V2: list[dict] = [
+    {
+        "title": "Example 1 (lily pads): a numbered heading, a nested item, an intermediate conclusion, a verification and its judgement",
+        "context": "A patch of lily pads doubles in size every day and covers the whole lake on day 48. On which day did it cover half the lake?",
+        "sentences": [
+            "1.",
+            "**Set up the rule:**",
+            "- Given:",
+            "the patch doubles every day and covers the lake on day 48.",
+            "Doubling every day means the patch on day 47 was half of the patch on day 48.",
+            "So half the lake was covered on day 47.",
+            "Let me double-check by going forwards instead:",
+            "Half the lake on day 47, doubled once, is the whole lake on day 48.",
+            "That checks out.",
+        ],
+        "expected": "0-1 Pl.gp\n2 Pl.lp\n3 Rs.rtp.qt\n4 Re.lr\n5 Co.ic\n6 Pl.iv\n7 Re.ca\n8 Rf.meo",
+    },
+    {
+        "title": "Example 2 (train): a branching sentence, a self-question and its one-word answer inside one Reasoning run, a combined sentence, an intermediate and a final conclusion",
+        "context": "A train leaves at 9:00 and travels at 60 km per hour. When does it reach a station 150 km away?",
+        "sentences": [
+            "Compute the travel time first.",
+            "If the train keeps exactly 60 km per hour,",
+            "then time = distance / speed = 150 / 60 = 2.5 hours.",
+            "Is 2.5 hours the same as 2 hours and 30 minutes?",
+            "Yes.",
+            "So the train arrives at 11:30, taking the usual reading that it never stops on the way.",
+            "Wait, was the departure 9:00 or 9:30?",
+            "The prompt says 9:00.",
+            "Final answer: 11:30.",
+        ],
+        "expected": "0 Pl.lp\n1 As.bcs\n2 Re.ca\n3-4 Re.lr\n5 Co.ic+As.aam\n6 Pl.iv\n7 Rs.rtp.qt\n8 Co.fa",
+    },
+    {
+        "title": "Example 3 (lily pads with options): Knowledge, an Example, an argued option evaluation, verdict tags, a drafted reply that restates an earlier equation, the final answer, announce output",
+        "context": "Same puzzle, with options (A) day 24, (B) day 47, (C) cannot be determined, (D) none of the above.",
+        "sentences": [
+            "This is the well-known lily-pad puzzle from the cognitive reflection test.",
+            "The intuitive answer is day 24, but that ignores the doubling.",
+            "For instance, a patch of 1 unit on day 1 is 2 units on day 2 and 4 units on day 3.",
+            "Halving the full lake once: 48 - 1 = 47.",
+            "Option (B) is right because it is the only option equal to 47.",
+            "(A) day 24 — Incorrect.",
+            "(C) cannot be determined — Incorrect.",
+            "Draft reply:",
+            "The lake is half covered one day before it is full: 48 - 1 = 47.",
+            "Answer: B.",
+            "Writing it out now.",
+        ],
+        "expected": "0 Kn.wk\n1 Re.lr\n2 Ex.nel\n3 Re.ca\n4 Re.oe.B\n5 Rf.meo.A\n6 Rf.meo.C\n7 Pl.gp\n8 Rs.rae\n9 Co.fa\n10 Pl.ao",
+    },
+]
+
+
+def examples_for(version: str) -> list[dict]:
+    return EXAMPLES if version == "v1" else EXAMPLES_V2
+
+
 def example_input(ex: dict) -> str:
     return "\n".join(f"s{i}: {s}" for i, s in enumerate(ex["sentences"]))
+
+
+def additional_rules_v2() -> list[str]:
+    """The v2 rules (Kian, 2026-09-16), each a bullet of Section 3; illustrated only with
+    sentences on other problems."""
+    return [
+        "- Combined sentences: a sentence carries two labels only when it does two things at once, so that two applicability tests pass; the two labels have different Level 1 parts. "
+        "Three kinds occur: a plan attached to a quote (the sentence announces a check and begins quoting in the same breath); a plan phrased as a speculation (the sentence announces a check and states the hypothesis being checked); "
+        "a true double function (a calculation that silently supplies a missing premise; an option judgment that also interprets a hedge word). Never more than two labels. Most sentences carry one.",
+        "- Headings and series structure: a top-level numbered heading of the trace — the bare marker (\"1.\", \"2.\") and the heading text that follows it, often bold and ending with a colon — is Planning > global plan: it announces a phase. "
+        "Items nested under a heading (\"- Given:\", \"Step 1:\", \"(B) day 47:\", \"   - compute the time\", a bullet that names the next small action) and step labels with a colon inside a derivation (\"Substitute t:\", \"Check:\", \"As stated:\") are Planning > local plan. "
+        "A bare number or bullet marker split off by the splitter (\"1.\", \"2.\", a lone \"-\" or \"*\") is not a plan of its own: it attaches to the sentence that follows it and takes that sentence's label, whatever it is.",
+        "- Restatement > rephrasing an earlier sentence: the sentence repeats or paraphrases something already established earlier in the trace — an equation already written, a comparison already made, the plan, a conclusion already reached — and adds no new inference. "
+        "Deletion test: if removing the sentence loses no information that an earlier sentence did not already give, it is Restatement, whatever it looks like (an equation, a verdict, a summary). "
+        "When the trace composes its reply (drafts the answer, lists what the reply will contain, writes the reply out), most sentences are restatements of earlier work; label them so unless they add something new. "
+        "Quoting or paraphrasing the question or an option is Restatement > rephrasing the prompt (> question text / option text / answer-format instruction), never option evaluation.",
+        "- Assumption > branching (case split): a sentence, often a fragment ending in a comma, that posits a case or a hypothetical value to work through (\"If x = 5,\", \"Suppose the pond is a square,\") — even when it contains an equation. "
+        "The computation that follows is Reasoning > calculation; the case sentence itself is Assumption > branching (> algebra when the case is on a value).",
+        "- Reasoning > option evaluation is only for a sentence that argues whether an option is correct, acceptable or best. A bare verdict attached to an option in a checklist (\"(B) day 47 — Incorrect.\", \"(D) cannot be determined — Vague.\") is Reflection > meta-evaluation of a step > option (X). "
+        "A sentence quoting an option's text is Restatement > rephrasing the prompt > option text. A sentence about what the question writer intended is Reasoning > speculation > intent of the question writer. "
+        "Setting two options against each other is Reasoning > comparison > option vs option. The appearance of an option letter never by itself makes a sentence option evaluation.",
+        "- Reflection: emotion or impression is a feeling about the problem or the progress (\"This is tricky.\", \"Nice.\"). A judgement about the correctness, completeness or consistency of a step, of the draft or of the output (\"All steps check out.\", \"The draft matches the reasoning.\", \"Output matches.\") is meta-evaluation of a step. "
+        "Planning > announce output covers the go-ahead words and sentences that say the reply is now being written (\"Proceed.\", \"Ready.\", \"Done — writing it out.\", \"I'll send exactly this text.\") — never emotion.",
+        "- Conclusion: a sentence that states a settled result of the reasoning so far (\"Therefore …\", \"So the value is not fixed.\", \"The problem is underdetermined.\") is Conclusion > intermediate conclusion, not logical reasoning; the inference steps before it are Reasoning. "
+        "Conclusion > final answer is only the statement of the answer at the very end of the trace (the last time it is given); every earlier statement of the answer, including \"Answer:\" lines and the answer letter inside a drafted reply, is intermediate conclusion. "
+        "A bare \"Answer:\" line or a bare letter inside the draft takes the same label as the answer statement it belongs to.",
+        "- One-word answers: the one-word answer to a self-question (\"Yes.\", \"No.\", \"Unlikely.\") is Reasoning > logical reasoning, and the question takes the same leaf as its answer, so both are Reasoning > logical reasoning and fall into one run (with the Level 3 leaf algebra when the check is about the item's equations).",
+        "- Labeling order, applied to every sentence in this sequence, first match wins: (1) a marker, heading or plan item → Planning; (2) an announcement that the reply is being written → Planning > announce output; "
+        "(3) repeats earlier content → Restatement > rephrasing an earlier sentence; (4) repeats the question, an option or the format instruction → Restatement > rephrasing the prompt; (5) posits a case or an assumption → Assumption; "
+        "(6) states a settled result → Conclusion; (7) judges the trace's own work → Reflection; (8) states a fact from outside the problem → Knowledge; (9) gives instances → Example; "
+        "(10) otherwise Reasoning, with the finest leaf that fits and logical reasoning as the default — never option evaluation by default.",
+        "- Sentences are never re-split or merged: label each numbered sentence as it is, even a fragment, a heading, a number or a closing parenthesis.",
+        "- For information only (you do not output blocks): the analysis derives blocks from your labels. A block opens at the first sentence of a Planning node unless every sentence of that node is Planning > local plan, at a sentence carrying Assumption > branching (case split), and at a sentence carrying Conclusion > final answer. "
+        "This is why the distinction between global plan, initiate verification, initiate backtracking, announce the conclusion, announce output on one side and local plan on the other matters.",
+    ]
 
 
 # ----------------------------------------------------------------------------
 # The prompt
 # ----------------------------------------------------------------------------
 
-def build_prompt(scheme_text: str, summary_text: str, inventory: list[dict]) -> str:
+def build_prompt(scheme_text: str, summary_text: str, inventory: list[dict], version: str = "v1") -> str:
+    if version not in VERSIONS:
+        raise ValueError(f"unknown prompt version {version!r}")
     defs1 = parse_level1_definitions(section(scheme_text, "## 2. "))
     tests = parse_applicability_tests(section(scheme_text, "## 4. "))
     tests["Planning"] = apply_substitutions(tests["Planning"], "Section 4, Planning test")
     codes = {e["code"] for e in inventory}
-    for ex in EXAMPLES:
+    for ex in examples_for(version):
         for line in ex["expected"].splitlines():
             for c in line.split()[1].split("+"):
                 if c not in codes:
                     raise RuntimeError(f"worked example uses a code outside the inventory: {c}")
     item = item_prompt(summary_text)
     p: list[str] = []
-    p.append(f"# Judge prompt {VERSION} — sentence labeling of reasoning traces")
+    p.append(f"# Judge prompt {version} — sentence labeling of reasoning traces")
     p.append("")
     p.append(SECTION_TITLES[0])
     p.append("")
@@ -502,17 +606,10 @@ def build_prompt(scheme_text: str, summary_text: str, inventory: list[dict]) -> 
         p.append(f"   Test: {tests[name]}")
     p.append("")
     p.append("Additional rules:")
-    p.append("- Combined sentences: a sentence carries two labels only when it does two things at once, so that two applicability tests pass; the two labels have different Level 1 parts. "
-             "Three kinds occur: a plan attached to a quote (the sentence announces a check and begins quoting in the same breath); a plan phrased as a speculation (the sentence announces a check and states the hypothesis being checked); "
-             "a true double function (a calculation that silently supplies a missing premise; an option judgment that also interprets a hedge word). Never more than two labels. Most sentences carry one.")
-    p.append("- One-word answers: the one-word answer to a self-question (\"Yes.\", \"No.\", \"Unlikely.\") is Reasoning > logical reasoning, and the question takes the same leaf as its answer, so both are Reasoning > logical reasoning and fall into one run (with the Level 3 leaf algebra when the check is about the item's equations).")
-    p.append("- Announce output: a sentence that announces that the reply is being produced (\"Writing the reply now.\", \"[Response] -> begin\", \"Go.\") is Planning > announce output, not Conclusion.")
-    p.append("- Local plans: a step label with a colon inside a derivation (\"Step 1:\", \"Substitute t:\", \"Check:\", \"As stated:\") and an item of a labeled or bulleted series under a heading (\"(A) day 24:\", \"1. Define the variables:\", \"- Given:\", \"- Compare the two readings of the puzzle.\") are Planning > local plan. "
-             "A bare number or bullet marker split off by the splitter (\"1.\", \"2.\", a lone \"-\" or \"*\") is not a plan of its own: it attaches to the sentence that follows it and takes that sentence's label, whatever it is.")
-    p.append("- Restatement: quoting an option verbatim before evaluating it is Restatement > rephrasing the prompt > option text; quoting the question is > question text.")
-    p.append("- Sentences are never re-split or merged: label each numbered sentence as it is, even a fragment, a heading, a number or a closing parenthesis.")
-    p.append("- For information only (you do not output blocks): the analysis derives blocks from your labels. A block opens at the first sentence of a Planning node unless every sentence of that node is Planning > local plan, at a sentence carrying Assumption > branching (case split), and at a sentence carrying Conclusion > final answer. "
-             "This is why the distinction between global plan, initiate verification, initiate backtracking, announce the conclusion, announce output on one side and local plan on the other matters.")
+    if version == "v2":
+        p.extend(additional_rules_v2())
+    else:
+        p.extend(additional_rules_v1())
     p.append("")
     p.append(SECTION_TITLES[3])
     p.append("")
@@ -547,7 +644,7 @@ def build_prompt(scheme_text: str, summary_text: str, inventory: list[dict]) -> 
     p.append("")
     p.append("Each example shows a short trace on a different problem, the numbered input and the exact expected output. "
              "The Level 3 leaves of Section 4 belong to the bat-and-ball item, so these examples stop at Level 2 where a leaf would be item-specific; on a real trace, use the Level 3 leaf whenever the sentence fits it.")
-    for ex in EXAMPLES:
+    for ex in examples_for(version):
         p.append("")
         p.append(f"### {ex['title']}")
         p.append("")
@@ -572,6 +669,23 @@ def build_prompt(scheme_text: str, summary_text: str, inventory: list[dict]) -> 
     return prompt
 
 
+def additional_rules_v1() -> list[str]:
+    """The v1 bullets of Section 3, byte for byte as first published."""
+    p: list[str] = []
+    p.append("- Combined sentences: a sentence carries two labels only when it does two things at once, so that two applicability tests pass; the two labels have different Level 1 parts. "
+             "Three kinds occur: a plan attached to a quote (the sentence announces a check and begins quoting in the same breath); a plan phrased as a speculation (the sentence announces a check and states the hypothesis being checked); "
+             "a true double function (a calculation that silently supplies a missing premise; an option judgment that also interprets a hedge word). Never more than two labels. Most sentences carry one.")
+    p.append("- One-word answers: the one-word answer to a self-question (\"Yes.\", \"No.\", \"Unlikely.\") is Reasoning > logical reasoning, and the question takes the same leaf as its answer, so both are Reasoning > logical reasoning and fall into one run (with the Level 3 leaf algebra when the check is about the item's equations).")
+    p.append("- Announce output: a sentence that announces that the reply is being produced (\"Writing the reply now.\", \"[Response] -> begin\", \"Go.\") is Planning > announce output, not Conclusion.")
+    p.append("- Local plans: a step label with a colon inside a derivation (\"Step 1:\", \"Substitute t:\", \"Check:\", \"As stated:\") and an item of a labeled or bulleted series under a heading (\"(A) day 24:\", \"1. Define the variables:\", \"- Given:\", \"- Compare the two readings of the puzzle.\") are Planning > local plan. "
+             "A bare number or bullet marker split off by the splitter (\"1.\", \"2.\", a lone \"-\" or \"*\") is not a plan of its own: it attaches to the sentence that follows it and takes that sentence's label, whatever it is.")
+    p.append("- Restatement: quoting an option verbatim before evaluating it is Restatement > rephrasing the prompt > option text; quoting the question is > question text.")
+    p.append("- Sentences are never re-split or merged: label each numbered sentence as it is, even a fragment, a heading, a number or a closing parenthesis.")
+    p.append("- For information only (you do not output blocks): the analysis derives blocks from your labels. A block opens at the first sentence of a Planning node unless every sentence of that node is Planning > local plan, at a sentence carrying Assumption > branching (case split), and at a sentence carrying Conclusion > final answer. "
+             "This is why the distinction between global plan, initiate verification, initiate backtracking, announce the conclusion, announce output on one side and local plan on the other matters.")
+    return p
+
+
 # ----------------------------------------------------------------------------
 # Main
 # ----------------------------------------------------------------------------
@@ -581,24 +695,24 @@ def main(argv=None) -> int:
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     ap = argparse.ArgumentParser(description="Pipeline step (3/9): generate the judge prompt and the label codes.")
     ap.add_argument("--out-dir", default=str(PROMPTS_DIR), help="folder for the three output files (default prompts/)")
+    ap.add_argument("--version", default="v1", choices=VERSIONS, help="prompt version to write (default v1)")
     args = ap.parse_args(argv)
     out_dir = Path(args.out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
+    version = args.version
     scheme_text = SCHEME.read_text(encoding="utf-8")
     summary_text = SUMMARY.read_text(encoding="utf-8")
     inventory = build_inventory(scheme_text)
-    prompt = build_prompt(scheme_text, summary_text, inventory)
+    prompt = build_prompt(scheme_text, summary_text, inventory, version)
     scheme_sha = sha256_of_file(SCHEME)
     labels = {
-        "version": VERSION,
+        "version": version,
         "scheme": SCHEME.name,
         "scheme_sha256": scheme_sha,
         "level1": {code: name for name, code in LEVEL1},
         "paths": [{"code": e["code"], "path": e["path"]} for e in inventory],
     }
-    prompt_path = out_dir / OUT_PROMPT.name
-    labels_path = out_dir / OUT_LABELS.name
-    meta_path = out_dir / OUT_META.name
+    prompt_path, labels_path, meta_path = prompt_paths(version, out_dir)
     prompt_path.write_text(prompt + "\n", encoding="utf-8", newline="\n")
     with open(labels_path, "w", encoding="utf-8", newline="\n") as fh:
         json.dump(labels, fh, indent=2, ensure_ascii=False)

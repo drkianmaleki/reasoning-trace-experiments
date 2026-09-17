@@ -1,0 +1,38 @@
+{
+  "run_id": "judge_source_haiku_v2_2026-09-17_0012",
+  "collection": "source",
+  "mode": "ordinary",
+  "model_key": "haiku",
+  "model": "claude-haiku-4-5-20251001",
+  "model_echoed": {
+    "e036": "claude-haiku-4-5-20251001",
+    "c004": "claude-haiku-4-5-20251001"
+  },
+  "max_tokens": 8000,
+  "temperature": 0,
+  "temperature_via": "extra_body",
+  "thinking": "omitted (the model runs without thinking by default)",
+  "prompt_version": "v2",
+  "prompt": "judge_prompt_v2.md",
+  "prompt_sha256": "98ac17659798c184bc75fba6336007fb87e0b771e5272dfa05bdc90781b2a65c",
+  "inventory": "labels_v2.json",
+  "inventory_sha256": "51c5d0d142863a1d6461bcc871b08401f80c02abce45c31445de2cae07798ba2",
+  "sentences": "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\tests\\t2_split_2026-09-16_2224\\sentences_source.jsonl",
+  "sentences_sha256": "22dd7c383757935506233d0ac3fb2fad6018f6b3ec4d8efae822fcb8a622d75c",
+  "traces": [
+    "e036",
+    "c004"
+  ],
+  "git_commit": "90c8358c5561adf6006bd7c0289a7b25903a9338",
+  "python": "3.12.10",
+  "anthropic": "1.6.0",
+  "requests": "2.34.2",
+  "pytest": "9.1.1",
+  "prices_usd_per_million": {
+    "input": 1.0,
+    "output": 5.0,
+    "cache_read": 0.1,
+    "cache_write": 1.25
+  },
+  "timestamp": "2026-09-17T00:12:24"
+}

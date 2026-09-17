@@ -1,0 +1,17 @@
+{
+  "git_commit": "90c8358c5561adf6006bd7c0289a7b25903a9338",
+  "prompt_version": "v2",
+  "scheme": "2026-09-16_labeling_scheme_v5.md",
+  "scheme_sha256": "b1ca66336b0d37594c8bd878c426aee85102d0a9bc40ce28279d4f8d2f03a3a3",
+  "summary": "2026-09-16_action_summary_v5.md",
+  "summary_sha256": "ef7faf6aad4d104408133b46c3f5977d8d983e3c7b90e5e2080bd4745eadc098",
+  "prompt": "judge_prompt_v2.md",
+  "prompt_sha256": "98ac17659798c184bc75fba6336007fb87e0b771e5272dfa05bdc90781b2a65c",
+  "labels": "labels_v2.json",
+  "labels_sha256": "51c5d0d142863a1d6461bcc871b08401f80c02abce45c31445de2cae07798ba2",
+  "sentences": "runs/tests/t2_split_2026-09-16_2224/sentences_source.jsonl",
+  "sentences_sha256": "22dd7c383757935506233d0ac3fb2fad6018f6b3ec4d8efae822fcb8a622d75c",
+  "script": "scripts/tests/t3_prompt.py",
+  "python": "3.12.10",
+  "timestamp": "2026-09-17T00:08:47"
+}

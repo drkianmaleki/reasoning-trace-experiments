@@ -40,11 +40,19 @@ def normalize(s: str) -> str:
     return " ".join(s.replace(P.NEWLINE_MARK, " ").split())
 
 
-def main() -> int:
+def main(argv=None) -> int:
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    import argparse
+    ap = argparse.ArgumentParser(description="t3: gate test of the judge prompt and codes")
+    ap.add_argument("--prompt-version", default="v1", choices=P.VERSIONS)
+    args = ap.parse_args(argv)
+    version = args.prompt_version
+    prompt_file, labels_file, _ = P.prompt_paths(version)
+    examples = P.examples_for(version)
     stamp = datetime.now()
-    folder = REPO / "runs" / "tests" / f"t3_prompt_{stamp:%Y-%m-%d_%H%M}"
+    tag = "" if version == "v1" else f"{version}_"
+    folder = REPO / "runs" / "tests" / f"t3_prompt_{tag}{stamp:%Y-%m-%d_%H%M}"
     folder.mkdir(parents=True, exist_ok=True)
     lines: list[str] = []
     details: list[str] = []
@@ -55,11 +63,11 @@ def main() -> int:
         lines.append(f"- {'PASS' if ok else 'FAIL'} — {name} — {numbers}")
         print(lines[-1])
 
-    prompt = P.OUT_PROMPT.read_text(encoding="utf-8")
-    labels_data = json.loads(P.OUT_LABELS.read_text(encoding="utf-8"))
-    shutil.copy(P.OUT_PROMPT, folder / P.OUT_PROMPT.name)
-    shutil.copy(P.OUT_LABELS, folder / P.OUT_LABELS.name)
-    inv = J.Inventory.load(P.OUT_LABELS)
+    prompt = prompt_file.read_text(encoding="utf-8")
+    labels_data = json.loads(labels_file.read_text(encoding="utf-8"))
+    shutil.copy(prompt_file, folder / prompt_file.name)
+    shutil.copy(labels_file, folder / labels_file.name)
+    inv = J.Inventory.load(labels_file)
     scheme_text = P.SCHEME.read_text(encoding="utf-8")
     summary_text = P.SUMMARY.read_text(encoding="utf-8")
 
@@ -98,7 +106,8 @@ def main() -> int:
     ok = (len(set(codes)) == len(codes) == len(set(paths)) == len(paths) == len(inv)
           and json_codes == codes and json_paths == paths
           and all(inv.code_to_path[c] == p and inv.path_to_code[p] == c for c, p in zip(codes, paths))
-          and all(len(e["path"]) >= 2 for e in inventory))
+          and all(len(e["path"]) >= 2 for e in inventory)
+          and labels_data.get("version") == version)
     by_len = {2: sum(1 for e in inventory if len(e["path"]) == 2), 3: sum(1 for e in inventory if len(e["path"]) == 3)}
     check(ok, "check 2, inventory and codes",
           f"{len(paths)} paths ({by_len[2]} at Level 2, {by_len[3]} at Level 3), {len(set(codes))} unique codes, "
@@ -110,7 +119,7 @@ def main() -> int:
     has_output_section = P.SECTION_TITLES[5] in prompt
     has_examples_section = P.SECTION_TITLES[6] in prompt
     ex_results = []
-    for k, ex in enumerate(P.EXAMPLES, start=1):
+    for k, ex in enumerate(examples, start=1):
         present = P.example_input(ex) in prompt and ex["expected"] in prompt and ex["title"] in prompt
         try:
             labels = J.parse_reply(ex["expected"], len(ex["sentences"]), inv)
@@ -144,10 +153,11 @@ def main() -> int:
     # ---- config and report ----------------------------------------------------------------
     config = {
         "git_commit": P.git_head(),
+        "prompt_version": version,
         "scheme": P.SCHEME.name, "scheme_sha256": P.sha256_of_file(P.SCHEME),
         "summary": P.SUMMARY.name, "summary_sha256": P.sha256_of_file(P.SUMMARY),
-        "prompt": P.OUT_PROMPT.name, "prompt_sha256": P.sha256_of_file(P.OUT_PROMPT),
-        "labels": P.OUT_LABELS.name, "labels_sha256": P.sha256_of_file(P.OUT_LABELS),
+        "prompt": prompt_file.name, "prompt_sha256": P.sha256_of_file(prompt_file),
+        "labels": labels_file.name, "labels_sha256": P.sha256_of_file(labels_file),
         "sentences": SENTENCES.relative_to(REPO).as_posix(), "sentences_sha256": P.sha256_of_file(SENTENCES),
         "script": Path(__file__).resolve().relative_to(REPO).as_posix(),
         "python": sys.version.split()[0],
@@ -158,7 +168,7 @@ def main() -> int:
     report = [
         f"# TEST_REPORT — t3_prompt — {stamp:%Y-%m-%d %H:%M}",
         "",
-        f"Gate test of pipeline step (3/9), the judge prompt and the label codes (`scripts/s1a_make_prompt.py`, `scripts/judge_codec.py`), per pipeline v1 Section 9 item 5. "
+        f"Gate test of pipeline step (3/9), the judge prompt and the label codes (`scripts/s1a_make_prompt.py`, `scripts/judge_codec.py`), per pipeline v1 Section 9 item 5. Prompt version {version} (`{prompt_file.name}`, `{labels_file.name}`). "
         f"Git commit at run time: `{config['git_commit']}`. Scheme `{P.SCHEME.name}` sha256 `{config['scheme_sha256']}`; prompt sha256 `{config['prompt_sha256']}`. Python {config['python']}. Offline; API cost $0.",
         "",
         f"## Result: {'PASS' if gate else 'FAIL'} ({sum(verdicts)}/{len(verdicts)} checks passed)",
@@ -170,7 +180,7 @@ def main() -> int:
         "## Files produced",
         "",
         f"- `{folder.relative_to(REPO).as_posix()}/TEST_REPORT.md` (this file)",
-        f"- `{P.OUT_PROMPT.name}`, `{P.OUT_LABELS.name}` — copies of the generated prompt and inventory",
+        f"- `{prompt_file.name}`, `{labels_file.name}` — copies of the generated prompt and inventory",
         f"- `hits.txt` — {len(hits)} non-exempt hits, {len(exempt)} exemptions",
         "- `pytest_output.txt`, `config.json`",
         "",

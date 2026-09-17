@@ -1,0 +1,64 @@
+{
+  "collection": "source",
+  "run_id": "judge_source_haiku_v2_2026-09-17_0012",
+  "out_dir": "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\experiments\\judge_source_haiku_v2_2026-09-17_0012",
+  "traces": {
+    "e036": {
+      "n": 254,
+      "estimated_input_tokens": 8774,
+      "attempts": 1,
+      "valid": true,
+      "usage": {
+        "input_tokens": 4649,
+        "cache_read_input_tokens": 0,
+        "cache_creation_input_tokens": 5858,
+        "output_tokens": 592
+      },
+      "cost_usd": 0.0149315,
+      "model": "claude-haiku-4-5-20251001",
+      "stop_reasons": [
+        "end_turn"
+      ],
+      "retry_message": null,
+      "error": null,
+      "warnings": [],
+      "nodes": 49,
+      "blocks": 15
+    },
+    "c004": {
+      "n": 375,
+      "estimated_input_tokens": 10799,
+      "attempts": 1,
+      "valid": true,
+      "usage": {
+        "input_tokens": 7834,
+        "cache_read_input_tokens": 5858,
+        "cache_creation_input_tokens": 0,
+        "output_tokens": 704
+      },
+      "cost_usd": 0.011939799999999999,
+      "model": "claude-haiku-4-5-20251001",
+      "stop_reasons": [
+        "end_turn"
+      ],
+      "retry_message": null,
+      "error": null,
+      "warnings": [],
+      "nodes": 41,
+      "blocks": 5
+    }
+  },
+  "stopped": null,
+  "total_cost_usd": 0.0268713,
+  "dry_run": false,
+  "model_key": "haiku",
+  "model_id": "claude-haiku-4-5-20251001",
+  "prompt_version": "v2",
+  "labels_path": "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\experiments\\judge_source_haiku_v2_2026-09-17_0012\\labels_source_judge.jsonl",
+  "blocks_path": "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\experiments\\judge_source_haiku_v2_2026-09-17_0012\\blocks_source_judge.jsonl",
+  "agreement_paths": [
+    "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\experiments\\judge_source_haiku_v2_2026-09-17_0012\\agreement_source.csv",
+    "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\experiments\\judge_source_haiku_v2_2026-09-17_0012\\residue_source.csv",
+    "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\experiments\\judge_source_haiku_v2_2026-09-17_0012\\confusions_source.csv"
+  ]
+}

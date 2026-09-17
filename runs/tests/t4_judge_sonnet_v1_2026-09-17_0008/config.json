@@ -1,0 +1,40 @@
+{
+  "run_id": "judge_source_sonnet_v1_2026-09-17_0008",
+  "collection": "source",
+  "mode": "ordinary",
+  "model_key": "sonnet",
+  "model": "claude-sonnet-5",
+  "model_echoed": {
+    "e036": "claude-sonnet-5",
+    "c004": "claude-sonnet-5"
+  },
+  "max_tokens": 8000,
+  "temperature": null,
+  "temperature_via": "not sent (the model rejects sampling parameters)",
+  "thinking": {
+    "type": "disabled"
+  },
+  "prompt_version": "v1",
+  "prompt": "judge_prompt_v1.md",
+  "prompt_sha256": "2d9ebdd3f345e58a283c915cd03d64f1a1918becfb6a13cfbebbec9f22c5f69f",
+  "inventory": "labels_v1.json",
+  "inventory_sha256": "4054e9dc9378af3fac2a643dae2b918ffb98bd2e348200b2fffb403b54babf8b",
+  "sentences": "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\tests\\t2_split_2026-09-16_2224\\sentences_source.jsonl",
+  "sentences_sha256": "22dd7c383757935506233d0ac3fb2fad6018f6b3ec4d8efae822fcb8a622d75c",
+  "traces": [
+    "e036",
+    "c004"
+  ],
+  "git_commit": "90c8358c5561adf6006bd7c0289a7b25903a9338",
+  "python": "3.12.10",
+  "anthropic": "1.6.0",
+  "requests": "2.34.2",
+  "pytest": "9.1.1",
+  "prices_usd_per_million": {
+    "input": 2.0,
+    "output": 10.0,
+    "cache_read": 0.2,
+    "cache_write": 2.5
+  },
+  "timestamp": "2026-09-17T00:08:52"
+}

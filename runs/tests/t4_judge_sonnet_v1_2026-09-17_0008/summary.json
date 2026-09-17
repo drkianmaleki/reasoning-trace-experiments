@@ -1,0 +1,69 @@
+{
+  "collection": "source",
+  "run_id": "judge_source_sonnet_v1_2026-09-17_0008",
+  "out_dir": "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\experiments\\judge_source_sonnet_v1_2026-09-17_0008",
+  "traces": {
+    "e036": {
+      "n": 254,
+      "estimated_input_tokens": 7761,
+      "attempts": 2,
+      "valid": true,
+      "usage": {
+        "output_tokens": 9947,
+        "cache_read_input_tokens": 6718,
+        "cache_creation_input_tokens": 6718,
+        "input_tokens": 19355
+      },
+      "cost_usd": 0.1563186,
+      "model": "claude-sonnet-5",
+      "stop_reasons": [
+        "max_tokens",
+        "end_turn"
+      ],
+      "retry_message": "Your labeling was rejected: unparsable: expected '<first>-<last> <code>' or '<index> <code>' at line 1: <think>. Output the complete labeling again, every index from 0 to 253 exactly once, one run per line, codes only.",
+      "error": "unparsable: expected '<first>-<last> <code>' or '<index> <code>' at line 1: <think>",
+      "warnings": [],
+      "nodes": 152,
+      "blocks": 37
+    },
+    "c004": {
+      "n": 375,
+      "estimated_input_tokens": 9786,
+      "attempts": 2,
+      "valid": true,
+      "usage": {
+        "output_tokens": 11574,
+        "cache_read_input_tokens": 13436,
+        "cache_creation_input_tokens": 0,
+        "input_tokens": 26891
+      },
+      "cost_usd": 0.1722092,
+      "model": "claude-sonnet-5",
+      "stop_reasons": [
+        "max_tokens",
+        "end_turn"
+      ],
+      "retry_message": "Your labeling was rejected: unparsable: expected '<first>-<last> <code>' or '<index> <code>' at line 1: <think>. Output the complete labeling again, every index from 0 to 374 exactly once, one run per line, codes only.",
+      "error": "unparsable: expected '<first>-<last> <code>' or '<index> <code>' at line 1: <think>",
+      "warnings": [
+        "opening code fence stripped: '```'",
+        "closing code fence stripped"
+      ],
+      "nodes": 202,
+      "blocks": 40
+    }
+  },
+  "stopped": null,
+  "total_cost_usd": 0.32852780000000004,
+  "dry_run": false,
+  "model_key": "sonnet",
+  "model_id": "claude-sonnet-5",
+  "prompt_version": "v1",
+  "labels_path": "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\experiments\\judge_source_sonnet_v1_2026-09-17_0008\\labels_source_judge.jsonl",
+  "blocks_path": "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\experiments\\judge_source_sonnet_v1_2026-09-17_0008\\blocks_source_judge.jsonl",
+  "agreement_paths": [
+    "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\experiments\\judge_source_sonnet_v1_2026-09-17_0008\\agreement_source.csv",
+    "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\experiments\\judge_source_sonnet_v1_2026-09-17_0008\\residue_source.csv",
+    "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\experiments\\judge_source_sonnet_v1_2026-09-17_0008\\confusions_source.csv"
+  ]
+}

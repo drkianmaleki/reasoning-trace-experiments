@@ -1,0 +1,41 @@
+level,reviewed,judge,count
+1,Planning,Reasoning,89
+1,Restatement,Reasoning,71
+1,Knowledge,Reasoning,24
+1,Example,Reasoning,22
+1,Reflection,Reasoning,22
+1,Conclusion,Reasoning,18
+1,Planning,Reflection,8
+1,Planning,Restatement,7
+1,Assumption,Reasoning,6
+1,Restatement,Planning,5
+1,Planning,Conclusion,4
+1,Planning,Knowledge,3
+1,Reasoning,Knowledge,3
+1,Conclusion,Planning,3
+1,Reasoning,Restatement,2
+1,Reflection,Restatement,2
+1,Reasoning,Assumption,2
+1,Conclusion,Reflection,2
+1,Planning,Assumption,1
+1,Conclusion,Knowledge,1
+2,Restatement > rephrasing an earlier sentence,Reasoning > logical reasoning,40
+2,Reasoning > speculation,Reasoning > logical reasoning,23
+2,Planning > local plan,Reasoning > logical reasoning,19
+2,Planning > local plan,Planning > global plan,19
+2,Planning > local plan,Reasoning > calculation,17
+2,Reflection > meta-evaluation of a step,Reasoning > option evaluation,14
+2,Planning > global plan,Planning > local plan,12
+2,Reasoning > logical reasoning,Reasoning > calculation,12
+2,Reasoning > hedge word analysis,Reasoning > option evaluation,11
+2,Planning > initiate verification,Reasoning > logical reasoning,11
+2,Example > non-exhaustive listing,Reasoning > logical reasoning,10
+2,Planning > local plan,Reasoning > option evaluation,9
+2,Restatement > rephrasing the prompt,Reasoning > logical reasoning,9
+2,Conclusion > intermediate conclusion,Reasoning > logical reasoning,9
+2,Reasoning > calculation,Reasoning > logical reasoning,8
+2,Restatement > rephrasing an earlier sentence,Reasoning > calculation,8
+2,Restatement > rephrasing the prompt,Reasoning > comparison,7
+2,Reasoning > option evaluation,Reasoning > logical reasoning,7
+2,Reasoning > logical reasoning,Reasoning > option evaluation,7
+2,Example > non-exhaustive listing,Reasoning > calculation,7

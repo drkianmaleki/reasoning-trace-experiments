@@ -1,0 +1,4 @@
+# s1_judge run_id=judge_source_sonnet_v1_2026-09-17_0008 model=claude-sonnet-5 (sonnet) prompt=v1 2026-09-17T00:08:52
+# trace_id	attempts	valid	input	cache_read	cache_write	output	cost_usd	stop_reasons
+e036	2	True	19355	6718	6718	9947	0.156319	['max_tokens', 'end_turn']
+c004	2	True	26891	13436	0	11574	0.172209	['max_tokens', 'end_turn']
