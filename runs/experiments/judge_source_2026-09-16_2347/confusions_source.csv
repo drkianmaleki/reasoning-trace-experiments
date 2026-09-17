@@ -1,0 +1,41 @@
+level,reviewed,judge,count
+1,Restatement,Reasoning,81
+1,Planning,Reasoning,76
+1,Reasoning,Planning,29
+1,Knowledge,Reasoning,26
+1,Conclusion,Reasoning,23
+1,Reflection,Reasoning,21
+1,Example,Reasoning,16
+1,Restatement,Planning,11
+1,Planning,Reflection,11
+1,Conclusion,Planning,6
+1,Assumption,Reasoning,5
+1,Planning,Restatement,4
+1,Reasoning,Restatement,2
+1,Restatement,Reflection,2
+1,Planning,Knowledge,1
+1,Assumption,Planning,1
+1,Reflection,Planning,1
+1,Planning,Assumption,1
+1,Knowledge,Restatement,1
+1,Reasoning,Example,1
+2,Restatement > rephrasing an earlier sentence,Reasoning > option evaluation,39
+2,Planning > local plan,Reasoning > option evaluation,38
+2,Planning > global plan,Planning > local plan,26
+2,Restatement > rephrasing an earlier sentence,Reasoning > logical reasoning,22
+2,Reasoning > speculation,Reasoning > option evaluation,19
+2,Reflection > meta-evaluation of a step,Reasoning > option evaluation,16
+2,Conclusion > intermediate conclusion,Reasoning > option evaluation,13
+2,Reflection > meta-evaluation of a step,Reflection > emotion or impression,12
+2,Reasoning > logical reasoning,Reasoning > calculation,10
+2,Example > non-exhaustive listing,Reasoning > logical reasoning,10
+2,Restatement > rephrasing the prompt,Reasoning > option evaluation,10
+2,Reasoning > logical reasoning,Reasoning > option evaluation,10
+2,Reasoning > logical reasoning,Planning > initiate verification,9
+2,Planning > announce output,Reflection > emotion or impression,9
+2,Reasoning > hedge word analysis,Reasoning > option evaluation,8
+2,Reasoning > option evaluation,Reasoning > comparison,8
+2,Restatement > rephrasing the prompt,Planning > initiate verification,8
+2,Conclusion > intermediate conclusion,Reasoning > logical reasoning,8
+2,Reasoning > comparison,Reasoning > option evaluation,6
+2,Planning > initiate verification,Reasoning > option evaluation,6

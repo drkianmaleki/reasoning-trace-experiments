@@ -1,0 +1,31 @@
+{
+  "run_id": "dry_run",
+  "collection": "source",
+  "mode": "dry-run",
+  "model": "claude-haiku-4-5-20251001",
+  "max_tokens": 8000,
+  "temperature": 0,
+  "temperature_via": "extra_body",
+  "prompt": "judge_prompt_v1.md",
+  "prompt_sha256": "2d9ebdd3f345e58a283c915cd03d64f1a1918becfb6a13cfbebbec9f22c5f69f",
+  "inventory": "labels_v1.json",
+  "inventory_sha256": "4054e9dc9378af3fac2a643dae2b918ffb98bd2e348200b2fffb403b54babf8b",
+  "sentences": "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\tests\\t2_split_2026-09-16_2224\\sentences_source.jsonl",
+  "sentences_sha256": "22dd7c383757935506233d0ac3fb2fad6018f6b3ec4d8efae822fcb8a622d75c",
+  "traces": [
+    "e036",
+    "c004"
+  ],
+  "git_commit": "abfc1fa3c65934b8307997eccd8c564ae7bed52e",
+  "python": "3.12.10",
+  "anthropic": "1.6.0",
+  "requests": "2.34.2",
+  "pytest": "9.1.1",
+  "prices_usd_per_million": {
+    "input": 1.0,
+    "output": 5.0,
+    "cache_read": 0.1,
+    "cache_write": 1.25
+  },
+  "timestamp": "2026-09-16T23:47:13"
+}

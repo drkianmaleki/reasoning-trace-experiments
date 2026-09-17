@@ -1,0 +1,4 @@
+# s1_judge run_id=judge_source_2026-09-16_2347 model=claude-haiku-4-5-20251001 2026-09-16T23:47:13
+# trace_id	attempts	valid	input	cache_read	cache_write	output	cost_usd	stop_reasons
+e036	1	True	4649	0	4862	1111	0.016282	['end_turn']
+c004	1	True	7834	4862	0	748	0.012060	['end_turn']
