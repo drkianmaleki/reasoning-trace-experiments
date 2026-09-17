@@ -1,0 +1,4 @@
+# s0_split collection=source 2026-09-17T10:47:19 traces=2 records=629
+# trace_id	characters	sentences
+c004	18690	375
+e036	11401	254

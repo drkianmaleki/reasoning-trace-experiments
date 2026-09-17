@@ -299,6 +299,25 @@ def test_records_text_equals_display_form(sources, trace_id):
         assert r["part"] >= 1
 
 
+def test_continuation_rule_splits_only_before_the_think_tag():
+    # Kian, 2026-09-17: continuations are split up to the first </think>; the reply is not labeled
+    t = "First thought. Second thought.\n</think>\n\nThe reply, which is not split. Answer: E"
+    recs = S.split_records("c", t, continuation=True)
+    assert [r["text"] for r in recs] == ["First thought.", "Second thought."]
+    assert all(r["think_end"] == t.index("</think>") for r in recs) and recs[-1]["char_end"] == t.index("</think>")
+    assert t[recs[-1]["char_start"]:recs[-1]["char_end"]] == " Second thought.\n"
+    # without the tag (the cap was hit) the whole text is split and think_end is null
+    recs = S.split_records("c", "First thought. Second thought.", continuation=True)
+    assert len(recs) == 2 and all(r["think_end"] is None for r in recs)
+    # a non-continuation collection ignores the tag and carries no field
+    recs = S.split_records("c", t, continuation=False)
+    assert [r["text"] for r in recs] == ["First thought.", "Second thought.", NL + "</think>", NL + NL + "The reply, which is not split.", "Answer:", "E"]
+    assert "think_end" not in recs[0]
+    # a tag at the very start leaves nothing to split
+    assert S.split_records("c", "</think>Reply.", continuation=True) == []
+    assert "archived500" in S.CONTINUATION_COLLECTIONS and "source" not in S.CONTINUATION_COLLECTIONS
+
+
 def test_collections_and_trace_ids(sources):
     sweep = S.load_collection("sweep44")
     assert [tid for tid, _ in sweep] == [f"s0819_eval0multi0_{k:03d}" for k in range(1, 45)]

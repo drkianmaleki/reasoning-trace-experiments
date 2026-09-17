@@ -1,0 +1,4 @@
+# s1_judge run_id=judge_source_sonnet_v2_thinknone_2026-09-17_1045 model=claude-sonnet-5 (sonnet) prompt=v2 thinking=none 2026-09-17T10:45:36
+# trace_id	attempts	valid	input	cache_read	cache_write	output	cost_usd	stop_reasons	thinking_tokens	leaks
+e036	2	True	13329	8109	8109	3775	0.086302	['end_turn', 'end_turn']	0	[False, False]
+c004	1	True	9444	8109	0	3466	0.055170	['end_turn']	0	[False]

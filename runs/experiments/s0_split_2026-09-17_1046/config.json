@@ -1,0 +1,30 @@
+{
+  "script": "scripts/s0_split.py",
+  "script_sha256": "36039022cf7d2aa0c2a9a6eff83f1dfc047245e1e88cd907148f63e5e174c7ef",
+  "git_commit": "5eed56dcbf8323af99574d5a82ff350e0a808250",
+  "git_dirty": true,
+  "python": "3.12.10",
+  "collections": {
+    "archived500": {
+      "collection": "archived500",
+      "output": "runs/experiments/s0_split_2026-09-17_1046/sentences_archived500.jsonl",
+      "inputs": [
+        {
+          "path": "archive/decided-mid-thought/runs/resample_cuts_2026-08-25_1503.jsonl",
+          "sha256": "2c49a15a09fa5647839db13f35c470565b597380e77c2824e336b73bf207bf53"
+        }
+      ],
+      "traces": 500,
+      "records": 225173,
+      "continuation_rule": "continuation: the text before the first </think> tag is split; the reply after the tag is neither split nor labeled; a continuation without the tag (the cap was hit) is split whole; think_end = character index of the tag in the raw text, or null (Kian, 2026-09-17)",
+      "continuations_with_think_tag": 440,
+      "continuations_without_think_tag": 60,
+      "sentences_per_trace": {
+        "min": 84,
+        "median": 355.5,
+        "max": 1163
+      },
+      "timestamp": "2026-09-17T10:46:37"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+[
+  {
+    "collection": "source",
+    "run_id": "judge_source_sonnet_v2_thinkmedium_2026-09-17_1041",
+    "out_dir": "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\experiments\\judge_source_sonnet_v2_thinkmedium_2026-09-17_1041",
+    "traces": {
+      "e036": {
+        "n": 254,
+        "estimated_input_tokens": 8774,
+        "attempts": 1,
+        "valid": true,
+        "usage": {
+          "input_tokens": 5635,
+          "output_tokens": 11533,
+          "cache_creation_input_tokens": 8109,
+          "thinking_tokens": 9886,
+          "cache_read_input_tokens": 0
+        },
+        "cost_usd": 0.1468725,
+        "model": "claude-sonnet-5",
+        "stop_reasons": [
+          "end_turn"
+        ],
+        "retry_message": null,
+        "error": null,
+        "warnings": [],
+        "thinking_tokens": 9886,
+        "leaks": [
+          false
+        ],
+        "final_stop_reason": "end_turn",
+        "thinking_chars": [
+          8273
+        ],
+        "nodes": 140,
+        "blocks": 34
+      },
+      "c004": {
+        "n": 375,
+        "estimated_input_tokens": 10799,
+        "attempts": 1,
+        "valid": true,
+        "usage": {
+          "input_tokens": 9403,
+          "output_tokens": 20208,
+          "cache_creation_input_tokens": 0,
+          "thinking_tokens": 17480,
+          "cache_read_input_tokens": 8109
+        },
+        "cost_usd": 0.22250779999999998,
+        "model": "claude-sonnet-5",
+        "stop_reasons": [
+          "end_turn"
+        ],
+        "retry_message": null,
+        "error": null,
+        "warnings": [],
+        "thinking_tokens": 17480,
+        "leaks": [
+          false
+        ],
+        "final_stop_reason": "end_turn",
+        "thinking_chars": [
+          16625
+        ],
+        "nodes": 221,
+        "blocks": 48
+      }
+    },
+    "stopped": null,
+    "total_cost_usd": 0.3693803,
+    "dry_run": false,
+    "model_key": "sonnet",
+    "model_id": "claude-sonnet-5",
+    "prompt_version": "v2",
+    "thinking_mode": "medium",
+    "labels_path": "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\experiments\\judge_source_sonnet_v2_thinkmedium_2026-09-17_1041\\labels_source_judge.jsonl",
+    "blocks_path": "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\experiments\\judge_source_sonnet_v2_thinkmedium_2026-09-17_1041\\blocks_source_judge.jsonl",
+    "agreement_paths": [
+      "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\experiments\\judge_source_sonnet_v2_thinkmedium_2026-09-17_1041\\agreement_source.csv",
+      "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\experiments\\judge_source_sonnet_v2_thinkmedium_2026-09-17_1041\\residue_source.csv",
+      "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\experiments\\judge_source_sonnet_v2_thinkmedium_2026-09-17_1041\\confusions_source.csv"
+    ]
+  }
+]

@@ -70,6 +70,20 @@ def test_prompt_files_and_run_id():
     assert S.make_run_id("haiku", "v1", st, "off", None) == "judge_source_haiku_v1_2026-09-17_0805"
 
 
+def test_thinking_none_mode(sents):
+    req = S.build_request("e036", sents["e036"], "PROMPT", "sonnet", "none")
+    assert req["thinking"] == {"type": "disabled"} and req["max_tokens"] == 8000 and "output_config" not in req
+    lines = req["messages"][0]["content"].split("\n")
+    assert lines[-2] == "Output the run-length labels now, nothing else."
+    assert lines[-1] == S.REPLY_INSTRUCTION == ("Reply with the run-length labels only: no reasoning, no commentary, "
+                                                "no tags of any kind, nothing before the first run line.")
+    off = S.build_request("e036", sents["e036"], "PROMPT", "sonnet", "off")
+    assert off["messages"][0]["content"].split("\n")[-1] == "Output the run-length labels now, nothing else."
+    from datetime import datetime
+    assert S.make_run_id("sonnet", "v2", datetime(2026, 9, 17, 8, 5), "none") == "judge_source_sonnet_v2_thinknone_2026-09-17_0805"
+    assert S.thinking_params("haiku", "none") == {}  # allowed on Haiku too (no adaptive parameters involved)
+
+
 def test_thinking_request_parameters(sents):
     # documented adaptive-thinking fields for Sonnet 5 (thinking-steering-and-cost and effort pages)
     req = S.build_request("e036", sents["e036"], "PROMPT", "sonnet", "low")

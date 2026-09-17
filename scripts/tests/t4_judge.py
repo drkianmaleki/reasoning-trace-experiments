@@ -29,6 +29,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))  # scripts/
 import derivation as D  # noqa: E402
 import s1_judge as S  # noqa: E402
+import structural_agreement as SA  # noqa: E402
 
 REPO = S.REPO
 SENTENCES = REPO / "runs" / "tests" / "t2_split_2026-09-16_2224" / "sentences_source.jsonl"
@@ -210,6 +211,20 @@ def main(argv=None) -> int:
                   + f"; residue rows {len(agr['residue'])}; cost of this run ${summary['total_cost_usd']:.6f}")
             k_check += 1
             details.append(agreement_markdown(agr, f"Run {k}: agreement judge vs reviewed (both traces)"))
+            # structural metrics (Kian, 2026-09-17): blocks, next node after the reviewed cuts, nodes, decomposition
+            judge = SA.judge_labels_from_file(Path(summary["labels_path"]))
+            structural = SA.compute(judge, {t: listing[t]["labels"] for t in judge})
+            SA.write_csv(run_dir / "structural_source.csv", structural)
+            shutil.copy(run_dir / "structural_source.csv", sub / "structural_source.csv")
+            ps = structural["pooled"]
+            check(True, f"check {k_check}, run {k}, structural metrics vs reviewed (pooled)",
+                  f"block openers hits {ps['blocks']['hits']} / misses {ps['blocks']['misses']} (near {ps['blocks']['near_misses']}) / extras {ps['blocks']['extras']}, F1 {ps['blocks']['f1']:.3f}, "
+                  f"rule agrees on {ps['blocks']['rule_agree']} of {ps['blocks']['hits']} hits; next node after the reviewed cuts {ps['next_node']['agree']} / {ps['next_node']['n_cuts']} ({ps['next_node']['rate']:.3f}); "
+                  f"node ends F1 {ps['nodes']['f1']:.3f}, matched nodes Level 1 agree {ps['nodes']['matched_l1_rate']:.3f}, reviewed nodes split {ps['nodes']['split']} / merged {ps['nodes']['merged']}; "
+                  f"sentences L1 wrong {ps['sentences']['l1_wrong']} / L2 wrong {ps['sentences']['l2_wrong']} / L3 wrong {ps['sentences']['l3_wrong']} / all right {ps['sentences']['all_right']} "
+                  f"(L1 share of disagreements {ps['sentences']['l1_share_of_disagreements']:.3f}); structural_source.csv written")
+            k_check += 1
+            details.append(SA.markdown(structural, f"Run {k}: structural metrics judge vs reviewed"))
         else:
             check(False, f"check {k_check}, run {k}, agreement", "no agreement computed (the run stopped)")
             k_check += 1

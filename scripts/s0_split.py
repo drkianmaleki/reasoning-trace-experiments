@@ -301,8 +301,24 @@ def old_index_and_part(text: str) -> list[tuple[int, int]]:
     return out
 
 
-def split_records(trace_id: str, text: str, with_old: bool = False) -> list[dict]:
-    """One record per sentence in the schema of pipeline v1, Section 3 item 3."""
+THINK_END_TAG = "</think>"
+CONTINUATION_COLLECTIONS = ("archived500",)  # and every future resampling run
+CONTINUATION_RULE = ("continuation: the text before the first </think> tag is split; the reply after the tag is "
+                     "neither split nor labeled; a continuation without the tag (the cap was hit) is split whole; "
+                     "think_end = character index of the tag in the raw text, or null (Kian, 2026-09-17)")
+
+
+def split_records(trace_id: str, text: str, with_old: bool = False, continuation: bool = False) -> list[dict]:
+    """One record per sentence in the schema of pipeline v1, Section 3 item 3.  With
+    continuation=True (archived500 and every future resampling run) only the text before the
+    first </think> tag is split and every record carries think_end (the tag's character index in
+    the raw text, or None when there is no tag and the whole text is split)."""
+    think_end = None
+    if continuation:
+        i = text.find(THINK_END_TAG)
+        if i >= 0:
+            think_end = i
+            text = text[:i]
     spans = split_offsets(text)
     old = old_index_and_part(text) if with_old else None
     records = []
@@ -313,6 +329,8 @@ def split_records(trace_id: str, text: str, with_old: bool = False) -> list[dict
         rec["char_start"] = start
         rec["char_end"] = end
         rec["text"] = sentence_text(text, start, end)
+        if continuation:
+            rec["think_end"] = think_end
         records.append(rec)
     return records
 
@@ -406,24 +424,35 @@ def run_collection(name: str, out_dir: Path) -> dict:
     Returns the config entry of this collection."""
     out_dir.mkdir(parents=True, exist_ok=True)
     traces = load_collection(name)
+    continuation = name in CONTINUATION_COLLECTIONS
     out_path = out_dir / f"sentences_{name}.jsonl"
     n_records = 0
     counts = []
     log_lines = []
+    with_tag = without_tag = 0
     with open(out_path, "w", encoding="utf-8", newline="\n") as fh:
         for trace_id, text in traces:
-            recs = split_records(trace_id, text, with_old=(name == "source"))
+            recs = split_records(trace_id, text, with_old=(name == "source"), continuation=continuation)
             for rec in recs:
                 fh.write(json.dumps(rec, ensure_ascii=False) + "\n")
             n_records += len(recs)
             counts.append(len(recs))
-            log_lines.append(f"{trace_id}\t{len(text)}\t{len(recs)}")
+            if continuation:
+                tagged = THINK_END_TAG in text
+                with_tag += tagged
+                without_tag += not tagged
+                log_lines.append(f"{trace_id}\t{len(text)}\t{len(recs)}\tthink_end={text.find(THINK_END_TAG) if tagged else 'null'}")
+            else:
+                log_lines.append(f"{trace_id}\t{len(text)}\t{len(recs)}")
     entry = {
         "collection": name,
         "output": _rel(out_path),
         "inputs": [{"path": _rel(p), "sha256": sha256_of_file(p)} for p in input_files(name)],
         "traces": len(traces),
         "records": n_records,
+        "continuation_rule": CONTINUATION_RULE if continuation else None,
+        "continuations_with_think_tag": with_tag if continuation else None,
+        "continuations_without_think_tag": without_tag if continuation else None,
         "sentences_per_trace": {
             "min": min(counts) if counts else None,
             "median": statistics.median(counts) if counts else None,

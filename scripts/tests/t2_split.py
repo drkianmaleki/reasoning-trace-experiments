@@ -28,7 +28,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))  # scripts/
 import s0_split as S  # noqa: E402
 
-LISTING = S.REPO / "docs" / "shared" / "2026-09-15_source_traces_labeled_v2.md"
+LISTING = S.REPO / "docs" / "shared" / "2026-09-16_source_traces_labeled_v3.md"  # v2 moved to archive/ on 2026-09-16
 UNIT_TESTS = S.REPO / "scripts" / "tests" / "test_s0_split.py"
 EXPECTED = {"c004": (375, 366), "e036": (254, 247)}  # (equation rule, base rule)
 TRUNCATED_LENGTHS = (149, 150)  # the listing truncates the text column at 150 characters
@@ -251,17 +251,21 @@ def main() -> int:
     with open(folder / "sentences_archived5_sample.jsonl", "w", encoding="utf-8", newline="\n") as fj, \
          open(folder / "sentences_archived5_sample.md", "w", encoding="utf-8", newline="\n") as fm:
         fm.write("# Splitter output on the first five archived continuations (resample_cuts_2026-08-25_1503.jsonl)\n\n")
-        fm.write("One line per sentence: `trace_id s: text` (display form; ⏎ marks a line break).\n")
+        fm.write("One line per sentence: `trace_id s: text` (display form; ⏎ marks a line break). "
+                 "Continuation rule (Kian, 2026-09-17): only the text before the first </think> tag is split; think_end is the tag's character index.\n")
         for r in archived:
-            recs5 = S.split_records(r["id"], r["cont_text"])
-            counts.append((r["id"], len(r["cont_text"]), len(recs5)))
-            fm.write(f"\n## {r['id']} ({len(r['cont_text'])} characters, {len(recs5)} sentences)\n\n")
+            recs5 = S.split_records(r["id"], r["cont_text"], continuation=True)
+            think_end = recs5[0]["think_end"] if recs5 else r["cont_text"].find(S.THINK_END_TAG)
+            counts.append((r["id"], len(r["cont_text"]), len(recs5), think_end))
+            fm.write(f"\n## {r['id']} ({len(r['cont_text'])} characters, think_end {think_end}, {len(recs5)} sentences)\n\n")
             for rec in recs5:
                 fj.write(json.dumps(rec, ensure_ascii=False) + "\n")
                 fm.write(f"{rec['trace_id']} {rec['s']}: {rec['text']}\n")
-    ok = len(counts) == 5 and all(n > 0 for _, _, n in counts)
-    check(ok, "check 6, splitter on the first five archived continuations",
-          "; ".join(f"{i}: {c} chars, {n} sentences" for i, c, n in counts) + " (files sentences_archived5_sample.jsonl and .md)")
+    ok = len(counts) == 5 and all(n > 0 for _, _, n, _ in counts) and all(
+        (te is None) or all(json.loads(l)["char_end"] <= te for l in open(folder / "sentences_archived5_sample.jsonl", encoding="utf-8") if json.loads(l)["trace_id"] == i)
+        for i, _, _, te in counts)
+    check(ok, "check 6, splitter on the first five archived continuations (text before </think> only)",
+          "; ".join(f"{i}: {c} chars, think_end {te}, {n} sentences" for i, c, n, te in counts) + " (files sentences_archived5_sample.jsonl and .md)")
 
     # ---- pytest ------------------------------------------------------------------------
     cmd = [sys.executable, "-m", "pytest", "-q", str(UNIT_TESTS.relative_to(S.REPO).as_posix())]
@@ -308,7 +312,7 @@ def main() -> int:
         f"- `{folder.relative_to(S.REPO).as_posix()}/TEST_REPORT.md` (this file)",
         f"- `sentences_source.jsonl` — {len(recs)} records with old_s and part; `config.json`, `_log.txt` (written by s0_split.run_collection)",
         f"- `mismatches.txt` — {len(mismatch_lines)} entries",
-        f"- `sentences_archived5_sample.jsonl`, `sentences_archived5_sample.md` — {sum(n for _, _, n in counts)} sentences of five archived continuations",
+        f"- `sentences_archived5_sample.jsonl`, `sentences_archived5_sample.md` — {sum(n for _, _, n, _ in counts)} sentences of five archived continuations (text before </think> only)",
         "- `pytest_output.txt`",
         "",
         "## pytest output",

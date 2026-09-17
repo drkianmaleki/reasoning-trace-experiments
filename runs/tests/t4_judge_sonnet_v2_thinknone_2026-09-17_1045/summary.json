@@ -1,0 +1,88 @@
+[
+  {
+    "collection": "source",
+    "run_id": "judge_source_sonnet_v2_thinknone_2026-09-17_1045",
+    "out_dir": "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\experiments\\judge_source_sonnet_v2_thinknone_2026-09-17_1045",
+    "traces": {
+      "e036": {
+        "n": 254,
+        "estimated_input_tokens": 8805,
+        "attempts": 2,
+        "valid": true,
+        "usage": {
+          "input_tokens": 13329,
+          "output_tokens": 3775,
+          "thinking_tokens": 0,
+          "cache_read_input_tokens": 8109,
+          "cache_creation_input_tokens": 8109
+        },
+        "cost_usd": 0.0863023,
+        "model": "claude-sonnet-5",
+        "stop_reasons": [
+          "end_turn",
+          "end_turn"
+        ],
+        "retry_message": "Your labeling was rejected: unparsable: expected '<first>-<last> <code>' or '<index> <code>' at line 1: s0 Pl.gp. Output the complete labeling again, every index from 0 to 253 exactly once, one run per line, codes only.",
+        "error": "unparsable: expected '<first>-<last> <code>' or '<index> <code>' at line 1: s0 Pl.gp",
+        "warnings": [],
+        "thinking_tokens": 0,
+        "leaks": [
+          false,
+          false
+        ],
+        "final_stop_reason": "end_turn",
+        "thinking_chars": [
+          0,
+          0
+        ],
+        "nodes": 130,
+        "blocks": 33
+      },
+      "c004": {
+        "n": 375,
+        "estimated_input_tokens": 10830,
+        "attempts": 1,
+        "valid": true,
+        "usage": {
+          "thinking_tokens": 0,
+          "cache_read_input_tokens": 8109,
+          "cache_creation_input_tokens": 0,
+          "input_tokens": 9444,
+          "output_tokens": 3466
+        },
+        "cost_usd": 0.055169800000000005,
+        "model": "claude-sonnet-5",
+        "stop_reasons": [
+          "end_turn"
+        ],
+        "retry_message": null,
+        "error": null,
+        "warnings": [],
+        "thinking_tokens": 0,
+        "leaks": [
+          false
+        ],
+        "final_stop_reason": "end_turn",
+        "thinking_chars": [
+          0
+        ],
+        "nodes": 232,
+        "blocks": 48
+      }
+    },
+    "stopped": null,
+    "total_cost_usd": 0.1414721,
+    "dry_run": false,
+    "model_key": "sonnet",
+    "model_id": "claude-sonnet-5",
+    "prompt_version": "v2",
+    "thinking_mode": "none",
+    "labels_path": "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\experiments\\judge_source_sonnet_v2_thinknone_2026-09-17_1045\\labels_source_judge.jsonl",
+    "blocks_path": "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\experiments\\judge_source_sonnet_v2_thinknone_2026-09-17_1045\\blocks_source_judge.jsonl",
+    "agreement_paths": [
+      "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\experiments\\judge_source_sonnet_v2_thinknone_2026-09-17_1045\\agreement_source.csv",
+      "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\experiments\\judge_source_sonnet_v2_thinknone_2026-09-17_1045\\residue_source.csv",
+      "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\experiments\\judge_source_sonnet_v2_thinknone_2026-09-17_1045\\confusions_source.csv"
+    ]
+  }
+]

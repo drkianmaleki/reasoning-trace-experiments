@@ -1,0 +1,41 @@
+{
+  "run_id": "dry_run",
+  "collection": "source",
+  "mode": "dry-run",
+  "model_key": "sonnet",
+  "model": "claude-sonnet-5",
+  "model_echoed": {},
+  "max_tokens": 8000,
+  "temperature": null,
+  "temperature_via": "not sent (the model rejects sampling parameters)",
+  "thinking_mode": "none",
+  "thinking_params": {
+    "type": "disabled"
+  },
+  "reply_instruction": "Reply with the run-length labels only: no reasoning, no commentary, no tags of any kind, nothing before the first run line.",
+  "thinking_tokens": {},
+  "final_stop_reason": {},
+  "prompt_version": "v2",
+  "prompt": "judge_prompt_v2.md",
+  "prompt_sha256": "98ac17659798c184bc75fba6336007fb87e0b771e5272dfa05bdc90781b2a65c",
+  "inventory": "labels_v2.json",
+  "inventory_sha256": "51c5d0d142863a1d6461bcc871b08401f80c02abce45c31445de2cae07798ba2",
+  "sentences": "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\tests\\t2_split_2026-09-16_2224\\sentences_source.jsonl",
+  "sentences_sha256": "22dd7c383757935506233d0ac3fb2fad6018f6b3ec4d8efae822fcb8a622d75c",
+  "traces": [
+    "e036",
+    "c004"
+  ],
+  "git_commit": "5eed56dcbf8323af99574d5a82ff350e0a808250",
+  "python": "3.12.10",
+  "anthropic": "1.6.0",
+  "requests": "2.34.2",
+  "pytest": "9.1.1",
+  "prices_usd_per_million": {
+    "input": 2.0,
+    "output": 10.0,
+    "cache_read": 0.2,
+    "cache_write": 2.5
+  },
+  "timestamp": "2026-09-17T10:45:36"
+}

@@ -1,0 +1,41 @@
+level,reviewed,judge,count
+1,Reasoning,Conclusion,19
+1,Reasoning,Restatement,11
+1,Planning,Restatement,8
+1,Restatement,Reasoning,8
+1,Reflection,Reasoning,7
+1,Reasoning,Reflection,6
+1,Reasoning,Planning,6
+1,Restatement,Example,5
+1,Reasoning,Assumption,4
+1,Restatement,Planning,4
+1,Restatement,Conclusion,4
+1,Restatement,Knowledge,2
+1,Restatement,Reflection,2
+1,Planning,Reasoning,2
+1,Conclusion,Reasoning,2
+1,Knowledge,Planning,1
+1,Assumption,Planning,1
+1,Example,Reasoning,1
+1,Planning,Knowledge,1
+1,Conclusion,Restatement,1
+2,Reasoning > calculation,Reasoning > logical reasoning,13
+2,Reasoning > speculation,Reasoning > option evaluation,9
+2,Reasoning > logical reasoning,Conclusion > intermediate conclusion,8
+2,Reasoning > hedge word analysis,Reasoning > option evaluation,7
+2,Planning > local plan,Restatement > rephrasing the prompt,6
+2,Reasoning > option evaluation,Conclusion > intermediate conclusion,6
+2,Planning > initiate verification,Planning > initiate backtracking,6
+2,Reasoning > defining symbols,Restatement > rephrasing an earlier sentence,6
+2,Restatement > rephrasing an earlier sentence,Example > non-exhaustive listing,5
+2,Restatement > rephrasing an earlier sentence,Reasoning > logical reasoning,5
+2,Reflection > meta-evaluation of a step,Reasoning > option evaluation,4
+2,Reasoning > option evaluation,Planning > local plan,4
+2,Planning > initiate backtracking,Planning > initiate verification,4
+2,Restatement > rephrasing an earlier sentence,Planning > local plan,4
+2,Restatement > rephrasing an earlier sentence,Conclusion > intermediate conclusion,4
+2,Reasoning > speculation,Reasoning > logical reasoning,4
+2,Reasoning > calculation,Conclusion > intermediate conclusion,3
+2,Reasoning > calculation,Reasoning > commonsense reasoning,2
+2,Reflection > meta-evaluation of a step,Reasoning > comparison,2
+2,Reasoning > option evaluation,Reasoning > logical reasoning,2

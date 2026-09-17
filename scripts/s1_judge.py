@@ -66,14 +66,18 @@ def prompt_files(version: str) -> tuple[Path, Path]:
 # billed as output and counted inside max_tokens; the count is `usage.output_tokens_details.
 # thinking_tokens`) and https://platform.claude.com/docs/en/build-with-claude/effort (levels).
 # Adaptive thinking exists on Sonnet 5 only among the two judges; Haiku 4.5 uses manual budgets.
-THINKING_MODES = ("off", "low", "medium")
+THINKING_MODES = ("off", "none", "low", "medium")
 MAX_TOKENS_THINKING = 24000
+# "none" (Kian, 2026-09-17): thinking disabled as in "off" AND the user message ends with this
+# extra line, recorded in config.json as reply_instruction.
+REPLY_INSTRUCTION = ("Reply with the run-length labels only: no reasoning, no commentary, no tags of any kind, "
+                     "nothing before the first run line.")
 
 
 def thinking_params(model_key: str, mode: str) -> dict:
     if mode not in THINKING_MODES:
         raise ValueError(f"unknown thinking mode {mode!r}; known: {THINKING_MODES}")
-    if mode == "off":
+    if mode in ("off", "none"):
         return {}
     if model_key != "sonnet":
         raise ValueError("thinking modes low/medium are implemented for Sonnet 5 only (adaptive thinking)")
@@ -145,11 +149,13 @@ def collection_name(sentences_path: Path) -> str:
 # Requests
 # ----------------------------------------------------------------------------
 
-def user_message(trace_id: str, sents: list[dict]) -> str:
+def user_message(trace_id: str, sents: list[dict], extra_line: str | None = None) -> str:
     n = len(sents)
     lines = [f"Trace {trace_id}, {n} sentences, indices s0 to s{n - 1}. Label every sentence."]
     lines += [f"s{r['s']}: {r['text']}" for r in sents]
     lines.append("Output the run-length labels now, nothing else.")
+    if extra_line:
+        lines.append(extra_line)
     return "\n".join(lines)
 
 
@@ -157,11 +163,12 @@ def build_request(trace_id: str, sents: list[dict], prompt_text: str, model_key:
                   thinking_mode: str = "off") -> dict:
     m = MODELS[model_key]
     tp = thinking_params(model_key, thinking_mode)
+    extra = REPLY_INSTRUCTION if thinking_mode == "none" else None
     req = {
         "model": m["id"],
         "max_tokens": MAX_TOKENS_THINKING if tp else MAX_TOKENS,
         "system": [{"type": "text", "text": prompt_text, "cache_control": {"type": "ephemeral"}}],
-        "messages": [{"role": "user", "content": user_message(trace_id, sents)}],
+        "messages": [{"role": "user", "content": user_message(trace_id, sents, extra)}],
     }
     if m["temperature"] is not None:
         req["extra_body"] = {"temperature": m["temperature"]}
@@ -457,6 +464,7 @@ def run_judge(sentences_path: Path, out_dir: Path, traces: list[str] | None = No
         "temperature_via": "extra_body" if model["temperature"] is not None else "not sent (the model rejects sampling parameters)",
         "thinking_mode": thinking_mode,
         "thinking_params": tparams if tparams else (model["thinking"] if model["thinking"] is not None else "omitted (the model runs without thinking by default)"),
+        "reply_instruction": REPLY_INSTRUCTION if thinking_mode == "none" else None,
         "thinking_tokens": {}, "final_stop_reason": {},
         "prompt_version": prompt_version, "prompt": prompt_file.name, "prompt_sha256": prompt_sha,
         "inventory": labels_file.name, "inventory_sha256": sha256_of_file(labels_file),
@@ -538,7 +546,8 @@ def main(argv=None) -> int:
     ap.add_argument("--model", choices=tuple(MODELS), default="haiku")
     ap.add_argument("--prompt-version", choices=PROMPT_VERSIONS, default="v1")
     ap.add_argument("--thinking", choices=THINKING_MODES, default="off",
-                    help="off (default): current behaviour; low/medium: adaptive thinking at that effort (Sonnet 5 only)")
+                    help="off (default): current behaviour; none: thinking disabled plus the labels-only closing line; "
+                         "low/medium: adaptive thinking at that effort (Sonnet 5 only)")
     args = ap.parse_args(argv)
     if args.mode == "batch":
         raise NotImplementedError("batch mode is pipeline step (5/9) (sweep44, archived500, the new continuations); "
