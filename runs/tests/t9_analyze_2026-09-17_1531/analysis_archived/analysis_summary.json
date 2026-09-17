@@ -1,0 +1,111 @@
+{
+  "out_dir": "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\tests\\t9_analyze_2026-09-17_1531\\analysis_archived",
+  "figures": [
+    "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\figures\\archived_replay_c004_phat.png",
+    "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\figures\\archived_replay_c004_delta.png",
+    "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\figures\\archived_replay_e036_phat.png",
+    "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\figures\\archived_replay_e036_delta.png"
+  ],
+  "mediation": [
+    {
+      "trace_id": "c004",
+      "a_T": "C",
+      "cuts_sampled": 13,
+      "M": 12,
+      "p_cut0": 0.12,
+      "p_M": 0.92,
+      "total_movement": 0.8,
+      "B_top": 2,
+      "delta_top": 0.48,
+      "tk_B_top": 278,
+      "tk_trace": 4740,
+      "tk_B_top_share": 0.05864978902953587,
+      "gap": 0.20000000000000007,
+      "gap_low": 0.0,
+      "gap_high": 0.4,
+      "gap_draws": 10000,
+      "seed": 0,
+      "share_top1": 0.6,
+      "share_top2": 0.9499999999999998,
+      "share_top3": 1.2499999999999998,
+      "blocks_to_half": 1,
+      "trivial_blocks": 1
+    },
+    {
+      "trace_id": "e036",
+      "a_T": "E",
+      "cuts_sampled": 6,
+      "M": 5,
+      "p_cut0": 0.8,
+      "p_M": 0.92,
+      "total_movement": 0.12,
+      "B_top": 0,
+      "delta_top": 0.15999999999999992,
+      "tk_B_top": 871,
+      "tk_trace": 2890,
+      "tk_B_top_share": 0.3013840830449827,
+      "gap": 0.11999999999999988,
+      "gap_low": 0.0,
+      "gap_high": 0.31999999999999995,
+      "gap_draws": 10000,
+      "seed": 0,
+      "share_top1": 1.3333333333333328,
+      "share_top2": 1.6666666666666663,
+      "share_top3": 1.6666666666666663,
+      "blocks_to_half": 1,
+      "trivial_blocks": 3
+    }
+  ],
+  "permutation": [
+    {
+      "scope": "c004",
+      "S_obs": 0.3785948043184885,
+      "p": 9.999000099990002e-05,
+      "n_perm": 10000,
+      "seed": 0,
+      "cuts_included": 12,
+      "groups": 2,
+      "singleton_X_excluded": "Reflection",
+      "S_perm_mean": 0.10498825556680162
+    },
+    {
+      "scope": "e036",
+      "S_obs": 0.5377777777777778,
+      "p": 9.999000099990002e-05,
+      "n_perm": 10000,
+      "seed": 0,
+      "cuts_included": 3,
+      "groups": 1,
+      "singleton_X_excluded": "Conclusion Planning Restatement",
+      "S_perm_mean": 0.12477199999999998
+    },
+    {
+      "scope": "pooled",
+      "S_obs": 0.4515751951485647,
+      "p": 9.999000099990002e-05,
+      "n_perm": 10000,
+      "seed": 0,
+      "cuts_included": 16,
+      "groups": 2,
+      "singleton_X_excluded": "Conclusion Reflection Restatement",
+      "S_perm_mean": 0.11955396175018186
+    }
+  ],
+  "noise": [],
+  "n_pnext_rows": 19,
+  "n_history_rows": 4,
+  "n_order_rows": 1,
+  "tables": [
+    "mediation_delta.csv",
+    "mediation_pcut.csv",
+    "mediation_summary.csv",
+    "transition_history.csv",
+    "transition_noise.csv",
+    "transition_order.csv",
+    "transition_permutation.csv",
+    "transition_pnext.csv",
+    "transition_psource.csv",
+    "transition_tv_corpus.csv",
+    "stage1_summary.md"
+  ]
+}

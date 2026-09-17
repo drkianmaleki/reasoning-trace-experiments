@@ -1,0 +1,29 @@
+# s1_judge run_id=rb_c004 mode=batch model=claude-sonnet-5 (sonnet) prompt=v3 thinking=low 2026-09-17T15:37:39
+# trace_id	attempts	valid	input	cache_read	cache_write	output	cost_usd	stop_reasons	thinking_tokens	leaks	batch_ids	error
+submitted batch msgbatch_01XdhHLwCXYSELQ191RMFCyK (attempt 1, 3 entries); status in_progress; request_counts {"processing": 3, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}
+batch msgbatch_01XdhHLwCXYSELQ191RMFCyK: in_progress; request_counts {"processing": 3, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 0s
+batch msgbatch_01XdhHLwCXYSELQ191RMFCyK: in_progress; request_counts {"processing": 3, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 31s
+batch msgbatch_01XdhHLwCXYSELQ191RMFCyK: in_progress; request_counts {"processing": 3, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 61s
+batch msgbatch_01XdhHLwCXYSELQ191RMFCyK: in_progress; request_counts {"processing": 3, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 92s
+batch msgbatch_01XdhHLwCXYSELQ191RMFCyK: in_progress; request_counts {"processing": 3, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 122s
+batch msgbatch_01XdhHLwCXYSELQ191RMFCyK: in_progress; request_counts {"processing": 3, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 152s
+batch msgbatch_01XdhHLwCXYSELQ191RMFCyK: in_progress; request_counts {"processing": 3, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 183s
+batch msgbatch_01XdhHLwCXYSELQ191RMFCyK: in_progress; request_counts {"processing": 3, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 213s
+batch msgbatch_01XdhHLwCXYSELQ191RMFCyK: in_progress; request_counts {"processing": 3, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 243s
+batch msgbatch_01XdhHLwCXYSELQ191RMFCyK: in_progress; request_counts {"processing": 3, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 274s
+batch msgbatch_01XdhHLwCXYSELQ191RMFCyK: in_progress; request_counts {"processing": 3, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 304s
+batch msgbatch_01XdhHLwCXYSELQ191RMFCyK: ended; request_counts {"processing": 0, "succeeded": 3, "errored": 0, "canceled": 0, "expired": 0}; elapsed 335s
+batch msgbatch_01XdhHLwCXYSELQ191RMFCyK (attempt 1): 2 of 3 parsed; failures 1: {"gap": 1}
+submitted batch msgbatch_01HgKqgdyTzFTZMzv4f1BjVw (attempt 2, 1 entries); status in_progress; request_counts {"processing": 1, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}
+batch msgbatch_01HgKqgdyTzFTZMzv4f1BjVw: in_progress; request_counts {"processing": 1, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 0s
+batch msgbatch_01HgKqgdyTzFTZMzv4f1BjVw: in_progress; request_counts {"processing": 1, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 31s
+batch msgbatch_01HgKqgdyTzFTZMzv4f1BjVw: in_progress; request_counts {"processing": 1, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 61s
+batch msgbatch_01HgKqgdyTzFTZMzv4f1BjVw: in_progress; request_counts {"processing": 1, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 92s
+batch msgbatch_01HgKqgdyTzFTZMzv4f1BjVw: in_progress; request_counts {"processing": 1, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 122s
+batch msgbatch_01HgKqgdyTzFTZMzv4f1BjVw: in_progress; request_counts {"processing": 1, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 153s
+batch msgbatch_01HgKqgdyTzFTZMzv4f1BjVw: in_progress; request_counts {"processing": 1, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 183s
+batch msgbatch_01HgKqgdyTzFTZMzv4f1BjVw: ended; request_counts {"processing": 0, "succeeded": 1, "errored": 0, "canceled": 0, "expired": 0}; elapsed 214s
+batch msgbatch_01HgKqgdyTzFTZMzv4f1BjVw (attempt 2): 1 of 1 parsed; failures 0: {}
+rb_c004_B00_001	2	True	29148	0	17168	51556	0.308388	['max_tokens', 'end_turn']	46989	[False, False]	['msgbatch_01XdhHLwCXYSELQ191RMFCyK', 'msgbatch_01HgKqgdyTzFTZMzv4f1BjVw']	
+rb_c004_B00_000	1	True	17556	0	8584	19105	0.123811	['end_turn']	14694	[False]	['msgbatch_01XdhHLwCXYSELQ191RMFCyK']	
+rb_c004_B00_002	1	True	27217	0	8584	41073	0.243312	['end_turn']	32322	[False]	['msgbatch_01XdhHLwCXYSELQ191RMFCyK']	

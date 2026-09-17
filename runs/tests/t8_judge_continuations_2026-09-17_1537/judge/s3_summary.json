@@ -1,0 +1,48 @@
+{
+  "run_dir": "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\tests\\t7_resample_2026-09-17_1532\\smoke",
+  "out_dir": "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\tests\\t8_judge_continuations_2026-09-17_1537\\judge",
+  "collections": {
+    "rb_c004": {
+      "sentences_path": "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\tests\\t8_judge_continuations_2026-09-17_1537\\judge\\sentences_rb_c004.jsonl",
+      "documents": 3,
+      "sentences": 2204,
+      "prefix_sentences": 24,
+      "valid": 3,
+      "failed": 0,
+      "cost_usd": 0.675511,
+      "stopped": null
+    }
+  },
+  "dry_run": false,
+  "cost_usd": 0.675511,
+  "noise": null,
+  "projection": {
+    "collections": [
+      {
+        "collection": "rb_c004",
+        "documents": 3,
+        "sentences": 2204,
+        "prefix_sentences": 24,
+        "input_tokens_est": 54193,
+        "cache_read_tokens_est": 17460,
+        "output_tokens_est": 90364,
+        "cost_est_usd": 0.508
+      }
+    ],
+    "total_cost_est_usd": 0.51,
+    "rates": {
+      "thinking_per_sentence": 34.0,
+      "label_per_sentence": 7.0,
+      "text_per_sentence": 23.9,
+      "prefix_code_factor": 1.6,
+      "system_prompt_tokens": 5820
+    },
+    "prices": {
+      "input": 1.0,
+      "output": 5.0,
+      "cache_read": 0.1,
+      "cache_write": 1.25
+    }
+  },
+  "pnext_rows": 1
+}

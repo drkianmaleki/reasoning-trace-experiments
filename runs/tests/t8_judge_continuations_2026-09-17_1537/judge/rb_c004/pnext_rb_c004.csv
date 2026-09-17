@@ -1,0 +1,2 @@
+prefix_id,trace_arm,cut,last_node_label,n,n_labeled,n_failed,next_Planning,next_Reasoning,next_Reflection,next_Knowledge,next_Restatement,next_Assumption,next_Example,next_Conclusion,opens_block,first_is_wait
+rb_c004_B00,c004,7,Restatement,3,3,0,3,0,0,0,0,0,0,0,3,0

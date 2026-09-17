@@ -1,0 +1,5 @@
+scope,X,cuts,continuations,p_Planning,p_Reasoning,p_Reflection,p_Knowledge,p_Restatement,p_Assumption,p_Example,p_Conclusion,tv_corpus,tv_corpus_low,tv_corpus_high,corpus_Planning,corpus_Reasoning,corpus_Reflection,corpus_Knowledge,corpus_Restatement,corpus_Assumption,corpus_Example,corpus_Conclusion
+pooled,Planning,1,25,0.6000,0.2800,0.0000,0.0000,0.1200,0.0000,0.0000,0.0000,0.5717,0.4117,0.7717,0.0283,0.3976,0.0504,0.1138,0.3129,0.0175,0.0220,0.0574
+pooled,Restatement,2,50,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.2961,0.2961,0.3170,0.3430,0.3609,0.1109,0.0299,0.0068,0.0137,0.0085,0.1263
+c004,Planning,1,25,0.6000,0.2800,0.0000,0.0000,0.1200,0.0000,0.0000,0.0000,0.5717,0.4117,0.7717,0.0283,0.3976,0.0504,0.1138,0.3129,0.0175,0.0220,0.0574
+c004,Restatement,2,50,0.5000,0.5000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.2961,0.2961,0.3170,0.3430,0.3609,0.1109,0.0299,0.0068,0.0137,0.0085,0.1263

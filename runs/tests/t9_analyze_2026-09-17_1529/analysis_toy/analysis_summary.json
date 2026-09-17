@@ -1,0 +1,85 @@
+{
+  "out_dir": "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\tests\\t9_analyze_2026-09-17_1529\\analysis_toy",
+  "figures": [
+    "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\figures\\toy_c004_phat.png",
+    "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\figures\\toy_c004_delta.png"
+  ],
+  "mediation": [
+    {
+      "trace_id": "c004",
+      "a_T": "C",
+      "cuts_sampled": 3,
+      "M": 2,
+      "p_cut0": 0.12,
+      "p_M": 1.0,
+      "total_movement": 0.88,
+      "B_top": 2,
+      "delta_top": 0.36,
+      "tk_B_top": 15,
+      "tk_trace": 4740,
+      "tk_B_top_share": 0.0031645569620253164,
+      "gap": 0.07999999999999996,
+      "gap_low": 0.0,
+      "gap_high": 0.36000000000000004,
+      "gap_draws": 10000,
+      "seed": 1,
+      "share_top1": 0.40909090909090906,
+      "share_top2": 0.7272727272727273,
+      "share_top3": 1.0,
+      "blocks_to_half": 2,
+      "trivial_blocks": 0
+    }
+  ],
+  "permutation": [
+    {
+      "scope": "c004",
+      "S_obs": 0.45999999999999996,
+      "p": 9.999000099990002e-05,
+      "n_perm": 10000,
+      "seed": 1,
+      "cuts_included": 2,
+      "groups": 1,
+      "singleton_X_excluded": "Planning",
+      "S_perm_mean": 0.05844000000000002
+    },
+    {
+      "scope": "e036",
+      "S_obs": NaN,
+      "p": NaN,
+      "n_perm": 10000,
+      "seed": 1,
+      "cuts_included": 0,
+      "groups": 0,
+      "singleton_X_excluded": "",
+      "S_perm_mean": NaN
+    },
+    {
+      "scope": "pooled",
+      "S_obs": 0.45999999999999996,
+      "p": 9.999000099990002e-05,
+      "n_perm": 10000,
+      "seed": 1,
+      "cuts_included": 2,
+      "groups": 1,
+      "singleton_X_excluded": "Planning",
+      "S_perm_mean": 0.05844000000000002
+    }
+  ],
+  "noise": [],
+  "n_pnext_rows": 3,
+  "n_history_rows": 0,
+  "n_order_rows": 0,
+  "tables": [
+    "mediation_delta.csv",
+    "mediation_pcut.csv",
+    "mediation_summary.csv",
+    "transition_history.csv",
+    "transition_noise.csv",
+    "transition_order.csv",
+    "transition_permutation.csv",
+    "transition_pnext.csv",
+    "transition_psource.csv",
+    "transition_tv_corpus.csv",
+    "stage1_summary.md"
+  ]
+}

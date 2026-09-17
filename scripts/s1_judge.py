@@ -348,7 +348,12 @@ def make_documents(all_sents: dict[str, list[dict]], order: list[str], cont_meta
             if m["trace_arm"] != "shared":
                 if reviewed is None or source_texts is None or inventory is None:
                     raise ValueError("continuation documents need the reviewed labels, the source texts and the inventory")
-                recs = [r for r in reviewed[m["trace_arm"]] if r["old_s"] <= m["cut"]]
+                # the prefix: the archived cuts name an old-numbering sentence (old_s <= cut); the
+                # registered cuts name the block-end index in the listing's numbering (prefix_end_s)
+                if m.get("prefix_end_s") is not None:
+                    recs = [r for r in reviewed[m["trace_arm"]] if r["s"] <= m["prefix_end_s"]]
+                else:
+                    recs = [r for r in reviewed[m["trace_arm"]] if r["old_s"] <= m["cut"]]
                 doc["prefix_labels"] = [[path_of(l) for l in r["labels"]] for r in recs]
                 doc["prefix_texts"] = [source_texts[m["trace_arm"]][r["s"]] for r in recs]
                 doc["prefix_codes"] = [label_code(paths, inventory) for paths in doc["prefix_labels"]]
@@ -766,7 +771,7 @@ def finalize_document(doc: dict, res: dict) -> dict:
             pre = D.derive(doc["prefix_labels"], doc["trace_id"], REVIEWED_SOURCE, doc["prefix_texts"])
             last_prefix = D.node_level1(pre["nodes"][-1])
         cont_nodes = [n for n in der["nodes"] if n["s_end"] >= p]
-        rec.update({"prefix_id": m["prefix_id"], "trace_arm": m["trace_arm"], "cut": m["cut"], "seq": m.get("seq"),
+        rec.update({"prefix_id": m["prefix_id"], "trace_arm": m["trace_arm"], "cut": m["cut"], "seq": m.get("seq"), "m": m.get("m"),
                     "prefix_n": p, "n_cont": doc["n"], "last_prefix_node_label": last_prefix,
                     "first_new_node": {"name": node["name"], "L1": D.node_level1(node), "s_start": node["s_start"], "s_end": node["s_end"],
                                        "opens_block": opens, "opener_rule": block["opener_rule"] if opens else None,
@@ -966,7 +971,10 @@ def retry_failed(run_dir: Path | str, client=None, log=print, extra_line: str = 
     order = [t["trace_id"] for t in failed]
     cont_meta = reviewed_records = source_texts = None
     if is_cont:
-        meta_all = load_archived_meta(config["archived_meta"])
+        if config.get("continuation_meta"):
+            meta_all = json.loads((run_dir / config["continuation_meta"]).read_text(encoding="utf-8"))
+        else:
+            meta_all = load_archived_meta(config["archived_meta"])
         cont_meta = {t: meta_all[t] for t in order}
         reviewed_records = {}
         for r in read_jsonl(run_dir / f"labels_source_{REVIEWED_SOURCE}.jsonl"):
@@ -1077,8 +1085,11 @@ def run_judge(sentences_path: Path, out_dir: Path, traces: list[str] | None = No
               mode: str = "ordinary", collection: str | None = None, archived_meta_path: Path | None = ARCHIVED_CONTINUATIONS,
               listing_path: Path | str = D.LISTING, sentences_source: Path | str = SENTENCES_SOURCE,
               resume_batch: str | None = None, poll_seconds: int = BATCH_POLL_SECONDS,
-              max_wait_seconds: int = BATCH_MAX_WAIT_SECONDS, sleep=time.sleep) -> dict:
-    """The whole step for one collection.  Returns a summary dict (per trace results, paths)."""
+              max_wait_seconds: int = BATCH_MAX_WAIT_SECONDS, sleep=time.sleep,
+              continuation_meta: dict[str, dict] | None = None) -> dict:
+    """The whole step for one collection.  Returns a summary dict (per trace results, paths).
+    `continuation_meta` ({trace_id: {prefix_id, trace_arm, cut, prefix_end_s, m}}) makes every
+    trace a continuation document (step 8/9); without it the archived file decides."""
     if model_key not in MODELS:
         raise ValueError(f"unknown model {model_key!r}; known: {tuple(MODELS)}")
     if mode not in ("ordinary", "batch"):
@@ -1103,15 +1114,22 @@ def run_judge(sentences_path: Path, out_dir: Path, traces: list[str] | None = No
     cont_meta = None
     reviewed_records = None
     source_texts = None
-    if archived_meta_path is not None and Path(archived_meta_path).exists():
+    if continuation_meta is not None:
+        missing_meta = [t for t in order if t not in continuation_meta]
+        if missing_meta:
+            raise ValueError(f"continuation_meta lacks {len(missing_meta)} traces, e.g. {missing_meta[:3]}")
+        cont_meta = {t: continuation_meta[t] for t in order}
+        (out_dir / "continuation_meta.json").write_text(json.dumps(cont_meta, indent=1) + "\n", encoding="utf-8")
+    elif archived_meta_path is not None and Path(archived_meta_path).exists():
         meta_all = load_archived_meta(archived_meta_path)
         known = [t for t in order if t in meta_all]
         if known and len(known) != len(order):
             raise ValueError(f"{len(known)} of {len(order)} traces are archived continuations; a collection must be all continuations or none")
         if known:
             cont_meta = {t: meta_all[t] for t in order}
-            reviewed_records = export_reviewed_labels(out_dir / f"labels_source_{REVIEWED_SOURCE}.jsonl", listing_path, sentences_source, inventory)
-            source_texts = D.load_sentence_texts(sentences_source)
+    if cont_meta is not None:
+        reviewed_records = export_reviewed_labels(out_dir / f"labels_source_{REVIEWED_SOURCE}.jsonl", listing_path, sentences_source, inventory)
+        source_texts = D.load_sentence_texts(sentences_source)
     docs = make_documents(all_sents, order, cont_meta, reviewed_records, source_texts, inventory)
     is_cont = cont_meta is not None
     summary = {"collection": collection, "run_id": run_id, "out_dir": str(out_dir), "traces": {}, "stopped": None,
@@ -1148,7 +1166,8 @@ def run_judge(sentences_path: Path, out_dir: Path, traces: list[str] | None = No
     import pytest
     config = {
         "run_id": run_id, "collection": collection, "mode": "dry-run" if dry_run else mode,
-        "continuations": is_cont, "archived_meta": str(archived_meta_path) if is_cont else None,
+        "continuations": is_cont, "archived_meta": str(archived_meta_path) if (is_cont and continuation_meta is None) else None,
+        "continuation_meta": "continuation_meta.json" if continuation_meta is not None else None,
         "reviewed_listing": str(listing_path) if is_cont else None, "sentences_source": str(sentences_source) if is_cont else None,
         "model_key": model_key, "model": model["id"], "model_echoed": {},
         "max_tokens": {"default": MAX_TOKENS_THINKING if tparams else MAX_TOKENS, "long_documents": MAX_TOKENS_THINKING_LONG if tparams else MAX_TOKENS,

@@ -1,0 +1,4 @@
+trace_id,m,prefix_id,block_end_s,X,Y_source,p_Y_source,source_opens,opens_block_frac,opens_where_source_did
+c004,0,rb_c004_B00,7,Restatement,Planning,0.9600,True,1.0000,1.0000
+c004,1,rb_c004_B01,12,Restatement,Planning,0.0400,True,1.0000,1.0000
+c004,2,rb_c004_B02,14,Planning,Assumption,0.0000,True,1.0000,1.0000

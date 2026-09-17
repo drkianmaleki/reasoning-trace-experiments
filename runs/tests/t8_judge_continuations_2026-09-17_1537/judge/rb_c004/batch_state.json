@@ -1,0 +1,55 @@
+{
+ "collection": null,
+ "batches": [
+  {
+   "batch_id": "msgbatch_01XdhHLwCXYSELQ191RMFCyK",
+   "attempt": 1,
+   "n_entries": 3,
+   "custom_ids": [
+    "rb_c004_B00_000",
+    "rb_c004_B00_001",
+    "rb_c004_B00_002"
+   ],
+   "submitted": "2026-09-17T15:37:40",
+   "ended": "2026-09-17T15:43:15",
+   "request_counts": {
+    "processing": 0,
+    "succeeded": 3,
+    "errored": 0,
+    "canceled": 0,
+    "expired": 0
+   },
+   "poll_seconds": 30,
+   "api_created_at": "2026-09-17 20:37:41.659688+00:00",
+   "api_ended_at": "2026-09-17 20:43:08.624558+00:00"
+  },
+  {
+   "batch_id": "msgbatch_01HgKqgdyTzFTZMzv4f1BjVw",
+   "attempt": 2,
+   "n_entries": 1,
+   "custom_ids": [
+    "rb_c004_B00_001"
+   ],
+   "submitted": "2026-09-17T15:43:17",
+   "ended": "2026-09-17T15:46:50",
+   "request_counts": {
+    "processing": 0,
+    "succeeded": 1,
+    "errored": 0,
+    "canceled": 0,
+    "expired": 0
+   },
+   "poll_seconds": 30,
+   "api_created_at": "2026-09-17 20:43:17.927432+00:00",
+   "api_ended_at": "2026-09-17 20:46:39.729804+00:00"
+  }
+ ],
+ "custom_ids": {
+  "rb_c004_B00_001": "rb_c004_B00_001",
+  "rb_c004_B00_000": "rb_c004_B00_000",
+  "rb_c004_B00_002": "rb_c004_B00_002"
+ },
+ "status": "ended",
+ "started": "2026-09-17T15:37:39",
+ "ended": "2026-09-17T15:46:51"
+}

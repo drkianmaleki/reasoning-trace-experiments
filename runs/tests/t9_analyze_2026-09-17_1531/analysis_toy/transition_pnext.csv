@@ -1,0 +1,4 @@
+trace_id,m,prefix_id,block_end_s,X,n,n_labeled,p_Planning,p_Reasoning,p_Reflection,p_Knowledge,p_Restatement,p_Assumption,p_Example,p_Conclusion,opens_block_frac,wait_frac,Y_source,p_Y_source,source_opens,opens_where_source_did,tv_corpus,tv_corpus_low,tv_corpus_high,tv_pooled_X,tv_pooled_X_low,tv_pooled_X_high
+c004,0,rb_c004_B00,7,Restatement,25,25,0.9600,0.0400,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,1.0000,0.4800,Planning,0.9600,True,1.0000,0.6170,0.5370,0.6570,0.4600,0.3800,0.5000
+c004,1,rb_c004_B01,12,Restatement,25,25,0.0400,0.9600,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,1.0000,0.0400,Planning,0.0400,True,1.0000,0.5991,0.5191,0.6391,0.4600,0.3800,0.5000
+c004,2,rb_c004_B02,14,Planning,25,25,0.6000,0.2800,0.0000,0.0000,0.1200,0.0000,0.0000,0.0000,1.0000,0.3200,Assumption,0.0000,True,1.0000,0.5717,0.4117,0.7717,0.0000,0.0000,0.2400

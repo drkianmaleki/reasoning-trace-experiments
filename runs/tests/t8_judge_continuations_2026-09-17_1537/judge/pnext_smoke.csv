@@ -1,0 +1,2 @@
+trace_id,m,prefix_id,block_end_s,last_node_label,n,n_labeled,n_failed,next_Planning,next_Reasoning,next_Reflection,next_Knowledge,next_Restatement,next_Assumption,next_Example,next_Conclusion,opens_block,first_is_wait
+c004,0,rb_c004_B00,7,Restatement,3,3,0,3,0,0,0,0,0,0,0,3,0

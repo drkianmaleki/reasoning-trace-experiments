@@ -1,0 +1,26 @@
+{
+ "rb_c004_B00_001": {
+  "prefix_id": "rb_c004_B00",
+  "trace_arm": "c004",
+  "cut": 7,
+  "prefix_end_s": 7,
+  "m": 0,
+  "seq": 1
+ },
+ "rb_c004_B00_000": {
+  "prefix_id": "rb_c004_B00",
+  "trace_arm": "c004",
+  "cut": 7,
+  "prefix_end_s": 7,
+  "m": 0,
+  "seq": 0
+ },
+ "rb_c004_B00_002": {
+  "prefix_id": "rb_c004_B00",
+  "trace_arm": "c004",
+  "cut": 7,
+  "prefix_end_s": 7,
+  "m": 0,
+  "seq": 2
+ }
+}

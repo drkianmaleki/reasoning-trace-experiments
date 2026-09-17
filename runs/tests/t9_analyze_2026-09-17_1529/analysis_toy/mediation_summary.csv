@@ -1,0 +1,2 @@
+trace_id,a_T,cuts_sampled,M,p_cut0,p_M,total_movement,B_top,delta_top,tk_B_top,tk_trace,tk_B_top_share,gap,gap_low,gap_high,gap_draws,seed,share_top1,share_top2,share_top3,blocks_to_half,trivial_blocks
+c004,C,3,2,0.1200,1.0000,0.8800,2,0.3600,15,4740,0.0032,0.0800,0.0000,0.3600,10000,1,0.4091,0.7273,1.0000,2,0

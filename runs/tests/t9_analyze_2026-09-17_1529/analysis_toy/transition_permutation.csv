@@ -1,0 +1,4 @@
+scope,S_obs,p,n_perm,seed,cuts_included,groups,singleton_X_excluded,S_perm_mean
+c004,0.4600,0.0001,10000,1,2,1,Planning,0.0584
+e036,,,10000,1,0,0,,
+pooled,0.4600,0.0001,10000,1,2,1,Planning,0.0584

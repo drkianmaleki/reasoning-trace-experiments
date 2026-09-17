@@ -1,0 +1,69 @@
+{
+  "run_id": "rb_c004",
+  "collection": "rb_c004",
+  "mode": "dry-run",
+  "continuations": true,
+  "archived_meta": null,
+  "continuation_meta": "continuation_meta.json",
+  "reviewed_listing": "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\docs\\shared\\2026-09-17_source_traces_labeled_v4.md",
+  "sentences_source": "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\tests\\t2_split_2026-09-16_2224\\sentences_source.jsonl",
+  "model_key": "sonnet",
+  "model": "claude-sonnet-5",
+  "model_echoed": {},
+  "max_tokens": {
+    "default": 24000,
+    "long_documents": 48000,
+    "long_document_sentences": 600,
+    "retry_after_max_tokens": "doubled",
+    "cap": 96000
+  },
+  "temperature": null,
+  "temperature_via": "not sent (the model rejects sampling parameters)",
+  "thinking_mode": "low",
+  "thinking_params": {
+    "thinking": {
+      "type": "adaptive",
+      "display": "summarized"
+    },
+    "output_config": {
+      "effort": "low"
+    }
+  },
+  "reply_instruction": null,
+  "thinking_tokens": {},
+  "final_stop_reason": {},
+  "prompt_version": "v3",
+  "prompt": "judge_prompt_v3.md",
+  "prompt_sha256": "e999f7081d5a285c4db1dcb4fb55f9eb5291b1ba536f770d1ad53a815e43f51a",
+  "inventory": "labels_v3.json",
+  "inventory_sha256": "845dba31100f3d3104db3e69279f8a1e2a662c32ecd295fe4f7dec6a669df37b",
+  "sentences": "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\tests\\t8_judge_continuations_2026-09-17_1537\\dry\\sentences_rb_c004.jsonl",
+  "sentences_sha256": "cf2b0b71bdcfa56a197f3aaa806fced07a81f33d6d7c028badd69a99dc2f617a",
+  "traces": [
+    "rb_c004_B00_001",
+    "rb_c004_B00_000",
+    "rb_c004_B00_002"
+  ],
+  "n_traces": 3,
+  "r4": {
+    "regex": "^[\\s\\u23ce*_#>\\d.)(-]*(?:but\\s+|and\\s+|oh,?\\s+|okay,?\\s+)?wait\\b",
+    "enforced_on_judge_labels": true
+  },
+  "git_commit": "b5f4a5a9b0526a7bfe2f5b7da65ace8db0066d11",
+  "python": "3.12.10",
+  "anthropic": "1.6.0",
+  "requests": "2.34.2",
+  "pytest": "9.1.1",
+  "prices_usd_per_million": {
+    "input": 1.0,
+    "output": 5.0,
+    "cache_read": 0.1,
+    "cache_write": 1.25
+  },
+  "batch": {
+    "poll_seconds": 60,
+    "max_wait_seconds": 10800,
+    "resume_batch": null
+  },
+  "timestamp": "2026-09-17T15:37:39"
+}
