@@ -64,7 +64,25 @@ def test_prompt_files_and_run_id():
     with pytest.raises(ValueError):
         S.prompt_files("v9")
     from datetime import datetime
-    assert S.make_run_id("sonnet", "v2", datetime(2026, 9, 17, 8, 5)) == "judge_source_sonnet_v2_2026-09-17_0805"
+    st = datetime(2026, 9, 17, 8, 5)
+    assert S.make_run_id("sonnet", "v2", st) == "judge_source_sonnet_v2_2026-09-17_0805"
+    assert S.make_run_id("sonnet", "v2", st, "low", 2) == "judge_source_sonnet_v2_thinklow_r2_2026-09-17_0805"
+    assert S.make_run_id("haiku", "v1", st, "off", None) == "judge_source_haiku_v1_2026-09-17_0805"
+
+
+def test_thinking_request_parameters(sents):
+    # documented adaptive-thinking fields for Sonnet 5 (thinking-steering-and-cost and effort pages)
+    req = S.build_request("e036", sents["e036"], "PROMPT", "sonnet", "low")
+    assert req["thinking"] == {"type": "adaptive", "display": "summarized"}
+    assert req["output_config"] == {"effort": "low"}
+    assert req["max_tokens"] == 24000 and "extra_body" not in req and "temperature" not in req
+    assert S.build_request("e036", sents["e036"], "PROMPT", "sonnet", "medium")["output_config"] == {"effort": "medium"}
+    off = S.build_request("e036", sents["e036"], "PROMPT", "sonnet", "off")
+    assert off["thinking"] == {"type": "disabled"} and off["max_tokens"] == 8000 and "output_config" not in off
+    with pytest.raises(ValueError):
+        S.build_request("e036", sents["e036"], "PROMPT", "haiku", "low")  # no adaptive thinking on Haiku 4.5
+    with pytest.raises(ValueError):
+        S.thinking_params("sonnet", "high")
 
 
 def test_load_sentences_checks_order(tmp_path):
@@ -97,10 +115,72 @@ def test_cost_arithmetic():
 # Parse and retry with a stubbed client
 # ----------------------------------------------------------------------------
 
-def fake_response(text, model="claude-haiku-4-5-20251001", usage=(100, 10, 0, 0), stop="end_turn"):
-    return SimpleNamespace(content=[SimpleNamespace(type="text", text=text)], model=model, stop_reason=stop,
+def fake_response(text, model="claude-haiku-4-5-20251001", usage=(100, 10, 0, 0), stop="end_turn", thinking=None, thinking_tokens=None):
+    content = []
+    if thinking is not None:
+        content.append(SimpleNamespace(type="thinking", thinking=thinking, signature="sig"))
+    content.append(SimpleNamespace(type="text", text=text))
+    details = SimpleNamespace(thinking_tokens=thinking_tokens) if thinking_tokens is not None else None
+    return SimpleNamespace(content=content, model=model, stop_reason=stop,
                            usage=SimpleNamespace(input_tokens=usage[0], output_tokens=usage[1],
-                                                 cache_creation_input_tokens=usage[2], cache_read_input_tokens=usage[3]))
+                                                 cache_creation_input_tokens=usage[2], cache_read_input_tokens=usage[3],
+                                                 output_tokens_details=details))
+
+
+def test_thinking_blocks_are_stored_not_parsed(inv, tmp_path):
+    calls = []
+
+    def create(**kwargs):
+        calls.append(kwargs)
+        return fake_response(VALID, model="claude-sonnet-5", usage=(100, 500, 0, 0), thinking="I reason here.", thinking_tokens=480)
+
+    res = S.judge_trace(create, "toy", TOY, "PROMPT", inv, tmp_path / "replies", model_key="sonnet", thinking_mode="low")
+    assert res["valid"] and res["attempts"] == 1 and res["leaks"] == [False]
+    assert res["thinking_tokens"] == 480 and res["usage"]["thinking_tokens"] == 480 and res["usage"]["output_tokens"] == 500
+    assert res["final_stop_reason"] == "end_turn" and res["thinking_mode"] == "low"
+    assert (tmp_path / "replies" / "toy_attempt1_thinking.txt").read_text(encoding="utf-8") == "I reason here."
+    assert (tmp_path / "replies" / "toy_attempt1.txt").read_text(encoding="utf-8") == VALID  # text blocks only
+    assert calls[0]["thinking"] == {"type": "adaptive", "display": "summarized"} and calls[0]["output_config"] == {"effort": "low"}
+    assert calls[0]["max_tokens"] == 24000
+    assert res["cost_usd"] == pytest.approx((100 * 2 + 500 * 10) / 1e6)  # thinking billed as output
+    recs = S.label_records(res, "run_z", "abc", "2026-09-17T00:00:00", "v2")
+    assert all(r["thinking_mode"] == "low" and r["thinking_tokens"] == 480 and r["stop_reason"] == "end_turn" for r in recs)
+
+
+def test_streaming_create_returns_the_final_message():
+    class Stream:
+        def __init__(self, kwargs):
+            self.kwargs = kwargs
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *a):
+            return False
+
+        def get_final_message(self):
+            return fake_response(VALID, model="claude-sonnet-5", usage=(1, 2, 0, 0), thinking="t", thinking_tokens=1)
+
+    class Client:
+        class messages:
+            calls = []
+
+            @staticmethod
+            def stream(**kwargs):
+                Client.messages.calls.append(kwargs)
+                return Stream(kwargs)
+
+    create = S.streaming_create(Client)
+    msg = create(model="claude-sonnet-5", max_tokens=24000, messages=[])
+    assert msg.model == "claude-sonnet-5" and msg.usage.output_tokens_details.thinking_tokens == 1
+    assert Client.messages.calls[0]["max_tokens"] == 24000
+
+
+def test_think_tag_leak_is_flagged_and_retried(inv, tmp_path):
+    stub = StubCreate(["<think>\nlong reasoning cut off", VALID])
+    res = S.judge_trace(stub, "toy", TOY, "PROMPT", inv, tmp_path / "replies", model_key="sonnet")
+    assert res["valid"] and res["attempts"] == 2 and res["leaks"] == [True, False]
+    assert res["error"].startswith("unparsable") and res["thinking_tokens"] == 0
 
 
 class StubCreate:
@@ -122,7 +202,7 @@ def test_first_attempt_valid(inv, tmp_path):
     assert res["valid"] and res["attempts"] == 1 and res["retry_message"] is None
     assert res["labels"] == [["Planning > global plan"], ["Reasoning > calculation > algebra"],
                              ["Reasoning > calculation > algebra"], ["Conclusion > final answer"]]
-    assert res["usage"] == {"input_tokens": 100, "output_tokens": 10, "cache_creation_input_tokens": 50, "cache_read_input_tokens": 0}
+    assert res["usage"] == {"input_tokens": 100, "output_tokens": 10, "cache_creation_input_tokens": 50, "cache_read_input_tokens": 0, "thinking_tokens": 0}
     assert res["cost_usd"] == pytest.approx((100 + 50 + 50 * 1.25) / 1e6)
     assert (tmp_path / "replies" / "toy_attempt1.txt").read_text(encoding="utf-8") == VALID
     assert len(stub.calls) == 1 and stub.calls[0]["extra_body"] == {"temperature": 0}

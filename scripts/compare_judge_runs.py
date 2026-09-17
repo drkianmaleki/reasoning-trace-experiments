@@ -30,8 +30,13 @@ CELL_ORDER = [("haiku", "v1"), ("haiku", "v2"), ("sonnet", "v1"), ("sonnet", "v2
 
 
 def cell_of(config: dict) -> tuple[str, str]:
+    """(model, prompt version); runs with a thinking mode other than off get a suffixed model key
+    ("sonnet+thinklow") so that they never overwrite a 2x2 cell."""
     model_key = config.get("model_key") or ("sonnet" if "sonnet" in config.get("model", "") else "haiku")
     version = config.get("prompt_version") or config.get("prompt", "judge_prompt_v1.md").replace("judge_prompt_", "").replace(".md", "")
+    mode = config.get("thinking_mode", "off")
+    if mode and mode != "off":
+        model_key = f"{model_key}+think{mode}"
     return model_key, version
 
 
@@ -91,9 +96,12 @@ def main(argv=None) -> int:
     ap.add_argument("--out", help="output folder (default runs/experiments/judge_compare_2x2_<stamp>)")
     args = ap.parse_args(argv)
     run_dirs = [Path(r) for r in args.run] if args.run else sorted((REPO / "runs" / "experiments").glob("judge_source_*"))
-    runs = [load_run(d) for d in run_dirs if (d / "labels_source_judge.jsonl").exists()]
+    runs = [load_run(d) for d in run_dirs
+            if (d / "labels_source_judge.jsonl").exists() and (d / "labels_source_judge.jsonl").stat().st_size > 0]
     by_cell: dict[tuple[str, str], dict] = {}
     for r in runs:
+        if not r["labels"]:
+            continue  # a run that stopped before any valid trace
         by_cell[r["cell"]] = r  # the latest run of a cell wins (sorted by name = by time)
     listing = D.parse_listing()
     reviewed = {t: listing[t]["labels"] for t in listing}

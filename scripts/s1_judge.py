@@ -59,9 +59,33 @@ def prompt_files(version: str) -> tuple[Path, Path]:
     return REPO / "prompts" / f"judge_prompt_{version}.md", REPO / "prompts" / f"labels_{version}.json"
 
 
-def make_run_id(model_key: str, version: str, stamp: datetime | None = None) -> str:
+# Thinking modes.  "off" = the current behaviour (Haiku: no thinking parameter; Sonnet: thinking
+# disabled).  "low"/"medium" = adaptive thinking at that effort level, documented at
+# https://platform.claude.com/docs/en/build-with-claude/thinking-steering-and-cost (fields
+# `thinking: {"type": "adaptive", "display": ...}`; effort at `output_config.effort`; thinking is
+# billed as output and counted inside max_tokens; the count is `usage.output_tokens_details.
+# thinking_tokens`) and https://platform.claude.com/docs/en/build-with-claude/effort (levels).
+# Adaptive thinking exists on Sonnet 5 only among the two judges; Haiku 4.5 uses manual budgets.
+THINKING_MODES = ("off", "low", "medium")
+MAX_TOKENS_THINKING = 24000
+
+
+def thinking_params(model_key: str, mode: str) -> dict:
+    if mode not in THINKING_MODES:
+        raise ValueError(f"unknown thinking mode {mode!r}; known: {THINKING_MODES}")
+    if mode == "off":
+        return {}
+    if model_key != "sonnet":
+        raise ValueError("thinking modes low/medium are implemented for Sonnet 5 only (adaptive thinking)")
+    return {"thinking": {"type": "adaptive", "display": "summarized"}, "output_config": {"effort": mode}}
+
+
+def make_run_id(model_key: str, version: str, stamp: datetime | None = None, thinking: str = "off",
+                repeat: int | None = None) -> str:
     stamp = stamp or datetime.now()
-    return f"judge_source_{model_key}_{version}_{stamp:%Y-%m-%d_%H%M}"
+    tag = f"_think{thinking}" if thinking != "off" else ""
+    rep = f"_r{repeat}" if repeat is not None else ""
+    return f"judge_source_{model_key}_{version}{tag}{rep}_{stamp:%Y-%m-%d_%H%M}"
 
 
 # ----------------------------------------------------------------------------
@@ -129,17 +153,21 @@ def user_message(trace_id: str, sents: list[dict]) -> str:
     return "\n".join(lines)
 
 
-def build_request(trace_id: str, sents: list[dict], prompt_text: str, model_key: str = "haiku") -> dict:
+def build_request(trace_id: str, sents: list[dict], prompt_text: str, model_key: str = "haiku",
+                  thinking_mode: str = "off") -> dict:
     m = MODELS[model_key]
+    tp = thinking_params(model_key, thinking_mode)
     req = {
         "model": m["id"],
-        "max_tokens": MAX_TOKENS,
+        "max_tokens": MAX_TOKENS_THINKING if tp else MAX_TOKENS,
         "system": [{"type": "text", "text": prompt_text, "cache_control": {"type": "ephemeral"}}],
         "messages": [{"role": "user", "content": user_message(trace_id, sents)}],
     }
     if m["temperature"] is not None:
         req["extra_body"] = {"temperature": m["temperature"]}
-    if m["thinking"] is not None:
+    if tp:
+        req.update(tp)
+    elif m["thinking"] is not None:
         req["thinking"] = m["thinking"]
     return req
 
@@ -161,11 +189,13 @@ def rejection_message(err: J.ReplyError, n: int) -> str:
 # ----------------------------------------------------------------------------
 
 def usage_dict(usage) -> dict:
+    details = getattr(usage, "output_tokens_details", None)
     return {
         "input_tokens": int(getattr(usage, "input_tokens", 0) or 0),
         "output_tokens": int(getattr(usage, "output_tokens", 0) or 0),
         "cache_creation_input_tokens": int(getattr(usage, "cache_creation_input_tokens", 0) or 0),
         "cache_read_input_tokens": int(getattr(usage, "cache_read_input_tokens", 0) or 0),
+        "thinking_tokens": int(getattr(details, "thinking_tokens", 0) or 0) if details is not None else 0,
     }
 
 
@@ -182,7 +212,20 @@ def cost_usd(usage: dict, model_key: str = "haiku") -> float:
 
 
 def reply_text(response) -> str:
+    """The concatenation of the reply's text blocks only (thinking blocks are never parsed)."""
     return "".join(getattr(b, "text", "") for b in response.content if getattr(b, "type", "") == "text")
+
+
+def thinking_text(response) -> str:
+    """The thinking blocks of a reply (summarized text; a redacted block leaves a marker)."""
+    parts = []
+    for b in response.content:
+        t = getattr(b, "type", "")
+        if t == "thinking":
+            parts.append(getattr(b, "thinking", "") or "")
+        elif t == "redacted_thinking":
+            parts.append("[redacted_thinking block]")
+    return "\n".join(parts)
 
 
 def make_client(env_path: Path = ENV_FILE):
@@ -193,27 +236,45 @@ def make_client(env_path: Path = ENV_FILE):
     return anthropic.Anthropic(api_key=key)
 
 
+def streaming_create(client):
+    """A create-like callable that streams the response and returns the final Message.
+    The SDK refuses a non-streaming request whose max_tokens implies more than 10 minutes
+    (24000 tokens does), so every real call goes through client.messages.stream(...) and
+    stream.get_final_message(), which returns the same Message object (content, usage with
+    output_tokens_details, stop_reason, model)."""
+    def create(**kwargs):
+        with client.messages.stream(**kwargs) as stream:
+            return stream.get_final_message()
+    return create
+
+
 def judge_trace(create, trace_id: str, sents: list[dict], prompt_text: str, inventory,
-                replies_dir: Path | None = None, model_key: str = "haiku") -> dict:
+                replies_dir: Path | None = None, model_key: str = "haiku", thinking_mode: str = "off") -> dict:
     """One trace: the call, the parse, one retry in the same conversation.
     `create` is client.messages.create (or a stub with the same interface)."""
     n = len(sents)
-    request = build_request(trace_id, sents, prompt_text, model_key)
+    request = build_request(trace_id, sents, prompt_text, model_key, thinking_mode)
     messages = list(request["messages"])
     fixed = {k: v for k, v in request.items() if k != "messages"}
     usage_total: dict = {}
     replies: list[str] = []
     result = {"trace_id": trace_id, "n": n, "attempts": 0, "valid": False, "labels": None,
               "warnings": [], "retry_message": None, "error": None, "model": None,
-              "stop_reasons": [], "usage": {}, "cost_usd": 0.0, "replies": replies}
+              "stop_reasons": [], "usage": {}, "cost_usd": 0.0, "replies": replies,
+              "thinking_mode": thinking_mode, "thinking_tokens": 0, "leaks": [], "thinking_chars": []}
     for attempt in (1, 2):
         result["attempts"] = attempt
         response = create(**fixed, messages=messages)
         text = reply_text(response)
+        think = thinking_text(response)
         replies.append(text)
+        result["leaks"].append("<think>" in text)
+        result["thinking_chars"].append(len(think))
         if replies_dir is not None:
             replies_dir.mkdir(parents=True, exist_ok=True)
             (replies_dir / f"{trace_id}_attempt{attempt}.txt").write_text(text, encoding="utf-8")
+            if think or thinking_mode != "off":
+                (replies_dir / f"{trace_id}_attempt{attempt}_thinking.txt").write_text(think, encoding="utf-8")
         result["model"] = getattr(response, "model", None)
         result["stop_reasons"].append(getattr(response, "stop_reason", None))
         usage_total = add_usage(usage_total, usage_dict(getattr(response, "usage", None)))
@@ -230,6 +291,8 @@ def judge_trace(create, trace_id: str, sents: list[dict], prompt_text: str, inve
     result["usage"] = usage_total
     result["cost_usd"] = cost_usd(usage_total, model_key)
     result["model_key"] = model_key
+    result["thinking_tokens"] = usage_total.get("thinking_tokens", 0)
+    result["final_stop_reason"] = result["stop_reasons"][-1] if result["stop_reasons"] else None
     return result
 
 
@@ -259,6 +322,8 @@ def label_records(res: dict, run_id: str, prompt_sha: str, timestamp: str, promp
             "raw_reply": res["replies"][-1] if first else None,
             "model": res["model"], "model_key": model_key, "prompt_version": prompt_sha, "prompt_file": f"judge_prompt_{prompt_version}.md",
             "temperature": MODELS[model_key]["temperature"],
+            "thinking_mode": res.get("thinking_mode", "off"), "thinking_tokens": res.get("thinking_tokens", 0),
+            "stop_reason": res.get("final_stop_reason"),
             "run_id": run_id, "timestamp": timestamp,
             "usage": res["usage"] if first else None, "cost_usd": res["cost_usd"] if first else None,
             "attempt": res["attempts"], "valid": res["valid"],
@@ -351,10 +416,11 @@ def write_agreement(agr: dict, out_dir: Path, collection: str) -> tuple[Path, Pa
 
 def run_judge(sentences_path: Path, out_dir: Path, traces: list[str] | None = None, dry_run: bool = False,
               client=None, reviewed_path: Path | None = None, run_id: str | None = None, log=print,
-              model_key: str = "haiku", prompt_version: str = "v1") -> dict:
+              model_key: str = "haiku", prompt_version: str = "v1", thinking_mode: str = "off") -> dict:
     """The whole step for one collection.  Returns a summary dict (per trace results, paths)."""
     if model_key not in MODELS:
         raise ValueError(f"unknown model {model_key!r}; known: {tuple(MODELS)}")
+    tparams = thinking_params(model_key, thinking_mode)
     sentences_path, out_dir = Path(sentences_path), Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
     collection = collection_name(sentences_path)
@@ -371,12 +437,12 @@ def run_judge(sentences_path: Path, out_dir: Path, traces: list[str] | None = No
         raise ValueError(f"traces not in the sentences file: {missing}")
     summary = {"collection": collection, "run_id": run_id, "out_dir": str(out_dir), "traces": {}, "stopped": None,
                "total_cost_usd": 0.0, "dry_run": dry_run, "model_key": model_key, "model_id": model["id"],
-               "prompt_version": prompt_version}
+               "prompt_version": prompt_version, "thinking_mode": thinking_mode}
     # dry run: build and write every request
     req_dir = out_dir / "requests"
     req_dir.mkdir(exist_ok=True)
     for tid in order:
-        req = build_request(tid, all_sents[tid], prompt_text, model_key)
+        req = build_request(tid, all_sents[tid], prompt_text, model_key, thinking_mode)
         (req_dir / f"{tid}.json").write_text(json.dumps(req, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
         est = estimate_input_tokens(req)
         summary["traces"][tid] = {"n": len(all_sents[tid]), "estimated_input_tokens": est}
@@ -386,10 +452,12 @@ def run_judge(sentences_path: Path, out_dir: Path, traces: list[str] | None = No
     import pytest
     config = {
         "run_id": run_id, "collection": collection, "mode": "dry-run" if dry_run else "ordinary",
-        "model_key": model_key, "model": model["id"], "model_echoed": {}, "max_tokens": MAX_TOKENS,
+        "model_key": model_key, "model": model["id"], "model_echoed": {}, "max_tokens": MAX_TOKENS_THINKING if tparams else MAX_TOKENS,
         "temperature": model["temperature"],
         "temperature_via": "extra_body" if model["temperature"] is not None else "not sent (the model rejects sampling parameters)",
-        "thinking": model["thinking"] if model["thinking"] is not None else "omitted (the model runs without thinking by default)",
+        "thinking_mode": thinking_mode,
+        "thinking_params": tparams if tparams else (model["thinking"] if model["thinking"] is not None else "omitted (the model runs without thinking by default)"),
+        "thinking_tokens": {}, "final_stop_reason": {},
         "prompt_version": prompt_version, "prompt": prompt_file.name, "prompt_sha256": prompt_sha,
         "inventory": labels_file.name, "inventory_sha256": sha256_of_file(labels_file),
         "sentences": str(sentences_path), "sentences_sha256": sha256_of_file(sentences_path),
@@ -412,22 +480,27 @@ def run_judge(sentences_path: Path, out_dir: Path, traces: list[str] | None = No
     judge_labels: dict[str, list[list[str]]] = {}
     with open(labels_path, "w", encoding="utf-8", newline="\n") as lf, open(blocks_path, "w", encoding="utf-8", newline="\n") as bf, \
             open(log_path, "a", encoding="utf-8", newline="\n") as lg:
-        lg.write(f"# s1_judge run_id={run_id} model={model['id']} ({model_key}) prompt={prompt_version} {config['timestamp']}\n")
-        lg.write("# trace_id\tattempts\tvalid\tinput\tcache_read\tcache_write\toutput\tcost_usd\tstop_reasons\n")
+        lg.write(f"# s1_judge run_id={run_id} model={model['id']} ({model_key}) prompt={prompt_version} thinking={thinking_mode} {config['timestamp']}\n")
+        lg.write("# trace_id\tattempts\tvalid\tinput\tcache_read\tcache_write\toutput\tcost_usd\tstop_reasons\tthinking_tokens\tleaks\n")
         for tid in order:
             timestamp = datetime.now().isoformat(timespec="seconds")
-            res = judge_trace(client.messages.create, tid, all_sents[tid], prompt_text, inventory, out_dir / "replies", model_key)
+            res = judge_trace(streaming_create(client), tid, all_sents[tid], prompt_text, inventory, out_dir / "replies",
+                              model_key, thinking_mode)
             config["model_echoed"][tid] = res["model"]
+            config["thinking_tokens"][tid] = res["thinking_tokens"]
+            config["final_stop_reason"][tid] = res["final_stop_reason"]
             write_config()
             u = res["usage"]
             lg.write(f"{tid}\t{res['attempts']}\t{res['valid']}\t{u.get('input_tokens', 0)}\t{u.get('cache_read_input_tokens', 0)}\t"
-                     f"{u.get('cache_creation_input_tokens', 0)}\t{u.get('output_tokens', 0)}\t{res['cost_usd']:.6f}\t{res['stop_reasons']}\n")
+                     f"{u.get('cache_creation_input_tokens', 0)}\t{u.get('output_tokens', 0)}\t{res['cost_usd']:.6f}\t{res['stop_reasons']}\t"
+                     f"{res['thinking_tokens']}\t{res['leaks']}\n")
             lg.flush()
             summary["total_cost_usd"] += res["cost_usd"]
             t = summary["traces"][tid]
             t.update({"attempts": res["attempts"], "valid": res["valid"], "usage": u, "cost_usd": res["cost_usd"],
                       "model": res["model"], "stop_reasons": res["stop_reasons"], "retry_message": res["retry_message"],
-                      "error": res["error"], "warnings": res["warnings"]})
+                      "error": res["error"], "warnings": res["warnings"], "thinking_tokens": res["thinking_tokens"],
+                      "leaks": res["leaks"], "final_stop_reason": res["final_stop_reason"], "thinking_chars": res["thinking_chars"]})
             log(f"{tid}: attempts {res['attempts']}, valid {res['valid']}, usage {u}, cost ${res['cost_usd']:.6f}")
             if not res["valid"]:
                 summary["stopped"] = f"{tid}: {res['error']}"
@@ -464,18 +537,22 @@ def main(argv=None) -> int:
     ap.add_argument("--reviewed", help="the reviewed listing; writes the agreement and residue files")
     ap.add_argument("--model", choices=tuple(MODELS), default="haiku")
     ap.add_argument("--prompt-version", choices=PROMPT_VERSIONS, default="v1")
+    ap.add_argument("--thinking", choices=THINKING_MODES, default="off",
+                    help="off (default): current behaviour; low/medium: adaptive thinking at that effort (Sonnet 5 only)")
     args = ap.parse_args(argv)
     if args.mode == "batch":
         raise NotImplementedError("batch mode is pipeline step (5/9) (sweep44, archived500, the new continuations); "
                                   "not implemented in step (4/9), use --mode ordinary")
     collection = collection_name(Path(args.sentences))
-    out_dir = Path(args.out) if args.out else REPO / "runs" / "experiments" / f"judge_{collection}_{args.model}_{args.prompt_version}_{datetime.now():%Y-%m-%d_%H%M}"
+    tag = f"_think{args.thinking}" if args.thinking != "off" else ""
+    out_dir = Path(args.out) if args.out else REPO / "runs" / "experiments" / f"judge_{collection}_{args.model}_{args.prompt_version}{tag}_{datetime.now():%Y-%m-%d_%H%M}"
     prompt_file, _ = prompt_files(args.prompt_version)
-    print(f"s1_judge: sentences={args.sentences} out={out_dir} model={MODELS[args.model]['id']} ({args.model}) max_tokens={MAX_TOKENS} "
+    print(f"s1_judge: sentences={args.sentences} out={out_dir} model={MODELS[args.model]['id']} ({args.model}) "
+          f"thinking={args.thinking} max_tokens={MAX_TOKENS_THINKING if args.thinking != 'off' else MAX_TOKENS} "
           f"temperature={MODELS[args.model]['temperature']} prompt={prompt_file.name} sha256={sha256_of_file(prompt_file)[:12]} dry_run={args.dry_run} git={git_head()}")
     summary = run_judge(Path(args.sentences), out_dir, args.trace, args.dry_run,
                         reviewed_path=Path(args.reviewed) if args.reviewed else None,
-                        model_key=args.model, prompt_version=args.prompt_version)
+                        model_key=args.model, prompt_version=args.prompt_version, thinking_mode=args.thinking)
     print(json.dumps({k: v for k, v in summary.items() if k != "agreement"}, indent=2, default=str))
     return 0 if not summary["stopped"] else 1
 
