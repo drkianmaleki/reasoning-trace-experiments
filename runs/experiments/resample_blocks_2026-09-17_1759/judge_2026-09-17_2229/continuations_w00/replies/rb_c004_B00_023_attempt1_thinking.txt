@@ -1,0 +1,14 @@
+I'm working through labeling each section, comparing the standard phrasing against the current wording, checking definitions and equations for alignment.
+
+I move into evaluating the worked examples one by one, checking consistency with the intended answer, then verify each answer option against the reasoning before landing on the final self-check about whether I've correctly understood what's being asked.
+
+I'm second-guessing the answer choices, considering whether "not enough information" might be the intended response rather than a numeric one. I look at the text again closely, re-reading the classic riddle "the bat costs more than the ball" to make sure I'm interpreting the constraint correctly before restating the defining equation.
+
+I keep alternating between calculations, checking option A and F, and evaluating whether the answer format the question wants is just the numeric value versus a fuller explanation. I question my own assumptions about what makes an option "best," treating that as a genuine analytical check rather than just a rhetorical planning move, then settle into re-deriving the algebra behind the answer once more.
+
+Continuing to classify the remaining cases, I keep tagging each item with its category code, working through comparisons like B vs C, repeated reasoning-lookup labels, and some knowledge-based distractor examples toward the end.
+
+I'm continuing to code each item with its classification tag, working through restatements, plausibility judgments, discourse relations, and reasoning categories as I move through the remaining sequence.
+
+Now I'm finalizing the classification, resolving a couple of ambiguous entries by settling on the Re.oe category for both, then preparing to compress everything into the final run-length output.
+

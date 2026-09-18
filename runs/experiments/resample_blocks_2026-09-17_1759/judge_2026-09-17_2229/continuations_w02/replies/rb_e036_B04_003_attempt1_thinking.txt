@@ -1,0 +1,6 @@
+I'm going through and labeling each piece of reasoning, tracking the different candidate solutions and judgments about them—noting where a solution is deemed mathematically unsound, where reasoning shifts to considering infinite solutions, and where a well-posed definition gets introduced to clarify the inference.
+
+I keep reworking my plan for how to present the equations, restating them and examples multiple times to make sure the reasoning is airtight, and I confirm that option E is the one that fits after comparing the restated properties one more time before moving into laying out the final answer.
+
+I keep evaluating and re-planning the approach, checking my code work against expectations, and finding discrepancies that push me back into another round of adjustments before settling into a final assessment.
+

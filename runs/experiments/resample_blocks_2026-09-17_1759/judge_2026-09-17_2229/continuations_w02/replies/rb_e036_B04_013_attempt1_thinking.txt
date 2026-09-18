@@ -1,0 +1,10 @@
+I'm labeling each category code to categories: planning, reference materials with multiple sub-variants, iterative development, and reasoning types like literal recall, commonsense reasoning about behavior, and compositional reasoning.
+
+Continuing through the sequence, I'm working out how to combine or separate labels—like whether two option-evaluation leaves (E and F) can share a Level1 category, deciding they can't, so I'm choosing a single comparison leaf instead (option-vs-option comparison) or falling back to evaluating one option at a time.
+
+I'm also tracking planning moves like announcing a hypothetical alternative path (considering a possible typo in the prompt), knowledge lookups, source-knowledge references, literal recall, implicit condition checks, and different reasoning-comparison types (prompt-vs-option, answer-listing) as I work through the remaining labels.
+
+Continuing through the classification codes, I'm now drafting the actual explanation text itself, restating the reasoning in quoted form multiple times as I refine the wording.
+
+Adding a few more entries, then trying to compile to check everything runs.
+

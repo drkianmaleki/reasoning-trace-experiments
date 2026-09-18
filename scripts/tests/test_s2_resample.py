@@ -34,7 +34,8 @@ def test_conditions_in_registered_order(design):
     conds = R.conditions(design)
     assert len(conds) == 2 + 46 + 37
     assert [c["condition"] for c in conds[:2]] == ["nothink", "cut0"] and conds[0]["n"] == 100 and conds[1]["n"] == 25
-    assert conds[0]["max_tokens"] == 2000 and conds[1]["max_tokens"] == 16000
+    assert conds[0]["max_tokens"] == 8000 and conds[1]["max_tokens"] == 16000  # v2, 3.1: no-think cap 8000
+    assert R.STOP == ["<|im_end|>"]  # v2, 2.3
     assert conds[0]["prompt"].endswith("<|im_start|>assistant\n<think>\n\n</think>\n\n") and conds[1]["prompt"].endswith("<|im_start|>assistant\n<think>\n")
     assert conds[0]["prompt"].startswith("<|im_start|>user\n" + design["item_prompt"] + "<|im_end|>\n")
     c_cuts = [c for c in conds if c["trace_id"] == "c004"]
@@ -122,7 +123,7 @@ def test_run_loop_records_pcut_tk_stop_resume_and_departures(design, tmp_path):
     assert config["slug_check"]["ok"] and config["stop"] == ["<|im_end|>"] and config["M"] == {"c004": 1} and config["prefix_check"]["c004"]["matched"] == 46
     assert stub.calls[0]["max_tokens"] == 1  # the slug check came first
     assert all(c["temperature"] == 1.0 and c["stop"] == ["<|im_end|>"] for c in stub.calls[1:])
-    assert {c["max_tokens"] for c in stub.calls[1:]} == {2000, 16000}
+    assert {c["max_tokens"] for c in stub.calls[1:]} == {8000, 16000}
     # resume: nothing new to do
     s2 = R.run(out, design, conds, post=stub, workers=2, log=lambda m: None, sleep=lambda x: None, resume=True)
     assert s2["rows"] == [] and len(R.read_pcut(out / "pcut.csv")) == 4 and s2["cost_usd"] == pytest.approx(18 * 0.001)

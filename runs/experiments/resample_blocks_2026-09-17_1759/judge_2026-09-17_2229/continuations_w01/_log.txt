@@ -1,0 +1,139 @@
+# s1_judge run_id=continuations_w01 mode=batch model=claude-sonnet-5 (sonnet) prompt=v3 thinking=low 2026-09-17T22:44:09
+# trace_id	attempts	valid	input	cache_read	cache_write	output	cost_usd	stop_reasons	thinking_tokens	leaks	batch_ids	error
+submitted batch msgbatch_01Ntn8XcYvHJMZocUWD49h5p (attempt 1, 100 entries); status in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}
+batch msgbatch_01Ntn8XcYvHJMZocUWD49h5p: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 0s
+batch msgbatch_01Ntn8XcYvHJMZocUWD49h5p: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 61s
+batch msgbatch_01Ntn8XcYvHJMZocUWD49h5p: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 121s
+batch msgbatch_01Ntn8XcYvHJMZocUWD49h5p: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 181s
+batch msgbatch_01Ntn8XcYvHJMZocUWD49h5p: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 242s
+batch msgbatch_01Ntn8XcYvHJMZocUWD49h5p: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 302s
+batch msgbatch_01Ntn8XcYvHJMZocUWD49h5p: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 362s
+batch msgbatch_01Ntn8XcYvHJMZocUWD49h5p: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 423s
+batch msgbatch_01Ntn8XcYvHJMZocUWD49h5p: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 483s
+batch msgbatch_01Ntn8XcYvHJMZocUWD49h5p: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 544s
+batch msgbatch_01Ntn8XcYvHJMZocUWD49h5p: ended; request_counts {"processing": 0, "succeeded": 100, "errored": 0, "canceled": 0, "expired": 0}; elapsed 604s
+batch msgbatch_01Ntn8XcYvHJMZocUWD49h5p (attempt 1): 76 of 100 parsed; failures 24: {"gap": 1, "overlap": 6, "unknown_code": 3, "unparsable": 14}
+submitted batch msgbatch_01QtL125cT9nJknkR8BvTRQC (attempt 2, 24 entries); status in_progress; request_counts {"processing": 24, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}
+batch msgbatch_01QtL125cT9nJknkR8BvTRQC: in_progress; request_counts {"processing": 24, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 0s
+batch msgbatch_01QtL125cT9nJknkR8BvTRQC: in_progress; request_counts {"processing": 24, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 60s
+batch msgbatch_01QtL125cT9nJknkR8BvTRQC: in_progress; request_counts {"processing": 24, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 121s
+batch msgbatch_01QtL125cT9nJknkR8BvTRQC: in_progress; request_counts {"processing": 24, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 181s
+batch msgbatch_01QtL125cT9nJknkR8BvTRQC: in_progress; request_counts {"processing": 24, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 241s
+batch msgbatch_01QtL125cT9nJknkR8BvTRQC: in_progress; request_counts {"processing": 24, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 302s
+batch msgbatch_01QtL125cT9nJknkR8BvTRQC: ended; request_counts {"processing": 0, "succeeded": 24, "errored": 0, "canceled": 0, "expired": 0}; elapsed 362s
+batch msgbatch_01QtL125cT9nJknkR8BvTRQC (attempt 2): 20 of 24 parsed; failures 4: {"overlap": 2, "unparsable": 1, "gap": 1}
+rb_e036_B01_000	1	True	4770	8584	0	4317	0.027213	['end_turn']	2874	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B01_001	1	True	3904	8584	0	4255	0.026037	['end_turn']	3273	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B01_002	1	True	5503	8584	0	9180	0.052261	['end_turn']	7650	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B01_003	1	True	5084	8584	0	6592	0.038902	['end_turn']	5106	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B01_004	1	True	4218	8584	0	3312	0.021636	['end_turn']	1992	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B01_005	1	True	4721	8584	0	7629	0.043724	['end_turn']	6214	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B01_006	1	True	3510	8584	0	5534	0.032038	['end_turn']	4689	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B01_007	1	True	5186	8584	0	9386	0.052974	['end_turn']	7951	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B01_008	1	True	4521	8584	0	5708	0.033919	['end_turn']	4490	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B01_009	1	True	4160	8584	0	2942	0.019728	['end_turn']	1840	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B01_010	1	True	4239	8584	0	3751	0.023852	['end_turn']	2783	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B01_011	1	True	4345	8584	0	5752	0.033963	['end_turn']	4769	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B01_012	1	True	4877	8584	0	9702	0.054245	['end_turn']	8374	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B01_013	1	True	5606	8584	0	5172	0.032324	['end_turn']	3669	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B01_014	1	True	5328	8584	0	7895	0.045661	['end_turn']	6352	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B01_015	1	True	5237	8584	0	9716	0.054675	['end_turn']	8075	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B01_016	1	True	4001	8584	0	4652	0.028119	['end_turn']	3409	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B01_017	1	True	4279	8584	0	8630	0.048287	['end_turn']	7506	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B01_018	1	True	4121	8584	0	3357	0.021764	['end_turn']	2076	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B01_019	1	True	4845	8584	0	7980	0.045603	['end_turn']	6674	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B01_020	1	True	5014	8584	0	3587	0.023807	['end_turn']	2226	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B01_021	1	True	4666	8584	0	4606	0.028554	['end_turn']	3396	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B01_022	1	True	6180	8584	0	10024	0.057158	['end_turn']	8324	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B01_023	1	True	5588	8584	0	6701	0.039951	['end_turn']	5091	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B01_024	1	True	3581	8584	0	3123	0.020054	['end_turn']	2139	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_c004_B02_000	1	True	9259	8584	0	23925	0.129742	['end_turn']	21553	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_c004_B02_001	1	True	27310	8584	0	46553	0.260933	['end_turn']	39399	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_c004_B02_002	1	True	18310	8584	0	29297	0.165653	['end_turn']	24088	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_c004_B02_003	1	True	10385	8584	0	11027	0.066378	['end_turn']	8182	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_c004_B02_004	1	True	12153	8584	0	17486	0.100441	['end_turn']	14107	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_c004_B02_005	1	True	19274	8584	0	21093	0.125597	['end_turn']	15791	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_c004_B02_006	2	True	26904	8584	8584	50603	0.291507	['max_tokens', 'end_turn']	46546	[False, False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p', 'msgbatch_01QtL125cT9nJknkR8BvTRQC']	
+rb_c004_B02_007	1	True	8887	8584	0	8770	0.053595	['end_turn']	6629	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_c004_B02_008	2	True	66111	8584	8584	47115	0.313274	['end_turn', 'end_turn']	30685	[False, False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p', 'msgbatch_01QtL125cT9nJknkR8BvTRQC']	
+rb_c004_B02_009	1	True	22264	8584	0	15414	0.100192	['end_turn']	9071	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_c004_B02_010	2	True	33475	8584	8584	27696	0.183543	['max_tokens', 'end_turn']	23818	[False, False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p', 'msgbatch_01QtL125cT9nJknkR8BvTRQC']	
+rb_c004_B02_011	1	True	10931	8584	0	13110	0.077339	['end_turn']	10285	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_c004_B02_012	2	True	28258	8584	8584	27656	0.178126	['max_tokens', 'end_turn']	22867	[False, False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p', 'msgbatch_01QtL125cT9nJknkR8BvTRQC']	
+rb_c004_B02_013	1	True	19407	8584	0	27014	0.155335	['end_turn']	22261	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_c004_B02_014	1	True	12666	8584	0	9564	0.061344	['end_turn']	5870	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_c004_B02_015	1	True	28491	8584	0	45118	0.254939	['end_turn']	36883	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_c004_B02_016	2	True	49468	8584	8584	39171	0.256911	['end_turn', 'end_turn']	28009	[False, False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p', 'msgbatch_01QtL125cT9nJknkR8BvTRQC']	
+rb_c004_B02_017	2	False	63141	8584	8584	38193	0.265694	['end_turn', 'end_turn']	22871	[False, False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p', 'msgbatch_01QtL125cT9nJknkR8BvTRQC']	overlap: sentences 958..958 are covered twice at line 673: 958 Co.ic
+rb_c004_B02_018	1	True	20751	8584	0	38537	0.214294	['end_turn']	31907	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_c004_B02_019	1	True	27608	8584	0	30040	0.178666	['end_turn']	22089	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_c004_B02_020	1	True	19479	8584	0	14761	0.094142	['end_turn']	8850	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_c004_B02_021	2	False	67534	8584	8584	54145	0.349847	['end_turn', 'end_turn']	35024	[False, False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p', 'msgbatch_01QtL125cT9nJknkR8BvTRQC']	overlap: sentences 596..596 are covered twice at line 494: 596 Re.lr.al
+rb_c004_B02_022	1	True	12108	8584	0	12731	0.076621	['end_turn']	9325	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_c004_B02_023	1	True	8684	8584	0	9962	0.059352	['end_turn']	7399	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_c004_B02_024	1	True	19151	8584	0	34503	0.192524	['end_turn']	28444	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B02_000	1	True	4803	8584	0	9130	0.051311	['end_turn']	7727	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B02_001	1	True	3836	8584	0	3277	0.021079	['end_turn']	2236	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B02_002	2	True	7731	8584	8584	3609	0.037364	['end_turn', 'end_turn']	1892	[False, False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p', 'msgbatch_01QtL125cT9nJknkR8BvTRQC']	
+rb_e036_B02_003	1	True	4143	8584	0	3772	0.023861	['end_turn']	2571	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B02_004	1	True	4430	8584	0	5382	0.032198	['end_turn']	4147	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B02_005	1	True	5337	8584	0	6785	0.040120	['end_turn']	5216	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B02_006	1	True	4326	8584	0	2882	0.019594	['end_turn']	1708	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B02_007	1	True	5755	8584	0	7632	0.044773	['end_turn']	5925	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B02_008	1	True	3743	8584	0	4421	0.026706	['end_turn']	3226	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B02_009	1	True	4657	8584	0	4706	0.029045	['end_turn']	3275	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B02_010	1	True	4311	8584	0	8203	0.046184	['end_turn']	6953	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B02_011	1	True	4985	8584	0	10093	0.056308	['end_turn']	8707	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B02_012	1	True	3596	8584	0	4505	0.026979	['end_turn']	3288	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B02_013	1	True	4697	8584	0	7814	0.044625	['end_turn']	6647	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B02_014	2	False	10925	8584	8584	5461	0.049818	['end_turn', 'end_turn']	2973	[False, False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p', 'msgbatch_01QtL125cT9nJknkR8BvTRQC']	unparsable: a combined sentence needs a single index, not a run at line 106: 149-151 Rs.rtp.qt+Re.co.pvo
+rb_e036_B02_015	1	True	6286	8584	0	9146	0.052874	['end_turn']	7355	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B02_016	1	True	4593	8584	0	4487	0.027886	['end_turn']	3159	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B02_017	1	True	4356	8584	0	6621	0.038319	['end_turn']	5405	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B02_018	1	True	5001	8584	0	6318	0.037449	['end_turn']	4787	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B02_019	1	True	6316	8584	0	6841	0.041379	['end_turn']	4730	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B02_020	1	True	4162	8584	0	4225	0.026145	['end_turn']	3277	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B02_021	1	True	5462	8584	0	5431	0.033475	['end_turn']	3789	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B02_022	2	True	10164	8584	8584	5790	0.050702	['end_turn', 'end_turn']	3432	[False, False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p', 'msgbatch_01QtL125cT9nJknkR8BvTRQC']	
+rb_e036_B02_023	1	True	4431	8584	0	7765	0.044114	['end_turn']	6444	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_e036_B02_024	1	True	4318	8584	0	3849	0.024421	['end_turn']	2750	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_c004_B03_000	2	True	23117	8584	8584	21865	0.144030	['end_turn', 'end_turn']	15889	[False, False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p', 'msgbatch_01QtL125cT9nJknkR8BvTRQC']	
+rb_c004_B03_001	1	True	11367	8584	0	10661	0.065530	['end_turn']	7858	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_c004_B03_002	1	True	17914	8584	0	28590	0.161722	['end_turn']	23343	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_c004_B03_003	1	True	29233	8584	0	39325	0.226716	['end_turn']	29565	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_c004_B03_004	2	False	67597	8584	8584	43105	0.294710	['end_turn', 'end_turn']	25109	[False, False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p', 'msgbatch_01QtL125cT9nJknkR8BvTRQC']	gap: sentences 279..279 are not covered at line 224: 280 Pl.gp
+rb_c004_B03_005	2	True	29695	8584	8584	28844	0.185503	['max_tokens', 'end_turn']	23243	[False, False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p', 'msgbatch_01QtL125cT9nJknkR8BvTRQC']	
+rb_c004_B03_006	1	True	29353	8584	0	43925	0.249836	['end_turn']	35150	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_c004_B03_007	1	True	13787	8584	0	14260	0.085945	['end_turn']	10339	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_c004_B03_008	2	True	66285	8584	8584	29633	0.226038	['end_turn', 'end_turn']	13617	[False, False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p', 'msgbatch_01QtL125cT9nJknkR8BvTRQC']	
+rb_c004_B03_009	1	True	19739	8584	0	22797	0.134582	['end_turn']	16962	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_c004_B03_010	1	True	27902	8584	0	47011	0.263815	['end_turn']	38831	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_c004_B03_011	2	True	63511	8584	8584	26093	0.205564	['end_turn', 'end_turn']	11562	[False, False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p', 'msgbatch_01QtL125cT9nJknkR8BvTRQC']	
+rb_c004_B03_012	1	True	11670	8584	0	7991	0.052483	['end_turn']	4695	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_c004_B03_013	1	True	24112	8584	0	39597	0.222955	['end_turn']	32666	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_c004_B03_014	2	True	49149	8584	8584	21170	0.166587	['end_turn', 'end_turn']	9353	[False, False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p', 'msgbatch_01QtL125cT9nJknkR8BvTRQC']	
+rb_c004_B03_015	2	True	62687	8584	8584	42717	0.287860	['end_turn', 'end_turn']	27120	[False, False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p', 'msgbatch_01QtL125cT9nJknkR8BvTRQC']	
+rb_c004_B03_016	2	True	24284	8584	8584	6736	0.069552	['end_turn', 'end_turn']	59	[False, False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p', 'msgbatch_01QtL125cT9nJknkR8BvTRQC']	
+rb_c004_B03_017	2	True	65106	8584	8584	56925	0.361319	['max_tokens', 'end_turn']	41016	[False, False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p', 'msgbatch_01QtL125cT9nJknkR8BvTRQC']	
+rb_c004_B03_018	2	True	57703	8584	8584	52732	0.332951	['end_turn', 'end_turn']	38680	[False, False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p', 'msgbatch_01QtL125cT9nJknkR8BvTRQC']	
+rb_c004_B03_019	1	True	12616	8584	0	23134	0.129144	['end_turn']	19702	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_c004_B03_020	2	True	60680	17168	0	57758	0.351187	['max_tokens', 'end_turn']	46898	[False, False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p', 'msgbatch_01QtL125cT9nJknkR8BvTRQC']	
+rb_c004_B03_021	2	True	29111	8584	8584	26223	0.171814	['end_turn', 'end_turn']	18809	[False, False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p', 'msgbatch_01QtL125cT9nJknkR8BvTRQC']	
+rb_c004_B03_022	2	True	66815	8584	8584	51532	0.336063	['end_turn', 'end_turn']	33836	[False, False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p', 'msgbatch_01QtL125cT9nJknkR8BvTRQC']	
+rb_c004_B03_023	1	True	29391	8584	0	43130	0.245899	['end_turn']	33503	[False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p']	
+rb_c004_B03_024	2	True	58281	8584	8584	39808	0.268909	['end_turn', 'end_turn']	24076	[False, False]	['msgbatch_01Ntn8XcYvHJMZocUWD49h5p', 'msgbatch_01QtL125cT9nJknkR8BvTRQC']	
+# retry_failed 2026-09-17T23:00:44: 4 traces, attempt 3, extra line: Format check before you answer: every index from 0 to N−1 exactly once, runs in increasing order, one code per run (two codes joined by + only on a single-index line), codes only from the table.
+submitted batch msgbatch_01YBefPNaAL9fqh44oG11ngx (attempt 3, 4 entries); status in_progress; request_counts {"processing": 4, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}
+batch msgbatch_01YBefPNaAL9fqh44oG11ngx: in_progress; request_counts {"processing": 4, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 0s
+batch msgbatch_01YBefPNaAL9fqh44oG11ngx: in_progress; request_counts {"processing": 4, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 60s
+batch msgbatch_01YBefPNaAL9fqh44oG11ngx: in_progress; request_counts {"processing": 4, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 121s
+batch msgbatch_01YBefPNaAL9fqh44oG11ngx: in_progress; request_counts {"processing": 4, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 181s
+batch msgbatch_01YBefPNaAL9fqh44oG11ngx: in_progress; request_counts {"processing": 4, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 241s
+batch msgbatch_01YBefPNaAL9fqh44oG11ngx: in_progress; request_counts {"processing": 4, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 302s
+batch msgbatch_01YBefPNaAL9fqh44oG11ngx: in_progress; request_counts {"processing": 4, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 362s
+batch msgbatch_01YBefPNaAL9fqh44oG11ngx: ended; request_counts {"processing": 0, "succeeded": 4, "errored": 0, "canceled": 0, "expired": 0}; elapsed 423s
+batch msgbatch_01YBefPNaAL9fqh44oG11ngx (attempt 3): 3 of 4 parsed; failures 1: {"overlap": 1}
+rb_c004_B02_017	3	True	27760	8584	0	37630	0.216768	['end_turn']	29643	[False]	['msgbatch_01YBefPNaAL9fqh44oG11ngx']	
+rb_c004_B02_021	3	True	29002	8584	0	21670	0.138210	['end_turn']	13009	[False]	['msgbatch_01YBefPNaAL9fqh44oG11ngx']	
+rb_e036_B02_014	3	True	4857	8584	0	6770	0.039565	['end_turn']	5554	[False]	['msgbatch_01YBefPNaAL9fqh44oG11ngx']	
+rb_c004_B03_004	3	False	29308	8584	0	36529	0.212811	['end_turn']	27378	[False]	['msgbatch_01YBefPNaAL9fqh44oG11ngx']	overlap: sentences 827..827 are covered twice at line 674: 827 Re.lr.al

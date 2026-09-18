@@ -1,0 +1,2 @@
+I need to fix the duplicate range issue: entries 720-721 map to Re.oe.C, entry 722 should be Re.oe.F, and 723 stays as Re.oe.E, correcting the overlap I had before.
+

@@ -1,0 +1,25 @@
+s2_resample: out=runs\experiments\resample_blocks_2026-09-17_1759 conditions=48 dry_run=False resume=False traces=['c004'] skip_baselines=False git=64ae55b4af25527d8c61619c5db8a902ed8bb4ba
+rb_nothink: n 100, p_hat None [None, None], Tk None, cost $0.8749, cumulative $0.87
+rb_cut0: n 25, p_hat None [None, None], Tk None, cost $0.3945, cumulative $1.27
+rb_c004_B00: n 25, p_hat 0.64 [0.4452, 0.7975], Tk 139, cost $1.0146, cumulative $2.28
+rb_c004_B01: n 25, p_hat 0.36 [0.2025, 0.5548], Tk 60, cost $0.9788, cumulative $3.26
+rb_c004_B02: n 25, p_hat 0.56 [0.3707, 0.7333], Tk 13, cost $0.8706, cumulative $4.13
+rb_c004_B03: n 25, p_hat 0.44 [0.2667, 0.6293], Tk 91, cost $1.0016, cumulative $5.13
+rb_c004_B04: n 25, p_hat 0.28 [0.1428, 0.4758], Tk 92, cost $1.0595, cumulative $6.19
+rb_c004_B05: n 25, p_hat 0.28 [0.1428, 0.4758], Tk 79, cost $1.0275, cumulative $7.22
+rb_c004_B06: n 25, p_hat 0.68 [0.4841, 0.8279], Tk 87, cost $0.9946, cumulative $8.22
+rb_c004_B07: n 25, p_hat 0.48 [0.3003, 0.665], Tk 25, cost $0.9850, cumulative $9.20
+rb_c004_B08: n 25, p_hat 0.4 [0.234, 0.5926], Tk 211, cost $0.9163, cumulative $10.12
+rb_c004_B09: n 25, p_hat 0.96 [0.8046, 0.9929], Tk 321, cost $0.5490, cumulative $10.67
+rb_c004_B10: n 25, p_hat 0.96 [0.8046, 0.9929], Tk 266, cost $0.4191, cumulative $11.09
+rb_c004_B11: n 25, p_hat 1.0 [0.8668, 1.0], Tk 109, cost $0.3881, cumulative $11.47
+{
+  "out_dir": "runs\\experiments\\resample_blocks_2026-09-17_1759",
+  "conditions": 48,
+  "cost_usd": 11.473916,
+  "stopped": null,
+  "M": {
+    "c004": 11
+  },
+  "departures": 0
+}

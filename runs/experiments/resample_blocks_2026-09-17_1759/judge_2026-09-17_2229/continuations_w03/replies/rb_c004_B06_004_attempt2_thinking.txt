@@ -1,0 +1,2 @@
+I'm noticing an overlap in the line assignments around lines 76-78 and correcting it so line 76 maps to As.bcs.al while lines 77-78 map to Re.ca.al, then preparing to output the full corrected list.
+

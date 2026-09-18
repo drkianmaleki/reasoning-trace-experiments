@@ -22,7 +22,7 @@ import derivation as D  # noqa: E402
 import s2_resample as R  # noqa: E402
 
 REPO = R.REPO
-PREREG = REPO / "docs" / "shared" / "2026-09-17_preregistration_stage1_v1.md"
+PREREG = REPO / "docs" / "shared" / "2026-09-17_preregistration_stage1_v2.md"  # v2 (pre-run amendments) supersedes v1 (archive/)
 PHRASES = {"n = 25": "n = 25 continuations per cut", "n_0 = 100": "n_0 = 100", "DeepInfra ceiling $45": "DeepInfra $45",
            "Claude ceiling $80": "Claude $80", "stopping rule": "if P̂_m = 1, M := m", "denominator": '"?" in the denominator'}
 

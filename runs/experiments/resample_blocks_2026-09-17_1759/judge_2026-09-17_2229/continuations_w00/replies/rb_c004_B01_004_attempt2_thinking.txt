@@ -1,0 +1,2 @@
+I need to split that combined line into two separate individual index lines since they can't form a valid run together. Let me also verify the other combined lines have single-index counts that are fine, scanning through several entries to confirm none of them incorrectly represent multi-item runs.
+

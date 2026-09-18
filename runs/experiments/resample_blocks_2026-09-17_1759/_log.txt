@@ -1,0 +1,89 @@
+# s2_resample run 2026-09-17T17:59:22 slug check PASS: model 'Qwen/Qwen3.6-27B' status 200
+rb_nothink	n=100	counts A32 B0 C49 D0 E19 F0 ?0	p_hat=None	ci=[None, None]	prompt_tokens=142	tk_block=None	mean_completion=2719.8	cost=0.8749	cum=$0.87	stopped=False	1136s
+rb_cut0	n=25	counts A0 B2 C4 D0 E18 F0 ?1	p_hat=None	ci=[None, None]	prompt_tokens=140	tk_block=None	mean_completion=4917.0	cost=0.3945	cum=$1.27	stopped=False	584s
+# s2_resample run 2026-09-17T18:28:53 slug check PASS: model 'Qwen/Qwen3.6-27B' status 200
+rb_e036_B00	n=25	counts A0 B0 C1 D0 E24 F0 ?0	p_hat=0.96	ci=[0.8046, 0.9929]	prompt_tokens=287	tk_block=147	mean_completion=2501.7	cost=0.2024	cum=$1.47	stopped=False	329s
+rb_e036_B01	n=25	counts A0 B0 C5 D0 E20 F0 ?0	p_hat=0.8	ci=[0.6087, 0.9114]	prompt_tokens=346	tk_block=59	mean_completion=2562.5	cost=0.2078	cum=$1.68	stopped=False	297s
+rb_e036_B02	n=25	counts A1 B0 C10 D0 E14 F0 ?0	p_hat=0.56	ci=[0.3707, 0.7333]	prompt_tokens=369	tk_block=23	mean_completion=2484.1	cost=0.2017	cum=$1.88	stopped=False	311s
+rb_e036_B03	n=25	counts A0 B0 C5 D0 E20 F0 ?0	p_hat=0.8	ci=[0.6087, 0.9114]	prompt_tokens=421	tk_block=52	mean_completion=2478.8	cost=0.2017	cum=$2.08	stopped=False	315s
+rb_e036_B04	n=25	counts A0 B0 C1 D0 E24 F0 ?0	p_hat=0.96	ci=[0.8046, 0.9929]	prompt_tokens=640	tk_block=219	mean_completion=2065.6	cost=0.1704	cum=$2.25	stopped=False	264s
+rb_c004_B00	n=25	counts A1 B1 C16 D0 E2 F0 ?5	p_hat=0.64	ci=[0.4452, 0.7975]	prompt_tokens=279	tk_block=139	mean_completion=12654.1	cost=1.0146	cum=$2.28	stopped=False	1576s
+rb_e036_B05	n=25	counts A0 B0 C6 D0 E19 F0 ?0	p_hat=0.76	ci=[0.5657, 0.885]	prompt_tokens=844	tk_block=204	mean_completion=2600.8	cost=0.2148	cum=$2.47	stopped=False	345s
+rb_e036_B06	n=25	counts A0 B0 C0 D0 E24 F1 ?0	p_hat=0.96	ci=[0.8046, 0.9929]	prompt_tokens=1099	tk_block=255	mean_completion=2295.2	cost=0.1924	cum=$2.66	stopped=False	324s
+rb_e036_B07	n=25	counts A0 B0 C0 D0 E25 F0 ?0	p_hat=1.0	ci=[0.8668, 1.0]	prompt_tokens=1174	tk_block=75	mean_completion=2275.6	cost=0.1914	cum=$2.85	stopped=True	326s
+# stopping rule: e036 P_hat = 1 at m = 7; M = 7; later cuts of e036 not sampled
+rb_e036_B08	skipped: trace e036 stopped by the rule at an earlier cut
+rb_e036_B09	skipped: trace e036 stopped by the rule at an earlier cut
+rb_e036_B10	skipped: trace e036 stopped by the rule at an earlier cut
+rb_e036_B11	skipped: trace e036 stopped by the rule at an earlier cut
+rb_e036_B12	skipped: trace e036 stopped by the rule at an earlier cut
+rb_e036_B13	skipped: trace e036 stopped by the rule at an earlier cut
+rb_e036_B14	skipped: trace e036 stopped by the rule at an earlier cut
+rb_e036_B15	skipped: trace e036 stopped by the rule at an earlier cut
+rb_e036_B16	skipped: trace e036 stopped by the rule at an earlier cut
+rb_e036_B17	skipped: trace e036 stopped by the rule at an earlier cut
+rb_e036_B18	skipped: trace e036 stopped by the rule at an earlier cut
+rb_e036_B19	skipped: trace e036 stopped by the rule at an earlier cut
+rb_e036_B20	skipped: trace e036 stopped by the rule at an earlier cut
+rb_e036_B21	skipped: trace e036 stopped by the rule at an earlier cut
+rb_e036_B22	skipped: trace e036 stopped by the rule at an earlier cut
+rb_e036_B23	skipped: trace e036 stopped by the rule at an earlier cut
+rb_e036_B24	skipped: trace e036 stopped by the rule at an earlier cut
+rb_e036_B25	skipped: trace e036 stopped by the rule at an earlier cut
+rb_e036_B26	skipped: trace e036 stopped by the rule at an earlier cut
+rb_e036_B27	skipped: trace e036 stopped by the rule at an earlier cut
+rb_e036_B28	skipped: trace e036 stopped by the rule at an earlier cut
+rb_e036_B29	skipped: trace e036 stopped by the rule at an earlier cut
+rb_e036_B30	skipped: trace e036 stopped by the rule at an earlier cut
+rb_e036_B31	skipped: trace e036 stopped by the rule at an earlier cut
+rb_e036_B32	skipped: trace e036 stopped by the rule at an earlier cut
+rb_e036_B33	skipped: trace e036 stopped by the rule at an earlier cut
+rb_e036_B34	skipped: trace e036 stopped by the rule at an earlier cut
+rb_e036_B35	skipped: trace e036 stopped by the rule at an earlier cut
+rb_e036_B36	skipped: trace e036 stopped by the rule at an earlier cut
+rb_c004_B01	n=25	counts A1 B0 C9 D0 E8 F0 ?7	p_hat=0.36	ci=[0.2025, 0.5548]	prompt_tokens=339	tk_block=60	mean_completion=12200.7	cost=0.9788	cum=$3.26	stopped=False	1669s
+rb_c004_B02	n=25	counts A0 B0 C14 D0 E6 F0 ?5	p_hat=0.56	ci=[0.3707, 0.7333]	prompt_tokens=352	tk_block=13	mean_completion=10847.8	cost=0.8706	cum=$4.13	stopped=False	1482s
+rb_c004_B03	n=25	counts A0 B1 C11 D0 E8 F0 ?5	p_hat=0.44	ci=[0.2667, 0.6293]	prompt_tokens=443	tk_block=91	mean_completion=12475.2	cost=1.0016	cum=$5.13	stopped=False	1067s
+rb_c004_B04	n=25	counts A0 B0 C7 D0 E11 F0 ?7	p_hat=0.28	ci=[0.1428, 0.4758]	prompt_tokens=535	tk_block=92	mean_completion=13190.2	cost=1.0595	cum=$6.19	stopped=False	1435s
+rb_c004_B05	n=25	counts A1 B0 C7 D0 E8 F0 ?9	p_hat=0.28	ci=[0.1428, 0.4758]	prompt_tokens=614	tk_block=79	mean_completion=12782.2	cost=1.0275	cum=$7.22	stopped=False	1322s
+rb_c004_B06	n=25	counts A0 B0 C17 D1 E2 F0 ?5	p_hat=0.68	ci=[0.4841, 0.8279]	prompt_tokens=701	tk_block=87	mean_completion=12362.1	cost=0.9946	cum=$8.22	stopped=False	1049s
+rb_c004_B07	n=25	counts A0 B1 C12 D0 E3 F0 ?9	p_hat=0.48	ci=[0.3003, 0.665]	prompt_tokens=726	tk_block=25	mean_completion=12239.6	cost=0.9850	cum=$9.20	stopped=False	1643s
+rb_c004_B08	n=25	counts A0 B0 C10 D0 E8 F1 ?6	p_hat=0.4	ci=[0.234, 0.5926]	prompt_tokens=937	tk_block=211	mean_completion=11360.2	cost=0.9163	cum=$10.12	stopped=False	1435s
+rb_c004_B09	n=25	counts A0 B0 C24 D0 E0 F0 ?1	p_hat=0.96	ci=[0.8046, 0.9929]	prompt_tokens=1258	tk_block=321	mean_completion=6736.6	cost=0.5490	cum=$10.67	stopped=False	817s
+rb_c004_B10	n=25	counts A0 B0 C24 D0 E0 F0 ?1	p_hat=0.96	ci=[0.8046, 0.9929]	prompt_tokens=1524	tk_block=266	mean_completion=5085.8	cost=0.4191	cum=$11.09	stopped=False	478s
+rb_c004_B11	n=25	counts A0 B0 C25 D0 E0 F0 ?0	p_hat=1.0	ci=[0.8668, 1.0]	prompt_tokens=1633	tk_block=109	mean_completion=4688.4	cost=0.3881	cum=$11.47	stopped=True	409s
+# stopping rule: c004 P_hat = 1 at m = 11; M = 11; later cuts of c004 not sampled
+rb_c004_B12	skipped: trace c004 stopped by the rule at an earlier cut
+rb_c004_B13	skipped: trace c004 stopped by the rule at an earlier cut
+rb_c004_B14	skipped: trace c004 stopped by the rule at an earlier cut
+rb_c004_B15	skipped: trace c004 stopped by the rule at an earlier cut
+rb_c004_B16	skipped: trace c004 stopped by the rule at an earlier cut
+rb_c004_B17	skipped: trace c004 stopped by the rule at an earlier cut
+rb_c004_B18	skipped: trace c004 stopped by the rule at an earlier cut
+rb_c004_B19	skipped: trace c004 stopped by the rule at an earlier cut
+rb_c004_B20	skipped: trace c004 stopped by the rule at an earlier cut
+rb_c004_B21	skipped: trace c004 stopped by the rule at an earlier cut
+rb_c004_B22	skipped: trace c004 stopped by the rule at an earlier cut
+rb_c004_B23	skipped: trace c004 stopped by the rule at an earlier cut
+rb_c004_B24	skipped: trace c004 stopped by the rule at an earlier cut
+rb_c004_B25	skipped: trace c004 stopped by the rule at an earlier cut
+rb_c004_B26	skipped: trace c004 stopped by the rule at an earlier cut
+rb_c004_B27	skipped: trace c004 stopped by the rule at an earlier cut
+rb_c004_B28	skipped: trace c004 stopped by the rule at an earlier cut
+rb_c004_B29	skipped: trace c004 stopped by the rule at an earlier cut
+rb_c004_B30	skipped: trace c004 stopped by the rule at an earlier cut
+rb_c004_B31	skipped: trace c004 stopped by the rule at an earlier cut
+rb_c004_B32	skipped: trace c004 stopped by the rule at an earlier cut
+rb_c004_B33	skipped: trace c004 stopped by the rule at an earlier cut
+rb_c004_B34	skipped: trace c004 stopped by the rule at an earlier cut
+rb_c004_B35	skipped: trace c004 stopped by the rule at an earlier cut
+rb_c004_B36	skipped: trace c004 stopped by the rule at an earlier cut
+rb_c004_B37	skipped: trace c004 stopped by the rule at an earlier cut
+rb_c004_B38	skipped: trace c004 stopped by the rule at an earlier cut
+rb_c004_B39	skipped: trace c004 stopped by the rule at an earlier cut
+rb_c004_B40	skipped: trace c004 stopped by the rule at an earlier cut
+rb_c004_B41	skipped: trace c004 stopped by the rule at an earlier cut
+rb_c004_B42	skipped: trace c004 stopped by the rule at an earlier cut
+rb_c004_B43	skipped: trace c004 stopped by the rule at an earlier cut
+rb_c004_B44	skipped: trace c004 stopped by the rule at an earlier cut
+rb_c004_B45	skipped: trace c004 stopped by the rule at an earlier cut

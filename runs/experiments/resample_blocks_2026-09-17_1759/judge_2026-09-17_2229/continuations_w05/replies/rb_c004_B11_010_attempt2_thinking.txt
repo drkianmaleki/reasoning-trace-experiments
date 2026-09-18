@@ -1,0 +1,2 @@
+I noticed an overlap around line 19 — I'd listed both a range for gp and lp covering the same rows. I'm correcting this so gp covers rows 24-25 and lp takes over from 26-30.
+

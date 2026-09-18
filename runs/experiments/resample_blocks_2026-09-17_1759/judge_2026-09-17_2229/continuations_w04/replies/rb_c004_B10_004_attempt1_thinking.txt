@@ -1,0 +1,10 @@
+I'm working through the goal, questioning intent, then reasoning through the logic before weighing option C against option A. After planning next steps, I circle back to double-check my reasoning and conclude against it.
+
+I outline concrete options, comparing them against my earlier assumptions, then reflect on efficiency and correctness before settling on a plan of action. I check my work against my understanding, consider how it applies more broadly, and refine my approach with a specific method in mind.
+
+I list out options again, reflect on correctness, and lay out next planning steps -- checking my knowledge, assumptions, and weighing options A through C once more before deciding how to proceed. I evaluate efficiency, correctness, and uncertainty in my approach, then settle into a plan involving standard calculations and a loop structure, followed by clarifying questions before continuing with calculations in another loop.
+
+I explore new options and reflect on my approach again, comparing this text against typical riddle patterns before laying out several planning loops interspersed with correctness checks and knowledge references. I ask myself clarifying self-questions -- answering "No" and then "Yes" -- while reflecting on speed and correctness, checking understanding, exploring uncertainty, and referencing relevant knowledge before laying out an implementation plan with clarifying questions and a final self-question that trails off.
+
+I'm working through more reflective checkpoints, weighing options and revising my plan before moving into the next phase of implementation.
+

@@ -1,0 +1,100 @@
+{
+  "waves": [
+    {
+      "collection": "continuations_w00",
+      "wave": 0,
+      "cuts": [
+        "cut0",
+        "c004_B00",
+        "e036_B00",
+        "c004_B01"
+      ],
+      "documents": 100,
+      "sentences": 52271,
+      "prefix_sentences": 825,
+      "cost_est_usd": 12.07
+    },
+    {
+      "collection": "continuations_w01",
+      "wave": 1,
+      "cuts": [
+        "e036_B01",
+        "c004_B02",
+        "e036_B02",
+        "c004_B03"
+      ],
+      "documents": 100,
+      "sentences": 45948,
+      "prefix_sentences": 1825,
+      "cost_est_usd": 10.67
+    },
+    {
+      "collection": "continuations_w02",
+      "wave": 2,
+      "cuts": [
+        "e036_B03",
+        "c004_B04",
+        "e036_B04",
+        "c004_B05"
+      ],
+      "documents": 100,
+      "sentences": 49367,
+      "prefix_sentences": 3225,
+      "cost_est_usd": 11.5
+    },
+    {
+      "collection": "continuations_w03",
+      "wave": 3,
+      "cuts": [
+        "e036_B05",
+        "c004_B06",
+        "e036_B06",
+        "c004_B07"
+      ],
+      "documents": 100,
+      "sentences": 46767,
+      "prefix_sentences": 5225,
+      "cost_est_usd": 10.98
+    },
+    {
+      "collection": "continuations_w04",
+      "wave": 4,
+      "cuts": [
+        "e036_B07",
+        "c004_B08",
+        "c004_B09",
+        "c004_B10"
+      ],
+      "documents": 100,
+      "sentences": 39628,
+      "prefix_sentences": 7750,
+      "cost_est_usd": 9.45
+    },
+    {
+      "collection": "continuations_w05",
+      "wave": 5,
+      "cuts": [
+        "c004_B11"
+      ],
+      "documents": 25,
+      "sentences": 7024,
+      "prefix_sentences": 2675,
+      "cost_est_usd": 1.73
+    }
+  ],
+  "total_cost_est_usd": 56.4,
+  "rates": {
+    "thinking_per_sentence": 34.0,
+    "label_per_sentence": 7.0,
+    "text_per_sentence": 23.9,
+    "prefix_code_factor": 1.6,
+    "system_prompt_tokens": 5820
+  },
+  "safety": 1.3,
+  "prices": {
+    "input": 1.0,
+    "output": 5.0,
+    "cache_read": 0.1,
+    "cache_write": 1.25
+  }
+}

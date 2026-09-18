@@ -1,0 +1,2 @@
+I notice an overlap between lines 7-9, so I need to separate the entries for rows 7, 8, and 9 into distinct assignments rather than letting them conflict.
+

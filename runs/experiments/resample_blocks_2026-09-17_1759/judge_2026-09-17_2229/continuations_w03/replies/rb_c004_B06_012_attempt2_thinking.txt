@@ -1,0 +1,2 @@
+Sentence 838, "I'll go with (C)," is just restating the final answer, so it counts as Co.fa too - I should extend line 837's classification to cover both 837 and 838.
+

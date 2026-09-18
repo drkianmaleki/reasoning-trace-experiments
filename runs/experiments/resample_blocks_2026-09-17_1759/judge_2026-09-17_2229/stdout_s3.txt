@@ -1,0 +1,1836 @@
+525 continuations in 21 cut groups, 6 waves of 4; projected judge cost $56.40 at batch prices (ceiling $80)
+wave 0: cuts ['cut0', 'c004_B00', 'e036_B00', 'c004_B01'], 100 documents, 52271 sentences, projected $12.07
+100 documents, 52271 sentences to label (825 prefix sentences shown)
+submitted batch msgbatch_01TUdtJE1HqPHtvdyvQQkyhB (attempt 1, 100 entries); status in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}
+batch msgbatch_01TUdtJE1HqPHtvdyvQQkyhB: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 0s
+batch msgbatch_01TUdtJE1HqPHtvdyvQQkyhB: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 61s
+batch msgbatch_01TUdtJE1HqPHtvdyvQQkyhB: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 121s
+batch msgbatch_01TUdtJE1HqPHtvdyvQQkyhB: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 182s
+batch msgbatch_01TUdtJE1HqPHtvdyvQQkyhB: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 242s
+batch msgbatch_01TUdtJE1HqPHtvdyvQQkyhB: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 303s
+batch msgbatch_01TUdtJE1HqPHtvdyvQQkyhB: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 363s
+batch msgbatch_01TUdtJE1HqPHtvdyvQQkyhB: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 423s
+batch msgbatch_01TUdtJE1HqPHtvdyvQQkyhB: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 483s
+batch msgbatch_01TUdtJE1HqPHtvdyvQQkyhB: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 544s
+batch msgbatch_01TUdtJE1HqPHtvdyvQQkyhB: ended; request_counts {"processing": 0, "succeeded": 100, "errored": 0, "canceled": 0, "expired": 0}; elapsed 604s
+batch msgbatch_01TUdtJE1HqPHtvdyvQQkyhB (attempt 1): 78 of 100 parsed; failures 22: {"unparsable": 8, "unknown_code": 6, "overlap": 3, "gap": 5}
+submitted batch msgbatch_01MaFxZmXJQXQqCLb8boPwRG (attempt 2, 22 entries); status in_progress; request_counts {"processing": 22, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}
+batch msgbatch_01MaFxZmXJQXQqCLb8boPwRG: in_progress; request_counts {"processing": 22, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 0s
+batch msgbatch_01MaFxZmXJQXQqCLb8boPwRG: in_progress; request_counts {"processing": 22, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 60s
+batch msgbatch_01MaFxZmXJQXQqCLb8boPwRG: in_progress; request_counts {"processing": 22, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 121s
+batch msgbatch_01MaFxZmXJQXQqCLb8boPwRG: in_progress; request_counts {"processing": 22, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 181s
+batch msgbatch_01MaFxZmXJQXQqCLb8boPwRG: ended; request_counts {"processing": 0, "succeeded": 22, "errored": 0, "canceled": 0, "expired": 0}; elapsed 241s
+batch msgbatch_01MaFxZmXJQXQqCLb8boPwRG (attempt 2): 22 of 22 parsed; failures 0: {}
+wave 0 done: valid 100 of 100, cost $13.34, cumulative $13.34
+wave 1: cuts ['e036_B01', 'c004_B02', 'e036_B02', 'c004_B03'], 100 documents, 45948 sentences, projected $10.67
+100 documents, 45948 sentences to label (1825 prefix sentences shown)
+submitted batch msgbatch_01Ntn8XcYvHJMZocUWD49h5p (attempt 1, 100 entries); status in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}
+batch msgbatch_01Ntn8XcYvHJMZocUWD49h5p: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 0s
+batch msgbatch_01Ntn8XcYvHJMZocUWD49h5p: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 61s
+batch msgbatch_01Ntn8XcYvHJMZocUWD49h5p: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 121s
+batch msgbatch_01Ntn8XcYvHJMZocUWD49h5p: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 181s
+batch msgbatch_01Ntn8XcYvHJMZocUWD49h5p: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 242s
+batch msgbatch_01Ntn8XcYvHJMZocUWD49h5p: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 302s
+batch msgbatch_01Ntn8XcYvHJMZocUWD49h5p: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 362s
+batch msgbatch_01Ntn8XcYvHJMZocUWD49h5p: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 423s
+batch msgbatch_01Ntn8XcYvHJMZocUWD49h5p: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 483s
+batch msgbatch_01Ntn8XcYvHJMZocUWD49h5p: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 544s
+batch msgbatch_01Ntn8XcYvHJMZocUWD49h5p: ended; request_counts {"processing": 0, "succeeded": 100, "errored": 0, "canceled": 0, "expired": 0}; elapsed 604s
+batch msgbatch_01Ntn8XcYvHJMZocUWD49h5p (attempt 1): 76 of 100 parsed; failures 24: {"gap": 1, "overlap": 6, "unknown_code": 3, "unparsable": 14}
+submitted batch msgbatch_01QtL125cT9nJknkR8BvTRQC (attempt 2, 24 entries); status in_progress; request_counts {"processing": 24, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}
+batch msgbatch_01QtL125cT9nJknkR8BvTRQC: in_progress; request_counts {"processing": 24, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 0s
+batch msgbatch_01QtL125cT9nJknkR8BvTRQC: in_progress; request_counts {"processing": 24, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 60s
+batch msgbatch_01QtL125cT9nJknkR8BvTRQC: in_progress; request_counts {"processing": 24, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 121s
+batch msgbatch_01QtL125cT9nJknkR8BvTRQC: in_progress; request_counts {"processing": 24, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 181s
+batch msgbatch_01QtL125cT9nJknkR8BvTRQC: in_progress; request_counts {"processing": 24, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 241s
+batch msgbatch_01QtL125cT9nJknkR8BvTRQC: in_progress; request_counts {"processing": 24, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 302s
+batch msgbatch_01QtL125cT9nJknkR8BvTRQC: ended; request_counts {"processing": 0, "succeeded": 24, "errored": 0, "canceled": 0, "expired": 0}; elapsed 362s
+batch msgbatch_01QtL125cT9nJknkR8BvTRQC (attempt 2): 20 of 24 parsed; failures 4: {"overlap": 2, "unparsable": 1, "gap": 1}
+retrying 4 failed traces as one batch (attempt 3) with the format-check line
+submitted batch msgbatch_01YBefPNaAL9fqh44oG11ngx (attempt 3, 4 entries); status in_progress; request_counts {"processing": 4, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}
+batch msgbatch_01YBefPNaAL9fqh44oG11ngx: in_progress; request_counts {"processing": 4, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 0s
+batch msgbatch_01YBefPNaAL9fqh44oG11ngx: in_progress; request_counts {"processing": 4, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 60s
+batch msgbatch_01YBefPNaAL9fqh44oG11ngx: in_progress; request_counts {"processing": 4, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 121s
+batch msgbatch_01YBefPNaAL9fqh44oG11ngx: in_progress; request_counts {"processing": 4, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 181s
+batch msgbatch_01YBefPNaAL9fqh44oG11ngx: in_progress; request_counts {"processing": 4, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 241s
+batch msgbatch_01YBefPNaAL9fqh44oG11ngx: in_progress; request_counts {"processing": 4, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 302s
+batch msgbatch_01YBefPNaAL9fqh44oG11ngx: in_progress; request_counts {"processing": 4, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 362s
+batch msgbatch_01YBefPNaAL9fqh44oG11ngx: ended; request_counts {"processing": 0, "succeeded": 4, "errored": 0, "canceled": 0, "expired": 0}; elapsed 423s
+batch msgbatch_01YBefPNaAL9fqh44oG11ngx (attempt 3): 3 of 4 parsed; failures 1: {"overlap": 1}
+DEPARTURE wave 1: 1 continuations unlabeled after three attempts: rb_c004_B03_004
+wave 1 done: valid 96 of 100, cost $11.89, cumulative $25.23
+wave 2: cuts ['e036_B03', 'c004_B04', 'e036_B04', 'c004_B05'], 100 documents, 49367 sentences, projected $11.50
+100 documents, 49367 sentences to label (3225 prefix sentences shown)
+submitted batch msgbatch_01M2r1cD2HArQ56UqnBWjRUp (attempt 1, 100 entries); status in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}
+batch msgbatch_01M2r1cD2HArQ56UqnBWjRUp: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 0s
+batch msgbatch_01M2r1cD2HArQ56UqnBWjRUp: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 61s
+batch msgbatch_01M2r1cD2HArQ56UqnBWjRUp: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 121s
+batch msgbatch_01M2r1cD2HArQ56UqnBWjRUp: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 181s
+batch msgbatch_01M2r1cD2HArQ56UqnBWjRUp: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 242s
+batch msgbatch_01M2r1cD2HArQ56UqnBWjRUp: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 302s
+batch msgbatch_01M2r1cD2HArQ56UqnBWjRUp: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 362s
+batch msgbatch_01M2r1cD2HArQ56UqnBWjRUp: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 423s
+batch msgbatch_01M2r1cD2HArQ56UqnBWjRUp: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 483s
+batch msgbatch_01M2r1cD2HArQ56UqnBWjRUp: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 544s
+batch msgbatch_01M2r1cD2HArQ56UqnBWjRUp: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 604s
+batch msgbatch_01M2r1cD2HArQ56UqnBWjRUp: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 665s
+batch msgbatch_01M2r1cD2HArQ56UqnBWjRUp: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 725s
+batch msgbatch_01M2r1cD2HArQ56UqnBWjRUp: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 785s
+batch msgbatch_01M2r1cD2HArQ56UqnBWjRUp: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 845s
+batch msgbatch_01M2r1cD2HArQ56UqnBWjRUp: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 906s
+batch msgbatch_01M2r1cD2HArQ56UqnBWjRUp: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 966s
+batch msgbatch_01M2r1cD2HArQ56UqnBWjRUp: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1026s
+batch msgbatch_01M2r1cD2HArQ56UqnBWjRUp: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1087s
+batch msgbatch_01M2r1cD2HArQ56UqnBWjRUp: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1147s
+batch msgbatch_01M2r1cD2HArQ56UqnBWjRUp: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1207s
+batch msgbatch_01M2r1cD2HArQ56UqnBWjRUp: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1268s
+batch msgbatch_01M2r1cD2HArQ56UqnBWjRUp: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1328s
+batch msgbatch_01M2r1cD2HArQ56UqnBWjRUp: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1388s
+batch msgbatch_01M2r1cD2HArQ56UqnBWjRUp: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1448s
+batch msgbatch_01M2r1cD2HArQ56UqnBWjRUp: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1509s
+batch msgbatch_01M2r1cD2HArQ56UqnBWjRUp: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1569s
+batch msgbatch_01M2r1cD2HArQ56UqnBWjRUp: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1629s
+batch msgbatch_01M2r1cD2HArQ56UqnBWjRUp: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1690s
+batch msgbatch_01M2r1cD2HArQ56UqnBWjRUp: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1750s
+batch msgbatch_01M2r1cD2HArQ56UqnBWjRUp: ended; request_counts {"processing": 0, "succeeded": 100, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1810s
+batch msgbatch_01M2r1cD2HArQ56UqnBWjRUp (attempt 1): 76 of 100 parsed; failures 24: {"unparsable": 10, "overlap": 9, "gap": 4, "unknown_code": 1}
+submitted batch msgbatch_01SEyCQpJDm9NT9R41LkXUEa (attempt 2, 24 entries); status in_progress; request_counts {"processing": 24, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}
+batch msgbatch_01SEyCQpJDm9NT9R41LkXUEa: in_progress; request_counts {"processing": 24, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 0s
+batch msgbatch_01SEyCQpJDm9NT9R41LkXUEa: in_progress; request_counts {"processing": 24, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 60s
+batch msgbatch_01SEyCQpJDm9NT9R41LkXUEa: in_progress; request_counts {"processing": 24, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 121s
+batch msgbatch_01SEyCQpJDm9NT9R41LkXUEa: in_progress; request_counts {"processing": 24, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 181s
+batch msgbatch_01SEyCQpJDm9NT9R41LkXUEa: in_progress; request_counts {"processing": 24, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 241s
+batch msgbatch_01SEyCQpJDm9NT9R41LkXUEa: in_progress; request_counts {"processing": 24, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 302s
+batch msgbatch_01SEyCQpJDm9NT9R41LkXUEa: in_progress; request_counts {"processing": 24, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 362s
+batch msgbatch_01SEyCQpJDm9NT9R41LkXUEa: in_progress; request_counts {"processing": 24, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 423s
+batch msgbatch_01SEyCQpJDm9NT9R41LkXUEa: in_progress; request_counts {"processing": 24, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 483s
+batch msgbatch_01SEyCQpJDm9NT9R41LkXUEa: in_progress; request_counts {"processing": 24, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 543s
+batch msgbatch_01SEyCQpJDm9NT9R41LkXUEa: in_progress; request_counts {"processing": 24, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 603s
+batch msgbatch_01SEyCQpJDm9NT9R41LkXUEa: ended; request_counts {"processing": 0, "succeeded": 24, "errored": 0, "canceled": 0, "expired": 0}; elapsed 665s
+batch msgbatch_01SEyCQpJDm9NT9R41LkXUEa (attempt 2): 22 of 24 parsed; failures 2: {"overlap": 2}
+retrying 2 failed traces as one batch (attempt 3) with the format-check line
+submitted batch msgbatch_012biCKqsrgci1FiWbPwGu5j (attempt 3, 2 entries); status in_progress; request_counts {"processing": 2, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}
+batch msgbatch_012biCKqsrgci1FiWbPwGu5j: in_progress; request_counts {"processing": 2, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 0s
+batch msgbatch_012biCKqsrgci1FiWbPwGu5j: in_progress; request_counts {"processing": 2, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 61s
+batch msgbatch_012biCKqsrgci1FiWbPwGu5j: in_progress; request_counts {"processing": 2, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 121s
+batch msgbatch_012biCKqsrgci1FiWbPwGu5j: in_progress; request_counts {"processing": 2, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 181s
+batch msgbatch_012biCKqsrgci1FiWbPwGu5j: in_progress; request_counts {"processing": 2, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 242s
+batch msgbatch_012biCKqsrgci1FiWbPwGu5j: in_progress; request_counts {"processing": 2, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 302s
+batch msgbatch_012biCKqsrgci1FiWbPwGu5j: in_progress; request_counts {"processing": 2, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 362s
+batch msgbatch_012biCKqsrgci1FiWbPwGu5j: in_progress; request_counts {"processing": 2, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 422s
+batch msgbatch_012biCKqsrgci1FiWbPwGu5j: in_progress; request_counts {"processing": 2, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 483s
+batch msgbatch_012biCKqsrgci1FiWbPwGu5j: in_progress; request_counts {"processing": 2, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 543s
+batch msgbatch_012biCKqsrgci1FiWbPwGu5j: in_progress; request_counts {"processing": 2, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 603s
+batch msgbatch_012biCKqsrgci1FiWbPwGu5j: in_progress; request_counts {"processing": 2, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 664s
+batch msgbatch_012biCKqsrgci1FiWbPwGu5j: in_progress; request_counts {"processing": 2, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 724s
+batch msgbatch_012biCKqsrgci1FiWbPwGu5j: in_progress; request_counts {"processing": 2, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 785s
+batch msgbatch_012biCKqsrgci1FiWbPwGu5j: ended; request_counts {"processing": 0, "succeeded": 2, "errored": 0, "canceled": 0, "expired": 0}; elapsed 845s
+batch msgbatch_012biCKqsrgci1FiWbPwGu5j (attempt 3): 2 of 2 parsed; failures 0: {}
+wave 2 done: valid 98 of 100, cost $12.25, cumulative $37.48
+wave 3: cuts ['e036_B05', 'c004_B06', 'e036_B06', 'c004_B07'], 100 documents, 46767 sentences, projected $10.98
+100 documents, 46767 sentences to label (5225 prefix sentences shown)
+submitted batch msgbatch_01AmK4HS2AVTpibwTiRhV1jK (attempt 1, 100 entries); status in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}
+batch msgbatch_01AmK4HS2AVTpibwTiRhV1jK: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 0s
+batch msgbatch_01AmK4HS2AVTpibwTiRhV1jK: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 61s
+batch msgbatch_01AmK4HS2AVTpibwTiRhV1jK: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 121s
+batch msgbatch_01AmK4HS2AVTpibwTiRhV1jK: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 181s
+batch msgbatch_01AmK4HS2AVTpibwTiRhV1jK: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 242s
+batch msgbatch_01AmK4HS2AVTpibwTiRhV1jK: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 302s
+batch msgbatch_01AmK4HS2AVTpibwTiRhV1jK: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 362s
+batch msgbatch_01AmK4HS2AVTpibwTiRhV1jK: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 423s
+batch msgbatch_01AmK4HS2AVTpibwTiRhV1jK: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 483s
+batch msgbatch_01AmK4HS2AVTpibwTiRhV1jK: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 543s
+batch msgbatch_01AmK4HS2AVTpibwTiRhV1jK: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 603s
+batch msgbatch_01AmK4HS2AVTpibwTiRhV1jK: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 664s
+batch msgbatch_01AmK4HS2AVTpibwTiRhV1jK: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 724s
+batch msgbatch_01AmK4HS2AVTpibwTiRhV1jK: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 785s
+batch msgbatch_01AmK4HS2AVTpibwTiRhV1jK: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 845s
+batch msgbatch_01AmK4HS2AVTpibwTiRhV1jK: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 905s
+batch msgbatch_01AmK4HS2AVTpibwTiRhV1jK: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 965s
+batch msgbatch_01AmK4HS2AVTpibwTiRhV1jK: ended; request_counts {"processing": 0, "succeeded": 100, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1026s
+batch msgbatch_01AmK4HS2AVTpibwTiRhV1jK (attempt 1): 74 of 100 parsed; failures 26: {"unparsable": 9, "overlap": 7, "descending": 1, "gap": 7, "unknown_code": 2}
+submitted batch msgbatch_0158FUyHZvm73pVZoVSuUY6H (attempt 2, 26 entries); status in_progress; request_counts {"processing": 26, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}
+batch msgbatch_0158FUyHZvm73pVZoVSuUY6H: in_progress; request_counts {"processing": 26, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1s
+batch msgbatch_0158FUyHZvm73pVZoVSuUY6H: in_progress; request_counts {"processing": 26, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 61s
+batch msgbatch_0158FUyHZvm73pVZoVSuUY6H: in_progress; request_counts {"processing": 26, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 121s
+batch msgbatch_0158FUyHZvm73pVZoVSuUY6H: in_progress; request_counts {"processing": 26, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 182s
+batch msgbatch_0158FUyHZvm73pVZoVSuUY6H: in_progress; request_counts {"processing": 26, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 242s
+batch msgbatch_0158FUyHZvm73pVZoVSuUY6H: in_progress; request_counts {"processing": 26, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 302s
+batch msgbatch_0158FUyHZvm73pVZoVSuUY6H: in_progress; request_counts {"processing": 26, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 362s
+batch msgbatch_0158FUyHZvm73pVZoVSuUY6H: in_progress; request_counts {"processing": 26, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 423s
+batch msgbatch_0158FUyHZvm73pVZoVSuUY6H: in_progress; request_counts {"processing": 26, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 483s
+batch msgbatch_0158FUyHZvm73pVZoVSuUY6H: in_progress; request_counts {"processing": 26, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 543s
+batch msgbatch_0158FUyHZvm73pVZoVSuUY6H: ended; request_counts {"processing": 0, "succeeded": 26, "errored": 0, "canceled": 0, "expired": 0}; elapsed 604s
+batch msgbatch_0158FUyHZvm73pVZoVSuUY6H (attempt 2): 21 of 26 parsed; failures 5: {"unknown_code": 1, "unparsable": 3, "overlap": 1}
+retrying 5 failed traces as one batch (attempt 3) with the format-check line
+submitted batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M (attempt 3, 5 entries); status in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 0s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 60s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 121s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 181s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 241s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 302s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 362s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 422s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 482s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 543s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 603s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 663s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 724s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 784s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 844s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 905s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 965s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1025s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1086s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1146s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1206s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1267s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1327s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1387s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1447s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1508s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1568s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1628s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1689s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1749s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1810s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1870s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1930s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1991s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 2051s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 2111s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 2171s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 2232s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 2293s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 2353s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 2413s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 2473s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 2534s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 2594s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 2654s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 2715s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 2775s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 2835s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 2895s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 2956s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 3016s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: ended; request_counts {"processing": 0, "succeeded": 5, "errored": 0, "canceled": 0, "expired": 0}; elapsed 3076s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M (attempt 3): 5 of 5 parsed; failures 0: {}
+wave 3 done: valid 95 of 100, cost $12.43, cumulative $49.91
+wave 4: cuts ['e036_B07', 'c004_B08', 'c004_B09', 'c004_B10'], 100 documents, 39628 sentences, projected $9.45
+100 documents, 39628 sentences to label (7750 prefix sentences shown)
+submitted batch msgbatch_01Mgh6JJNC5j9T5xjKVDa8Du (attempt 1, 100 entries); status in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}
+batch msgbatch_01Mgh6JJNC5j9T5xjKVDa8Du: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 0s
+batch msgbatch_01Mgh6JJNC5j9T5xjKVDa8Du: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 61s
+batch msgbatch_01Mgh6JJNC5j9T5xjKVDa8Du: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 121s
+batch msgbatch_01Mgh6JJNC5j9T5xjKVDa8Du: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 181s
+batch msgbatch_01Mgh6JJNC5j9T5xjKVDa8Du: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 242s
+batch msgbatch_01Mgh6JJNC5j9T5xjKVDa8Du: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 302s
+batch msgbatch_01Mgh6JJNC5j9T5xjKVDa8Du: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 362s
+batch msgbatch_01Mgh6JJNC5j9T5xjKVDa8Du: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 423s
+batch msgbatch_01Mgh6JJNC5j9T5xjKVDa8Du: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 483s
+batch msgbatch_01Mgh6JJNC5j9T5xjKVDa8Du: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 543s
+batch msgbatch_01Mgh6JJNC5j9T5xjKVDa8Du: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 604s
+batch msgbatch_01Mgh6JJNC5j9T5xjKVDa8Du: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 664s
+batch msgbatch_01Mgh6JJNC5j9T5xjKVDa8Du: ended; request_counts {"processing": 0, "succeeded": 100, "errored": 0, "canceled": 0, "expired": 0}; elapsed 724s
+batch msgbatch_01Mgh6JJNC5j9T5xjKVDa8Du (attempt 1): 80 of 100 parsed; failures 20: {"overlap": 5, "gap": 5, "unparsable": 9, "too_many_codes": 1}
+submitted batch msgbatch_01Fsmv6DyeNzVCacRAmPescX (attempt 2, 20 entries); status in_progress; request_counts {"processing": 20, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}
+batch msgbatch_01Fsmv6DyeNzVCacRAmPescX: in_progress; request_counts {"processing": 20, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 0s
+batch msgbatch_01Fsmv6DyeNzVCacRAmPescX: in_progress; request_counts {"processing": 20, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 61s
+batch msgbatch_01Fsmv6DyeNzVCacRAmPescX: in_progress; request_counts {"processing": 20, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 121s
+batch msgbatch_01Fsmv6DyeNzVCacRAmPescX: in_progress; request_counts {"processing": 20, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 181s
+batch msgbatch_01Fsmv6DyeNzVCacRAmPescX: in_progress; request_counts {"processing": 20, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 241s
+batch msgbatch_01Fsmv6DyeNzVCacRAmPescX: in_progress; request_counts {"processing": 20, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 302s
+batch msgbatch_01Fsmv6DyeNzVCacRAmPescX: ended; request_counts {"processing": 0, "succeeded": 20, "errored": 0, "canceled": 0, "expired": 0}; elapsed 362s
+batch msgbatch_01Fsmv6DyeNzVCacRAmPescX (attempt 2): 17 of 20 parsed; failures 3: {"unparsable": 2, "overlap": 1}
+retrying 3 failed traces as one batch (attempt 3) with the format-check line
+submitted batch msgbatch_0151od7KoS6QrBMTAQQs9UmS (attempt 3, 3 entries); status in_progress; request_counts {"processing": 3, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}
+batch msgbatch_0151od7KoS6QrBMTAQQs9UmS: in_progress; request_counts {"processing": 3, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 0s
+batch msgbatch_0151od7KoS6QrBMTAQQs9UmS: in_progress; request_counts {"processing": 3, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 60s
+batch msgbatch_0151od7KoS6QrBMTAQQs9UmS: in_progress; request_counts {"processing": 3, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 121s
+batch msgbatch_0151od7KoS6QrBMTAQQs9UmS: in_progress; request_counts {"processing": 3, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 181s
+batch msgbatch_0151od7KoS6QrBMTAQQs9UmS: in_progress; request_counts {"processing": 3, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 241s
+batch msgbatch_0151od7KoS6QrBMTAQQs9UmS: in_progress; request_counts {"processing": 3, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 302s
+batch msgbatch_0151od7KoS6QrBMTAQQs9UmS: in_progress; request_counts {"processing": 3, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 363s
+batch msgbatch_0151od7KoS6QrBMTAQQs9UmS: in_progress; request_counts {"processing": 3, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 424s
+batch msgbatch_0151od7KoS6QrBMTAQQs9UmS: in_progress; request_counts {"processing": 3, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 484s
+batch msgbatch_0151od7KoS6QrBMTAQQs9UmS: in_progress; request_counts {"processing": 3, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 544s
+batch msgbatch_0151od7KoS6QrBMTAQQs9UmS: ended; request_counts {"processing": 0, "succeeded": 3, "errored": 0, "canceled": 0, "expired": 0}; elapsed 605s
+batch msgbatch_0151od7KoS6QrBMTAQQs9UmS (attempt 3): 2 of 3 parsed; failures 1: {"overlap": 1}
+DEPARTURE wave 4: 1 continuations unlabeled after three attempts: rb_c004_B08_001
+wave 4 done: valid 97 of 100, cost $11.03, cumulative $60.94
+wave 5: cuts ['c004_B11'], 25 documents, 7024 sentences, projected $1.73
+request rb_c004_B11_000: 105 sentences after a prefix of 107, about 9040 input tokens (characters/4), max_tokens 24000
+request rb_c004_B11_001: 408 sentences after a prefix of 107, about 13373 input tokens (characters/4), max_tokens 24000
+request rb_c004_B11_002: 216 sentences after a prefix of 107, about 10405 input tokens (characters/4), max_tokens 24000
+request rb_c004_B11_003: 319 sentences after a prefix of 107, about 11644 input tokens (characters/4), max_tokens 24000
+request rb_c004_B11_004: 256 sentences after a prefix of 107, about 11094 input tokens (characters/4), max_tokens 24000
+request rb_c004_B11_005: 250 sentences after a prefix of 107, about 11164 input tokens (characters/4), max_tokens 24000
+request rb_c004_B11_006: 181 sentences after a prefix of 107, about 10072 input tokens (characters/4), max_tokens 24000
+request rb_c004_B11_007: 389 sentences after a prefix of 107, about 13604 input tokens (characters/4), max_tokens 24000
+request rb_c004_B11_008: 568 sentences after a prefix of 107, about 15189 input tokens (characters/4), max_tokens 24000
+request rb_c004_B11_009: 299 sentences after a prefix of 107, about 12152 input tokens (characters/4), max_tokens 24000
+request rb_c004_B11_010: 261 sentences after a prefix of 107, about 11562 input tokens (characters/4), max_tokens 24000
+request rb_c004_B11_011: 212 sentences after a prefix of 107, about 10333 input tokens (characters/4), max_tokens 24000
+request rb_c004_B11_012: 380 sentences after a prefix of 107, about 13095 input tokens (characters/4), max_tokens 24000
+request rb_c004_B11_013: 304 sentences after a prefix of 107, about 11888 input tokens (characters/4), max_tokens 24000
+request rb_c004_B11_014: 202 sentences after a prefix of 107, about 10332 input tokens (characters/4), max_tokens 24000
+request rb_c004_B11_015: 308 sentences after a prefix of 107, about 12184 input tokens (characters/4), max_tokens 24000
+request rb_c004_B11_016: 257 sentences after a prefix of 107, about 11346 input tokens (characters/4), max_tokens 24000
+request rb_c004_B11_017: 428 sentences after a prefix of 107, about 13649 input tokens (characters/4), max_tokens 24000
+request rb_c004_B11_018: 217 sentences after a prefix of 107, about 10369 input tokens (characters/4), max_tokens 24000
+request rb_c004_B11_019: 199 sentences after a prefix of 107, about 10120 input tokens (characters/4), max_tokens 24000
+request rb_c004_B11_020: 312 sentences after a prefix of 107, about 12099 input tokens (characters/4), max_tokens 24000
+request rb_c004_B11_021: 229 sentences after a prefix of 107, about 10568 input tokens (characters/4), max_tokens 24000
+request rb_c004_B11_022: 319 sentences after a prefix of 107, about 12197 input tokens (characters/4), max_tokens 24000
+request rb_c004_B11_023: 177 sentences after a prefix of 107, about 10113 input tokens (characters/4), max_tokens 24000
+request rb_c004_B11_024: 228 sentences after a prefix of 107, about 10627 input tokens (characters/4), max_tokens 24000
+25 documents, 7024 sentences to label (2675 prefix sentences shown)
+submitted batch msgbatch_01TY3nm4qj3yPwt9xGvC3gBP (attempt 1, 25 entries); status in_progress; request_counts {"processing": 25, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}
+batch msgbatch_01TY3nm4qj3yPwt9xGvC3gBP: in_progress; request_counts {"processing": 25, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 0s
+batch msgbatch_01TY3nm4qj3yPwt9xGvC3gBP: in_progress; request_counts {"processing": 25, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 61s
+batch msgbatch_01TY3nm4qj3yPwt9xGvC3gBP: in_progress; request_counts {"processing": 25, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 121s
+batch msgbatch_01TY3nm4qj3yPwt9xGvC3gBP: in_progress; request_counts {"processing": 25, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 181s
+batch msgbatch_01TY3nm4qj3yPwt9xGvC3gBP: in_progress; request_counts {"processing": 25, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 242s
+batch msgbatch_01TY3nm4qj3yPwt9xGvC3gBP: in_progress; request_counts {"processing": 25, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 302s
+batch msgbatch_01TY3nm4qj3yPwt9xGvC3gBP: in_progress; request_counts {"processing": 25, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 362s
+batch msgbatch_01TY3nm4qj3yPwt9xGvC3gBP: in_progress; request_counts {"processing": 25, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 423s
+batch msgbatch_01TY3nm4qj3yPwt9xGvC3gBP: in_progress; request_counts {"processing": 25, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 483s
+batch msgbatch_01TY3nm4qj3yPwt9xGvC3gBP: in_progress; request_counts {"processing": 25, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 543s
+batch msgbatch_01TY3nm4qj3yPwt9xGvC3gBP: in_progress; request_counts {"processing": 25, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 604s
+batch msgbatch_01TY3nm4qj3yPwt9xGvC3gBP: in_progress; request_counts {"processing": 25, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 664s
+batch msgbatch_01TY3nm4qj3yPwt9xGvC3gBP: in_progress; request_counts {"processing": 25, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 724s
+batch msgbatch_01TY3nm4qj3yPwt9xGvC3gBP: in_progress; request_counts {"processing": 25, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 785s
+batch msgbatch_01TY3nm4qj3yPwt9xGvC3gBP: in_progress; request_counts {"processing": 25, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 845s
+batch msgbatch_01TY3nm4qj3yPwt9xGvC3gBP: in_progress; request_counts {"processing": 25, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 905s
+batch msgbatch_01TY3nm4qj3yPwt9xGvC3gBP: in_progress; request_counts {"processing": 25, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 966s
+batch msgbatch_01TY3nm4qj3yPwt9xGvC3gBP: ended; request_counts {"processing": 0, "succeeded": 25, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1026s
+batch msgbatch_01TY3nm4qj3yPwt9xGvC3gBP (attempt 1): 20 of 25 parsed; failures 5: {"gap": 1, "overlap": 1, "unparsable": 2, "unknown_code": 1}
+submitted batch msgbatch_01BFd28kbh8nuhN8vxJqZaMb (attempt 2, 5 entries); status in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}
+batch msgbatch_01BFd28kbh8nuhN8vxJqZaMb: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 0s
+batch msgbatch_01BFd28kbh8nuhN8vxJqZaMb: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 61s
+batch msgbatch_01BFd28kbh8nuhN8vxJqZaMb: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 121s
+batch msgbatch_01BFd28kbh8nuhN8vxJqZaMb: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 181s
+batch msgbatch_01BFd28kbh8nuhN8vxJqZaMb: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 242s
+batch msgbatch_01BFd28kbh8nuhN8vxJqZaMb: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 302s
+batch msgbatch_01BFd28kbh8nuhN8vxJqZaMb: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 362s
+batch msgbatch_01BFd28kbh8nuhN8vxJqZaMb: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 423s
+batch msgbatch_01BFd28kbh8nuhN8vxJqZaMb: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 483s
+batch msgbatch_01BFd28kbh8nuhN8vxJqZaMb: ended; request_counts {"processing": 0, "succeeded": 5, "errored": 0, "canceled": 0, "expired": 0}; elapsed 543s
+batch msgbatch_01BFd28kbh8nuhN8vxJqZaMb (attempt 2): 5 of 5 parsed; failures 0: {}
+wave 5 done: valid 25 of 25, cost $2.08, cumulative $63.02
+request rb_c004_B09_003: 289 sentences after a prefix of 79, about 11380 input tokens (characters/4), max_tokens 24000
+request rb_c004_B09_002: 262 sentences after a prefix of 79, about 11312 input tokens (characters/4), max_tokens 24000
+request rb_c004_B09_000: 361 sentences after a prefix of 79, about 12287 input tokens (characters/4), max_tokens 24000
+request rb_c004_B09_001: 382 sentences after a prefix of 79, about 12968 input tokens (characters/4), max_tokens 24000
+request rb_c004_B09_005: 245 sentences after a prefix of 79, about 11062 input tokens (characters/4), max_tokens 24000
+request rb_c004_B09_004: 316 sentences after a prefix of 79, about 11549 input tokens (characters/4), max_tokens 24000
+request rb_c004_B09_006: 372 sentences after a prefix of 79, about 12592 input tokens (characters/4), max_tokens 24000
+request rb_c004_B09_007: 399 sentences after a prefix of 79, about 13229 input tokens (characters/4), max_tokens 24000
+request rb_c004_B09_008: 408 sentences after a prefix of 79, about 13074 input tokens (characters/4), max_tokens 24000
+request rb_c004_B09_011: 306 sentences after a prefix of 79, about 11725 input tokens (characters/4), max_tokens 24000
+request rb_c004_B09_010: 432 sentences after a prefix of 79, about 13281 input tokens (characters/4), max_tokens 24000
+request rb_c004_B09_012: 362 sentences after a prefix of 79, about 12751 input tokens (characters/4), max_tokens 24000
+request rb_c004_B09_014: 384 sentences after a prefix of 79, about 12796 input tokens (characters/4), max_tokens 24000
+request rb_c004_B09_009: 1061 sentences after a prefix of 79, about 22519 input tokens (characters/4), max_tokens 48000
+request rb_c004_B09_013: 486 sentences after a prefix of 79, about 14094 input tokens (characters/4), max_tokens 24000
+request rb_c004_B09_015: 355 sentences after a prefix of 79, about 12337 input tokens (characters/4), max_tokens 24000
+request rb_c004_B09_018: 197 sentences after a prefix of 79, about 10384 input tokens (characters/4), max_tokens 24000
+request rb_c004_B09_017: 309 sentences after a prefix of 79, about 12030 input tokens (characters/4), max_tokens 24000
+request rb_c004_B09_016: 467 sentences after a prefix of 79, about 14030 input tokens (characters/4), max_tokens 24000
+request rb_c004_B09_021: 263 sentences after a prefix of 79, about 10652 input tokens (characters/4), max_tokens 24000
+request rb_c004_B09_022: 301 sentences after a prefix of 79, about 11685 input tokens (characters/4), max_tokens 24000
+request rb_c004_B09_019: 643 sentences after a prefix of 79, about 17194 input tokens (characters/4), max_tokens 48000
+request rb_c004_B09_020: 518 sentences after a prefix of 79, about 15232 input tokens (characters/4), max_tokens 24000
+request rb_c004_B09_024: 302 sentences after a prefix of 79, about 11508 input tokens (characters/4), max_tokens 24000
+request rb_c004_B09_023: 739 sentences after a prefix of 79, about 18132 input tokens (characters/4), max_tokens 48000
+25 documents, 10159 sentences to label (1975 prefix sentences shown)
+submitted batch msgbatch_01TNR4heL3dvsxW6uK8EDTyi (attempt 1, 25 entries); status in_progress; request_counts {"processing": 25, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}
+batch msgbatch_01TNR4heL3dvsxW6uK8EDTyi: in_progress; request_counts {"processing": 25, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 0s
+batch msgbatch_01TNR4heL3dvsxW6uK8EDTyi: in_progress; request_counts {"processing": 25, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 61s
+batch msgbatch_01TNR4heL3dvsxW6uK8EDTyi: in_progress; request_counts {"processing": 25, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 121s
+batch msgbatch_01TNR4heL3dvsxW6uK8EDTyi: in_progress; request_counts {"processing": 25, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 181s
+batch msgbatch_01TNR4heL3dvsxW6uK8EDTyi: in_progress; request_counts {"processing": 25, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 242s
+batch msgbatch_01TNR4heL3dvsxW6uK8EDTyi: in_progress; request_counts {"processing": 25, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 303s
+batch msgbatch_01TNR4heL3dvsxW6uK8EDTyi: in_progress; request_counts {"processing": 25, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 363s
+batch msgbatch_01TNR4heL3dvsxW6uK8EDTyi: in_progress; request_counts {"processing": 25, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 423s
+batch msgbatch_01TNR4heL3dvsxW6uK8EDTyi: in_progress; request_counts {"processing": 25, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 483s
+batch msgbatch_01TNR4heL3dvsxW6uK8EDTyi: in_progress; request_counts {"processing": 25, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 544s
+batch msgbatch_01TNR4heL3dvsxW6uK8EDTyi: in_progress; request_counts {"processing": 25, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 604s
+batch msgbatch_01TNR4heL3dvsxW6uK8EDTyi: in_progress; request_counts {"processing": 25, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 665s
+batch msgbatch_01TNR4heL3dvsxW6uK8EDTyi: ended; request_counts {"processing": 0, "succeeded": 25, "errored": 0, "canceled": 0, "expired": 0}; elapsed 725s
+batch msgbatch_01TNR4heL3dvsxW6uK8EDTyi (attempt 1): 19 of 25 parsed; failures 6: {"unparsable": 4, "unknown_code": 2}
+submitted batch msgbatch_014aGmGUo8f4kajLaeGvU7pC (attempt 2, 6 entries); status in_progress; request_counts {"processing": 6, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}
+batch msgbatch_014aGmGUo8f4kajLaeGvU7pC: in_progress; request_counts {"processing": 6, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 0s
+batch msgbatch_014aGmGUo8f4kajLaeGvU7pC: in_progress; request_counts {"processing": 6, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 61s
+batch msgbatch_014aGmGUo8f4kajLaeGvU7pC: in_progress; request_counts {"processing": 6, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 121s
+batch msgbatch_014aGmGUo8f4kajLaeGvU7pC: in_progress; request_counts {"processing": 6, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 181s
+batch msgbatch_014aGmGUo8f4kajLaeGvU7pC: in_progress; request_counts {"processing": 6, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 241s
+batch msgbatch_014aGmGUo8f4kajLaeGvU7pC: in_progress; request_counts {"processing": 6, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 302s
+batch msgbatch_014aGmGUo8f4kajLaeGvU7pC: in_progress; request_counts {"processing": 6, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 362s
+batch msgbatch_014aGmGUo8f4kajLaeGvU7pC: in_progress; request_counts {"processing": 6, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 422s
+batch msgbatch_014aGmGUo8f4kajLaeGvU7pC: ended; request_counts {"processing": 0, "succeeded": 6, "errored": 0, "canceled": 0, "expired": 0}; elapsed 483s
+batch msgbatch_014aGmGUo8f4kajLaeGvU7pC (attempt 2): 6 of 6 parsed; failures 0: {}
+request rb_e036_B06_002: 151 sentences after a prefix of 71, about 8973 input tokens (characters/4), max_tokens 24000
+request rb_e036_B06_000: 142 sentences after a prefix of 71, about 9056 input tokens (characters/4), max_tokens 24000
+request rb_e036_B06_003: 167 sentences after a prefix of 71, about 9157 input tokens (characters/4), max_tokens 24000
+request rb_e036_B06_001: 251 sentences after a prefix of 71, about 10654 input tokens (characters/4), max_tokens 24000
+request rb_e036_B06_004: 120 sentences after a prefix of 71, about 8590 input tokens (characters/4), max_tokens 24000
+request rb_e036_B06_006: 128 sentences after a prefix of 71, about 8844 input tokens (characters/4), max_tokens 24000
+request rb_e036_B06_005: 185 sentences after a prefix of 71, about 9490 input tokens (characters/4), max_tokens 24000
+request rb_e036_B06_008: 87 sentences after a prefix of 71, about 8221 input tokens (characters/4), max_tokens 24000
+request rb_e036_B06_007: 153 sentences after a prefix of 71, about 8958 input tokens (characters/4), max_tokens 24000
+request rb_e036_B06_009: 142 sentences after a prefix of 71, about 8920 input tokens (characters/4), max_tokens 24000
+request rb_e036_B06_010: 146 sentences after a prefix of 71, about 8846 input tokens (characters/4), max_tokens 24000
+request rb_e036_B06_011: 139 sentences after a prefix of 71, about 8708 input tokens (characters/4), max_tokens 24000
+request rb_e036_B06_012: 157 sentences after a prefix of 71, about 8812 input tokens (characters/4), max_tokens 24000
+request rb_e036_B06_013: 148 sentences after a prefix of 71, about 9112 input tokens (characters/4), max_tokens 24000
+request rb_e036_B06_014: 146 sentences after a prefix of 71, about 9082 input tokens (characters/4), max_tokens 24000
+request rb_e036_B06_015: 174 sentences after a prefix of 71, about 9294 input tokens (characters/4), max_tokens 24000
+request rb_e036_B06_016: 165 sentences after a prefix of 71, about 9216 input tokens (characters/4), max_tokens 24000
+request rb_e036_B06_018: 121 sentences after a prefix of 71, about 8602 input tokens (characters/4), max_tokens 24000
+request rb_e036_B06_017: 164 sentences after a prefix of 71, about 9437 input tokens (characters/4), max_tokens 24000
+request rb_e036_B06_021: 125 sentences after a prefix of 71, about 8520 input tokens (characters/4), max_tokens 24000
+request rb_e036_B06_020: 210 sentences after a prefix of 71, about 9786 input tokens (characters/4), max_tokens 24000
+request rb_e036_B06_022: 176 sentences after a prefix of 71, about 9333 input tokens (characters/4), max_tokens 24000
+request rb_e036_B06_019: 288 sentences after a prefix of 71, about 11342 input tokens (characters/4), max_tokens 24000
+request rb_e036_B06_024: 93 sentences after a prefix of 71, about 8185 input tokens (characters/4), max_tokens 24000
+request rb_e036_B06_023: 153 sentences after a prefix of 71, about 9157 input tokens (characters/4), max_tokens 24000
+25 documents, 3931 sentences to label (1775 prefix sentences shown)
+submitted batch msgbatch_01E5T13iDp4v5nYqDyRywvMj (attempt 1, 25 entries); status in_progress; request_counts {"processing": 25, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}
+batch msgbatch_01E5T13iDp4v5nYqDyRywvMj: in_progress; request_counts {"processing": 25, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 0s
+batch msgbatch_01E5T13iDp4v5nYqDyRywvMj: in_progress; request_counts {"processing": 25, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 61s
+batch msgbatch_01E5T13iDp4v5nYqDyRywvMj: in_progress; request_counts {"processing": 25, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 121s
+batch msgbatch_01E5T13iDp4v5nYqDyRywvMj: in_progress; request_counts {"processing": 25, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 181s
+batch msgbatch_01E5T13iDp4v5nYqDyRywvMj: in_progress; request_counts {"processing": 25, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 241s
+batch msgbatch_01E5T13iDp4v5nYqDyRywvMj: in_progress; request_counts {"processing": 25, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 302s
+batch msgbatch_01E5T13iDp4v5nYqDyRywvMj: in_progress; request_counts {"processing": 25, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 362s
+batch msgbatch_01E5T13iDp4v5nYqDyRywvMj: in_progress; request_counts {"processing": 25, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 422s
+batch msgbatch_01E5T13iDp4v5nYqDyRywvMj: ended; request_counts {"processing": 0, "succeeded": 25, "errored": 0, "canceled": 0, "expired": 0}; elapsed 483s
+batch msgbatch_01E5T13iDp4v5nYqDyRywvMj (attempt 1): 22 of 25 parsed; failures 3: {"overlap": 1, "unparsable": 2}
+submitted batch msgbatch_014LxgJuK4jfix4mG4hHDeKc (attempt 2, 3 entries); status in_progress; request_counts {"processing": 3, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}
+batch msgbatch_014LxgJuK4jfix4mG4hHDeKc: in_progress; request_counts {"processing": 3, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 0s
+batch msgbatch_014LxgJuK4jfix4mG4hHDeKc: in_progress; request_counts {"processing": 3, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 61s
+batch msgbatch_014LxgJuK4jfix4mG4hHDeKc: in_progress; request_counts {"processing": 3, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 121s
+batch msgbatch_014LxgJuK4jfix4mG4hHDeKc: in_progress; request_counts {"processing": 3, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 181s
+batch msgbatch_014LxgJuK4jfix4mG4hHDeKc: in_progress; request_counts {"processing": 3, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 242s
+batch msgbatch_014LxgJuK4jfix4mG4hHDeKc: in_progress; request_counts {"processing": 3, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 302s
+batch msgbatch_014LxgJuK4jfix4mG4hHDeKc: in_progress; request_counts {"processing": 3, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 362s
+batch msgbatch_014LxgJuK4jfix4mG4hHDeKc: ended; request_counts {"processing": 0, "succeeded": 3, "errored": 0, "canceled": 0, "expired": 0}; elapsed 423s
+batch msgbatch_014LxgJuK4jfix4mG4hHDeKc (attempt 2): 3 of 3 parsed; failures 0: {}
+judge done: $66.84 of the $80 ceiling; 21 of 21 cut groups labeled
+{
+  "run_dir": "runs\\experiments\\resample_blocks_2026-09-17_1759",
+  "out_dir": "runs\\experiments\\resample_blocks_2026-09-17_1759\\judge_2026-09-17_2229",
+  "dry_run": false,
+  "wave_size": 4,
+  "claude_ceiling_usd": 80.0,
+  "order": [
+    "cut0",
+    "c004_B00",
+    "e036_B00",
+    "c004_B01",
+    "e036_B01",
+    "c004_B02",
+    "e036_B02",
+    "c004_B03",
+    "e036_B03",
+    "c004_B04",
+    "e036_B04",
+    "c004_B05",
+    "e036_B05",
+    "c004_B06",
+    "e036_B06",
+    "c004_B07",
+    "e036_B07",
+    "c004_B08",
+    "c004_B09",
+    "c004_B10",
+    "c004_B11"
+  ],
+  "waves": [
+    {
+      "wave": 0,
+      "collection": "continuations_w00",
+      "cuts": [
+        "cut0",
+        "c004_B00",
+        "e036_B00",
+        "c004_B01"
+      ],
+      "documents": 100,
+      "sentences": 52271,
+      "valid": 100,
+      "failed_after_follow_up": 0,
+      "batches": [
+        {
+          "batch_id": "msgbatch_01TUdtJE1HqPHtvdyvQQkyhB",
+          "attempt": 1,
+          "n_entries": 100,
+          "custom_ids": [
+            "rb_c004_B00_000",
+            "rb_c004_B00_001",
+            "rb_c004_B00_002",
+            "rb_c004_B00_003",
+            "rb_c004_B00_004",
+            "rb_c004_B00_005",
+            "rb_c004_B00_006",
+            "rb_c004_B00_007",
+            "rb_c004_B00_008",
+            "rb_c004_B00_009",
+            "rb_c004_B00_010",
+            "rb_c004_B00_011",
+            "rb_c004_B00_012",
+            "rb_c004_B00_013",
+            "rb_c004_B00_014",
+            "rb_c004_B00_015",
+            "rb_c004_B00_016",
+            "rb_c004_B00_017",
+            "rb_c004_B00_018",
+            "rb_c004_B00_019",
+            "rb_c004_B00_020",
+            "rb_c004_B00_021",
+            "rb_c004_B00_022",
+            "rb_c004_B00_023",
+            "rb_c004_B00_024",
+            "rb_c004_B01_000",
+            "rb_c004_B01_001",
+            "rb_c004_B01_002",
+            "rb_c004_B01_003",
+            "rb_c004_B01_004",
+            "rb_c004_B01_005",
+            "rb_c004_B01_006",
+            "rb_c004_B01_007",
+            "rb_c004_B01_008",
+            "rb_c004_B01_009",
+            "rb_c004_B01_010",
+            "rb_c004_B01_011",
+            "rb_c004_B01_012",
+            "rb_c004_B01_013",
+            "rb_c004_B01_014",
+            "rb_c004_B01_015",
+            "rb_c004_B01_016",
+            "rb_c004_B01_017",
+            "rb_c004_B01_018",
+            "rb_c004_B01_019",
+            "rb_c004_B01_020",
+            "rb_c004_B01_021",
+            "rb_c004_B01_022",
+            "rb_c004_B01_023",
+            "rb_c004_B01_024",
+            "rb_cut0_000",
+            "rb_cut0_001",
+            "rb_cut0_002",
+            "rb_cut0_003",
+            "rb_cut0_004",
+            "rb_cut0_005",
+            "rb_cut0_006",
+            "rb_cut0_007",
+            "rb_cut0_008",
+            "rb_cut0_009",
+            "rb_cut0_010",
+            "rb_cut0_011",
+            "rb_cut0_012",
+            "rb_cut0_013",
+            "rb_cut0_014",
+            "rb_cut0_015",
+            "rb_cut0_016",
+            "rb_cut0_017",
+            "rb_cut0_018",
+            "rb_cut0_019",
+            "rb_cut0_020",
+            "rb_cut0_021",
+            "rb_cut0_022",
+            "rb_cut0_023",
+            "rb_cut0_024",
+            "rb_e036_B00_000",
+            "rb_e036_B00_001",
+            "rb_e036_B00_002",
+            "rb_e036_B00_003",
+            "rb_e036_B00_004",
+            "rb_e036_B00_005",
+            "rb_e036_B00_006",
+            "rb_e036_B00_007",
+            "rb_e036_B00_008",
+            "rb_e036_B00_009",
+            "rb_e036_B00_010",
+            "rb_e036_B00_011",
+            "rb_e036_B00_012",
+            "rb_e036_B00_013",
+            "rb_e036_B00_014",
+            "rb_e036_B00_015",
+            "rb_e036_B00_016",
+            "rb_e036_B00_017",
+            "rb_e036_B00_018",
+            "rb_e036_B00_019",
+            "rb_e036_B00_020",
+            "rb_e036_B00_021",
+            "rb_e036_B00_022",
+            "rb_e036_B00_023",
+            "rb_e036_B00_024"
+          ],
+          "submitted": "2026-09-17T22:29:45",
+          "ended": "2026-09-17T22:39:50",
+          "request_counts": {
+            "processing": 0,
+            "succeeded": 100,
+            "errored": 0,
+            "canceled": 0,
+            "expired": 0
+          },
+          "poll_seconds": 60,
+          "api_created_at": "2026-09-18 03:29:46.921619+00:00",
+          "api_ended_at": "2026-09-18 03:39:39.447000+00:00"
+        },
+        {
+          "batch_id": "msgbatch_01MaFxZmXJQXQqCLb8boPwRG",
+          "attempt": 2,
+          "n_entries": 22,
+          "custom_ids": [
+            "rb_c004_B00_000",
+            "rb_c004_B00_005",
+            "rb_c004_B00_007",
+            "rb_c004_B00_008",
+            "rb_c004_B00_011",
+            "rb_c004_B00_015",
+            "rb_c004_B00_017",
+            "rb_c004_B00_024",
+            "rb_c004_B01_000",
+            "rb_c004_B01_002",
+            "rb_c004_B01_004",
+            "rb_c004_B01_006",
+            "rb_c004_B01_009",
+            "rb_c004_B01_012",
+            "rb_c004_B01_013",
+            "rb_c004_B01_016",
+            "rb_c004_B01_018",
+            "rb_c004_B01_023",
+            "rb_cut0_005",
+            "rb_cut0_012",
+            "rb_cut0_019",
+            "rb_e036_B00_017"
+          ],
+          "submitted": "2026-09-17T22:40:05",
+          "ended": "2026-09-17T22:44:07",
+          "request_counts": {
+            "processing": 0,
+            "succeeded": 22,
+            "errored": 0,
+            "canceled": 0,
+            "expired": 0
+          },
+          "poll_seconds": 60,
+          "api_created_at": "2026-09-18 03:40:06.699366+00:00",
+          "api_ended_at": "2026-09-18 03:43:42.270848+00:00"
+        }
+      ],
+      "cost_usd": 13.343765800000007,
+      "usage": {
+        "input_tokens": 1843941,
+        "cache_read_input_tokens": 1047248,
+        "cache_creation_input_tokens": 0,
+        "output_tokens": 2279020,
+        "thinking_tokens": 1799476
+      },
+      "thinking_tokens_per_labeled_sentence": 34.42589581220945,
+      "stopped": null,
+      "retry": null
+    },
+    {
+      "wave": 1,
+      "collection": "continuations_w01",
+      "cuts": [
+        "e036_B01",
+        "c004_B02",
+        "e036_B02",
+        "c004_B03"
+      ],
+      "documents": 100,
+      "sentences": 45948,
+      "valid": 96,
+      "failed_after_follow_up": 4,
+      "batches": [
+        {
+          "batch_id": "msgbatch_01Ntn8XcYvHJMZocUWD49h5p",
+          "attempt": 1,
+          "n_entries": 100,
+          "custom_ids": [
+            "rb_c004_B02_000",
+            "rb_c004_B02_001",
+            "rb_c004_B02_002",
+            "rb_c004_B02_003",
+            "rb_c004_B02_004",
+            "rb_c004_B02_005",
+            "rb_c004_B02_006",
+            "rb_c004_B02_007",
+            "rb_c004_B02_008",
+            "rb_c004_B02_009",
+            "rb_c004_B02_010",
+            "rb_c004_B02_011",
+            "rb_c004_B02_012",
+            "rb_c004_B02_013",
+            "rb_c004_B02_014",
+            "rb_c004_B02_015",
+            "rb_c004_B02_016",
+            "rb_c004_B02_017",
+            "rb_c004_B02_018",
+            "rb_c004_B02_019",
+            "rb_c004_B02_020",
+            "rb_c004_B02_021",
+            "rb_c004_B02_022",
+            "rb_c004_B02_023",
+            "rb_c004_B02_024",
+            "rb_c004_B03_000",
+            "rb_c004_B03_001",
+            "rb_c004_B03_002",
+            "rb_c004_B03_003",
+            "rb_c004_B03_004",
+            "rb_c004_B03_005",
+            "rb_c004_B03_006",
+            "rb_c004_B03_007",
+            "rb_c004_B03_008",
+            "rb_c004_B03_009",
+            "rb_c004_B03_010",
+            "rb_c004_B03_011",
+            "rb_c004_B03_012",
+            "rb_c004_B03_013",
+            "rb_c004_B03_014",
+            "rb_c004_B03_015",
+            "rb_c004_B03_016",
+            "rb_c004_B03_017",
+            "rb_c004_B03_018",
+            "rb_c004_B03_019",
+            "rb_c004_B03_020",
+            "rb_c004_B03_021",
+            "rb_c004_B03_022",
+            "rb_c004_B03_023",
+            "rb_c004_B03_024",
+            "rb_e036_B01_000",
+            "rb_e036_B01_001",
+            "rb_e036_B01_002",
+            "rb_e036_B01_003",
+            "rb_e036_B01_004",
+            "rb_e036_B01_005",
+            "rb_e036_B01_006",
+            "rb_e036_B01_007",
+            "rb_e036_B01_008",
+            "rb_e036_B01_009",
+            "rb_e036_B01_010",
+            "rb_e036_B01_011",
+            "rb_e036_B01_012",
+            "rb_e036_B01_013",
+            "rb_e036_B01_014",
+            "rb_e036_B01_015",
+            "rb_e036_B01_016",
+            "rb_e036_B01_017",
+            "rb_e036_B01_018",
+            "rb_e036_B01_019",
+            "rb_e036_B01_020",
+            "rb_e036_B01_021",
+            "rb_e036_B01_022",
+            "rb_e036_B01_023",
+            "rb_e036_B01_024",
+            "rb_e036_B02_000",
+            "rb_e036_B02_001",
+            "rb_e036_B02_002",
+            "rb_e036_B02_003",
+            "rb_e036_B02_004",
+            "rb_e036_B02_005",
+            "rb_e036_B02_006",
+            "rb_e036_B02_007",
+            "rb_e036_B02_008",
+            "rb_e036_B02_009",
+            "rb_e036_B02_010",
+            "rb_e036_B02_011",
+            "rb_e036_B02_012",
+            "rb_e036_B02_013",
+            "rb_e036_B02_014",
+            "rb_e036_B02_015",
+            "rb_e036_B02_016",
+            "rb_e036_B02_017",
+            "rb_e036_B02_018",
+            "rb_e036_B02_019",
+            "rb_e036_B02_020",
+            "rb_e036_B02_021",
+            "rb_e036_B02_022",
+            "rb_e036_B02_023",
+            "rb_e036_B02_024"
+          ],
+          "submitted": "2026-09-17T22:44:23",
+          "ended": "2026-09-17T22:54:26",
+          "request_counts": {
+            "processing": 0,
+            "succeeded": 100,
+            "errored": 0,
+            "canceled": 0,
+            "expired": 0
+          },
+          "poll_seconds": 60,
+          "api_created_at": "2026-09-18 03:44:24.073061+00:00",
+          "api_ended_at": "2026-09-18 03:53:30.669432+00:00"
+        },
+        {
+          "batch_id": "msgbatch_01QtL125cT9nJknkR8BvTRQC",
+          "attempt": 2,
+          "n_entries": 24,
+          "custom_ids": [
+            "rb_c004_B02_006",
+            "rb_c004_B02_008",
+            "rb_c004_B02_010",
+            "rb_c004_B02_012",
+            "rb_c004_B02_016",
+            "rb_c004_B02_017",
+            "rb_c004_B02_021",
+            "rb_c004_B03_000",
+            "rb_c004_B03_004",
+            "rb_c004_B03_005",
+            "rb_c004_B03_008",
+            "rb_c004_B03_011",
+            "rb_c004_B03_014",
+            "rb_c004_B03_015",
+            "rb_c004_B03_016",
+            "rb_c004_B03_017",
+            "rb_c004_B03_018",
+            "rb_c004_B03_020",
+            "rb_c004_B03_021",
+            "rb_c004_B03_022",
+            "rb_c004_B03_024",
+            "rb_e036_B02_002",
+            "rb_e036_B02_014",
+            "rb_e036_B02_022"
+          ],
+          "submitted": "2026-09-17T22:54:40",
+          "ended": "2026-09-17T23:00:42",
+          "request_counts": {
+            "processing": 0,
+            "succeeded": 24,
+            "errored": 0,
+            "canceled": 0,
+            "expired": 0
+          },
+          "poll_seconds": 60,
+          "api_created_at": "2026-09-18 03:54:41.617796+00:00",
+          "api_ended_at": "2026-09-18 03:59:54.809525+00:00"
+        }
+      ],
+      "cost_usd": 11.887276000000002,
+      "usage": {
+        "input_tokens": 1842962,
+        "cache_read_input_tokens": 866984,
+        "cache_creation_input_tokens": 197432,
+        "output_tokens": 1820694,
+        "thinking_tokens": 1346395
+      },
+      "thinking_tokens_per_labeled_sentence": 31.656047211511332,
+      "stopped": null,
+      "retry": {
+        "parsed": [
+          "rb_c004_B02_017",
+          "rb_c004_B02_021",
+          "rb_e036_B02_014"
+        ],
+        "failed": [
+          "rb_c004_B03_004"
+        ],
+        "cost_usd": 0.6073556,
+        "batches": [
+          {
+            "batch_id": "msgbatch_01YBefPNaAL9fqh44oG11ngx",
+            "attempt": 3,
+            "n_entries": 4,
+            "custom_ids": [
+              "rb_c004_B02_017",
+              "rb_c004_B02_021",
+              "rb_c004_B03_004",
+              "rb_e036_B02_014"
+            ],
+            "submitted": "2026-09-17T23:00:45",
+            "ended": "2026-09-17T23:07:48",
+            "request_counts": {
+              "processing": 0,
+              "succeeded": 4,
+              "errored": 0,
+              "canceled": 0,
+              "expired": 0
+            },
+            "poll_seconds": 60,
+            "api_created_at": "2026-09-18 04:00:46.675533+00:00",
+            "api_ended_at": "2026-09-18 04:07:14.675949+00:00"
+          }
+        ]
+      }
+    },
+    {
+      "wave": 2,
+      "collection": "continuations_w02",
+      "cuts": [
+        "e036_B03",
+        "c004_B04",
+        "e036_B04",
+        "c004_B05"
+      ],
+      "documents": 100,
+      "sentences": 49367,
+      "valid": 98,
+      "failed_after_follow_up": 2,
+      "batches": [
+        {
+          "batch_id": "msgbatch_01M2r1cD2HArQ56UqnBWjRUp",
+          "attempt": 1,
+          "n_entries": 100,
+          "custom_ids": [
+            "rb_c004_B04_000",
+            "rb_c004_B04_001",
+            "rb_c004_B04_002",
+            "rb_c004_B04_003",
+            "rb_c004_B04_004",
+            "rb_c004_B04_005",
+            "rb_c004_B04_006",
+            "rb_c004_B04_007",
+            "rb_c004_B04_008",
+            "rb_c004_B04_009",
+            "rb_c004_B04_010",
+            "rb_c004_B04_011",
+            "rb_c004_B04_012",
+            "rb_c004_B04_013",
+            "rb_c004_B04_014",
+            "rb_c004_B04_015",
+            "rb_c004_B04_016",
+            "rb_c004_B04_017",
+            "rb_c004_B04_018",
+            "rb_c004_B04_019",
+            "rb_c004_B04_020",
+            "rb_c004_B04_021",
+            "rb_c004_B04_022",
+            "rb_c004_B04_023",
+            "rb_c004_B04_024",
+            "rb_c004_B05_000",
+            "rb_c004_B05_001",
+            "rb_c004_B05_002",
+            "rb_c004_B05_003",
+            "rb_c004_B05_004",
+            "rb_c004_B05_005",
+            "rb_c004_B05_006",
+            "rb_c004_B05_007",
+            "rb_c004_B05_008",
+            "rb_c004_B05_009",
+            "rb_c004_B05_010",
+            "rb_c004_B05_011",
+            "rb_c004_B05_012",
+            "rb_c004_B05_013",
+            "rb_c004_B05_014",
+            "rb_c004_B05_015",
+            "rb_c004_B05_016",
+            "rb_c004_B05_017",
+            "rb_c004_B05_018",
+            "rb_c004_B05_019",
+            "rb_c004_B05_020",
+            "rb_c004_B05_021",
+            "rb_c004_B05_022",
+            "rb_c004_B05_023",
+            "rb_c004_B05_024",
+            "rb_e036_B03_000",
+            "rb_e036_B03_001",
+            "rb_e036_B03_002",
+            "rb_e036_B03_003",
+            "rb_e036_B03_004",
+            "rb_e036_B03_005",
+            "rb_e036_B03_006",
+            "rb_e036_B03_007",
+            "rb_e036_B03_008",
+            "rb_e036_B03_009",
+            "rb_e036_B03_010",
+            "rb_e036_B03_011",
+            "rb_e036_B03_012",
+            "rb_e036_B03_013",
+            "rb_e036_B03_014",
+            "rb_e036_B03_015",
+            "rb_e036_B03_016",
+            "rb_e036_B03_017",
+            "rb_e036_B03_018",
+            "rb_e036_B03_019",
+            "rb_e036_B03_020",
+            "rb_e036_B03_021",
+            "rb_e036_B03_022",
+            "rb_e036_B03_023",
+            "rb_e036_B03_024",
+            "rb_e036_B04_000",
+            "rb_e036_B04_001",
+            "rb_e036_B04_002",
+            "rb_e036_B04_003",
+            "rb_e036_B04_004",
+            "rb_e036_B04_005",
+            "rb_e036_B04_006",
+            "rb_e036_B04_007",
+            "rb_e036_B04_008",
+            "rb_e036_B04_009",
+            "rb_e036_B04_010",
+            "rb_e036_B04_011",
+            "rb_e036_B04_012",
+            "rb_e036_B04_013",
+            "rb_e036_B04_014",
+            "rb_e036_B04_015",
+            "rb_e036_B04_016",
+            "rb_e036_B04_017",
+            "rb_e036_B04_018",
+            "rb_e036_B04_019",
+            "rb_e036_B04_020",
+            "rb_e036_B04_021",
+            "rb_e036_B04_022",
+            "rb_e036_B04_023",
+            "rb_e036_B04_024"
+          ],
+          "submitted": "2026-09-17T23:08:01",
+          "ended": "2026-09-17T23:38:11",
+          "request_counts": {
+            "processing": 0,
+            "succeeded": 100,
+            "errored": 0,
+            "canceled": 0,
+            "expired": 0
+          },
+          "poll_seconds": 60,
+          "api_created_at": "2026-09-18 04:08:02.536725+00:00",
+          "api_ended_at": "2026-09-18 04:37:52.507629+00:00"
+        },
+        {
+          "batch_id": "msgbatch_01SEyCQpJDm9NT9R41LkXUEa",
+          "attempt": 2,
+          "n_entries": 24,
+          "custom_ids": [
+            "rb_c004_B04_000",
+            "rb_c004_B04_002",
+            "rb_c004_B04_005",
+            "rb_c004_B04_006",
+            "rb_c004_B04_009",
+            "rb_c004_B04_010",
+            "rb_c004_B04_016",
+            "rb_c004_B04_017",
+            "rb_c004_B04_022",
+            "rb_c004_B04_023",
+            "rb_c004_B05_000",
+            "rb_c004_B05_003",
+            "rb_c004_B05_005",
+            "rb_c004_B05_009",
+            "rb_c004_B05_010",
+            "rb_c004_B05_015",
+            "rb_c004_B05_018",
+            "rb_c004_B05_021",
+            "rb_c004_B05_022",
+            "rb_e036_B03_011",
+            "rb_e036_B03_021",
+            "rb_e036_B04_004",
+            "rb_e036_B04_012",
+            "rb_e036_B04_020"
+          ],
+          "submitted": "2026-09-17T23:38:24",
+          "ended": "2026-09-17T23:49:29",
+          "request_counts": {
+            "processing": 0,
+            "succeeded": 24,
+            "errored": 0,
+            "canceled": 0,
+            "expired": 0
+          },
+          "poll_seconds": 60,
+          "api_created_at": "2026-09-18 04:38:25.843200+00:00",
+          "api_ended_at": "2026-09-18 04:49:20.105767+00:00"
+        }
+      ],
+      "cost_usd": 12.251919599999997,
+      "usage": {
+        "input_tokens": 1950487,
+        "cache_read_input_tokens": 969992,
+        "cache_creation_input_tokens": 94424,
+        "output_tokens": 1951151,
+        "thinking_tokens": 1453875
+      },
+      "thinking_tokens_per_labeled_sentence": 30.41643130609427,
+      "stopped": null,
+      "retry": {
+        "parsed": [
+          "rb_c004_B04_009",
+          "rb_c004_B04_010"
+        ],
+        "failed": [],
+        "cost_usd": 0.3306484,
+        "batches": [
+          {
+            "batch_id": "msgbatch_012biCKqsrgci1FiWbPwGu5j",
+            "attempt": 3,
+            "n_entries": 2,
+            "custom_ids": [
+              "rb_c004_B04_009",
+              "rb_c004_B04_010"
+            ],
+            "submitted": "2026-09-17T23:49:32",
+            "ended": "2026-09-18T00:03:37",
+            "request_counts": {
+              "processing": 0,
+              "succeeded": 2,
+              "errored": 0,
+              "canceled": 0,
+              "expired": 0
+            },
+            "poll_seconds": 60,
+            "api_created_at": "2026-09-18 04:49:33.335749+00:00",
+            "api_ended_at": "2026-09-18 05:02:47.145135+00:00"
+          }
+        ]
+      }
+    },
+    {
+      "wave": 3,
+      "collection": "continuations_w03",
+      "cuts": [
+        "e036_B05",
+        "c004_B06",
+        "e036_B06",
+        "c004_B07"
+      ],
+      "documents": 100,
+      "sentences": 46767,
+      "valid": 95,
+      "failed_after_follow_up": 5,
+      "batches": [
+        {
+          "batch_id": "msgbatch_01AmK4HS2AVTpibwTiRhV1jK",
+          "attempt": 1,
+          "n_entries": 100,
+          "custom_ids": [
+            "rb_c004_B06_000",
+            "rb_c004_B06_001",
+            "rb_c004_B06_002",
+            "rb_c004_B06_003",
+            "rb_c004_B06_004",
+            "rb_c004_B06_005",
+            "rb_c004_B06_006",
+            "rb_c004_B06_007",
+            "rb_c004_B06_008",
+            "rb_c004_B06_009",
+            "rb_c004_B06_010",
+            "rb_c004_B06_011",
+            "rb_c004_B06_012",
+            "rb_c004_B06_013",
+            "rb_c004_B06_014",
+            "rb_c004_B06_015",
+            "rb_c004_B06_016",
+            "rb_c004_B06_017",
+            "rb_c004_B06_018",
+            "rb_c004_B06_019",
+            "rb_c004_B06_020",
+            "rb_c004_B06_021",
+            "rb_c004_B06_022",
+            "rb_c004_B06_023",
+            "rb_c004_B06_024",
+            "rb_c004_B07_000",
+            "rb_c004_B07_001",
+            "rb_c004_B07_002",
+            "rb_c004_B07_003",
+            "rb_c004_B07_004",
+            "rb_c004_B07_005",
+            "rb_c004_B07_006",
+            "rb_c004_B07_007",
+            "rb_c004_B07_008",
+            "rb_c004_B07_009",
+            "rb_c004_B07_010",
+            "rb_c004_B07_011",
+            "rb_c004_B07_012",
+            "rb_c004_B07_013",
+            "rb_c004_B07_014",
+            "rb_c004_B07_015",
+            "rb_c004_B07_016",
+            "rb_c004_B07_017",
+            "rb_c004_B07_018",
+            "rb_c004_B07_019",
+            "rb_c004_B07_020",
+            "rb_c004_B07_021",
+            "rb_c004_B07_022",
+            "rb_c004_B07_023",
+            "rb_c004_B07_024",
+            "rb_e036_B05_000",
+            "rb_e036_B05_001",
+            "rb_e036_B05_002",
+            "rb_e036_B05_003",
+            "rb_e036_B05_004",
+            "rb_e036_B05_005",
+            "rb_e036_B05_006",
+            "rb_e036_B05_007",
+            "rb_e036_B05_008",
+            "rb_e036_B05_009",
+            "rb_e036_B05_010",
+            "rb_e036_B05_011",
+            "rb_e036_B05_012",
+            "rb_e036_B05_013",
+            "rb_e036_B05_014",
+            "rb_e036_B05_015",
+            "rb_e036_B05_016",
+            "rb_e036_B05_017",
+            "rb_e036_B05_018",
+            "rb_e036_B05_019",
+            "rb_e036_B05_020",
+            "rb_e036_B05_021",
+            "rb_e036_B05_022",
+            "rb_e036_B05_023",
+            "rb_e036_B05_024",
+            "rb_e036_B06_000",
+            "rb_e036_B06_001",
+            "rb_e036_B06_002",
+            "rb_e036_B06_003",
+            "rb_e036_B06_004",
+            "rb_e036_B06_005",
+            "rb_e036_B06_006",
+            "rb_e036_B06_007",
+            "rb_e036_B06_008",
+            "rb_e036_B06_009",
+            "rb_e036_B06_010",
+            "rb_e036_B06_011",
+            "rb_e036_B06_012",
+            "rb_e036_B06_013",
+            "rb_e036_B06_014",
+            "rb_e036_B06_015",
+            "rb_e036_B06_016",
+            "rb_e036_B06_017",
+            "rb_e036_B06_018",
+            "rb_e036_B06_019",
+            "rb_e036_B06_020",
+            "rb_e036_B06_021",
+            "rb_e036_B06_022",
+            "rb_e036_B06_023",
+            "rb_e036_B06_024"
+          ],
+          "submitted": "2026-09-18T00:03:50",
+          "ended": "2026-09-18T00:20:56",
+          "request_counts": {
+            "processing": 0,
+            "succeeded": 100,
+            "errored": 0,
+            "canceled": 0,
+            "expired": 0
+          },
+          "poll_seconds": 60,
+          "api_created_at": "2026-09-18 05:03:51.944459+00:00",
+          "api_ended_at": "2026-09-18 05:20:18.376539+00:00"
+        },
+        {
+          "batch_id": "msgbatch_0158FUyHZvm73pVZoVSuUY6H",
+          "attempt": 2,
+          "n_entries": 26,
+          "custom_ids": [
+            "rb_c004_B06_000",
+            "rb_c004_B06_001",
+            "rb_c004_B06_002",
+            "rb_c004_B06_003",
+            "rb_c004_B06_004",
+            "rb_c004_B06_012",
+            "rb_c004_B06_020",
+            "rb_c004_B07_000",
+            "rb_c004_B07_001",
+            "rb_c004_B07_003",
+            "rb_c004_B07_005",
+            "rb_c004_B07_007",
+            "rb_c004_B07_008",
+            "rb_c004_B07_009",
+            "rb_c004_B07_013",
+            "rb_c004_B07_020",
+            "rb_e036_B05_004",
+            "rb_e036_B05_007",
+            "rb_e036_B05_013",
+            "rb_e036_B05_016",
+            "rb_e036_B05_020",
+            "rb_e036_B06_003",
+            "rb_e036_B06_014",
+            "rb_e036_B06_017",
+            "rb_e036_B06_018",
+            "rb_e036_B06_019"
+          ],
+          "submitted": "2026-09-18T00:21:09",
+          "ended": "2026-09-18T00:31:13",
+          "request_counts": {
+            "processing": 0,
+            "succeeded": 26,
+            "errored": 0,
+            "canceled": 0,
+            "expired": 0
+          },
+          "poll_seconds": 60,
+          "api_created_at": "2026-09-18 05:21:10.990180+00:00",
+          "api_ended_at": "2026-09-18 05:30:21.258298+00:00"
+        }
+      ],
+      "cost_usd": 12.425068799999996,
+      "usage": {
+        "input_tokens": 1871583,
+        "cache_read_input_tokens": 1064416,
+        "cache_creation_input_tokens": 17168,
+        "output_tokens": 1940598,
+        "thinking_tokens": 1491465
+      },
+      "thinking_tokens_per_labeled_sentence": 34.10466020305497,
+      "stopped": null,
+      "retry": {
+        "parsed": [
+          "rb_c004_B06_020",
+          "rb_e036_B06_014",
+          "rb_c004_B07_000",
+          "rb_c004_B07_009",
+          "rb_c004_B07_013"
+        ],
+        "failed": [],
+        "cost_usd": 0.7225942,
+        "batches": [
+          {
+            "batch_id": "msgbatch_01EebXRXPgTiVvdQ4C1YZu9M",
+            "attempt": 3,
+            "n_entries": 5,
+            "custom_ids": [
+              "rb_c004_B06_020",
+              "rb_c004_B07_000",
+              "rb_c004_B07_009",
+              "rb_c004_B07_013",
+              "rb_e036_B06_014"
+            ],
+            "submitted": "2026-09-18T00:31:16",
+            "ended": "2026-09-18T01:22:32",
+            "request_counts": {
+              "processing": 0,
+              "succeeded": 5,
+              "errored": 0,
+              "canceled": 0,
+              "expired": 0
+            },
+            "poll_seconds": 60,
+            "api_created_at": "2026-09-18 05:31:17.597016+00:00",
+            "api_ended_at": "2026-09-18 06:21:51.662400+00:00"
+          }
+        ]
+      }
+    },
+    {
+      "wave": 4,
+      "collection": "continuations_w04",
+      "cuts": [
+        "e036_B07",
+        "c004_B08",
+        "c004_B09",
+        "c004_B10"
+      ],
+      "documents": 100,
+      "sentences": 39628,
+      "valid": 97,
+      "failed_after_follow_up": 3,
+      "batches": [
+        {
+          "batch_id": "msgbatch_01Mgh6JJNC5j9T5xjKVDa8Du",
+          "attempt": 1,
+          "n_entries": 100,
+          "custom_ids": [
+            "rb_c004_B08_000",
+            "rb_c004_B08_001",
+            "rb_c004_B08_002",
+            "rb_c004_B08_003",
+            "rb_c004_B08_004",
+            "rb_c004_B08_005",
+            "rb_c004_B08_006",
+            "rb_c004_B08_007",
+            "rb_c004_B08_008",
+            "rb_c004_B08_009",
+            "rb_c004_B08_010",
+            "rb_c004_B08_011",
+            "rb_c004_B08_012",
+            "rb_c004_B08_013",
+            "rb_c004_B08_014",
+            "rb_c004_B08_015",
+            "rb_c004_B08_016",
+            "rb_c004_B08_017",
+            "rb_c004_B08_018",
+            "rb_c004_B08_019",
+            "rb_c004_B08_020",
+            "rb_c004_B08_021",
+            "rb_c004_B08_022",
+            "rb_c004_B08_023",
+            "rb_c004_B08_024",
+            "rb_c004_B09_000",
+            "rb_c004_B09_001",
+            "rb_c004_B09_002",
+            "rb_c004_B09_003",
+            "rb_c004_B09_004",
+            "rb_c004_B09_005",
+            "rb_c004_B09_006",
+            "rb_c004_B09_007",
+            "rb_c004_B09_008",
+            "rb_c004_B09_009",
+            "rb_c004_B09_010",
+            "rb_c004_B09_011",
+            "rb_c004_B09_012",
+            "rb_c004_B09_013",
+            "rb_c004_B09_014",
+            "rb_c004_B09_015",
+            "rb_c004_B09_016",
+            "rb_c004_B09_017",
+            "rb_c004_B09_018",
+            "rb_c004_B09_019",
+            "rb_c004_B09_020",
+            "rb_c004_B09_021",
+            "rb_c004_B09_022",
+            "rb_c004_B09_023",
+            "rb_c004_B09_024",
+            "rb_c004_B10_000",
+            "rb_c004_B10_001",
+            "rb_c004_B10_002",
+            "rb_c004_B10_003",
+            "rb_c004_B10_004",
+            "rb_c004_B10_005",
+            "rb_c004_B10_006",
+            "rb_c004_B10_007",
+            "rb_c004_B10_008",
+            "rb_c004_B10_009",
+            "rb_c004_B10_010",
+            "rb_c004_B10_011",
+            "rb_c004_B10_012",
+            "rb_c004_B10_013",
+            "rb_c004_B10_014",
+            "rb_c004_B10_015",
+            "rb_c004_B10_016",
+            "rb_c004_B10_017",
+            "rb_c004_B10_018",
+            "rb_c004_B10_019",
+            "rb_c004_B10_020",
+            "rb_c004_B10_021",
+            "rb_c004_B10_022",
+            "rb_c004_B10_023",
+            "rb_c004_B10_024",
+            "rb_e036_B07_000",
+            "rb_e036_B07_001",
+            "rb_e036_B07_002",
+            "rb_e036_B07_003",
+            "rb_e036_B07_004",
+            "rb_e036_B07_005",
+            "rb_e036_B07_006",
+            "rb_e036_B07_007",
+            "rb_e036_B07_008",
+            "rb_e036_B07_009",
+            "rb_e036_B07_010",
+            "rb_e036_B07_011",
+            "rb_e036_B07_012",
+            "rb_e036_B07_013",
+            "rb_e036_B07_014",
+            "rb_e036_B07_015",
+            "rb_e036_B07_016",
+            "rb_e036_B07_017",
+            "rb_e036_B07_018",
+            "rb_e036_B07_019",
+            "rb_e036_B07_020",
+            "rb_e036_B07_021",
+            "rb_e036_B07_022",
+            "rb_e036_B07_023",
+            "rb_e036_B07_024"
+          ],
+          "submitted": "2026-09-18T01:22:45",
+          "ended": "2026-09-18T01:34:49",
+          "request_counts": {
+            "processing": 0,
+            "succeeded": 100,
+            "errored": 0,
+            "canceled": 0,
+            "expired": 0
+          },
+          "poll_seconds": 60,
+          "api_created_at": "2026-09-18 06:22:46.616783+00:00",
+          "api_ended_at": "2026-09-18 06:34:26.029795+00:00"
+        },
+        {
+          "batch_id": "msgbatch_01Fsmv6DyeNzVCacRAmPescX",
+          "attempt": 2,
+          "n_entries": 20,
+          "custom_ids": [
+            "rb_c004_B08_001",
+            "rb_c004_B08_003",
+            "rb_c004_B08_004",
+            "rb_c004_B08_006",
+            "rb_c004_B08_008",
+            "rb_c004_B08_014",
+            "rb_c004_B08_017",
+            "rb_c004_B08_018",
+            "rb_c004_B08_019",
+            "rb_c004_B08_022",
+            "rb_c004_B08_023",
+            "rb_c004_B09_000",
+            "rb_c004_B09_007",
+            "rb_c004_B09_009",
+            "rb_c004_B09_020",
+            "rb_c004_B10_000",
+            "rb_c004_B10_004",
+            "rb_c004_B10_017",
+            "rb_c004_B10_022",
+            "rb_c004_B10_024"
+          ],
+          "submitted": "2026-09-18T01:35:01",
+          "ended": "2026-09-18T01:41:03",
+          "request_counts": {
+            "processing": 0,
+            "succeeded": 20,
+            "errored": 0,
+            "canceled": 0,
+            "expired": 0
+          },
+          "poll_seconds": 60,
+          "api_created_at": "2026-09-18 06:35:02.705858+00:00",
+          "api_ended_at": "2026-09-18 06:40:07.795821+00:00"
+        }
+      ],
+      "cost_usd": 11.029462000000002,
+      "usage": {
+        "input_tokens": 1701125,
+        "cache_read_input_tokens": 875568,
+        "cache_creation_input_tokens": 154512,
+        "output_tokens": 1739698,
+        "thinking_tokens": 1351252
+      },
+      "thinking_tokens_per_labeled_sentence": 35.60892824202177,
+      "stopped": null,
+      "retry": {
+        "parsed": [
+          "rb_c004_B08_018",
+          "rb_c004_B10_017"
+        ],
+        "failed": [
+          "rb_c004_B08_001"
+        ],
+        "cost_usd": 0.3491502,
+        "batches": [
+          {
+            "batch_id": "msgbatch_0151od7KoS6QrBMTAQQs9UmS",
+            "attempt": 3,
+            "n_entries": 3,
+            "custom_ids": [
+              "rb_c004_B08_001",
+              "rb_c004_B08_018",
+              "rb_c004_B10_017"
+            ],
+            "submitted": "2026-09-18T01:41:06",
+            "ended": "2026-09-18T01:51:11",
+            "request_counts": {
+              "processing": 0,
+              "succeeded": 3,
+              "errored": 0,
+              "canceled": 0,
+              "expired": 0
+            },
+            "poll_seconds": 60,
+            "api_created_at": "2026-09-18 06:41:07.978155+00:00",
+            "api_ended_at": "2026-09-18 06:50:46.190211+00:00"
+          }
+        ]
+      }
+    },
+    {
+      "wave": 5,
+      "collection": "continuations_w05",
+      "cuts": [
+        "c004_B11"
+      ],
+      "documents": 25,
+      "sentences": 7024,
+      "valid": 25,
+      "failed_after_follow_up": 0,
+      "batches": [
+        {
+          "batch_id": "msgbatch_01TY3nm4qj3yPwt9xGvC3gBP",
+          "attempt": 1,
+          "n_entries": 25,
+          "custom_ids": [
+            "rb_c004_B11_000",
+            "rb_c004_B11_001",
+            "rb_c004_B11_002",
+            "rb_c004_B11_003",
+            "rb_c004_B11_004",
+            "rb_c004_B11_005",
+            "rb_c004_B11_006",
+            "rb_c004_B11_007",
+            "rb_c004_B11_008",
+            "rb_c004_B11_009",
+            "rb_c004_B11_010",
+            "rb_c004_B11_011",
+            "rb_c004_B11_012",
+            "rb_c004_B11_013",
+            "rb_c004_B11_014",
+            "rb_c004_B11_015",
+            "rb_c004_B11_016",
+            "rb_c004_B11_017",
+            "rb_c004_B11_018",
+            "rb_c004_B11_019",
+            "rb_c004_B11_020",
+            "rb_c004_B11_021",
+            "rb_c004_B11_022",
+            "rb_c004_B11_023",
+            "rb_c004_B11_024"
+          ],
+          "submitted": "2026-09-18T01:51:14",
+          "ended": "2026-09-18T02:08:20",
+          "request_counts": {
+            "processing": 0,
+            "succeeded": 25,
+            "errored": 0,
+            "canceled": 0,
+            "expired": 0
+          },
+          "poll_seconds": 60,
+          "api_created_at": "2026-09-18 06:51:16.059390+00:00",
+          "api_ended_at": "2026-09-18 07:07:57.913728+00:00"
+        },
+        {
+          "batch_id": "msgbatch_01BFd28kbh8nuhN8vxJqZaMb",
+          "attempt": 2,
+          "n_entries": 5,
+          "custom_ids": [
+            "rb_c004_B11_007",
+            "rb_c004_B11_010",
+            "rb_c004_B11_011",
+            "rb_c004_B11_012",
+            "rb_c004_B11_015"
+          ],
+          "submitted": "2026-09-18T02:08:24",
+          "ended": "2026-09-18T02:17:27",
+          "request_counts": {
+            "processing": 0,
+            "succeeded": 5,
+            "errored": 0,
+            "canceled": 0,
+            "expired": 0
+          },
+          "poll_seconds": 60,
+          "api_created_at": "2026-09-18 07:08:25.086111+00:00",
+          "api_ended_at": "2026-09-18 07:16:50.015000+00:00"
+        }
+      ],
+      "cost_usd": 2.0786110000000004,
+      "usage": {
+        "input_tokens": 335169,
+        "cache_read_input_tokens": 257520,
+        "cache_creation_input_tokens": 0,
+        "output_tokens": 343538,
+        "thinking_tokens": 279698
+      },
+      "thinking_tokens_per_labeled_sentence": 39.820330296127565,
+      "stopped": null,
+      "retry": null
+    }
+  ],
+  "cost_usd": 66.83800760000001,
+  "noise": {
+    "cuts": {
+      "c004": 9,
+      "e036": 6
+    },
+    "collections": {
+      "noise_c004_B09": {
+        "cut": {
+          "trace_id": "c004",
+          "m": 9
+        },
+        "documents": 25,
+        "cost_usd": 2.9084775999999994,
+        "first_node": {
+          "n": 25,
+          "agree": 25,
+          "rate": 1.0,
+          "confusions": []
+        },
+        "level1_kappa": 0.7820861837826432,
+        "level1_exact": 0.83088886701447,
+        "full_path_kappa": 0.7090581931015987,
+        "sentences": 10159,
+        "batches": [
+          {
+            "batch_id": "msgbatch_01TNR4heL3dvsxW6uK8EDTyi",
+            "attempt": 1,
+            "n_entries": 25,
+            "custom_ids": [
+              "rb_c004_B09_000",
+              "rb_c004_B09_001",
+              "rb_c004_B09_002",
+              "rb_c004_B09_003",
+              "rb_c004_B09_004",
+              "rb_c004_B09_005",
+              "rb_c004_B09_006",
+              "rb_c004_B09_007",
+              "rb_c004_B09_008",
+              "rb_c004_B09_009",
+              "rb_c004_B09_010",
+              "rb_c004_B09_011",
+              "rb_c004_B09_012",
+              "rb_c004_B09_013",
+              "rb_c004_B09_014",
+              "rb_c004_B09_015",
+              "rb_c004_B09_016",
+              "rb_c004_B09_017",
+              "rb_c004_B09_018",
+              "rb_c004_B09_019",
+              "rb_c004_B09_020",
+              "rb_c004_B09_021",
+              "rb_c004_B09_022",
+              "rb_c004_B09_023",
+              "rb_c004_B09_024"
+            ],
+            "submitted": "2026-09-18T02:17:31",
+            "ended": "2026-09-18T02:29:36",
+            "request_counts": {
+              "processing": 0,
+              "succeeded": 25,
+              "errored": 0,
+              "canceled": 0,
+              "expired": 0
+            },
+            "poll_seconds": 60,
+            "api_created_at": "2026-09-18 07:17:32.837403+00:00",
+            "api_ended_at": "2026-09-18 07:29:30.920167+00:00"
+          },
+          {
+            "batch_id": "msgbatch_014aGmGUo8f4kajLaeGvU7pC",
+            "attempt": 2,
+            "n_entries": 6,
+            "custom_ids": [
+              "rb_c004_B09_005",
+              "rb_c004_B09_007",
+              "rb_c004_B09_009",
+              "rb_c004_B09_010",
+              "rb_c004_B09_013",
+              "rb_c004_B09_017"
+            ],
+            "submitted": "2026-09-18T02:29:40",
+            "ended": "2026-09-18T02:37:43",
+            "request_counts": {
+              "processing": 0,
+              "succeeded": 6,
+              "errored": 0,
+              "canceled": 0,
+              "expired": 0
+            },
+            "poll_seconds": 60,
+            "api_created_at": "2026-09-18 07:29:41.890774+00:00",
+            "api_ended_at": "2026-09-18 07:37:30.663979+00:00"
+          }
+        ]
+      },
+      "noise_e036_B06": {
+        "cut": {
+          "trace_id": "e036",
+          "m": 6
+        },
+        "documents": 25,
+        "cost_usd": 0.9134268,
+        "first_node": {
+          "n": 25,
+          "agree": 25,
+          "rate": 1.0,
+          "confusions": []
+        },
+        "level1_kappa": 0.8275155056096045,
+        "level1_exact": 0.8600864919867718,
+        "full_path_kappa": 0.7618355531053316,
+        "sentences": 3931,
+        "batches": [
+          {
+            "batch_id": "msgbatch_01E5T13iDp4v5nYqDyRywvMj",
+            "attempt": 1,
+            "n_entries": 25,
+            "custom_ids": [
+              "rb_e036_B06_000",
+              "rb_e036_B06_001",
+              "rb_e036_B06_002",
+              "rb_e036_B06_003",
+              "rb_e036_B06_004",
+              "rb_e036_B06_005",
+              "rb_e036_B06_006",
+              "rb_e036_B06_007",
+              "rb_e036_B06_008",
+              "rb_e036_B06_009",
+              "rb_e036_B06_010",
+              "rb_e036_B06_011",
+              "rb_e036_B06_012",
+              "rb_e036_B06_013",
+              "rb_e036_B06_014",
+              "rb_e036_B06_015",
+              "rb_e036_B06_016",
+              "rb_e036_B06_017",
+              "rb_e036_B06_018",
+              "rb_e036_B06_019",
+              "rb_e036_B06_020",
+              "rb_e036_B06_021",
+              "rb_e036_B06_022",
+              "rb_e036_B06_023",
+              "rb_e036_B06_024"
+            ],
+            "submitted": "2026-09-18T02:37:47",
+            "ended": "2026-09-18T02:45:49",
+            "request_counts": {
+              "processing": 0,
+              "succeeded": 25,
+              "errored": 0,
+              "canceled": 0,
+              "expired": 0
+            },
+            "poll_seconds": 60,
+            "api_created_at": "2026-09-18 07:37:48.306256+00:00",
+            "api_ended_at": "2026-09-18 07:45:48.949050+00:00"
+          },
+          {
+            "batch_id": "msgbatch_014LxgJuK4jfix4mG4hHDeKc",
+            "attempt": 2,
+            "n_entries": 3,
+            "custom_ids": [
+              "rb_e036_B06_007",
+              "rb_e036_B06_014",
+              "rb_e036_B06_017"
+            ],
+            "submitted": "2026-09-18T02:45:52",
+            "ended": "2026-09-18T02:52:54",
+            "request_counts": {
+              "processing": 0,
+              "succeeded": 3,
+              "errored": 0,
+              "canceled": 0,
+              "expired": 0
+            },
+            "poll_seconds": 60,
+            "api_created_at": "2026-09-18 07:45:53.101473+00:00",
+            "api_ended_at": "2026-09-18 07:52:34.243362+00:00"
+          }
+        ]
+      }
+    },
+    "skipped": null
+  },
+  "departures": [
+    "wave 1: 1 continuations unlabeled after three attempts: rb_c004_B03_004",
+    "wave 4: 1 continuations unlabeled after three attempts: rb_c004_B08_001"
+  ],
+  "unlabeled_cuts": [],
+  "stopped": null,
+  "pnext_rows": 21,
+  "labeled_cut_groups": [
+    "cut0",
+    "c004_B00",
+    "e036_B00",
+    "c004_B01",
+    "e036_B01",
+    "c004_B02",
+    "e036_B02",
+    "c004_B03",
+    "e036_B03",
+    "c004_B04",
+    "e036_B04",
+    "c004_B05",
+    "e036_B05",
+    "c004_B06",
+    "e036_B06",
+    "c004_B07",
+    "e036_B07",
+    "c004_B08",
+    "c004_B09",
+    "c004_B10",
+    "c004_B11"
+  ]
+}

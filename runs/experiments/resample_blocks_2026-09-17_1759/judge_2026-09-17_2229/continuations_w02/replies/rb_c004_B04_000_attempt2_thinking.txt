@@ -1,0 +1,2 @@
+I notice there's an overlap at 486 where two ranges duplicate the same value - I need to adjust the first range to end at 485 so it doesn't collide with the "486 Co.ic" entry.
+

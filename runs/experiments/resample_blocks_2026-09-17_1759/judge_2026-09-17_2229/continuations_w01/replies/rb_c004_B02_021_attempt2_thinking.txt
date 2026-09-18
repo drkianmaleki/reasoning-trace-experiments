@@ -1,0 +1,2 @@
+I noticed a duplication issue around lines 480-483 where a section repeats itself before the next line begins - I need to fix it so that section only appears once.
+

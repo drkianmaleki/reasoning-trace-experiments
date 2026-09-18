@@ -1,0 +1,2 @@
+I need to fix the line grouping here—rows 172-173 should be labeled Rs.rtp.qt while 174 gets its own label Re.co.pvo, since that row mentions a discrepancy of exactly $1.00.
+

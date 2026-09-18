@@ -1,0 +1,16 @@
+I'm labeling each step of the reasoning chain, tracking where I verify results, restate outcomes, and reflect on test design before concluding.
+
+I keep weighing whether the answer is "not well posed" versus one of the specific options, comparing evidence for C and E, then re-checking which choice best fits the pattern before settling on a final answer.
+
+I'm tracing through the sequence of reasoning moves, checking how outer-context evaluation, world knowledge, and self-directed steering interact as I work through examples and verify consistency before settling on a plan.
+
+I'm weighing option C against the others, then rechecking my reasoning once more before settling into drafting the actual answer, working through the phrasing line by line and double-checking option A doesn't fit better before finalizing.
+
+Yes, I'm confirming the ball costs really are missing that dollar difference, so I'm restating the question clearly before drafting an explanation and answer choice, going through a couple passes to nail the phrasing.
+
+I'm working through this coded sequence, tracking response patterns, outcomes, and reasoning categories across many trials to build up a numbering scheme for later analysis.
+
+I'm working through this sequence of coded reasoning steps, tracking through error checks, requests, plans, and knowledge references as I move toward organizing my final approach.
+
+I'm continuing to work through this coded sequence of reasoning steps, tracking knowledge checks, planning moves, reflection points, and quoted text references as I build out the analysis.
+

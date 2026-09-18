@@ -1,0 +1,4 @@
+This is a massive labeling task across over a thousand sentences, so I'm working through them systematically in chunks, assigning category codes based on the recurring content patterns I'm seeing.
+
+I'm working through a long sequence of reasoning steps, checking outcomes across multiple branches and options, referencing known formulas and standard problem setups, and cross-verifying calculated values against expected results before consolidating the final answer.
+

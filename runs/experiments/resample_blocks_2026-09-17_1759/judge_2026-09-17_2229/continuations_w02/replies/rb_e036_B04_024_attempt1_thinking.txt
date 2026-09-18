@@ -1,0 +1,2 @@
+I'm labeling each chunk by category to track the pattern - planning steps, reflection points, and where backtracking with "wait" begins.
+

@@ -15,10 +15,4 @@ Thumbs.db
 runs/experiments/*/sentences_archived500.jsonl
 # Large files stay local (Kian, 2026-09-17); runs/LARGE_FILES_INDEX.md lists them with sizes, hashes and provenance
 runs/experiments/*/labels_archived500_judge.jsonl
-# judge labels of every future continuation run (steps 8/9 and later)
-runs/experiments/*/labels_continuations_*.jsonl
 runs/experiments/*/blocks_archived500_judge.jsonl
-# sampled continuations of the registered runs (about 40 MB per run; pcut.csv and the judge files stay in git)
-runs/experiments/resample_blocks_*/continuations.jsonl
-# the same rule at any depth (the judge folder of a run holds labels_continuations_<arm>_judge.jsonl two levels down)
-runs/experiments/**/labels_continuations_*.jsonl

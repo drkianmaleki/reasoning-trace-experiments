@@ -1,0 +1,2 @@
+I need to redo this fully and correctly, covering the full 0-1060 range with consistent labeling, picking up where it broke off before and finishing with reasonable, consistent codes.
+

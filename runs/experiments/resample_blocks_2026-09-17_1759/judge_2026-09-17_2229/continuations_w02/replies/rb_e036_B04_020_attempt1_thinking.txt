@@ -1,0 +1,8 @@
+I'm quickly labeling each step: planning, then response formatting, then evaluating options as candidates, followed by a reasoning check and a final response step.
+
+I keep cycling through interpretation steps, self-questioning, and quoting the test material, weighing options E, C, and F multiple times before landing on a literal reading. Near the end I recognize this as a known variant designed to probe literal reading versus pattern matching.
+
+I keep working through the coding scheme for each remaining segment, tagging plans, knowledge references, and rhetorical moves as they shift between explanation, procedural steps, and summary statements toward the end of the passage.
+
+I keep cycling through planning, reflecting, and reasoning steps, revisiting drafted text and monitoring for repetition as I work toward finalizing the output.
+

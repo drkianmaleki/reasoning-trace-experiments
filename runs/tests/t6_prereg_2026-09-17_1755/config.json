@@ -1,0 +1,10 @@
+{
+  "prereg": "docs/shared/2026-09-17_preregistration_stage1_v2.md",
+  "prereg_sha256": "53115b04214347b55c992a7e249e7e2b3a991bbe6a4c0de8a3999c76b42f10a5",
+  "git_log": [
+    "64ae55b4af25527d8c61619c5db8a902ed8bb4ba 2026-09-17 17:51:58 -0500 run scripts s2/s3/s4 with tests t6-t9 (PASS), smoke tests; pre-registration v2 (pre-run amendments: stop sequence, no-think cap 8000, judge ceiling order)",
+    "b5f4a5a9b0526a7bfe2f5b7da65ace8db0066d11 2026-09-17 14:52:14 -0500 pre-registration of stage one (n=25, 84 prefixes under R4, stopping rule, judge Sonnet 5 x v3 x low, ceilings) \u00e2\u20ac\u201d registration timestamp; STATE_2026-09-17_2"
+  ],
+  "git_commit": "64ae55b4af25527d8c61619c5db8a902ed8bb4ba",
+  "timestamp": "2026-09-17T17:55:59"
+}

@@ -1,0 +1,2 @@
+I notice there's an overlap at line 27 - it's marked as both part of the group heading range and a separate local plan item. That should actually be split so the group heading covers 25-26, and 27 stands alone as its own local plan entry.
+

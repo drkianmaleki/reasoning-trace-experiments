@@ -1,0 +1,2 @@
+I need to split those two combined lines into separate indexed entries: one for treating it as the classic riddle (5 cents) and one for treating it as a strict logic puzzle (indeterminate), since they represent distinct answer paths.
+

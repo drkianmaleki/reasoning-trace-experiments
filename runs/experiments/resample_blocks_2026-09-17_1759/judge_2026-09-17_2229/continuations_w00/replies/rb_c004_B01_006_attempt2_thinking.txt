@@ -1,0 +1,2 @@
+I need to fix the overlapping entries around line 164-165, correcting the sequence to 208 Rf.meo.C, 209 Rf.meo.E, 210 Rf.meo.C, then output the full corrected list with just that fix applied.
+

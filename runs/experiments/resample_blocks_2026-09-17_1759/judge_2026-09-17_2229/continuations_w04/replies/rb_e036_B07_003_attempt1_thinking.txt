@@ -1,0 +1,6 @@
+I'm quickly tagging each thread with a shorthand label to track the different threads of reasoning, including one self-check about whether the intended answer might be (F).
+
+I'm laying out my plan for the response structure, then quickly going back through each answer option (A through F) to double-check my reasoning before settling on how I'll organize the final write-up, including a table comparing the options.
+
+I'm parsing the phrase "not well posed" itself for interpretation, then continuing through several more planning and generation steps.
+

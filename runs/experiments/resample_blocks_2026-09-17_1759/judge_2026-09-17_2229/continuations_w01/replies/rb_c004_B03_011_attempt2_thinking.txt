@@ -1,0 +1,2 @@
+I should drop that first invalid line and keep the rest unchanged.
+

@@ -1,0 +1,6 @@
+I'm going through each segment and categorizing it: some are about framing intent, some about reasoning or speculation, others evaluate options or note hedge words like "most likely" that signal weak confidence.
+
+I keep tracing through the plan revisions, restating the critical omission that's already surfaced multiple times, then pivoting to explain it with an analogy, weighing alternatives, and considering counterarguments before circling back to reassert the logical point and finally moving toward outlining next actions.
+
+I'm working through the remaining steps, reflecting on my own reasoning, checking coding choices, and drafting the final answer before pulling everything together into runs for the finished output.
+

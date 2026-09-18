@@ -1,0 +1,2 @@
+I need to fix that line by splitting it into two parts: lines 112-113 covering Rs.rtp.qt, and line 114 covering Rs.rtp.qt plus Re.lr.
+

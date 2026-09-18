@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """s2_resample.py -- pipeline v2 step (7/9), the registered stage-one run (pre-registration
-2026-09-17 v1, Sections 3 and 8): resampling of the two source traces at every block-end cut on
+2026-09-17 v2, Sections 3 and 8): resampling of the two source traces at every block-end cut on
 DeepInfra raw completions.
 
   python scripts/s2_resample.py --dry-run                      # prompts, prefix check, estimates; no call
@@ -11,12 +11,12 @@ DeepInfra raw completions.
 Design (asserted before anything else): the reviewed blocks of listing v4 derived with rule R4
 (scripts/derivation.py, texts from sentences_source.jsonl) must end exactly at the 46 (c004) and
 37 (e036) registered block-end indices.  Conditions in the registered order: the no-think
-baseline (n_0 = 100, prefill <think>\\n\\n</think>\\n\\n, max_tokens 2000), cut-0 (n = 25, prefill
+baseline (n_0 = 100, prefill <think>\\n\\n</think>\\n\\n, max_tokens 8000), cut-0 (n = 25, prefill
 <think>\\n), then the C-trace cuts m = 0, 1, ... and the E-trace cuts.  Prefix = raw trace text
 [0, char_end of the block's last sentence); prompt = the archived template with the item prompt
 of action summary v6 Section 4; the exact prompt string is stored in every record.  Sampling:
 Qwen/Qwen3.6-27B, temperature 1.0, max_tokens 16000, 4 workers, timeout 600 s, the archived
-stop sequence (see STOP below).  Scoring: scripts/scorer.py.  After each cut: P_hat_m with "?" in
+stop sequence <|im_end|> (v2, 2.3).  Scoring: scripts/scorer.py.  After each cut: P_hat_m with "?" in
 the denominator, the Wilson 95% interval, the stopping rule (P_hat_m = 1 -> M, no later cut of
 that trace), Tk(B_m) from prompt_tokens differences, the cost from usage; a row of pcut.csv, a
 line of _log.txt.  DEPARTURES.md is created empty at the start and appended for every deviation
@@ -52,14 +52,14 @@ ENDPOINT = BASE_URL + "/completions"
 MODEL = "Qwen/Qwen3.6-27B"
 TPL = "<|im_start|>user\n{p}<|im_end|>\n<|im_start|>assistant\n<think>\n{pre}"
 NOTHINK_PRE = "\n</think>\n\n"          # the template then reads <think>\n\n</think>\n\n (pipeline Section 5 item 8)
-# Pre-registration 2.3 says "no stop sequence -- the archived study's settings"; the archived
-# script (archive/decided-mid-thought/scripts/resample_cuts.py) sent stop=["<|im_end|>"] and no
-# archived completion contains the marker.  The run follows the archived settings and records
-# the choice in config.json and DEPARTURES.md (see report).
+# Pre-registration v2, 2.3: the archived stop sequence <|im_end|> (v1 wrote "no stop sequence"
+# in error; the archived script sent the stop and no archived completion contains the marker).
 STOP = ["<|im_end|>"]
 N0, N = 100, 25
 TEMPERATURE = 1.0
-MAX_TOKENS, MAX_TOKENS_NOTHINK = 16000, 2000
+# v2, 3.1: the no-think cap is 8000 (v1: 2000; seven of ten smoke replies were cut off before
+# their answer line); a reply still without a letter at 8000 tokens is "?".
+MAX_TOKENS, MAX_TOKENS_NOTHINK = 16000, 8000
 WORKERS, TIMEOUT = 4, 600
 COST_CEILING_USD = 45.0
 RETRIES = 3

@@ -1,0 +1,19 @@
+s2_resample: out=runs\experiments\resample_blocks_2026-09-17_1759 conditions=37 dry_run=False resume=True traces=['e036'] skip_baselines=True git=64ae55b4af25527d8c61619c5db8a902ed8bb4ba
+rb_e036_B00: n 25, p_hat 0.96 [0.8046, 0.9929], Tk 147, cost $0.2024, cumulative $1.47
+rb_e036_B01: n 25, p_hat 0.8 [0.6087, 0.9114], Tk 59, cost $0.2078, cumulative $1.68
+rb_e036_B02: n 25, p_hat 0.56 [0.3707, 0.7333], Tk 23, cost $0.2017, cumulative $1.88
+rb_e036_B03: n 25, p_hat 0.8 [0.6087, 0.9114], Tk 52, cost $0.2017, cumulative $2.08
+rb_e036_B04: n 25, p_hat 0.96 [0.8046, 0.9929], Tk 219, cost $0.1704, cumulative $2.25
+rb_e036_B05: n 25, p_hat 0.76 [0.5657, 0.885], Tk 204, cost $0.2148, cumulative $2.47
+rb_e036_B06: n 25, p_hat 0.96 [0.8046, 0.9929], Tk 255, cost $0.1924, cumulative $2.66
+rb_e036_B07: n 25, p_hat 1.0 [0.8668, 1.0], Tk 75, cost $0.1914, cumulative $2.85
+{
+  "out_dir": "runs\\experiments\\resample_blocks_2026-09-17_1759",
+  "conditions": 37,
+  "cost_usd": 2.8519449999999997,
+  "stopped": null,
+  "M": {
+    "e036": 7
+  },
+  "departures": 0
+}

@@ -1,0 +1,2 @@
+I need to fix this by removing the duplicate header line since I had both a range and individual lines listed.
+

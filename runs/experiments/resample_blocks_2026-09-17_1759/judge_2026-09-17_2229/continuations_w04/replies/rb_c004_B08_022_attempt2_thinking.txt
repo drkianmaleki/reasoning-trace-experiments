@@ -1,0 +1,2 @@
+There's an overlap issue at line 768 — I need to adjust the previous range to end at 767 instead of 768, so it reads 764-767 for the first item, then 768 starts the next one cleanly.
+

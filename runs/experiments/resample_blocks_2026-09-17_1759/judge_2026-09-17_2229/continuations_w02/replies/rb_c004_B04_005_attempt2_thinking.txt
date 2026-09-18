@@ -1,0 +1,2 @@
+I need to fix the overlap around lines 505-507. Checking the original example with b=0.05 giving B=1.05, then b=0.01 giving B=1.09, I can see the correct label sequence should be: line 504 as the setup statement, 505-506 as the calculation, 507 as the verification, then 508 setup, 509-510 calculation, 511 verification.
+

@@ -1,0 +1,10 @@
+I'm going through each sentence in the passage and tagging it by its rhetorical function—distinguishing self-correction, interpretation, reasoning steps, and restatements—to map out the structure of the argument.
+
+I'm continuing to classify each sentence by its structural pattern, tagging things like plan-verify combos, recall-check-answer sequences, and confirmation-implication patterns to build out the full labeling scheme.
+
+I'm continuing to code the sequence of reasoning and evaluation steps, tracking method refinements and plan iterations as I work through this coding scheme.
+
+I'm double-checking the classic ball-and-bat riddle numbers, verifying that if the ball costs 0.10 and the bat 1.00 more, the totals actually check out correctly.
+
+I'm still working through this coded breakdown of reasoning steps, tracking categories like plausibility checks, knowledge references, and comparisons of options across several answer choices.
+

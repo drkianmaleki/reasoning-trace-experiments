@@ -1,0 +1,2 @@
+I need to redo this fully, covering the entire range 0-1046 systematically and consistently, working through it in chunks to make sure every index gets a proper label.
+

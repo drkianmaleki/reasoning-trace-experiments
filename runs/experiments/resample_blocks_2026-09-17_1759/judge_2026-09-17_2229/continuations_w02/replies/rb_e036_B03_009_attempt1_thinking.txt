@@ -1,0 +1,6 @@
+I'm going through this problem step by step, recalling the setup, checking the reasoning, and noting that it seems to lead to infinitely many solutions rather than a unique one. I'm double-checking with examples to verify this conclusion.
+
+I keep working through the verification steps, checking each condition against known results, revisiting the problem statement when something doesn't quite fit, and organizing the reasoning into clearer subgoals before converging on the final overview of the solution.
+
+Continuing to work through the remaining items, checking each against the reasoning categories, confirming consistency, and revisiting knowledge points before finalizing the classification pass.
+

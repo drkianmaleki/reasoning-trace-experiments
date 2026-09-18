@@ -1,0 +1,4 @@
+I notice line 243 got duplicated in my numbering, so I need to fix the ordering around lines 240-259 and reconstruct the sequence properly based on the actual sentence breakdown.
+
+With two unknowns and only one linear constraint, the system is underdetermined—there are infinitely many valid bat/ball pairs satisfying both the sum and inequality, so I can't pin down a unique answer this way, which means (A) doesn't hold up as stated.
+

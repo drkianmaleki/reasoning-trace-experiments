@@ -1,0 +1,5 @@
+prefix_id,trace_arm,cut,last_node_label,n,n_labeled,n_failed,next_Planning,next_Reasoning,next_Reflection,next_Knowledge,next_Restatement,next_Assumption,next_Example,next_Conclusion,opens_block,first_is_wait
+rb_c004_B06,c004,41,Reasoning,25,25,0,3,16,0,2,0,4,0,0,7,3
+rb_c004_B07,c004,42,Planning,25,25,0,23,0,0,0,2,0,0,0,20,11
+rb_e036_B05,e036,52,Reflection,25,25,0,25,0,0,0,0,0,0,0,24,15
+rb_e036_B06,e036,70,Reasoning,25,25,0,25,0,0,0,0,0,0,0,25,25

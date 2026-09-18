@@ -1,0 +1,2 @@
+I need to split lines 74-75 into separate treatments: one noting that if this is a trick question missing the "1.00" quantifier, we can't determine the answer, and another noting that if it's a copy-paste error of the classic riddle, the answer is $0.05 — each as its own distinct assumption-conclusion pair rather than combined.
+

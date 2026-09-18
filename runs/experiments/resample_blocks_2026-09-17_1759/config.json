@@ -1,0 +1,264 @@
+{
+  "run_id": "resample_blocks_2026-09-17_1759",
+  "label": "run",
+  "endpoint": "https://api.deepinfra.com/v1/openai/completions",
+  "model": "Qwen/Qwen3.6-27B",
+  "template": "<|im_start|>user\n{p}<|im_end|>\n<|im_start|>assistant\n<think>\n{pre}",
+  "nothink_prefill": "<think>\n\n</think>\n\n",
+  "stop": [
+    "<|im_end|>"
+  ],
+  "temperature": 1.0,
+  "max_tokens": 16000,
+  "max_tokens_nothink": 8000,
+  "workers": 4,
+  "timeout_s": 600,
+  "retries": 3,
+  "n": 25,
+  "n0": 100,
+  "cost_ceiling_usd": 45.0,
+  "prices_usd_per_million": {
+    "input": 0.32,
+    "output": 3.2
+  },
+  "item_prompt_sha256": "5b2f1de060359d8fb120f0a0ec42d57f8e896a063e0ce10c7a245c2355c71cdb",
+  "options": {
+    "A": "It is $0.05",
+    "B": "It is probably $0.05",
+    "C": "There is not enough information, but the answer is most likely $0.05",
+    "D": "I am not sure",
+    "E": "The question is not well posed",
+    "F": "None of the above"
+  },
+  "listing": "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\docs\\shared\\2026-09-17_source_traces_labeled_v4.md",
+  "sentences_source": "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\runs\\tests\\t2_split_2026-09-16_2224\\sentences_source.jsonl",
+  "sweep_file": "C:\\Users\\kianu\\Dropbox\\Projects\\Ongoing\\reasoning-trace-experiments\\archive\\decided-mid-thought\\runs\\sweep_items_batball_2026-08-19_1623.jsonl",
+  "registered_ends": {
+    "c004": [
+      7,
+      12,
+      14,
+      22,
+      30,
+      35,
+      41,
+      42,
+      57,
+      78,
+      97,
+      106,
+      113,
+      115,
+      119,
+      131,
+      136,
+      143,
+      147,
+      159,
+      165,
+      170,
+      186,
+      189,
+      192,
+      198,
+      201,
+      208,
+      215,
+      226,
+      228,
+      253,
+      262,
+      265,
+      276,
+      287,
+      301,
+      324,
+      329,
+      339,
+      341,
+      343,
+      351,
+      355,
+      361,
+      373
+    ],
+    "e036": [
+      11,
+      15,
+      18,
+      19,
+      41,
+      52,
+      70,
+      74,
+      76,
+      92,
+      95,
+      99,
+      104,
+      116,
+      119,
+      133,
+      143,
+      151,
+      153,
+      165,
+      167,
+      173,
+      176,
+      178,
+      181,
+      186,
+      192,
+      198,
+      203,
+      206,
+      212,
+      214,
+      219,
+      227,
+      244,
+      246,
+      250
+    ]
+  },
+  "a_T": {
+    "c004": "C",
+    "e036": "E"
+  },
+  "tk_trace": {
+    "c004": 4740,
+    "e036": 2890
+  },
+  "conditions_this_process": [
+    "rb_nothink",
+    "rb_cut0",
+    "rb_c004_B00",
+    "rb_c004_B01",
+    "rb_c004_B02",
+    "rb_c004_B03",
+    "rb_c004_B04",
+    "rb_c004_B05",
+    "rb_c004_B06",
+    "rb_c004_B07",
+    "rb_c004_B08",
+    "rb_c004_B09",
+    "rb_c004_B10",
+    "rb_c004_B11",
+    "rb_c004_B12",
+    "rb_c004_B13",
+    "rb_c004_B14",
+    "rb_c004_B15",
+    "rb_c004_B16",
+    "rb_c004_B17",
+    "rb_c004_B18",
+    "rb_c004_B19",
+    "rb_c004_B20",
+    "rb_c004_B21",
+    "rb_c004_B22",
+    "rb_c004_B23",
+    "rb_c004_B24",
+    "rb_c004_B25",
+    "rb_c004_B26",
+    "rb_c004_B27",
+    "rb_c004_B28",
+    "rb_c004_B29",
+    "rb_c004_B30",
+    "rb_c004_B31",
+    "rb_c004_B32",
+    "rb_c004_B33",
+    "rb_c004_B34",
+    "rb_c004_B35",
+    "rb_c004_B36",
+    "rb_c004_B37",
+    "rb_c004_B38",
+    "rb_c004_B39",
+    "rb_c004_B40",
+    "rb_c004_B41",
+    "rb_c004_B42",
+    "rb_c004_B43",
+    "rb_c004_B44",
+    "rb_c004_B45"
+  ],
+  "git_commit": "64ae55b4af25527d8c61619c5db8a902ed8bb4ba",
+  "python": "3.12.10",
+  "timestamp": "2026-09-17T17:59:22",
+  "dry_run": false,
+  "prefix_check": {
+    "c004": {
+      "prefixes": 46,
+      "matched": 46,
+      "registered": 46
+    },
+    "e036": {
+      "prefixes": 37,
+      "matched": 37,
+      "registered": 37
+    }
+  },
+  "estimate": {
+    "per_trace": {
+      "nothink": {
+        "conditions": 1,
+        "calls": 100,
+        "prompt_tokens_est": 129.0,
+        "cost_est_usd": 0.132128,
+        "cost_est_stop_usd": 0.132128
+      },
+      "cut0": {
+        "conditions": 1,
+        "calls": 25,
+        "prompt_tokens_est": 126.25,
+        "cost_est_usd": 0.35701,
+        "cost_est_stop_usd": 0.35701
+      },
+      "c004": {
+        "conditions": 46,
+        "calls": 1150,
+        "prompt_tokens_est": 111912.0,
+        "cost_est_usd": 35.81849599999999,
+        "cost_est_stop_usd": 7.630039999999999
+      }
+    },
+    "total": {
+      "cost_est_usd": 36.307633999999986,
+      "cost_est_stop_usd": 8.119178,
+      "calls": 1275
+    },
+    "assumptions": {
+      "prompt_tokens": "characters/4",
+      "completion_tokens": {
+        "nothink": 400,
+        "cut0": 4450,
+        "c004": 9490,
+        "e036": 2391
+      },
+      "prices_usd_per_million": {
+        "input": 0.32,
+        "output": 3.2
+      },
+      "stop_at": {
+        "c004": "C-B09",
+        "e036": "E-B06"
+      }
+    }
+  },
+  "slug_check": {
+    "ok": true,
+    "status": 200,
+    "model_echoed": "Qwen/Qwen3.6-27B",
+    "usage": {
+      "prompt_tokens": 1,
+      "total_tokens": 2,
+      "completion_tokens": 1,
+      "estimated_cost": 3.5200000000000006e-06,
+      "prompt_tokens_details": null
+    },
+    "text": "OK",
+    "error": null
+  },
+  "cost_usd_this_process": 11.473916,
+  "M": {
+    "c004": 11
+  }
+}

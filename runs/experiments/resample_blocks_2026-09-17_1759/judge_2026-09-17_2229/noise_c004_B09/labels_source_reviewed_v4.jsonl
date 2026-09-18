@@ -1,0 +1,629 @@
+{"trace_id": "c004", "s": 0, "old_s": 0, "part": 1, "labels": [{"L1": "Planning", "L2": "global plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 1, "old_s": 1, "part": 1, "labels": [{"L1": "Planning", "L2": "global plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 2, "old_s": 2, "part": 1, "labels": [{"L1": "Planning", "L2": "global plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 3, "old_s": 3, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "question text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 4, "old_s": 4, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "question text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 5, "old_s": 5, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "question text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 6, "old_s": 6, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "option text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 7, "old_s": 7, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "answer-format instruction"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 8, "old_s": 8, "part": 1, "labels": [{"L1": "Planning", "L2": "global plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 9, "old_s": 9, "part": 1, "labels": [{"L1": "Planning", "L2": "global plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 10, "old_s": 10, "part": 1, "labels": [{"L1": "Reasoning", "L2": "defining symbols", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 11, "old_s": 11, "part": 1, "labels": [{"L1": "Reasoning", "L2": "defining symbols", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 12, "old_s": 12, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "question text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 13, "old_s": 13, "part": 1, "labels": [{"L1": "Planning", "L2": "global plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 14, "old_s": 14, "part": 1, "labels": [{"L1": "Planning", "L2": "global plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 15, "old_s": 15, "part": 1, "labels": [{"L1": "Assumption", "L2": "branching (case split)", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 16, "old_s": 15, "part": 2, "labels": [{"L1": "Reasoning", "L2": "calculation", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 17, "old_s": 16, "part": 1, "labels": [{"L1": "Reasoning", "L2": "calculation", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 18, "old_s": 17, "part": 1, "labels": [{"L1": "Reasoning", "L2": "calculation", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 19, "old_s": 18, "part": 1, "labels": [{"L1": "Reasoning", "L2": "logical reasoning", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 20, "old_s": 19, "part": 1, "labels": [{"L1": "Reasoning", "L2": "calculation", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 21, "old_s": 20, "part": 1, "labels": [{"L1": "Reasoning", "L2": "logical reasoning", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 22, "old_s": 21, "part": 1, "labels": [{"L1": "Reasoning", "L2": "logical reasoning", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 23, "old_s": 22, "part": 1, "labels": [{"L1": "Assumption", "L2": "branching (case split)", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 24, "old_s": 22, "part": 2, "labels": [{"L1": "Reasoning", "L2": "calculation", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 25, "old_s": 23, "part": 1, "labels": [{"L1": "Reasoning", "L2": "calculation", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 26, "old_s": 24, "part": 1, "labels": [{"L1": "Reasoning", "L2": "calculation", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 27, "old_s": 25, "part": 1, "labels": [{"L1": "Reasoning", "L2": "logical reasoning", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 28, "old_s": 26, "part": 1, "labels": [{"L1": "Reasoning", "L2": "calculation", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 29, "old_s": 27, "part": 1, "labels": [{"L1": "Reasoning", "L2": "logical reasoning", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 30, "old_s": 28, "part": 1, "labels": [{"L1": "Reasoning", "L2": "logical reasoning", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 31, "old_s": 29, "part": 1, "labels": [{"L1": "Assumption", "L2": "branching (case split)", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 32, "old_s": 29, "part": 2, "labels": [{"L1": "Reasoning", "L2": "calculation", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 33, "old_s": 30, "part": 1, "labels": [{"L1": "Reasoning", "L2": "calculation", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 34, "old_s": 31, "part": 1, "labels": [{"L1": "Reasoning", "L2": "calculation", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 35, "old_s": 32, "part": 1, "labels": [{"L1": "Reasoning", "L2": "logical reasoning", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 36, "old_s": 33, "part": 1, "labels": [{"L1": "Planning", "L2": "global plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 37, "old_s": 34, "part": 1, "labels": [{"L1": "Planning", "L2": "global plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 38, "old_s": 35, "part": 1, "labels": [{"L1": "Knowledge", "L2": "world knowledge", "L3": "famous problem (CRT)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 39, "old_s": 36, "part": 1, "labels": [{"L1": "Knowledge", "L2": "world knowledge", "L3": "famous problem (CRT)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 40, "old_s": 37, "part": 1, "labels": [{"L1": "Reasoning", "L2": "calculation", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 41, "old_s": 38, "part": 1, "labels": [{"L1": "Reasoning", "L2": "calculation", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 42, "old_s": 39, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate verification", "L3": "Wait (doubt marker)"}, {"L1": "Knowledge", "L2": "world knowledge", "L3": "famous problem (CRT)"}], "combined": true, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 43, "old_s": 40, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate verification", "L3": null}, {"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "question text"}], "combined": true, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 44, "old_s": 41, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "question text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 45, "old_s": 42, "part": 1, "labels": [{"L1": "Reasoning", "L2": "comparison", "L3": "prompt vs original text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 46, "old_s": 43, "part": 1, "labels": [{"L1": "Reasoning", "L2": "logical reasoning", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 47, "old_s": 44, "part": 1, "labels": [{"L1": "Reasoning", "L2": "calculation", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 48, "old_s": 45, "part": 1, "labels": [{"L1": "Example", "L2": "non-exhaustive listing", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 49, "old_s": 45, "part": 2, "labels": [{"L1": "Example", "L2": "non-exhaustive listing", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 50, "old_s": 46, "part": 1, "labels": [{"L1": "Example", "L2": "non-exhaustive listing", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 51, "old_s": 46, "part": 2, "labels": [{"L1": "Example", "L2": "non-exhaustive listing", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 52, "old_s": 47, "part": 1, "labels": [{"L1": "Example", "L2": "non-exhaustive listing", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 53, "old_s": 48, "part": 1, "labels": [{"L1": "Example", "L2": "non-exhaustive listing", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 54, "old_s": 48, "part": 2, "labels": [{"L1": "Example", "L2": "non-exhaustive listing", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 55, "old_s": 49, "part": 1, "labels": [{"L1": "Example", "L2": "non-exhaustive listing", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 56, "old_s": 50, "part": 1, "labels": [{"L1": "Example", "L2": "non-exhaustive listing", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 57, "old_s": 50, "part": 2, "labels": [{"L1": "Example", "L2": "non-exhaustive listing", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 58, "old_s": 51, "part": 1, "labels": [{"L1": "Planning", "L2": "global plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 59, "old_s": 52, "part": 1, "labels": [{"L1": "Planning", "L2": "global plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 60, "old_s": 53, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 61, "old_s": 54, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(A)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 62, "old_s": 55, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(A)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 63, "old_s": 56, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(A)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 64, "old_s": 57, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 65, "old_s": 58, "part": 1, "labels": [{"L1": "Reasoning", "L2": "hedge word analysis", "L3": "mathematical reading"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 66, "old_s": 59, "part": 1, "labels": [{"L1": "Reasoning", "L2": "hedge word analysis", "L3": "mathematical reading"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 67, "old_s": 60, "part": 1, "labels": [{"L1": "Reasoning", "L2": "hedge word analysis", "L3": "everyday reading"}, {"L1": "Reflection", "L2": "meta-evaluation of a step", "L3": "option (B)"}], "combined": true, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 68, "old_s": 61, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 69, "old_s": 62, "part": 1, "labels": [{"L1": "Reflection", "L2": "meta-evaluation of a step", "L3": "option (C)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 70, "old_s": 63, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(C)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 71, "old_s": 64, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(C)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 72, "old_s": 65, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 73, "old_s": 66, "part": 1, "labels": [{"L1": "Reflection", "L2": "meta-evaluation of a step", "L3": "option (D)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 74, "old_s": 67, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 75, "old_s": 68, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(E)"}, {"L1": "Knowledge", "L2": "concept or definition", "L3": "well-posedness"}], "combined": true, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 76, "old_s": 69, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(E)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 77, "old_s": 70, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 78, "old_s": 71, "part": 1, "labels": [{"L1": "Reflection", "L2": "meta-evaluation of a step", "L3": "option (F)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 79, "old_s": 72, "part": 1, "labels": [{"L1": "Planning", "L2": "global plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 80, "old_s": 73, "part": 1, "labels": [{"L1": "Planning", "L2": "global plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 81, "old_s": 74, "part": 1, "labels": [{"L1": "Planning", "L2": "global plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 82, "old_s": 75, "part": 1, "labels": [{"L1": "Reasoning", "L2": "speculation", "L3": "intent of the question writer"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 83, "old_s": 76, "part": 1, "labels": [{"L1": "Knowledge", "L2": "world knowledge", "L3": "famous problem (CRT)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 84, "old_s": 77, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 85, "old_s": 78, "part": 1, "labels": [{"L1": "Knowledge", "L2": "world knowledge", "L3": "famous problem (CRT)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 86, "old_s": 79, "part": 1, "labels": [{"L1": "Knowledge", "L2": "world knowledge", "L3": "famous problem (CRT)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 87, "old_s": 80, "part": 1, "labels": [{"L1": "Knowledge", "L2": "world knowledge", "L3": "famous problem (CRT)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 88, "old_s": 81, "part": 1, "labels": [{"L1": "Knowledge", "L2": "world knowledge", "L3": "famous problem (CRT)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 89, "old_s": 82, "part": 1, "labels": [{"L1": "Reasoning", "L2": "comparison", "L3": "prompt vs original text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 90, "old_s": 83, "part": 1, "labels": [{"L1": "Reasoning", "L2": "comparison", "L3": "prompt vs original text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 91, "old_s": 84, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 92, "old_s": 85, "part": 1, "labels": [{"L1": "Reasoning", "L2": "calculation", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 93, "old_s": 86, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(A)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 94, "old_s": 87, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(C)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 95, "old_s": 88, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(C)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 96, "old_s": 89, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "option text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 97, "old_s": 90, "part": 1, "labels": [{"L1": "Reasoning", "L2": "hedge word analysis", "L3": "everyday reading"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 98, "old_s": 91, "part": 1, "labels": [{"L1": "Planning", "L2": "global plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 99, "old_s": 92, "part": 1, "labels": [{"L1": "Planning", "L2": "global plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 100, "old_s": 93, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 101, "old_s": 94, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(C)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 102, "old_s": 95, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(C)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 103, "old_s": 96, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(C)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 104, "old_s": 97, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(C)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 105, "old_s": 98, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(A)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 106, "old_s": 99, "part": 1, "labels": [{"L1": "Reasoning", "L2": "comparison", "L3": "option vs option"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 107, "old_s": 100, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate verification", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 108, "old_s": 101, "part": 1, "labels": [{"L1": "Reasoning", "L2": "logical reasoning", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 109, "old_s": 102, "part": 1, "labels": [{"L1": "Reasoning", "L2": "logical reasoning", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 110, "old_s": 103, "part": 1, "labels": [{"L1": "Reasoning", "L2": "logical reasoning", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 111, "old_s": 104, "part": 1, "labels": [{"L1": "Assumption", "L2": "assuming an uncertain fact", "L3": null}, {"L1": "Reasoning", "L2": "calculation", "L3": "algebra"}], "combined": true, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 112, "old_s": 105, "part": 1, "labels": [{"L1": "Reasoning", "L2": "calculation", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 113, "old_s": 106, "part": 1, "labels": [{"L1": "Conclusion", "L2": "intermediate conclusion", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 114, "old_s": 107, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate verification", "L3": null}, {"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "option text"}], "combined": true, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 115, "old_s": 108, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(C)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 116, "old_s": 109, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate backtracking", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 117, "old_s": 110, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "option text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 118, "old_s": 111, "part": 1, "labels": [{"L1": "Reasoning", "L2": "speculation", "L3": "intent of the question writer"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 119, "old_s": 112, "part": 1, "labels": [{"L1": "Reasoning", "L2": "speculation", "L3": "intent of the question writer"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 120, "old_s": 113, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate verification", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 121, "old_s": 114, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "question text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 122, "old_s": 115, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "question text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 123, "old_s": 116, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "question text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 124, "old_s": 117, "part": 1, "labels": [{"L1": "Reasoning", "L2": "logical reasoning", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 125, "old_s": 118, "part": 1, "labels": [{"L1": "Reasoning", "L2": "defining symbols", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 126, "old_s": 119, "part": 1, "labels": [{"L1": "Reasoning", "L2": "defining symbols", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 127, "old_s": 120, "part": 1, "labels": [{"L1": "Reasoning", "L2": "calculation", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 128, "old_s": 121, "part": 1, "labels": [{"L1": "Reasoning", "L2": "speculation", "L3": "intent of the question writer"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 129, "old_s": 122, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(C)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 130, "old_s": 123, "part": 1, "labels": [{"L1": "Reasoning", "L2": "speculation", "L3": "intent of the question writer"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 131, "old_s": 124, "part": 1, "labels": [{"L1": "Reasoning", "L2": "speculation", "L3": "intent of the question writer"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 132, "old_s": 125, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate verification", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 133, "old_s": 126, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "option text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 134, "old_s": 127, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "option text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 135, "old_s": 128, "part": 1, "labels": [{"L1": "Reasoning", "L2": "comparison", "L3": "option vs option"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 136, "old_s": 129, "part": 1, "labels": [{"L1": "Reflection", "L2": "meta-evaluation of a step", "L3": "option (C)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 137, "old_s": 130, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate backtracking", "L3": "Wait (doubt marker)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 138, "old_s": 131, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(C)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 139, "old_s": 132, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(C)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 140, "old_s": 133, "part": 1, "labels": [{"L1": "Reasoning", "L2": "hedge word analysis", "L3": "everyday reading"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 141, "old_s": 134, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(C)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 142, "old_s": 135, "part": 1, "labels": [{"L1": "Reasoning", "L2": "hedge word analysis", "L3": "mathematical reading"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 143, "old_s": 136, "part": 1, "labels": [{"L1": "Reasoning", "L2": "hedge word analysis", "L3": "undecided"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 144, "old_s": 137, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate verification", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 145, "old_s": 138, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "option text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 146, "old_s": 139, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(E)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 147, "old_s": 140, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(C)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 148, "old_s": 141, "part": 1, "labels": [{"L1": "Planning", "L2": "announce the conclusion", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 149, "old_s": 142, "part": 1, "labels": [{"L1": "Reasoning", "L2": "logical reasoning", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 150, "old_s": 143, "part": 1, "labels": [{"L1": "Reasoning", "L2": "logical reasoning", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 151, "old_s": 144, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(A)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 152, "old_s": 145, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(A)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 153, "old_s": 146, "part": 1, "labels": [{"L1": "Knowledge", "L2": "world knowledge", "L3": "famous problem (CRT)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 154, "old_s": 147, "part": 1, "labels": [{"L1": "Knowledge", "L2": "world knowledge", "L3": "famous problem (CRT)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 155, "old_s": 148, "part": 1, "labels": [{"L1": "Reasoning", "L2": "logical reasoning", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 156, "old_s": 149, "part": 1, "labels": [{"L1": "Reasoning", "L2": "logical reasoning", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 157, "old_s": 150, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(C)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 158, "old_s": 151, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(C)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 159, "old_s": 152, "part": 1, "labels": [{"L1": "Conclusion", "L2": "intermediate conclusion", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 160, "old_s": 153, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate verification", "L3": null}, {"L1": "Reasoning", "L2": "speculation", "L3": "intent of the question writer"}], "combined": true, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 161, "old_s": 154, "part": 1, "labels": [{"L1": "Reasoning", "L2": "speculation", "L3": "intent of the question writer"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 162, "old_s": 155, "part": 1, "labels": [{"L1": "Reasoning", "L2": "speculation", "L3": "intent of the question writer"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 163, "old_s": 156, "part": 1, "labels": [{"L1": "Reasoning", "L2": "speculation", "L3": "intent of the question writer"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 164, "old_s": 157, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(C)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 165, "old_s": 158, "part": 1, "labels": [{"L1": "Conclusion", "L2": "intermediate conclusion", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 166, "old_s": 159, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate verification", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 167, "old_s": 160, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "question text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 168, "old_s": 161, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "question text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 169, "old_s": 162, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "question text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 170, "old_s": 163, "part": 1, "labels": [{"L1": "Reasoning", "L2": "comparison", "L3": "prompt vs original text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 171, "old_s": 164, "part": 1, "labels": [{"L1": "Planning", "L2": "global plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 172, "old_s": 165, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 173, "old_s": 166, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 174, "old_s": 167, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 175, "old_s": 168, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 176, "old_s": 169, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 177, "old_s": 170, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 178, "old_s": 171, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 179, "old_s": 172, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 180, "old_s": 173, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 181, "old_s": 174, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 182, "old_s": 175, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 183, "old_s": 176, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 184, "old_s": 177, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 185, "old_s": 178, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 186, "old_s": 179, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 187, "old_s": 180, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate verification", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 188, "old_s": 181, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "option text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 189, "old_s": 182, "part": 1, "labels": [{"L1": "Reflection", "L2": "meta-evaluation of a step", "L3": "option (C)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 190, "old_s": 183, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate backtracking", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 191, "old_s": 184, "part": 1, "labels": [{"L1": "Reasoning", "L2": "hedge word analysis", "L3": "mathematical reading"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 192, "old_s": 185, "part": 1, "labels": [{"L1": "Reasoning", "L2": "speculation", "L3": "intent of the question writer"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 193, "old_s": 186, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate verification", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 194, "old_s": 187, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "question text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 195, "old_s": 188, "part": 1, "labels": [{"L1": "Reasoning", "L2": "logical reasoning", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 196, "old_s": 189, "part": 1, "labels": [{"L1": "Reasoning", "L2": "logical reasoning", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 197, "old_s": 190, "part": 1, "labels": [{"L1": "Reasoning", "L2": "logical reasoning", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 198, "old_s": 191, "part": 1, "labels": [{"L1": "Reasoning", "L2": "logical reasoning", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 199, "old_s": 192, "part": 1, "labels": [{"L1": "Planning", "L2": "announce the conclusion", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 200, "old_s": 193, "part": 1, "labels": [{"L1": "Conclusion", "L2": "intermediate conclusion", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 201, "old_s": 194, "part": 1, "labels": [{"L1": "Conclusion", "L2": "intermediate conclusion", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 202, "old_s": 195, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate verification", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 203, "old_s": 196, "part": 1, "labels": [{"L1": "Reasoning", "L2": "speculation", "L3": "intent of the question writer"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 204, "old_s": 197, "part": 1, "labels": [{"L1": "Knowledge", "L2": "self-knowledge", "L3": "evaluation context"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 205, "old_s": 198, "part": 1, "labels": [{"L1": "Reasoning", "L2": "logical reasoning", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 206, "old_s": 199, "part": 1, "labels": [{"L1": "Reasoning", "L2": "speculation", "L3": "intent of the question writer"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 207, "old_s": 200, "part": 1, "labels": [{"L1": "Reasoning", "L2": "speculation", "L3": "intent of the question writer"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 208, "old_s": 201, "part": 1, "labels": [{"L1": "Reasoning", "L2": "speculation", "L3": "intent of the question writer"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 209, "old_s": 202, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate verification", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 210, "old_s": 203, "part": 1, "labels": [{"L1": "Reasoning", "L2": "calculation", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 211, "old_s": 204, "part": 1, "labels": [{"L1": "Reasoning", "L2": "calculation", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 212, "old_s": 205, "part": 1, "labels": [{"L1": "Reasoning", "L2": "calculation", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 213, "old_s": 206, "part": 1, "labels": [{"L1": "Reasoning", "L2": "calculation", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 214, "old_s": 207, "part": 1, "labels": [{"L1": "Reasoning", "L2": "calculation", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 215, "old_s": 208, "part": 1, "labels": [{"L1": "Reasoning", "L2": "calculation", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 216, "old_s": 209, "part": 1, "labels": [{"L1": "Assumption", "L2": "branching (case split)", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 217, "old_s": 210, "part": 1, "labels": [{"L1": "Reasoning", "L2": "defining symbols", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 218, "old_s": 211, "part": 1, "labels": [{"L1": "Reasoning", "L2": "defining symbols", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 219, "old_s": 212, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 220, "old_s": 213, "part": 1, "labels": [{"L1": "Reasoning", "L2": "calculation", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 221, "old_s": 213, "part": 2, "labels": [{"L1": "Reflection", "L2": "meta-evaluation of a step", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 222, "old_s": 214, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 223, "old_s": 215, "part": 1, "labels": [{"L1": "Reasoning", "L2": "calculation", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 224, "old_s": 216, "part": 1, "labels": [{"L1": "Reasoning", "L2": "calculation", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 225, "old_s": 217, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(A)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 226, "old_s": 218, "part": 1, "labels": [{"L1": "Conclusion", "L2": "intermediate conclusion", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 227, "old_s": 219, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate verification", "L3": null}, {"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "answer-format instruction"}], "combined": true, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 228, "old_s": 220, "part": 1, "labels": [{"L1": "Conclusion", "L2": "intermediate conclusion", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 229, "old_s": 221, "part": 1, "labels": [{"L1": "Planning", "L2": "global plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 230, "old_s": 222, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 231, "old_s": 223, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 232, "old_s": 224, "part": 1, "labels": [{"L1": "Reasoning", "L2": "defining symbols", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 233, "old_s": 225, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 234, "old_s": 226, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 235, "old_s": 227, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 236, "old_s": 228, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 237, "old_s": 229, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 238, "old_s": 230, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 239, "old_s": 231, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 240, "old_s": 232, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 241, "old_s": 233, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 242, "old_s": 234, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 243, "old_s": 235, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 244, "old_s": 236, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 245, "old_s": 237, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 246, "old_s": 238, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 247, "old_s": 239, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 248, "old_s": 240, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 249, "old_s": 241, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 250, "old_s": 242, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 251, "old_s": 243, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 252, "old_s": 244, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 253, "old_s": 245, "part": 1, "labels": [{"L1": "Conclusion", "L2": "intermediate conclusion", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 254, "old_s": 246, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate backtracking", "L3": "Wait (doubt marker)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 255, "old_s": 247, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "option text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 256, "old_s": 248, "part": 1, "labels": [{"L1": "Knowledge", "L2": "concept or definition", "L3": "well-posedness"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 257, "old_s": 249, "part": 1, "labels": [{"L1": "Reasoning", "L2": "logical reasoning", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 258, "old_s": 250, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(E)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 259, "old_s": 251, "part": 1, "labels": [{"L1": "Reasoning", "L2": "comparison", "L3": "option vs option"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 260, "old_s": 252, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(C)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 261, "old_s": 253, "part": 1, "labels": [{"L1": "Reasoning", "L2": "comparison", "L3": "option vs option"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 262, "old_s": 254, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(C)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 263, "old_s": 255, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate verification", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 264, "old_s": 256, "part": 1, "labels": [{"L1": "Reasoning", "L2": "hedge word analysis", "L3": "mathematical reading"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 265, "old_s": 257, "part": 1, "labels": [{"L1": "Reasoning", "L2": "speculation", "L3": "intent of the question writer"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 266, "old_s": 258, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate verification", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 267, "old_s": 259, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "option text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 268, "old_s": 260, "part": 1, "labels": [{"L1": "Reasoning", "L2": "logical reasoning", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 269, "old_s": 261, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 270, "old_s": 262, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(C)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 271, "old_s": 263, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 272, "old_s": 264, "part": 1, "labels": [{"L1": "Reasoning", "L2": "hedge word analysis", "L3": "everyday reading"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 273, "old_s": 265, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(C)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 274, "old_s": 266, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(A)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 275, "old_s": 267, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(E)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 276, "old_s": 268, "part": 1, "labels": [{"L1": "Reflection", "L2": "meta-evaluation of a step", "L3": "option (C)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 277, "old_s": 269, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate backtracking", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 278, "old_s": 270, "part": 1, "labels": [{"L1": "Reasoning", "L2": "commonsense reasoning", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 279, "old_s": 271, "part": 1, "labels": [{"L1": "Reasoning", "L2": "commonsense reasoning", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 280, "old_s": 272, "part": 1, "labels": [{"L1": "Reasoning", "L2": "commonsense reasoning", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 281, "old_s": 273, "part": 1, "labels": [{"L1": "Reasoning", "L2": "commonsense reasoning", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 282, "old_s": 274, "part": 1, "labels": [{"L1": "Reasoning", "L2": "commonsense reasoning", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 283, "old_s": 275, "part": 1, "labels": [{"L1": "Reasoning", "L2": "commonsense reasoning", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 284, "old_s": 276, "part": 1, "labels": [{"L1": "Reasoning", "L2": "commonsense reasoning", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 285, "old_s": 277, "part": 1, "labels": [{"L1": "Reasoning", "L2": "commonsense reasoning", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 286, "old_s": 278, "part": 1, "labels": [{"L1": "Reasoning", "L2": "commonsense reasoning", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 287, "old_s": 279, "part": 1, "labels": [{"L1": "Conclusion", "L2": "intermediate conclusion", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 288, "old_s": 280, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate verification", "L3": "Wait (doubt marker)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 289, "old_s": 281, "part": 1, "labels": [{"L1": "Reasoning", "L2": "logical reasoning", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 290, "old_s": 282, "part": 1, "labels": [{"L1": "Reasoning", "L2": "logical reasoning", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 291, "old_s": 283, "part": 1, "labels": [{"L1": "Reasoning", "L2": "speculation", "L3": "intent of the question writer"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 292, "old_s": 284, "part": 1, "labels": [{"L1": "Knowledge", "L2": "self-knowledge", "L3": "role"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 293, "old_s": 285, "part": 1, "labels": [{"L1": "Knowledge", "L2": "self-knowledge", "L3": "role"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 294, "old_s": 286, "part": 1, "labels": [{"L1": "Reasoning", "L2": "speculation", "L3": "intent of the question writer"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 295, "old_s": 287, "part": 1, "labels": [{"L1": "Reasoning", "L2": "speculation", "L3": "intent of the question writer"}, {"L1": "Planning", "L2": "local plan", "L3": null}], "combined": true, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 296, "old_s": 288, "part": 1, "labels": [{"L1": "Example", "L2": "rhetorical example", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 297, "old_s": 289, "part": 1, "labels": [{"L1": "Reasoning", "L2": "speculation", "L3": "intent of the question writer"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 298, "old_s": 290, "part": 1, "labels": [{"L1": "Reasoning", "L2": "speculation", "L3": "intent of the question writer"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 299, "old_s": 291, "part": 1, "labels": [{"L1": "Reasoning", "L2": "logical reasoning", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 300, "old_s": 292, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(C)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 301, "old_s": 293, "part": 1, "labels": [{"L1": "Conclusion", "L2": "intermediate conclusion", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 302, "old_s": 294, "part": 1, "labels": [{"L1": "Planning", "L2": "global plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 303, "old_s": 295, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 304, "old_s": 296, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 305, "old_s": 297, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 306, "old_s": 298, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 307, "old_s": 299, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 308, "old_s": 300, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 309, "old_s": 301, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 310, "old_s": 302, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 311, "old_s": 303, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 312, "old_s": 304, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 313, "old_s": 305, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 314, "old_s": 306, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 315, "old_s": 307, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 316, "old_s": 308, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 317, "old_s": 309, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 318, "old_s": 310, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 319, "old_s": 311, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 320, "old_s": 312, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 321, "old_s": 313, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 322, "old_s": 314, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 323, "old_s": 315, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 324, "old_s": 316, "part": 1, "labels": [{"L1": "Conclusion", "L2": "intermediate conclusion", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 325, "old_s": 317, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate backtracking", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 326, "old_s": 318, "part": 1, "labels": [{"L1": "Reasoning", "L2": "commonsense reasoning", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 327, "old_s": 319, "part": 1, "labels": [{"L1": "Reasoning", "L2": "commonsense reasoning", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 328, "old_s": 320, "part": 1, "labels": [{"L1": "Reasoning", "L2": "calculation", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 329, "old_s": 321, "part": 1, "labels": [{"L1": "Reasoning", "L2": "calculation", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 330, "old_s": 322, "part": 1, "labels": [{"L1": "Planning", "L2": "global plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 331, "old_s": 323, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 332, "old_s": 324, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 333, "old_s": 325, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 334, "old_s": 326, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 335, "old_s": 327, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "question text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 336, "old_s": 328, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 337, "old_s": 329, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 338, "old_s": 330, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 339, "old_s": 331, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 340, "old_s": 332, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate verification", "L3": "Wait (doubt marker)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 341, "old_s": 333, "part": 1, "labels": [{"L1": "Reasoning", "L2": "commonsense reasoning", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 342, "old_s": 334, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate verification", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 343, "old_s": 335, "part": 1, "labels": [{"L1": "Reasoning", "L2": "logical reasoning", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 344, "old_s": 336, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate verification", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 345, "old_s": 337, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(A)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 346, "old_s": 338, "part": 1, "labels": [{"L1": "Reflection", "L2": "meta-evaluation of a step", "L3": "option (B)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 347, "old_s": 339, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(C)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 348, "old_s": 340, "part": 1, "labels": [{"L1": "Reflection", "L2": "meta-evaluation of a step", "L3": "option (D)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 349, "old_s": 341, "part": 1, "labels": [{"L1": "Reasoning", "L2": "comparison", "L3": "option vs option"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 350, "old_s": 342, "part": 1, "labels": [{"L1": "Reflection", "L2": "meta-evaluation of a step", "L3": "option (F)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 351, "old_s": 343, "part": 1, "labels": [{"L1": "Conclusion", "L2": "intermediate conclusion", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 352, "old_s": 344, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate verification", "L3": "Wait (doubt marker)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 353, "old_s": 345, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "option text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 354, "old_s": 346, "part": 1, "labels": [{"L1": "Reflection", "L2": "meta-evaluation of a step", "L3": "option (C)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 355, "old_s": 347, "part": 1, "labels": [{"L1": "Knowledge", "L2": "commonsense", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 356, "old_s": 348, "part": 1, "labels": [{"L1": "Assumption", "L2": "branching (case split)", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 357, "old_s": 349, "part": 1, "labels": [{"L1": "Example", "L2": "rhetorical example", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 358, "old_s": 350, "part": 1, "labels": [{"L1": "Example", "L2": "rhetorical example", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 359, "old_s": 351, "part": 1, "labels": [{"L1": "Example", "L2": "rhetorical example", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 360, "old_s": 352, "part": 1, "labels": [{"L1": "Example", "L2": "rhetorical example", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 361, "old_s": 353, "part": 1, "labels": [{"L1": "Reasoning", "L2": "speculation", "L3": "intent of the question writer"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 362, "old_s": 354, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate verification", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 363, "old_s": 355, "part": 1, "labels": [{"L1": "Reasoning", "L2": "logical reasoning", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 364, "old_s": 356, "part": 1, "labels": [{"L1": "Reasoning", "L2": "logical reasoning", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 365, "old_s": 357, "part": 1, "labels": [{"L1": "Reasoning", "L2": "logical reasoning", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 366, "old_s": 358, "part": 1, "labels": [{"L1": "Reasoning", "L2": "calculation", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 367, "old_s": 359, "part": 1, "labels": [{"L1": "Reasoning", "L2": "calculation", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 368, "old_s": 360, "part": 1, "labels": [{"L1": "Reasoning", "L2": "defining symbols", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 369, "old_s": 360, "part": 2, "labels": [{"L1": "Reasoning", "L2": "defining symbols", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 370, "old_s": 361, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 371, "old_s": 362, "part": 1, "labels": [{"L1": "Example", "L2": "non-exhaustive listing", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 372, "old_s": 363, "part": 1, "labels": [{"L1": "Reasoning", "L2": "calculation", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 373, "old_s": 364, "part": 1, "labels": [{"L1": "Conclusion", "L2": "intermediate conclusion", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "c004", "s": 374, "old_s": 365, "part": 1, "labels": [{"L1": "Conclusion", "L2": "final answer", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 0, "old_s": 0, "part": 1, "labels": [{"L1": "Planning", "L2": "global plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 1, "old_s": 1, "part": 1, "labels": [{"L1": "Planning", "L2": "global plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 2, "old_s": 2, "part": 1, "labels": [{"L1": "Planning", "L2": "global plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 3, "old_s": 3, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 4, "old_s": 4, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "question text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 5, "old_s": 5, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "question text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 6, "old_s": 6, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "question text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 7, "old_s": 7, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 8, "old_s": 8, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "option text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 9, "old_s": 9, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 10, "old_s": 10, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "answer-format instruction"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 11, "old_s": 11, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "answer-format instruction"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 12, "old_s": 12, "part": 1, "labels": [{"L1": "Planning", "L2": "global plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 13, "old_s": 13, "part": 1, "labels": [{"L1": "Planning", "L2": "global plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 14, "old_s": 14, "part": 1, "labels": [{"L1": "Knowledge", "L2": "world knowledge", "L3": "famous problem (CRT)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 15, "old_s": 15, "part": 1, "labels": [{"L1": "Knowledge", "L2": "world knowledge", "L3": "famous problem (CRT)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 16, "old_s": 16, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate verification", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 17, "old_s": 17, "part": 1, "labels": [{"L1": "Reasoning", "L2": "defining symbols", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 18, "old_s": 17, "part": 2, "labels": [{"L1": "Reasoning", "L2": "calculation", "L3": "algebra"}, {"L1": "Assumption", "L2": "assuming a missing premise by common practice", "L3": "\"$1.00 more\""}], "combined": true, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 19, "old_s": 17, "part": 3, "labels": [{"L1": "Planning", "L2": "initiate verification", "L3": "Wait (doubt marker)"}, {"L1": "Reasoning", "L2": "comparison", "L3": "prompt vs original text"}], "combined": true, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 20, "old_s": 18, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate verification", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 21, "old_s": 19, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "question text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 22, "old_s": 20, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "question text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 23, "old_s": 21, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "question text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 24, "old_s": 22, "part": 1, "labels": [{"L1": "Reasoning", "L2": "comparison", "L3": "prompt vs original text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 25, "old_s": 23, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 26, "old_s": 24, "part": 1, "labels": [{"L1": "Knowledge", "L2": "world knowledge", "L3": "famous problem (CRT)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 27, "old_s": 25, "part": 1, "labels": [{"L1": "Reasoning", "L2": "comparison", "L3": "prompt vs original text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 28, "old_s": 26, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 29, "old_s": 27, "part": 1, "labels": [{"L1": "Reasoning", "L2": "defining symbols", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 30, "old_s": 28, "part": 1, "labels": [{"L1": "Reasoning", "L2": "defining symbols", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 31, "old_s": 29, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "question text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 32, "old_s": 30, "part": 1, "labels": [{"L1": "Reasoning", "L2": "logical reasoning", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 33, "old_s": 31, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 34, "old_s": 32, "part": 1, "labels": [{"L1": "Example", "L2": "non-exhaustive listing", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 35, "old_s": 32, "part": 2, "labels": [{"L1": "Example", "L2": "non-exhaustive listing", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 36, "old_s": 33, "part": 1, "labels": [{"L1": "Example", "L2": "non-exhaustive listing", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 37, "old_s": 33, "part": 2, "labels": [{"L1": "Example", "L2": "non-exhaustive listing", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 38, "old_s": 34, "part": 1, "labels": [{"L1": "Example", "L2": "non-exhaustive listing", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 39, "old_s": 34, "part": 2, "labels": [{"L1": "Example", "L2": "non-exhaustive listing", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 40, "old_s": 35, "part": 1, "labels": [{"L1": "Reasoning", "L2": "logical reasoning", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 41, "old_s": 36, "part": 1, "labels": [{"L1": "Conclusion", "L2": "intermediate conclusion", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 42, "old_s": 37, "part": 1, "labels": [{"L1": "Planning", "L2": "global plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 43, "old_s": 38, "part": 1, "labels": [{"L1": "Planning", "L2": "global plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 44, "old_s": 39, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(A)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 45, "old_s": 40, "part": 1, "labels": [{"L1": "Reflection", "L2": "meta-evaluation of a step", "L3": "option (B)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 46, "old_s": 41, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(C)"}, {"L1": "Reasoning", "L2": "hedge word analysis", "L3": "mathematical reading"}], "combined": true, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 47, "old_s": 42, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(C)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 48, "old_s": 43, "part": 1, "labels": [{"L1": "Reflection", "L2": "meta-evaluation of a step", "L3": "option (D)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 49, "old_s": 44, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(E)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 50, "old_s": 45, "part": 1, "labels": [{"L1": "Knowledge", "L2": "concept or definition", "L3": "well-posedness"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 51, "old_s": 46, "part": 1, "labels": [{"L1": "Reasoning", "L2": "logical reasoning", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 52, "old_s": 47, "part": 1, "labels": [{"L1": "Reflection", "L2": "meta-evaluation of a step", "L3": "option (F)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 53, "old_s": 48, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate verification", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 54, "old_s": 49, "part": 1, "labels": [{"L1": "Knowledge", "L2": "world knowledge", "L3": "famous problem (CRT)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 55, "old_s": 50, "part": 1, "labels": [{"L1": "Reasoning", "L2": "speculation", "L3": "intent of the question writer"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 56, "old_s": 51, "part": 1, "labels": [{"L1": "Knowledge", "L2": "self-knowledge", "L3": "role"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 57, "old_s": 52, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 58, "old_s": 53, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "question text"}, {"L1": "Reasoning", "L2": "defining symbols", "L3": "algebra"}], "combined": true, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 59, "old_s": 54, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 60, "old_s": 55, "part": 1, "labels": [{"L1": "Reasoning", "L2": "defining symbols", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 61, "old_s": 55, "part": 2, "labels": [{"L1": "Reasoning", "L2": "defining symbols", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 62, "old_s": 56, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 63, "old_s": 57, "part": 1, "labels": [{"L1": "Reasoning", "L2": "calculation", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 64, "old_s": 58, "part": 1, "labels": [{"L1": "Reasoning", "L2": "calculation", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 65, "old_s": 59, "part": 1, "labels": [{"L1": "Conclusion", "L2": "intermediate conclusion", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 66, "old_s": 60, "part": 1, "labels": [{"L1": "Conclusion", "L2": "intermediate conclusion", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 67, "old_s": 61, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(E)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 68, "old_s": 62, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "option text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 69, "old_s": 63, "part": 1, "labels": [{"L1": "Reasoning", "L2": "hedge word analysis", "L3": "mathematical reading"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 70, "old_s": 64, "part": 1, "labels": [{"L1": "Reasoning", "L2": "comparison", "L3": "option vs option"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 71, "old_s": 65, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate verification", "L3": "Wait (doubt marker)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 72, "old_s": 66, "part": 1, "labels": [{"L1": "Knowledge", "L2": "commonsense", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 73, "old_s": 67, "part": 1, "labels": [{"L1": "Reasoning", "L2": "speculation", "L3": "intent of the question writer"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 74, "old_s": 68, "part": 1, "labels": [{"L1": "Reflection", "L2": "meta-evaluation of a step", "L3": "option (E)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 75, "old_s": 69, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate verification", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 76, "old_s": 70, "part": 1, "labels": [{"L1": "Knowledge", "L2": "concept or definition", "L3": "well-posedness"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 77, "old_s": 71, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate verification", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 78, "old_s": 72, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "option text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 79, "old_s": 73, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "option text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 80, "old_s": 74, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "option text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 81, "old_s": 75, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "option text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 82, "old_s": 76, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "option text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 83, "old_s": 77, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "option text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 84, "old_s": 78, "part": 1, "labels": [{"L1": "Reasoning", "L2": "speculation", "L3": "intent of the question writer"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 85, "old_s": 79, "part": 1, "labels": [{"L1": "Reasoning", "L2": "speculation", "L3": "intent of the question writer"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 86, "old_s": 80, "part": 1, "labels": [{"L1": "Reasoning", "L2": "logical reasoning", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 87, "old_s": 81, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(E)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 88, "old_s": 82, "part": 1, "labels": [{"L1": "Knowledge", "L2": "concept or definition", "L3": "well-posedness"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 89, "old_s": 83, "part": 1, "labels": [{"L1": "Reasoning", "L2": "logical reasoning", "L3": "algebra"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 90, "old_s": 84, "part": 1, "labels": [{"L1": "Conclusion", "L2": "intermediate conclusion", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 91, "old_s": 85, "part": 1, "labels": [{"L1": "Reasoning", "L2": "speculation", "L3": "intent of the question writer"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 92, "old_s": 86, "part": 1, "labels": [{"L1": "Reasoning", "L2": "speculation", "L3": "intent of the question writer"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 93, "old_s": 87, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate verification", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 94, "old_s": 88, "part": 1, "labels": [{"L1": "Reasoning", "L2": "comparison", "L3": "prompt vs original text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 95, "old_s": 89, "part": 1, "labels": [{"L1": "Reflection", "L2": "emotion or impression", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 96, "old_s": 90, "part": 1, "labels": [{"L1": "Planning", "L2": "global plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 97, "old_s": 91, "part": 1, "labels": [{"L1": "Planning", "L2": "global plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 98, "old_s": 92, "part": 1, "labels": [{"L1": "Planning", "L2": "global plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 99, "old_s": 93, "part": 1, "labels": [{"L1": "Conclusion", "L2": "intermediate conclusion", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 100, "old_s": 94, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate verification", "L3": "Wait (doubt marker)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 101, "old_s": 95, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "option text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 102, "old_s": 96, "part": 1, "labels": [{"L1": "Reflection", "L2": "meta-evaluation of a step", "L3": "option (C)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 103, "old_s": 97, "part": 1, "labels": [{"L1": "Reflection", "L2": "meta-evaluation of a step", "L3": "option (E)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 104, "old_s": 98, "part": 1, "labels": [{"L1": "Conclusion", "L2": "intermediate conclusion", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 105, "old_s": 99, "part": 1, "labels": [{"L1": "Planning", "L2": "global plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 106, "old_s": 100, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 107, "old_s": 101, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 108, "old_s": 102, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 109, "old_s": 103, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 110, "old_s": 103, "part": 2, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 111, "old_s": 104, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 112, "old_s": 105, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 113, "old_s": 106, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 114, "old_s": 107, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 115, "old_s": 108, "part": 1, "labels": [{"L1": "Reasoning", "L2": "comparison", "L3": "option vs option"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 116, "old_s": 109, "part": 1, "labels": [{"L1": "Conclusion", "L2": "intermediate conclusion", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 117, "old_s": 110, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate verification", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 118, "old_s": 111, "part": 1, "labels": [{"L1": "Reasoning", "L2": "speculation", "L3": "intent of the question writer"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 119, "old_s": 112, "part": 1, "labels": [{"L1": "Conclusion", "L2": "intermediate conclusion", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 120, "old_s": 113, "part": 1, "labels": [{"L1": "Planning", "L2": "global plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 121, "old_s": 114, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 122, "old_s": 115, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 123, "old_s": 116, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 124, "old_s": 117, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 125, "old_s": 118, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 126, "old_s": 119, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 127, "old_s": 120, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate verification", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 128, "old_s": 121, "part": 1, "labels": [{"L1": "Reasoning", "L2": "logical reasoning", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 129, "old_s": 122, "part": 1, "labels": [{"L1": "Reasoning", "L2": "logical reasoning", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 130, "old_s": 123, "part": 1, "labels": [{"L1": "Reasoning", "L2": "speculation", "L3": "intent of the question writer"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 131, "old_s": 124, "part": 1, "labels": [{"L1": "Reasoning", "L2": "speculation", "L3": "intent of the question writer"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 132, "old_s": 125, "part": 1, "labels": [{"L1": "Knowledge", "L2": "commonsense", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 133, "old_s": 126, "part": 1, "labels": [{"L1": "Conclusion", "L2": "intermediate conclusion", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 134, "old_s": 127, "part": 1, "labels": [{"L1": "Planning", "L2": "global plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 135, "old_s": 128, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 136, "old_s": 129, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 137, "old_s": 130, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 138, "old_s": 131, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 139, "old_s": 132, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 140, "old_s": 133, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 141, "old_s": 134, "part": 1, "labels": [{"L1": "Conclusion", "L2": "intermediate conclusion", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 142, "old_s": 135, "part": 1, "labels": [{"L1": "Conclusion", "L2": "intermediate conclusion", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 143, "old_s": 136, "part": 1, "labels": [{"L1": "Reflection", "L2": "meta-evaluation of a step", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 144, "old_s": 137, "part": 1, "labels": [{"L1": "Planning", "L2": "announce output", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 145, "old_s": 138, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate verification", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 146, "old_s": 139, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "option text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 147, "old_s": 140, "part": 1, "labels": [{"L1": "Reasoning", "L2": "hedge word analysis", "L3": "mathematical reading"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 148, "old_s": 141, "part": 1, "labels": [{"L1": "Reasoning", "L2": "comparison", "L3": "option vs option"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 149, "old_s": 142, "part": 1, "labels": [{"L1": "Conclusion", "L2": "intermediate conclusion", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 150, "old_s": 143, "part": 1, "labels": [{"L1": "Knowledge", "L2": "world knowledge", "L3": "famous problem (CRT)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 151, "old_s": 144, "part": 1, "labels": [{"L1": "Conclusion", "L2": "intermediate conclusion", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 152, "old_s": 145, "part": 1, "labels": [{"L1": "Planning", "L2": "announce the conclusion", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 153, "old_s": 146, "part": 1, "labels": [{"L1": "Conclusion", "L2": "intermediate conclusion", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 154, "old_s": 147, "part": 1, "labels": [{"L1": "Planning", "L2": "global plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 155, "old_s": 148, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 156, "old_s": 149, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 157, "old_s": 150, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 158, "old_s": 151, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 159, "old_s": 152, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 160, "old_s": 153, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 161, "old_s": 154, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 162, "old_s": 155, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 163, "old_s": 156, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 164, "old_s": 157, "part": 1, "labels": [{"L1": "Conclusion", "L2": "intermediate conclusion", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 165, "old_s": 158, "part": 1, "labels": [{"L1": "Conclusion", "L2": "intermediate conclusion", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 166, "old_s": 159, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate verification", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 167, "old_s": 160, "part": 1, "labels": [{"L1": "Reflection", "L2": "meta-evaluation of a step", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 168, "old_s": 161, "part": 1, "labels": [{"L1": "Planning", "L2": "announce output", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 169, "old_s": 162, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate verification", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 170, "old_s": 163, "part": 1, "labels": [{"L1": "Reasoning", "L2": "option evaluation", "L3": "(E)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 171, "old_s": 164, "part": 1, "labels": [{"L1": "Knowledge", "L2": "concept or definition", "L3": "well-posedness"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 172, "old_s": 165, "part": 1, "labels": [{"L1": "Reasoning", "L2": "logical reasoning", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 173, "old_s": 166, "part": 1, "labels": [{"L1": "Reflection", "L2": "meta-evaluation of a step", "L3": "option (E)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 174, "old_s": 167, "part": 1, "labels": [{"L1": "Planning", "L2": "announce output", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 175, "old_s": 168, "part": 1, "labels": [{"L1": "Planning", "L2": "announce the conclusion", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 176, "old_s": 169, "part": 1, "labels": [{"L1": "Conclusion", "L2": "intermediate conclusion", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 177, "old_s": 170, "part": 1, "labels": [{"L1": "Planning", "L2": "announce output", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 178, "old_s": 171, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate verification", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 179, "old_s": 172, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate backtracking", "L3": "Wait (doubt marker)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 180, "old_s": 173, "part": 1, "labels": [{"L1": "Reasoning", "L2": "speculation", "L3": "intent of the question writer"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 181, "old_s": 174, "part": 1, "labels": [{"L1": "Reflection", "L2": "meta-evaluation of a step", "L3": "option (E)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 182, "old_s": 175, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate backtracking", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 183, "old_s": 176, "part": 1, "labels": [{"L1": "Knowledge", "L2": "self-knowledge", "L3": "role"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 184, "old_s": 177, "part": 1, "labels": [{"L1": "Reflection", "L2": "meta-evaluation of a step", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 185, "old_s": 178, "part": 1, "labels": [{"L1": "Conclusion", "L2": "intermediate conclusion", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 186, "old_s": 179, "part": 1, "labels": [{"L1": "Reflection", "L2": "meta-evaluation of a step", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 187, "old_s": 180, "part": 1, "labels": [{"L1": "Planning", "L2": "announce output", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 188, "old_s": 181, "part": 1, "labels": [{"L1": "Planning", "L2": "announce output", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 189, "old_s": 182, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 190, "old_s": 183, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 191, "old_s": 184, "part": 1, "labels": [{"L1": "Reflection", "L2": "meta-evaluation of a step", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 192, "old_s": 185, "part": 1, "labels": [{"L1": "Reflection", "L2": "meta-evaluation of a step", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 193, "old_s": 186, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate verification", "L3": null}, {"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "answer-format instruction"}], "combined": true, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 194, "old_s": 187, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "option text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 195, "old_s": 188, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "option text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 196, "old_s": 189, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "answer-format instruction"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 197, "old_s": 190, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "answer-format instruction"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 198, "old_s": 191, "part": 1, "labels": [{"L1": "Reflection", "L2": "meta-evaluation of a step", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 199, "old_s": 192, "part": 1, "labels": [{"L1": "Planning", "L2": "announce output", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 200, "old_s": 193, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate verification", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 201, "old_s": 194, "part": 1, "labels": [{"L1": "Planning", "L2": "local plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 202, "old_s": 195, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 203, "old_s": 196, "part": 1, "labels": [{"L1": "Conclusion", "L2": "intermediate conclusion", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 204, "old_s": 197, "part": 1, "labels": [{"L1": "Planning", "L2": "announce output", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 205, "old_s": 198, "part": 1, "labels": [{"L1": "Reflection", "L2": "meta-evaluation of a step", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 206, "old_s": 199, "part": 1, "labels": [{"L1": "Reflection", "L2": "meta-evaluation of a step", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 207, "old_s": 200, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate verification", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 208, "old_s": 201, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate verification", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 209, "old_s": 202, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing the prompt", "L3": "option text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 210, "old_s": 203, "part": 1, "labels": [{"L1": "Reflection", "L2": "meta-evaluation of a step", "L3": "option (C)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 211, "old_s": 204, "part": 1, "labels": [{"L1": "Reflection", "L2": "meta-evaluation of a step", "L3": "option (E)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 212, "old_s": 205, "part": 1, "labels": [{"L1": "Conclusion", "L2": "intermediate conclusion", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 213, "old_s": 206, "part": 1, "labels": [{"L1": "Planning", "L2": "announce the conclusion", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 214, "old_s": 207, "part": 1, "labels": [{"L1": "Conclusion", "L2": "intermediate conclusion", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 215, "old_s": 208, "part": 1, "labels": [{"L1": "Planning", "L2": "announce output", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 216, "old_s": 209, "part": 1, "labels": [{"L1": "Planning", "L2": "announce output", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 217, "old_s": 210, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 218, "old_s": 211, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 219, "old_s": 212, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 220, "old_s": 213, "part": 1, "labels": [{"L1": "Planning", "L2": "announce output", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 221, "old_s": 214, "part": 1, "labels": [{"L1": "Planning", "L2": "announce output", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 222, "old_s": 215, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate verification", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 223, "old_s": 216, "part": 1, "labels": [{"L1": "Reasoning", "L2": "comparison", "L3": "prompt vs original text"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 224, "old_s": 217, "part": 1, "labels": [{"L1": "Knowledge", "L2": "world knowledge", "L3": "famous problem (CRT)"}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 225, "old_s": 218, "part": 1, "labels": [{"L1": "Conclusion", "L2": "intermediate conclusion", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 226, "old_s": 219, "part": 1, "labels": [{"L1": "Conclusion", "L2": "intermediate conclusion", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 227, "old_s": 220, "part": 1, "labels": [{"L1": "Reflection", "L2": "meta-evaluation of a step", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 228, "old_s": 221, "part": 1, "labels": [{"L1": "Planning", "L2": "announce output", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 229, "old_s": 222, "part": 1, "labels": [{"L1": "Planning", "L2": "global plan", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 230, "old_s": 223, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 231, "old_s": 224, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 232, "old_s": 225, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 233, "old_s": 226, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 234, "old_s": 227, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 235, "old_s": 228, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 236, "old_s": 229, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 237, "old_s": 230, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 238, "old_s": 231, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 239, "old_s": 232, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 240, "old_s": 233, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 241, "old_s": 234, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 242, "old_s": 235, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 243, "old_s": 236, "part": 1, "labels": [{"L1": "Restatement", "L2": "rephrasing an earlier sentence", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 244, "old_s": 237, "part": 1, "labels": [{"L1": "Conclusion", "L2": "intermediate conclusion", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 245, "old_s": 238, "part": 1, "labels": [{"L1": "Conclusion", "L2": "final answer", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 246, "old_s": 239, "part": 1, "labels": [{"L1": "Conclusion", "L2": "final answer", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 247, "old_s": 240, "part": 1, "labels": [{"L1": "Planning", "L2": "initiate verification", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 248, "old_s": 241, "part": 1, "labels": [{"L1": "Reflection", "L2": "meta-evaluation of a step", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 249, "old_s": 242, "part": 1, "labels": [{"L1": "Reflection", "L2": "meta-evaluation of a step", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 250, "old_s": 243, "part": 1, "labels": [{"L1": "Reflection", "L2": "meta-evaluation of a step", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 251, "old_s": 244, "part": 1, "labels": [{"L1": "Planning", "L2": "announce output", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 252, "old_s": 245, "part": 1, "labels": [{"L1": "Planning", "L2": "announce output", "L3": null}], "combined": false, "source": "reviewed_v4"}
+{"trace_id": "e036", "s": 253, "old_s": 246, "part": 1, "labels": [{"L1": "Planning", "L2": "announce output", "L3": null}], "combined": false, "source": "reviewed_v4"}

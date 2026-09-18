@@ -1,0 +1,2 @@
+There's an overlap issue at position 309 - I need to shift the boundary so 304-308 is Re.lr and 309 becomes Co.ic instead of the previous split.
+

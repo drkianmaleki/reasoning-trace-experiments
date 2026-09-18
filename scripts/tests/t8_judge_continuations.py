@@ -51,10 +51,10 @@ def main(argv=None) -> int:
     else:
         d = S3.run(smoke, folder / "dry", dry_run=True, log=lambda s: None)
         proj = d["projection"]
-        cc = d["collections"].get("continuations_c004", {})
-        ok = set(d["collections"]) == {"continuations_c004"} and cc.get("documents") == 3 and (folder / "dry" / "continuations_c004" / "requests").exists()
+        cc = d["projection"]["waves"][0] if d["projection"]["waves"] else {}
+        ok = d["order"] == ["c004_B00"] and cc.get("documents") == 3 and (folder / "dry" / "continuations_w00" / "requests").exists()
         check(ok, "check 1, s3 dry run on the smoke folder: documents built, cost projected",
-              f"collections {list(d['collections'])}; documents {cc.get('documents')}, sentences {cc.get('sentences')}, "
+              f"cut groups {d['order']}; documents {cc.get('documents')}, sentences {cc.get('sentences')}, "
               f"prefix sentences shown {cc.get('prefix_sentences')}; projected cost ${proj['total_cost_est_usd']:.3f} at batch prices "
               f"(rates {proj['rates']['thinking_per_sentence']:.0f} thinking + {proj['rates']['label_per_sentence']:.0f} label tokens per sentence, {proj['rates']['text_per_sentence']} text tokens per sentence)")
         try:
@@ -64,11 +64,11 @@ def main(argv=None) -> int:
             s = None
         if s is not None:
             cost = s["cost_usd"]
-            c = s["collections"]["continuations_c004"]
+            c = s["waves"][0] if s["waves"] else {}
             ok = s.get("stopped") is None and c.get("valid") == 3
             check(ok, "check 2, one real batch of three continuation requests: submitted, polled, parsed",
-                  f"valid {c.get('valid')} of 3, failed {c.get('failed')}, retry {c.get('retry_parsed')}; cost ${cost:.4f}; stopped {s.get('stopped')}")
-            blocks_path = folder / "judge" / "continuations_c004" / "blocks_continuations_c004_judge.jsonl"
+                  f"valid {c.get('valid')} of 3, failed after the follow-up {c.get('failed_after_follow_up')}, retry {c.get('retry')}; cost ${cost:.4f}; stopped {s.get('stopped')}")
+            blocks_path = folder / "judge" / "continuations_w00" / "blocks_continuations_w00_judge.jsonl"
             blocks = [json.loads(l) for l in blocks_path.read_text(encoding="utf-8").splitlines()] if blocks_path.exists() else []
             rows = ["## The three continuations (cut(C-B00), prefix s0-s7 labeled)", "", "| continuation | continuation sentences | first new node | L1 | opens block (rule) | first sentence is Wait | block sequence from the cut |", "|---|---|---|---|---|---|---|"]
             for b in blocks:

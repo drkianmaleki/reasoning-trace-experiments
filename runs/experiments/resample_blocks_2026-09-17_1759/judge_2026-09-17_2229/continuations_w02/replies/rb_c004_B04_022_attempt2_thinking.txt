@@ -1,0 +1,2 @@
+I need to clean up the output by removing the stray intro line and fixing duplicate or overlapping indices, like the repeated entries and one that's mistakenly nested inside a range. Let me redo it carefully, merging the fixes inline.
+

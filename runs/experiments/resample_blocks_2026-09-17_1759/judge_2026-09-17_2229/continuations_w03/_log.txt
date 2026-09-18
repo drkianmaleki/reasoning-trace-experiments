@@ -1,0 +1,195 @@
+# s1_judge run_id=continuations_w03 mode=batch model=claude-sonnet-5 (sonnet) prompt=v3 thinking=low 2026-09-18T00:03:38
+# trace_id	attempts	valid	input	cache_read	cache_write	output	cost_usd	stop_reasons	thinking_tokens	leaks	batch_ids	error
+submitted batch msgbatch_01AmK4HS2AVTpibwTiRhV1jK (attempt 1, 100 entries); status in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}
+batch msgbatch_01AmK4HS2AVTpibwTiRhV1jK: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 0s
+batch msgbatch_01AmK4HS2AVTpibwTiRhV1jK: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 61s
+batch msgbatch_01AmK4HS2AVTpibwTiRhV1jK: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 121s
+batch msgbatch_01AmK4HS2AVTpibwTiRhV1jK: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 181s
+batch msgbatch_01AmK4HS2AVTpibwTiRhV1jK: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 242s
+batch msgbatch_01AmK4HS2AVTpibwTiRhV1jK: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 302s
+batch msgbatch_01AmK4HS2AVTpibwTiRhV1jK: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 362s
+batch msgbatch_01AmK4HS2AVTpibwTiRhV1jK: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 423s
+batch msgbatch_01AmK4HS2AVTpibwTiRhV1jK: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 483s
+batch msgbatch_01AmK4HS2AVTpibwTiRhV1jK: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 543s
+batch msgbatch_01AmK4HS2AVTpibwTiRhV1jK: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 603s
+batch msgbatch_01AmK4HS2AVTpibwTiRhV1jK: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 664s
+batch msgbatch_01AmK4HS2AVTpibwTiRhV1jK: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 724s
+batch msgbatch_01AmK4HS2AVTpibwTiRhV1jK: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 785s
+batch msgbatch_01AmK4HS2AVTpibwTiRhV1jK: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 845s
+batch msgbatch_01AmK4HS2AVTpibwTiRhV1jK: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 905s
+batch msgbatch_01AmK4HS2AVTpibwTiRhV1jK: in_progress; request_counts {"processing": 100, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 965s
+batch msgbatch_01AmK4HS2AVTpibwTiRhV1jK: ended; request_counts {"processing": 0, "succeeded": 100, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1026s
+batch msgbatch_01AmK4HS2AVTpibwTiRhV1jK (attempt 1): 74 of 100 parsed; failures 26: {"unparsable": 9, "overlap": 7, "descending": 1, "gap": 7, "unknown_code": 2}
+submitted batch msgbatch_0158FUyHZvm73pVZoVSuUY6H (attempt 2, 26 entries); status in_progress; request_counts {"processing": 26, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}
+batch msgbatch_0158FUyHZvm73pVZoVSuUY6H: in_progress; request_counts {"processing": 26, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1s
+batch msgbatch_0158FUyHZvm73pVZoVSuUY6H: in_progress; request_counts {"processing": 26, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 61s
+batch msgbatch_0158FUyHZvm73pVZoVSuUY6H: in_progress; request_counts {"processing": 26, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 121s
+batch msgbatch_0158FUyHZvm73pVZoVSuUY6H: in_progress; request_counts {"processing": 26, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 182s
+batch msgbatch_0158FUyHZvm73pVZoVSuUY6H: in_progress; request_counts {"processing": 26, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 242s
+batch msgbatch_0158FUyHZvm73pVZoVSuUY6H: in_progress; request_counts {"processing": 26, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 302s
+batch msgbatch_0158FUyHZvm73pVZoVSuUY6H: in_progress; request_counts {"processing": 26, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 362s
+batch msgbatch_0158FUyHZvm73pVZoVSuUY6H: in_progress; request_counts {"processing": 26, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 423s
+batch msgbatch_0158FUyHZvm73pVZoVSuUY6H: in_progress; request_counts {"processing": 26, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 483s
+batch msgbatch_0158FUyHZvm73pVZoVSuUY6H: in_progress; request_counts {"processing": 26, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 543s
+batch msgbatch_0158FUyHZvm73pVZoVSuUY6H: ended; request_counts {"processing": 0, "succeeded": 26, "errored": 0, "canceled": 0, "expired": 0}; elapsed 604s
+batch msgbatch_0158FUyHZvm73pVZoVSuUY6H (attempt 2): 21 of 26 parsed; failures 5: {"unknown_code": 1, "unparsable": 3, "overlap": 1}
+rb_e036_B05_000	1	True	7890	0	8584	10104	0.069140	['end_turn']	8014	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_e036_B05_001	1	True	5139	8584	0	4611	0.029052	['end_turn']	3519	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_e036_B05_002	1	True	6390	8584	0	4269	0.028593	['end_turn']	2612	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_e036_B05_003	1	True	5308	8584	0	5168	0.032006	['end_turn']	3699	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_e036_B05_004	2	True	11066	8584	8584	5804	0.051674	['end_turn', 'end_turn']	3596	[False, False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK', 'msgbatch_0158FUyHZvm73pVZoVSuUY6H']	
+rb_e036_B05_005	1	True	6526	8584	0	6504	0.039904	['end_turn']	4740	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_e036_B05_006	1	True	5172	8584	0	5226	0.032160	['end_turn']	4123	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_e036_B05_007	2	True	11528	17168	0	5147	0.038980	['end_turn', 'end_turn']	2457	[False, False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK', 'msgbatch_0158FUyHZvm73pVZoVSuUY6H']	
+rb_e036_B05_008	1	True	4723	8584	0	4502	0.028091	['end_turn']	3485	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_e036_B05_009	1	True	6123	8584	0	4005	0.027006	['end_turn']	2454	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_e036_B05_010	1	True	5590	8584	0	7830	0.045598	['end_turn']	6375	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_e036_B05_011	1	True	7054	8584	0	8113	0.048477	['end_turn']	6378	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_e036_B05_012	1	True	5681	8584	0	7812	0.045599	['end_turn']	6570	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_e036_B05_013	2	True	12544	17168	0	4817	0.038346	['end_turn', 'end_turn']	2199	[False, False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK', 'msgbatch_0158FUyHZvm73pVZoVSuUY6H']	
+rb_e036_B05_014	1	True	5671	8584	0	5314	0.033099	['end_turn']	3834	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_e036_B05_015	1	True	5948	8584	0	5544	0.034526	['end_turn']	4137	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_e036_B05_016	2	True	14035	17168	0	7547	0.053487	['end_turn', 'end_turn']	4724	[False, False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK', 'msgbatch_0158FUyHZvm73pVZoVSuUY6H']	
+rb_e036_B05_017	1	True	6722	8584	0	4716	0.031160	['end_turn']	2794	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_e036_B05_018	1	True	4928	8584	0	3115	0.021361	['end_turn']	1832	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_e036_B05_019	1	True	6474	8584	0	4187	0.028267	['end_turn']	2389	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_e036_B05_020	2	True	16678	17168	0	13473	0.085760	['end_turn', 'end_turn']	9594	[False, False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK', 'msgbatch_0158FUyHZvm73pVZoVSuUY6H']	
+rb_e036_B05_021	1	True	5253	8584	0	4934	0.030781	['end_turn']	3659	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_e036_B05_022	1	True	6070	8584	0	5801	0.035933	['end_turn']	4629	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_e036_B05_023	1	True	7401	8584	0	11756	0.067039	['end_turn']	9700	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_e036_B05_024	1	True	5663	8584	0	3327	0.023156	['end_turn']	1942	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_c004_B06_000	2	True	43903	17168	0	41891	0.255075	['end_turn', 'end_turn']	31559	[False, False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK', 'msgbatch_0158FUyHZvm73pVZoVSuUY6H']	
+rb_c004_B06_001	2	True	31924	17168	0	34062	0.203951	['max_tokens', 'end_turn']	30001	[False, False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK', 'msgbatch_0158FUyHZvm73pVZoVSuUY6H']	
+rb_c004_B06_002	2	True	64690	17168	0	42556	0.279187	['end_turn', 'end_turn']	25644	[False, False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK', 'msgbatch_0158FUyHZvm73pVZoVSuUY6H']	
+rb_c004_B06_003	2	True	60482	17168	0	57139	0.347894	['max_tokens', 'end_turn']	43982	[False, False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK', 'msgbatch_0158FUyHZvm73pVZoVSuUY6H']	
+rb_c004_B06_004	2	True	52325	17168	0	48010	0.294092	['end_turn', 'end_turn']	34168	[False, False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK', 'msgbatch_0158FUyHZvm73pVZoVSuUY6H']	
+rb_c004_B06_005	1	True	19868	8584	0	21246	0.126956	['end_turn']	15878	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_c004_B06_006	1	True	29502	8584	0	40385	0.232285	['end_turn']	31177	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_c004_B06_007	1	True	13058	8584	0	16429	0.096061	['end_turn']	13018	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_c004_B06_008	1	True	19083	8584	0	25315	0.146516	['end_turn']	20401	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_c004_B06_009	1	True	23353	8584	0	37651	0.212466	['end_turn']	30532	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_c004_B06_010	1	True	18963	8584	0	18691	0.113276	['end_turn']	13700	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_c004_B06_011	1	True	11113	8584	0	16333	0.093636	['end_turn']	13336	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_c004_B06_012	2	True	57351	17168	0	46547	0.291803	['end_turn', 'end_turn']	31363	[False, False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK', 'msgbatch_0158FUyHZvm73pVZoVSuUY6H']	
+rb_c004_B06_013	1	True	20746	8584	0	35149	0.197349	['end_turn']	29101	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_c004_B06_014	1	True	28181	8584	0	41127	0.234674	['end_turn']	33224	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_c004_B06_015	1	True	11951	8584	0	11381	0.069714	['end_turn']	8434	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_c004_B06_016	1	True	16916	8584	0	26607	0.150809	['end_turn']	21624	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_c004_B06_017	1	True	18734	8584	0	23684	0.138012	['end_turn']	18755	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_c004_B06_018	1	True	28023	8584	0	43970	0.248731	['end_turn']	36248	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_c004_B06_019	1	True	28240	8584	0	41257	0.235383	['end_turn']	33721	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_c004_B06_020	2	False	31062	17168	0	41432	0.239939	['max_tokens', 'end_turn']	36975	[False, False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK', 'msgbatch_0158FUyHZvm73pVZoVSuUY6H']	unknown_code: code 'Rf.meo.un' is not in the inventory at line 195: 250 Rf.meo.un
+rb_c004_B06_021	1	True	28260	8584	0	31633	0.187283	['end_turn']	24261	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_c004_B06_022	1	True	23021	8584	0	31051	0.179134	['end_turn']	24102	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_c004_B06_023	1	True	27926	8584	0	33562	0.196594	['end_turn']	25540	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_c004_B06_024	1	True	19703	8584	0	31663	0.178876	['end_turn']	26068	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_e036_B06_000	1	True	5879	8584	0	4422	0.028847	['end_turn']	3222	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_e036_B06_001	1	True	8354	8584	0	5248	0.035452	['end_turn']	3265	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_e036_B06_002	1	True	5777	8584	0	5985	0.036560	['end_turn']	4802	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_e036_B06_003	2	True	13593	17168	0	6862	0.049620	['end_turn', 'end_turn']	4543	[False, False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK', 'msgbatch_0158FUyHZvm73pVZoVSuUY6H']	
+rb_e036_B06_004	1	True	5081	8584	0	5572	0.033799	['end_turn']	4575	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_e036_B06_005	1	True	6555	8584	0	6884	0.041833	['end_turn']	5386	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_e036_B06_006	1	True	5472	8584	0	3008	0.021370	['end_turn']	1882	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_e036_B06_007	1	True	5714	8584	0	6952	0.041332	['end_turn']	5756	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_e036_B06_008	1	True	4471	8584	0	3388	0.022269	['end_turn']	2614	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_e036_B06_009	1	True	5711	8584	0	4813	0.030634	['end_turn']	3786	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_e036_B06_010	1	True	5563	8584	0	2988	0.021361	['end_turn']	1882	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_e036_B06_011	1	True	5352	8584	0	6164	0.037030	['end_turn']	5112	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_e036_B06_012	1	True	5556	8584	0	3176	0.022294	['end_turn']	1841	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_e036_B06_013	1	True	5838	8584	0	5772	0.035556	['end_turn']	4603	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_e036_B06_014	2	False	12987	17168	0	7206	0.050734	['end_turn', 'end_turn']	4931	[False, False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK', 'msgbatch_0158FUyHZvm73pVZoVSuUY6H']	unparsable: a combined sentence needs a single index, not a run at line 106: 140-142 Rs.rtp.qt+Re.co.pvo
+rb_e036_B06_015	1	True	6227	8584	0	5573	0.034950	['end_turn']	4315	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_e036_B06_016	1	True	6177	8584	0	6747	0.040770	['end_turn']	5659	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_e036_B06_017	2	True	14250	17168	0	9315	0.062542	['end_turn', 'end_turn']	6455	[False, False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK', 'msgbatch_0158FUyHZvm73pVZoVSuUY6H']	
+rb_e036_B06_018	2	True	11564	17168	0	5523	0.040896	['end_turn', 'end_turn']	3157	[False, False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK', 'msgbatch_0158FUyHZvm73pVZoVSuUY6H']	
+rb_e036_B06_019	2	True	20912	17168	0	12181	0.083534	['end_turn', 'end_turn']	7602	[False, False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK', 'msgbatch_0158FUyHZvm73pVZoVSuUY6H']	
+rb_e036_B06_020	1	True	7180	8584	0	7524	0.045658	['end_turn']	6074	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_e036_B06_021	1	True	5108	8584	0	3721	0.024571	['end_turn']	2604	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_e036_B06_022	1	True	6297	8584	0	6337	0.038840	['end_turn']	4762	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_e036_B06_023	1	True	6028	8584	0	5363	0.033701	['end_turn']	4195	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_e036_B06_024	1	True	4527	8584	0	2129	0.016030	['end_turn']	1480	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_c004_B07_000	2	False	67155	17168	0	28577	0.211757	['end_turn', 'end_turn']	12891	[False, False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK', 'msgbatch_0158FUyHZvm73pVZoVSuUY6H']	overlap: sentences 564..564 are covered twice at line 399: 564 Pl.lp
+rb_c004_B07_001	2	True	34994	17168	0	28591	0.179666	['max_tokens', 'end_turn']	22263	[False, False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK', 'msgbatch_0158FUyHZvm73pVZoVSuUY6H']	
+rb_c004_B07_002	1	True	19515	8584	0	29338	0.167063	['end_turn']	24242	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_c004_B07_003	2	True	56916	17168	0	91259	0.514928	['max_tokens', 'end_turn']	83656	[False, False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK', 'msgbatch_0158FUyHZvm73pVZoVSuUY6H']	
+rb_c004_B07_004	1	True	13665	8584	0	18979	0.109418	['end_turn']	15314	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_c004_B07_005	2	True	44570	17168	0	34618	0.219377	['end_turn', 'end_turn']	24174	[False, False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK', 'msgbatch_0158FUyHZvm73pVZoVSuUY6H']	
+rb_c004_B07_006	1	True	11073	8584	0	20453	0.114196	['end_turn']	17634	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_c004_B07_007	2	True	28861	17168	0	27620	0.168678	['max_tokens', 'end_turn']	22655	[False, False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK', 'msgbatch_0158FUyHZvm73pVZoVSuUY6H']	
+rb_c004_B07_008	2	True	42934	17168	0	53491	0.312106	['max_tokens', 'end_turn']	47330	[False, False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK', 'msgbatch_0158FUyHZvm73pVZoVSuUY6H']	
+rb_c004_B07_009	2	False	43437	17168	0	34743	0.218869	['end_turn', 'end_turn']	25533	[False, False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK', 'msgbatch_0158FUyHZvm73pVZoVSuUY6H']	unparsable: a combined sentence needs a single index, not a run at line 194: 276-277 Pl.lp+Rs.rtp.qt
+rb_c004_B07_010	1	True	15944	8584	0	11239	0.072997	['end_turn']	6769	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_c004_B07_011	1	True	28707	8584	0	36615	0.212640	['end_turn']	28218	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_c004_B07_012	1	True	27608	8584	0	19088	0.123906	['end_turn']	11336	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_c004_B07_013	2	False	33056	17168	0	28729	0.178418	['max_tokens', 'end_turn']	22813	[False, False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK', 'msgbatch_0158FUyHZvm73pVZoVSuUY6H']	unparsable: a combined sentence needs a single index, not a run at line 365: 460-464 As.bcs.al+Re.ca.al
+rb_c004_B07_014	1	True	28535	8584	0	22464	0.141713	['end_turn']	15104	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_c004_B07_015	1	True	28478	8584	0	47296	0.265816	['end_turn']	40082	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_c004_B07_016	1	True	29292	8584	0	25671	0.158505	['end_turn']	17247	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_c004_B07_017	1	True	8408	8584	0	12682	0.072676	['end_turn']	10539	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_c004_B07_018	1	True	28126	8584	0	42810	0.243034	['end_turn']	35076	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_c004_B07_019	1	True	12245	8584	0	15735	0.091778	['end_turn']	12778	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_c004_B07_020	2	True	65245	17168	0	56748	0.350702	['max_tokens', 'end_turn']	39902	[False, False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK', 'msgbatch_0158FUyHZvm73pVZoVSuUY6H']	
+rb_c004_B07_021	1	True	29821	8584	0	22749	0.144424	['end_turn']	13419	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_c004_B07_022	1	True	29950	8584	0	39704	0.229328	['end_turn']	30487	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_c004_B07_023	1	True	10633	8584	0	19516	0.109071	['end_turn']	16922	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+rb_c004_B07_024	1	True	28287	8584	0	36633	0.212310	['end_turn']	28311	[False]	['msgbatch_01AmK4HS2AVTpibwTiRhV1jK']	
+# retry_failed 2026-09-18T00:31:15: 5 traces, attempt 3, extra line: Format check before you answer: every index from 0 to N−1 exactly once, runs in increasing order, one code per run (two codes joined by + only on a single-index line), codes only from the table.
+submitted batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M (attempt 3, 5 entries); status in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 0s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 60s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 121s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 181s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 241s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 302s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 362s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 422s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 482s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 543s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 603s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 663s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 724s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 784s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 844s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 905s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 965s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1025s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1086s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1146s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1206s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1267s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1327s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1387s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1447s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1508s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1568s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1628s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1689s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1749s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1810s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1870s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1930s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 1991s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 2051s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 2111s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 2171s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 2232s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 2293s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 2353s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 2413s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 2473s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 2534s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 2594s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 2654s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 2715s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 2775s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 2835s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 2895s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 2956s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: in_progress; request_counts {"processing": 5, "succeeded": 0, "errored": 0, "canceled": 0, "expired": 0}; elapsed 3016s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M: ended; request_counts {"processing": 0, "succeeded": 5, "errored": 0, "canceled": 0, "expired": 0}; elapsed 3076s
+batch msgbatch_01EebXRXPgTiVvdQ4C1YZu9M (attempt 3): 5 of 5 parsed; failures 0: {}
+rb_c004_B06_020	3	True	15591	8584	0	36435	0.198624	['end_turn']	31980	[False]	['msgbatch_01EebXRXPgTiVvdQ4C1YZu9M']	
+rb_e036_B06_014	3	True	5911	8584	0	6520	0.039369	['end_turn']	5440	[False]	['msgbatch_01EebXRXPgTiVvdQ4C1YZu9M']	
+rb_c004_B07_000	3	True	29677	8584	0	13292	0.096995	['end_turn']	7631	[False]	['msgbatch_01EebXRXPgTiVvdQ4C1YZu9M']	
+rb_c004_B07_009	3	True	19429	0	8584	37012	0.215219	['end_turn']	32124	[False]	['msgbatch_01EebXRXPgTiVvdQ4C1YZu9M']	
+rb_c004_B07_013	3	True	15936	0	8584	29144	0.172386	['end_turn']	24691	[False]	['msgbatch_01EebXRXPgTiVvdQ4C1YZu9M']	

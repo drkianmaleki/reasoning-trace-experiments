@@ -17,6 +17,20 @@ PCORPUS = REPO / "runs" / "experiments" / "judge_sweep44_2026-09-17_1334" / "pco
 L1 = A.L1
 
 
+def unlink_figures(paths) -> None:
+    """The toys' figures do not stay in figures/; Dropbox may hold a fresh file for a moment."""
+    import time
+    for p in paths:
+        for attempt in range(5):
+            try:
+                Path(p).unlink()
+                break
+            except PermissionError:
+                time.sleep(0.5)
+            except FileNotFoundError:
+                break
+
+
 def write_toy_run(folder: Path, cut_answers: dict[str, list[str]], meta: dict[str, dict], judged: dict[str, list[tuple[str, bool, bool]]] | None = None,
                   noise: dict[str, list[tuple[str, bool, bool]]] | None = None) -> tuple[Path, Path]:
     """pcut.csv + continuations.jsonl from answers per prefix; a judge folder from labels per prefix."""
@@ -81,8 +95,7 @@ def test_mediation_hand_values(tmp_path):
     assert (tmp_path / "out" / "stage1_summary.md").read_text(encoding="utf-8").count("The largest shift, Δ = +0.36, sits in B_02") == 1
     figs = [Path(p) for p in res["figures"]]
     assert [p.name for p in figs] == ["toy_c004_phat.png", "toy_c004_delta.png"] and all(p.read_bytes()[:8] == b"\x89PNG\r\n\x1a\n" for p in figs)
-    for p in figs:
-        p.unlink()  # the toy's figures do not stay in figures/
+    unlink_figures(figs)
 
 
 def labels_from(dist: dict[str, int], seed: int, opens=True) -> list[tuple[str, bool, bool]]:
@@ -107,8 +120,7 @@ def test_permutation_null_true_and_false(tmp_path):
     assert pn["0"]["X"] == "Restatement" and pn["1"]["X"] == "Restatement" and pn["2"]["X"] == "Planning"
     assert pn["0"]["Y_source"] == "Planning" and pn["0"]["source_opens"] == "True" and float(pn["0"]["p_Planning"]) == pytest.approx(0.6)
     assert float(pn["0"]["opens_block_frac"]) == 1.0 and 0 < float(pn["0"]["wait_frac"]) < 1
-    for p in res["figures"]:
-        Path(p).unlink()  # the toy's figures do not stay in figures/
+    unlink_figures(res["figures"])
     judged_false = {"rb_c004_B00": labels_from({"Planning": 24, "Reasoning": 1}, 1), "rb_c004_B01": labels_from({"Reasoning": 24, "Planning": 1}, 2),
                     "rb_c004_B02": labels_from(same, 3)}
     run, judge = write_toy_run(tmp_path / "null_false", ANSWERS, META, judged_false)
@@ -119,8 +131,7 @@ def test_permutation_null_true_and_false(tmp_path):
     tvc = {(r["scope"], r["X"]): r for r in A.read_csv(tmp_path / "out_false" / "transition_tv_corpus.csv")}
     assert tvc[("pooled", "Restatement")]["cuts"] == "2" and tvc[("pooled", "Restatement")]["continuations"] == "50"
     assert 0 <= float(tvc[("pooled", "Restatement")]["tv_corpus"]) <= 1
-    for p in res["figures"]:
-        Path(p).unlink()
+    unlink_figures(res["figures"])
 
 
 def test_noise_subset_and_history(tmp_path):
@@ -136,8 +147,7 @@ def test_noise_subset_and_history(tmp_path):
     assert res["n_history_rows"] == 0 and res["n_order_rows"] == 0  # three cuts: no pair with three on each side
     md = (tmp_path / "out" / "stage1_summary.md").read_text(encoding="utf-8")
     assert "second labeling" in md and "_second_labeling" in md and "no verdict" in md
-    for p in res["figures"]:
-        Path(p).unlink()
+    unlink_figures(res["figures"])
 
 
 def test_load_pcorpus_rows_normalized():

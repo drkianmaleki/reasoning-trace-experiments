@@ -1,0 +1,2 @@
+I should split that combined line into two separate statements — one noting that if the prompt intends the classic riddle, the answer is $0.05, and another noting that if taken literally, the answer is undetermined.
+

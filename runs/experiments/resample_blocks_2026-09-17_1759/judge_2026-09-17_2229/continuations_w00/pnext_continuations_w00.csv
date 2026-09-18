@@ -1,0 +1,5 @@
+prefix_id,trace_arm,cut,last_node_label,n,n_labeled,n_failed,next_Planning,next_Reasoning,next_Reflection,next_Knowledge,next_Restatement,next_Assumption,next_Example,next_Conclusion,opens_block,first_is_wait
+rb_cut0,shared,,,25,25,0,25,0,0,0,0,0,0,0,25,0
+rb_c004_B00,c004,7,Restatement,25,25,0,25,0,0,0,0,0,0,0,25,0
+rb_c004_B01,c004,12,Restatement,25,25,0,21,1,0,3,0,0,0,0,21,0
+rb_e036_B00,e036,11,Restatement,25,25,0,25,0,0,0,0,0,0,0,25,0
