@@ -1,0 +1,4 @@
+W_first,X_first,cuts_W_then_X,cuts_X_then_W,n_W_then_X,n_X_then_W,p_Planning|W->X,p_Reasoning|W->X,p_Reflection|W->X,p_Knowledge|W->X,p_Restatement|W->X,p_Assumption|W->X,p_Example|W->X,p_Conclusion|W->X,p_Planning|X->W,p_Reasoning|X->W,p_Reflection|X->W,p_Knowledge|X->W,p_Restatement|X->W,p_Assumption|X->W,p_Example|X->W,p_Conclusion|X->W,tv_orders
+Planning,Restatement,3,3,75,75,0.9467,0.0133,0.0000,0.0400,0.0000,0.0000,0.0000,0.0000,0.6400,0.2400,0.0000,0.0533,0.0267,0.0400,0.0000,0.0000,0.3067
+Reasoning,Planning,3,8,75,199,0.6400,0.2400,0.0000,0.0533,0.0267,0.0400,0.0000,0.0000,0.4724,0.2462,0.0101,0.0101,0.0000,0.2613,0.0000,0.0000,0.2376
+Reflection,Reasoning,3,3,75,75,0.8133,0.1600,0.0267,0.0000,0.0000,0.0000,0.0000,0.0000,0.8933,0.0267,0.0267,0.0267,0.0267,0.0000,0.0000,0.0000,0.1333
