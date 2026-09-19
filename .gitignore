@@ -16,3 +16,5 @@ runs/experiments/*/sentences_archived500.jsonl
 # Large files stay local (Kian, 2026-09-17); runs/LARGE_FILES_INDEX.md lists them with sizes, hashes and provenance
 runs/experiments/*/labels_archived500_judge.jsonl
 runs/experiments/*/blocks_archived500_judge.jsonl
+# private working folder for the paper; never committed
+/rte-paper/
