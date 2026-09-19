@@ -1,0 +1,7 @@
+scope,S_obs,p,n_perm,seed,cuts_included,groups,singleton_X_excluded,S_perm_mean
+c004,0.3509,0.0001,10000,0,10,3,Example Reflection,0.0995
+e036,0.0900,0.0033,10000,0,4,2,Conclusion Knowledge Planning Restatement,0.0396
+pooled,0.3292,0.0001,10000,0,17,4,Conclusion Example Knowledge,0.0915
+c004_second_labeling,0.3509,0.0001,10000,0,10,3,Example Reflection,0.0995
+e036_second_labeling,0.0900,0.0033,10000,0,4,2,Conclusion Knowledge Planning Restatement,0.0396
+pooled_second_labeling,0.3292,0.0001,10000,0,17,4,Conclusion Example Knowledge,0.0915
