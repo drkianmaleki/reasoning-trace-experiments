@@ -1,3 +1,8 @@
+# (9/14/2026)
+## definitions and conventions
+A whole set of new definitions and conventions are established and saved in docs/shared.
+
+
 # (9/4/2026)
 ## Possible paths that the research can take
 path 1 - We can investigate the 'most likely' hypothesis from a different angle. Fifty continuations already exist that share an identical prefix, frozen just before the model starts discussing the options. Each continuation then makes its own interpretation of 'most likely' — user-intent or mathematical. If I read each one only up to that interpretation, blind to the rest, and the interpretation alone lets me predict the final answer, then the interpretation carries the signal; if my predictions are no better than chance, the interpretation is narration.
@@ -14,6 +19,18 @@ path 11 - try a directly-related-to-safety example.
 
 ## Chosen path 10
 ###  path 10 - define block of reasoning and find the nodes based on the blocks rather than sentences. 
-I the previous run, it was observed that the model have gradually changes its mind through some sentences. In this phase, we want to ignore the gratual change and focus on the block structure. The reason is as follow, the block structure should help us map out the thinking process of the model and the gradual change only happens within a node. Considering the fact that the narrrated text is not exactly the thinking process, I assume that the natterted may not be the exactly the same within a block but the order of the blocks should be close to the actual thinking process.
+In the previous run, it was observed that the model have gradually changes its mind through some sentences. In this phase, we want to ignore the gradual change and focus on the block structure. The reason is as follow, the block structure should help us map out the thinking process of the model and the gradual change only happens within a node. Considering the fact that the narrated text is not exactly the thinking process, I assume that the narrated  may not be the exactly the same within a block but the order of the blocks should be close to the actual thinking process.
 
 The approach to the problem is as follow, I pick a narrated thinking and use LLM as a judge (let's call it LJ) to break it down into blocks. The we feed back the block of the thinking process to the model. then we use LJ to see what were the blocks that happened next and with what probability and the next blocks and so one. This should help us map the thinking process of the model. 
+
+Set-up plan
+
+1) I pick the LJ and set up the account
+2) I write the block types with examples
+3) Claude reviews the document
+4) We write a script to turn the rules into prompts
+5) We run the script
+6) get the result from the LJ for 2 examples (main C and E traces)
+7) Claude and I review the LJ response
+8) Claude and I compare our findings about the blocks
+9) deciding the next steps

@@ -1,0 +1,385 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="389.07pt" height="492.36pt" viewBox="-6.00 -6.75 389.07 492.36">
+<rect x="-6.00" y="-6.75" width="389.07" height="492.36" fill="#ffffff"/>
+<g transform="translate(-8.00 0)">
+<text x="82.00" y="18.65" font-family="Georgia, 'Times New Roman', serif" font-size="6.8" fill="#9a9a9a" text-anchor="middle" font-weight="normal" font-style="normal">0</text>
+<text x="101.60" y="18.65" font-family="Georgia, 'Times New Roman', serif" font-size="6.8" fill="#9a9a9a" text-anchor="middle" font-weight="normal" font-style="normal">5</text>
+<text x="121.20" y="18.65" font-family="Georgia, 'Times New Roman', serif" font-size="6.8" fill="#9a9a9a" text-anchor="middle" font-weight="normal" font-style="normal">10</text>
+<text x="140.80" y="18.65" font-family="Georgia, 'Times New Roman', serif" font-size="6.8" fill="#9a9a9a" text-anchor="middle" font-weight="normal" font-style="normal">15</text>
+<text x="160.40" y="18.65" font-family="Georgia, 'Times New Roman', serif" font-size="6.8" fill="#9a9a9a" text-anchor="middle" font-weight="normal" font-style="normal">20</text>
+<text x="180.00" y="18.65" font-family="Georgia, 'Times New Roman', serif" font-size="6.8" fill="#9a9a9a" text-anchor="middle" font-weight="normal" font-style="normal">25</text>
+<text x="131.00" y="6.65" font-family="Georgia, 'Times New Roman', serif" font-size="7.4" fill="#5c5c5c" text-anchor="middle" font-weight="normal" font-style="normal">continuations of 25</text>
+<rect x="8.00" y="40.00" width="50.00" height="33.18" rx="0" fill="#f0f0ee" stroke="#000000" stroke-width="0.9"/>
+<text x="33.00" y="54.59" font-family="Georgia, 'Times New Roman', serif" font-size="7.6" fill="#1a1a1a" text-anchor="middle" font-weight="normal" font-style="normal">Block 0</text>
+<text x="33.00" y="62.59" font-family="Georgia, 'Times New Roman', serif" font-size="6.0" fill="#313030" text-anchor="middle" font-weight="normal" font-style="normal">139</text>
+<rect x="8.00" y="73.18" width="50.00" height="24.97" rx="0" fill="#f0f0ee" stroke="#000000" stroke-width="0.9"/>
+<text x="33.00" y="83.67" font-family="Georgia, 'Times New Roman', serif" font-size="7.6" fill="#1a1a1a" text-anchor="middle" font-weight="normal" font-style="normal">Block 1</text>
+<text x="33.00" y="91.67" font-family="Georgia, 'Times New Roman', serif" font-size="6.0" fill="#313030" text-anchor="middle" font-weight="normal" font-style="normal">60</text>
+<rect x="8.00" y="98.15" width="50.00" height="24.00" rx="0" fill="#f0f0ee" stroke="#000000" stroke-width="0.9"/>
+<text x="33.00" y="108.15" font-family="Georgia, 'Times New Roman', serif" font-size="7.6" fill="#1a1a1a" text-anchor="middle" font-weight="normal" font-style="normal">Block 2</text>
+<text x="33.00" y="116.15" font-family="Georgia, 'Times New Roman', serif" font-size="6.0" fill="#313030" text-anchor="middle" font-weight="normal" font-style="normal">13</text>
+<rect x="8.00" y="122.15" width="50.00" height="28.19" rx="0" fill="#f0f0ee" stroke="#000000" stroke-width="0.9"/>
+<text x="33.00" y="134.24" font-family="Georgia, 'Times New Roman', serif" font-size="7.6" fill="#1a1a1a" text-anchor="middle" font-weight="normal" font-style="normal">Block 3</text>
+<text x="33.00" y="142.24" font-family="Georgia, 'Times New Roman', serif" font-size="6.0" fill="#313030" text-anchor="middle" font-weight="normal" font-style="normal">91</text>
+<rect x="8.00" y="150.34" width="50.00" height="28.29" rx="0" fill="#f0f0ee" stroke="#000000" stroke-width="0.9"/>
+<text x="33.00" y="162.49" font-family="Georgia, 'Times New Roman', serif" font-size="7.6" fill="#1a1a1a" text-anchor="middle" font-weight="normal" font-style="normal">Block 4</text>
+<text x="33.00" y="170.49" font-family="Georgia, 'Times New Roman', serif" font-size="6.0" fill="#313030" text-anchor="middle" font-weight="normal" font-style="normal">92</text>
+<rect x="8.00" y="178.63" width="50.00" height="26.94" rx="0" fill="#f0f0ee" stroke="#000000" stroke-width="0.9"/>
+<text x="33.00" y="190.11" font-family="Georgia, 'Times New Roman', serif" font-size="7.6" fill="#1a1a1a" text-anchor="middle" font-weight="normal" font-style="normal">Block 5</text>
+<text x="33.00" y="198.11" font-family="Georgia, 'Times New Roman', serif" font-size="6.0" fill="#313030" text-anchor="middle" font-weight="normal" font-style="normal">79</text>
+<rect x="8.00" y="205.58" width="50.00" height="27.77" rx="0" fill="#f0f0ee" stroke="#000000" stroke-width="0.9"/>
+<text x="33.00" y="217.46" font-family="Georgia, 'Times New Roman', serif" font-size="7.6" fill="#1a1a1a" text-anchor="middle" font-weight="normal" font-style="normal">Block 6</text>
+<text x="33.00" y="225.46" font-family="Georgia, 'Times New Roman', serif" font-size="6.0" fill="#313030" text-anchor="middle" font-weight="normal" font-style="normal">87</text>
+<rect x="8.00" y="233.35" width="50.00" height="24.00" rx="0" fill="#f0f0ee" stroke="#000000" stroke-width="0.9"/>
+<text x="33.00" y="243.35" font-family="Georgia, 'Times New Roman', serif" font-size="7.6" fill="#1a1a1a" text-anchor="middle" font-weight="normal" font-style="normal">Block 7</text>
+<text x="33.00" y="251.35" font-family="Georgia, 'Times New Roman', serif" font-size="6.0" fill="#313030" text-anchor="middle" font-weight="normal" font-style="normal">25</text>
+<rect x="8.00" y="257.35" width="50.00" height="40.67" rx="0" fill="#f0f0ee" stroke="#000000" stroke-width="0.9"/>
+<text x="33.00" y="275.69" font-family="Georgia, 'Times New Roman', serif" font-size="7.6" fill="#1a1a1a" text-anchor="middle" font-weight="normal" font-style="normal">Block 8</text>
+<text x="33.00" y="283.69" font-family="Georgia, 'Times New Roman', serif" font-size="6.0" fill="#313030" text-anchor="middle" font-weight="normal" font-style="normal">211</text>
+<rect x="8.00" y="298.02" width="50.00" height="52.12" rx="0" fill="#f0f0ee" stroke="#000000" stroke-width="0.9"/>
+<text x="33.00" y="322.08" font-family="Georgia, 'Times New Roman', serif" font-size="7.6" fill="#1a1a1a" text-anchor="middle" font-weight="normal" font-style="normal">Block 9</text>
+<text x="33.00" y="330.08" font-family="Georgia, 'Times New Roman', serif" font-size="6.0" fill="#313030" text-anchor="middle" font-weight="normal" font-style="normal">321</text>
+<rect x="8.00" y="350.14" width="50.00" height="46.39" rx="0" fill="#f0f0ee" stroke="#000000" stroke-width="0.9"/>
+<text x="33.00" y="371.34" font-family="Georgia, 'Times New Roman', serif" font-size="7.6" fill="#1a1a1a" text-anchor="middle" font-weight="normal" font-style="normal">Block 10</text>
+<text x="33.00" y="379.34" font-family="Georgia, 'Times New Roman', serif" font-size="6.0" fill="#313030" text-anchor="middle" font-weight="normal" font-style="normal">266</text>
+<rect x="8.00" y="396.54" width="50.00" height="30.06" rx="0" fill="#f0f0ee" stroke="#000000" stroke-width="0.9"/>
+<text x="33.00" y="409.57" font-family="Georgia, 'Times New Roman', serif" font-size="7.6" fill="#1a1a1a" text-anchor="middle" font-weight="normal" font-style="normal">Block 11</text>
+<text x="33.00" y="417.57" font-family="Georgia, 'Times New Roman', serif" font-size="6.0" fill="#313030" text-anchor="middle" font-weight="normal" font-style="normal">109</text>
+<path d="M 71.00 27.75 Q 67.40 27.75 67.40 34.49 L 67.40 33.26 Q 67.40 40.00 63.00 40.00 Q 67.40 40.00 67.40 46.74 L 67.40 45.51 Q 67.40 52.25 71.00 52.25" fill="none" stroke="#0F0F00" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="82.00" y="26.65" width="98.00" height="26.70" rx="0" fill="#fbfbfa" stroke="#c4c4bf" stroke-width="0.6"/>
+<line x1="101.60" y1="26.65" x2="101.60" y2="53.35" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="121.20" y1="26.65" x2="121.20" y2="53.35" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="140.80" y1="26.65" x2="140.80" y2="53.35" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="160.40" y1="26.65" x2="160.40" y2="53.35" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="82.00" y1="26.65" x2="82.00" y2="53.35" stroke="#8c8c88" stroke-width="0.9"/>
+<rect x="82.00" y="29.25" width="11.76" height="5.00" rx="0" fill="#4D8052"/>
+<text x="79.00" y="33.15" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#4D8052" text-anchor="end" font-weight="bold" font-style="normal">C</text>
+<rect x="82.00" y="34.75" width="70.56" height="5.00" rx="0" fill="#615394"/>
+<text x="79.00" y="38.65" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#615394" text-anchor="end" font-weight="bold" font-style="normal">E</text>
+<rect x="82.00" y="40.25" width="15.68" height="5.00" rx="0" fill="#aa6182"/>
+<text x="79.00" y="44.15" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#aa6182" text-anchor="end" font-weight="bold" font-style="normal">?</text>
+<text x="79.00" y="49.65" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#91764b" text-anchor="end" font-weight="bold" font-style="normal">–</text>
+<path d="M 71.00 60.93 Q 67.40 60.93 67.40 67.67 L 67.40 66.45 Q 67.40 73.18 63.00 73.18 Q 67.40 73.18 67.40 79.92 L 67.40 78.70 Q 67.40 85.43 71.00 85.43" fill="none" stroke="#0F0F00" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="82.00" y="59.83" width="98.00" height="26.70" rx="0" fill="#fbfbfa" stroke="#c4c4bf" stroke-width="0.6"/>
+<line x1="101.60" y1="59.83" x2="101.60" y2="86.53" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="121.20" y1="59.83" x2="121.20" y2="86.53" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="140.80" y1="59.83" x2="140.80" y2="86.53" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="160.40" y1="59.83" x2="160.40" y2="86.53" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="82.00" y1="59.83" x2="82.00" y2="86.53" stroke="#8c8c88" stroke-width="0.9"/>
+<rect x="82.00" y="62.43" width="47.04" height="5.00" rx="0" fill="#4D8052"/>
+<text x="79.00" y="66.33" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#4D8052" text-anchor="end" font-weight="bold" font-style="normal">C</text>
+<rect x="82.00" y="67.93" width="3.92" height="5.00" rx="0" fill="#615394"/>
+<text x="79.00" y="71.83" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#615394" text-anchor="end" font-weight="bold" font-style="normal">E</text>
+<rect x="82.00" y="73.43" width="47.04" height="5.00" rx="0" fill="#aa6182"/>
+<text x="79.00" y="77.33" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#aa6182" text-anchor="end" font-weight="bold" font-style="normal">?</text>
+<text x="79.00" y="82.83" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#91764b" text-anchor="end" font-weight="bold" font-style="normal">–</text>
+<path d="M 71.00 85.90 Q 67.40 85.90 67.40 92.64 L 67.40 91.41 Q 67.40 98.15 63.00 98.15 Q 67.40 98.15 67.40 104.89 L 67.40 103.66 Q 67.40 110.40 71.00 110.40" fill="none" stroke="#0F0F00" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="82.00" y="84.80" width="98.00" height="26.70" rx="0" fill="#fbfbfa" stroke="#c4c4bf" stroke-width="0.6"/>
+<line x1="101.60" y1="84.80" x2="101.60" y2="111.50" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="121.20" y1="84.80" x2="121.20" y2="111.50" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="140.80" y1="84.80" x2="140.80" y2="111.50" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="160.40" y1="84.80" x2="160.40" y2="111.50" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="82.00" y1="84.80" x2="82.00" y2="111.50" stroke="#8c8c88" stroke-width="0.9"/>
+<rect x="82.00" y="87.40" width="27.44" height="5.00" rx="0" fill="#4D8052"/>
+<text x="79.00" y="91.30" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#4D8052" text-anchor="end" font-weight="bold" font-style="normal">C</text>
+<rect x="82.00" y="92.90" width="31.36" height="5.00" rx="0" fill="#615394"/>
+<text x="79.00" y="96.80" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#615394" text-anchor="end" font-weight="bold" font-style="normal">E</text>
+<rect x="82.00" y="98.40" width="39.20" height="5.00" rx="0" fill="#aa6182"/>
+<text x="79.00" y="102.30" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#aa6182" text-anchor="end" font-weight="bold" font-style="normal">?</text>
+<text x="79.00" y="107.80" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#91764b" text-anchor="end" font-weight="bold" font-style="normal">–</text>
+<path d="M 71.00 109.90 Q 67.40 109.90 67.40 116.64 L 67.40 115.41 Q 67.40 122.15 63.00 122.15 Q 67.40 122.15 67.40 128.89 L 67.40 127.66 Q 67.40 134.40 71.00 134.40" fill="none" stroke="#0F0F00" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="82.00" y="108.80" width="98.00" height="26.70" rx="0" fill="#fbfbfa" stroke="#c4c4bf" stroke-width="0.6"/>
+<line x1="101.60" y1="108.80" x2="101.60" y2="135.50" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="121.20" y1="108.80" x2="121.20" y2="135.50" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="140.80" y1="108.80" x2="140.80" y2="135.50" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="160.40" y1="108.80" x2="160.40" y2="135.50" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="82.00" y1="108.80" x2="82.00" y2="135.50" stroke="#8c8c88" stroke-width="0.9"/>
+<rect x="82.00" y="111.40" width="50.96" height="5.00" rx="0" fill="#4D8052"/>
+<text x="79.00" y="115.30" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#4D8052" text-anchor="end" font-weight="bold" font-style="normal">C</text>
+<rect x="82.00" y="116.90" width="23.52" height="5.00" rx="0" fill="#615394"/>
+<text x="79.00" y="120.80" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#615394" text-anchor="end" font-weight="bold" font-style="normal">E</text>
+<rect x="82.00" y="122.40" width="23.52" height="5.00" rx="0" fill="#aa6182"/>
+<text x="79.00" y="126.30" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#aa6182" text-anchor="end" font-weight="bold" font-style="normal">?</text>
+<text x="79.00" y="131.80" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#91764b" text-anchor="end" font-weight="bold" font-style="normal">–</text>
+<path d="M 71.00 138.09 Q 67.40 138.09 67.40 144.83 L 67.40 143.60 Q 67.40 150.34 63.00 150.34 Q 67.40 150.34 67.40 157.08 L 67.40 155.85 Q 67.40 162.59 71.00 162.59" fill="none" stroke="#0F0F00" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="82.00" y="136.99" width="98.00" height="26.70" rx="0" fill="#fbfbfa" stroke="#c4c4bf" stroke-width="0.6"/>
+<line x1="101.60" y1="136.99" x2="101.60" y2="163.69" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="121.20" y1="136.99" x2="121.20" y2="163.69" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="140.80" y1="136.99" x2="140.80" y2="163.69" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="160.40" y1="136.99" x2="160.40" y2="163.69" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="82.00" y1="136.99" x2="82.00" y2="163.69" stroke="#8c8c88" stroke-width="0.9"/>
+<rect x="82.00" y="139.59" width="23.52" height="5.00" rx="0" fill="#4D8052"/>
+<text x="79.00" y="143.49" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#4D8052" text-anchor="end" font-weight="bold" font-style="normal">C</text>
+<rect x="82.00" y="145.09" width="31.36" height="5.00" rx="0" fill="#615394"/>
+<text x="79.00" y="148.99" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#615394" text-anchor="end" font-weight="bold" font-style="normal">E</text>
+<rect x="82.00" y="150.59" width="43.12" height="5.00" rx="0" fill="#aa6182"/>
+<text x="79.00" y="154.49" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#aa6182" text-anchor="end" font-weight="bold" font-style="normal">?</text>
+<text x="79.00" y="159.99" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#91764b" text-anchor="end" font-weight="bold" font-style="normal">–</text>
+<path d="M 71.00 166.38 Q 67.40 166.38 67.40 173.12 L 67.40 171.90 Q 67.40 178.63 63.00 178.63 Q 67.40 178.63 67.40 185.37 L 67.40 184.15 Q 67.40 190.88 71.00 190.88" fill="none" stroke="#0F0F00" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="82.00" y="165.28" width="98.00" height="26.70" rx="0" fill="#fbfbfa" stroke="#c4c4bf" stroke-width="0.6"/>
+<line x1="101.60" y1="165.28" x2="101.60" y2="191.98" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="121.20" y1="165.28" x2="121.20" y2="191.98" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="140.80" y1="165.28" x2="140.80" y2="191.98" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="160.40" y1="165.28" x2="160.40" y2="191.98" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="82.00" y1="165.28" x2="82.00" y2="191.98" stroke="#8c8c88" stroke-width="0.9"/>
+<rect x="82.00" y="167.88" width="15.68" height="5.00" rx="0" fill="#4D8052"/>
+<text x="79.00" y="171.78" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#4D8052" text-anchor="end" font-weight="bold" font-style="normal">C</text>
+<rect x="82.00" y="173.38" width="43.12" height="5.00" rx="0" fill="#615394"/>
+<text x="79.00" y="177.28" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#615394" text-anchor="end" font-weight="bold" font-style="normal">E</text>
+<rect x="82.00" y="178.88" width="39.20" height="5.00" rx="0" fill="#aa6182"/>
+<text x="79.00" y="182.78" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#aa6182" text-anchor="end" font-weight="bold" font-style="normal">?</text>
+<text x="79.00" y="188.28" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#91764b" text-anchor="end" font-weight="bold" font-style="normal">–</text>
+<path d="M 71.00 193.33 Q 67.40 193.33 67.40 200.06 L 67.40 198.84 Q 67.40 205.58 63.00 205.58 Q 67.40 205.58 67.40 212.31 L 67.40 211.09 Q 67.40 217.83 71.00 217.83" fill="none" stroke="#0F0F00" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="82.00" y="192.23" width="98.00" height="26.70" rx="0" fill="#fbfbfa" stroke="#c4c4bf" stroke-width="0.6"/>
+<line x1="101.60" y1="192.23" x2="101.60" y2="218.93" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="121.20" y1="192.23" x2="121.20" y2="218.93" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="140.80" y1="192.23" x2="140.80" y2="218.93" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="160.40" y1="192.23" x2="160.40" y2="218.93" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="82.00" y1="192.23" x2="82.00" y2="218.93" stroke="#8c8c88" stroke-width="0.9"/>
+<rect x="82.00" y="194.83" width="23.52" height="5.00" rx="0" fill="#4D8052"/>
+<text x="79.00" y="198.73" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#4D8052" text-anchor="end" font-weight="bold" font-style="normal">C</text>
+<rect x="82.00" y="200.33" width="31.36" height="5.00" rx="0" fill="#615394"/>
+<text x="79.00" y="204.23" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#615394" text-anchor="end" font-weight="bold" font-style="normal">E</text>
+<rect x="82.00" y="205.83" width="43.12" height="5.00" rx="0" fill="#aa6182"/>
+<text x="79.00" y="209.73" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#aa6182" text-anchor="end" font-weight="bold" font-style="normal">?</text>
+<text x="79.00" y="215.23" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#91764b" text-anchor="end" font-weight="bold" font-style="normal">–</text>
+<path d="M 71.00 221.10 Q 67.40 221.10 67.40 227.84 L 67.40 226.61 Q 67.40 233.35 63.00 233.35 Q 67.40 233.35 67.40 240.09 L 67.40 238.86 Q 67.40 245.60 71.00 245.60" fill="none" stroke="#0F0F00" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="82.00" y="220.00" width="98.00" height="26.70" rx="0" fill="#fbfbfa" stroke="#c4c4bf" stroke-width="0.6"/>
+<line x1="101.60" y1="220.00" x2="101.60" y2="246.70" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="121.20" y1="220.00" x2="121.20" y2="246.70" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="140.80" y1="220.00" x2="140.80" y2="246.70" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="160.40" y1="220.00" x2="160.40" y2="246.70" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="82.00" y1="220.00" x2="82.00" y2="246.70" stroke="#8c8c88" stroke-width="0.9"/>
+<rect x="82.00" y="222.60" width="58.80" height="5.00" rx="0" fill="#4D8052"/>
+<text x="79.00" y="226.50" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#4D8052" text-anchor="end" font-weight="bold" font-style="normal">C</text>
+<rect x="82.00" y="228.10" width="7.84" height="5.00" rx="0" fill="#615394"/>
+<text x="79.00" y="232.00" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#615394" text-anchor="end" font-weight="bold" font-style="normal">E</text>
+<rect x="82.00" y="233.60" width="31.36" height="5.00" rx="0" fill="#aa6182"/>
+<text x="79.00" y="237.50" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#aa6182" text-anchor="end" font-weight="bold" font-style="normal">?</text>
+<text x="79.00" y="243.00" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#91764b" text-anchor="end" font-weight="bold" font-style="normal">–</text>
+<path d="M 71.00 245.10 Q 67.40 245.10 67.40 251.84 L 67.40 250.61 Q 67.40 257.35 63.00 257.35 Q 67.40 257.35 67.40 264.09 L 67.40 262.86 Q 67.40 269.60 71.00 269.60" fill="none" stroke="#0F0F00" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="82.00" y="244.00" width="98.00" height="26.70" rx="0" fill="#fbfbfa" stroke="#c4c4bf" stroke-width="0.6"/>
+<line x1="101.60" y1="244.00" x2="101.60" y2="270.70" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="121.20" y1="244.00" x2="121.20" y2="270.70" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="140.80" y1="244.00" x2="140.80" y2="270.70" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="160.40" y1="244.00" x2="160.40" y2="270.70" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="82.00" y1="244.00" x2="82.00" y2="270.70" stroke="#8c8c88" stroke-width="0.9"/>
+<rect x="82.00" y="246.60" width="39.20" height="5.00" rx="0" fill="#4D8052"/>
+<text x="79.00" y="250.50" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#4D8052" text-anchor="end" font-weight="bold" font-style="normal">C</text>
+<rect x="82.00" y="252.10" width="11.76" height="5.00" rx="0" fill="#615394"/>
+<text x="79.00" y="256.00" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#615394" text-anchor="end" font-weight="bold" font-style="normal">E</text>
+<rect x="82.00" y="257.60" width="47.04" height="5.00" rx="0" fill="#aa6182"/>
+<text x="79.00" y="261.50" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#aa6182" text-anchor="end" font-weight="bold" font-style="normal">?</text>
+<text x="79.00" y="267.00" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#91764b" text-anchor="end" font-weight="bold" font-style="normal">–</text>
+<path d="M 71.00 285.77 Q 67.40 285.77 67.40 292.51 L 67.40 291.29 Q 67.40 298.02 63.00 298.02 Q 67.40 298.02 67.40 304.76 L 67.40 303.54 Q 67.40 310.27 71.00 310.27" fill="none" stroke="#0F0F00" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="82.00" y="284.67" width="98.00" height="26.70" rx="0" fill="#fbfbfa" stroke="#c4c4bf" stroke-width="0.6"/>
+<line x1="101.60" y1="284.67" x2="101.60" y2="311.37" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="121.20" y1="284.67" x2="121.20" y2="311.37" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="140.80" y1="284.67" x2="140.80" y2="311.37" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="160.40" y1="284.67" x2="160.40" y2="311.37" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="82.00" y1="284.67" x2="82.00" y2="311.37" stroke="#8c8c88" stroke-width="0.9"/>
+<rect x="82.00" y="287.27" width="39.20" height="5.00" rx="0" fill="#4D8052"/>
+<text x="79.00" y="291.17" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#4D8052" text-anchor="end" font-weight="bold" font-style="normal">C</text>
+<rect x="82.00" y="292.77" width="31.36" height="5.00" rx="0" fill="#615394"/>
+<text x="79.00" y="296.67" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#615394" text-anchor="end" font-weight="bold" font-style="normal">E</text>
+<rect x="82.00" y="298.27" width="27.44" height="5.00" rx="0" fill="#aa6182"/>
+<text x="79.00" y="302.17" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#aa6182" text-anchor="end" font-weight="bold" font-style="normal">?</text>
+<text x="79.00" y="307.67" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#91764b" text-anchor="end" font-weight="bold" font-style="normal">–</text>
+<path d="M 71.00 337.89 Q 67.40 337.89 67.40 344.63 L 67.40 343.40 Q 67.40 350.14 63.00 350.14 Q 67.40 350.14 67.40 356.88 L 67.40 355.65 Q 67.40 362.39 71.00 362.39" fill="none" stroke="#0F0F00" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="82.00" y="336.79" width="98.00" height="26.70" rx="0" fill="#fbfbfa" stroke="#c4c4bf" stroke-width="0.6"/>
+<line x1="101.60" y1="336.79" x2="101.60" y2="363.49" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="121.20" y1="336.79" x2="121.20" y2="363.49" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="140.80" y1="336.79" x2="140.80" y2="363.49" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="160.40" y1="336.79" x2="160.40" y2="363.49" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="82.00" y1="336.79" x2="82.00" y2="363.49" stroke="#8c8c88" stroke-width="0.9"/>
+<rect x="82.00" y="339.39" width="98.00" height="5.00" rx="0" fill="#4D8052"/>
+<text x="79.00" y="343.29" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#4D8052" text-anchor="end" font-weight="bold" font-style="normal">C</text>
+<text x="79.00" y="348.79" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#615394" text-anchor="end" font-weight="bold" font-style="normal">E</text>
+<text x="79.00" y="354.29" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#aa6182" text-anchor="end" font-weight="bold" font-style="normal">?</text>
+<text x="79.00" y="359.79" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#91764b" text-anchor="end" font-weight="bold" font-style="normal">–</text>
+<path d="M 71.00 384.29 Q 67.40 384.29 67.40 391.02 L 67.40 389.80 Q 67.40 396.54 63.00 396.54 Q 67.40 396.54 67.40 403.27 L 67.40 402.05 Q 67.40 408.79 71.00 408.79" fill="none" stroke="#0F0F00" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="82.00" y="383.19" width="98.00" height="26.70" rx="0" fill="#fbfbfa" stroke="#c4c4bf" stroke-width="0.6"/>
+<line x1="101.60" y1="383.19" x2="101.60" y2="409.89" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="121.20" y1="383.19" x2="121.20" y2="409.89" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="140.80" y1="383.19" x2="140.80" y2="409.89" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="160.40" y1="383.19" x2="160.40" y2="409.89" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="82.00" y1="383.19" x2="82.00" y2="409.89" stroke="#8c8c88" stroke-width="0.9"/>
+<rect x="82.00" y="385.79" width="98.00" height="5.00" rx="0" fill="#4D8052"/>
+<text x="79.00" y="389.69" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#4D8052" text-anchor="end" font-weight="bold" font-style="normal">C</text>
+<text x="79.00" y="395.19" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#615394" text-anchor="end" font-weight="bold" font-style="normal">E</text>
+<text x="79.00" y="400.69" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#aa6182" text-anchor="end" font-weight="bold" font-style="normal">?</text>
+<text x="79.00" y="406.19" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#91764b" text-anchor="end" font-weight="bold" font-style="normal">–</text>
+<path d="M 71.00 414.35 Q 67.40 414.35 67.40 421.09 L 67.40 419.86 Q 67.40 426.60 63.00 426.60 Q 67.40 426.60 67.40 433.34 L 67.40 432.11 Q 67.40 438.85 71.00 438.85" fill="none" stroke="#0F0F00" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="82.00" y="413.25" width="98.00" height="26.70" rx="0" fill="#fbfbfa" stroke="#c4c4bf" stroke-width="0.6"/>
+<line x1="101.60" y1="413.25" x2="101.60" y2="439.95" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="121.20" y1="413.25" x2="121.20" y2="439.95" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="140.80" y1="413.25" x2="140.80" y2="439.95" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="160.40" y1="413.25" x2="160.40" y2="439.95" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="82.00" y1="413.25" x2="82.00" y2="439.95" stroke="#8c8c88" stroke-width="0.9"/>
+<rect x="82.00" y="415.85" width="98.00" height="5.00" rx="0" fill="#4D8052"/>
+<text x="79.00" y="419.75" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#4D8052" text-anchor="end" font-weight="bold" font-style="normal">C</text>
+<text x="79.00" y="425.25" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#615394" text-anchor="end" font-weight="bold" font-style="normal">E</text>
+<text x="79.00" y="430.75" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#aa6182" text-anchor="end" font-weight="bold" font-style="normal">?</text>
+<text x="79.00" y="436.25" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#91764b" text-anchor="end" font-weight="bold" font-style="normal">–</text>
+</g>
+<g transform="translate(193.54 0)">
+<text x="82.00" y="18.65" font-family="Georgia, 'Times New Roman', serif" font-size="6.8" fill="#9a9a9a" text-anchor="middle" font-weight="normal" font-style="normal">0</text>
+<text x="101.60" y="18.65" font-family="Georgia, 'Times New Roman', serif" font-size="6.8" fill="#9a9a9a" text-anchor="middle" font-weight="normal" font-style="normal">5</text>
+<text x="121.20" y="18.65" font-family="Georgia, 'Times New Roman', serif" font-size="6.8" fill="#9a9a9a" text-anchor="middle" font-weight="normal" font-style="normal">10</text>
+<text x="140.80" y="18.65" font-family="Georgia, 'Times New Roman', serif" font-size="6.8" fill="#9a9a9a" text-anchor="middle" font-weight="normal" font-style="normal">15</text>
+<text x="160.40" y="18.65" font-family="Georgia, 'Times New Roman', serif" font-size="6.8" fill="#9a9a9a" text-anchor="middle" font-weight="normal" font-style="normal">20</text>
+<text x="180.00" y="18.65" font-family="Georgia, 'Times New Roman', serif" font-size="6.8" fill="#9a9a9a" text-anchor="middle" font-weight="normal" font-style="normal">25</text>
+<text x="131.00" y="6.65" font-family="Georgia, 'Times New Roman', serif" font-size="7.4" fill="#5c5c5c" text-anchor="middle" font-weight="normal" font-style="normal">continuations of 25</text>
+<rect x="8.00" y="40.00" width="50.00" height="50.23" rx="0" fill="#f0f0ee" stroke="#000000" stroke-width="0.9"/>
+<text x="33.00" y="63.11" font-family="Georgia, 'Times New Roman', serif" font-size="7.6" fill="#1a1a1a" text-anchor="middle" font-weight="normal" font-style="normal">Block 0</text>
+<text x="33.00" y="71.11" font-family="Georgia, 'Times New Roman', serif" font-size="6.0" fill="#313030" text-anchor="middle" font-weight="normal" font-style="normal">147</text>
+<rect x="8.00" y="90.23" width="50.00" height="36.71" rx="0" fill="#f0f0ee" stroke="#000000" stroke-width="0.9"/>
+<text x="33.00" y="106.58" font-family="Georgia, 'Times New Roman', serif" font-size="7.6" fill="#1a1a1a" text-anchor="middle" font-weight="normal" font-style="normal">Block 1</text>
+<text x="33.00" y="114.58" font-family="Georgia, 'Times New Roman', serif" font-size="6.0" fill="#313030" text-anchor="middle" font-weight="normal" font-style="normal">59</text>
+<rect x="8.00" y="126.94" width="50.00" height="31.18" rx="0" fill="#f0f0ee" stroke="#000000" stroke-width="0.9"/>
+<text x="33.00" y="140.53" font-family="Georgia, 'Times New Roman', serif" font-size="7.6" fill="#1a1a1a" text-anchor="middle" font-weight="normal" font-style="normal">Block 2</text>
+<text x="33.00" y="148.53" font-family="Georgia, 'Times New Roman', serif" font-size="6.0" fill="#313030" text-anchor="middle" font-weight="normal" font-style="normal">23</text>
+<rect x="8.00" y="158.12" width="50.00" height="35.63" rx="0" fill="#f0f0ee" stroke="#000000" stroke-width="0.9"/>
+<text x="33.00" y="173.93" font-family="Georgia, 'Times New Roman', serif" font-size="7.6" fill="#1a1a1a" text-anchor="middle" font-weight="normal" font-style="normal">Block 3</text>
+<text x="33.00" y="181.93" font-family="Georgia, 'Times New Roman', serif" font-size="6.0" fill="#313030" text-anchor="middle" font-weight="normal" font-style="normal">52</text>
+<rect x="8.00" y="193.75" width="50.00" height="61.29" rx="0" fill="#f0f0ee" stroke="#000000" stroke-width="0.9"/>
+<text x="33.00" y="222.39" font-family="Georgia, 'Times New Roman', serif" font-size="7.6" fill="#1a1a1a" text-anchor="middle" font-weight="normal" font-style="normal">Block 4</text>
+<text x="33.00" y="230.39" font-family="Georgia, 'Times New Roman', serif" font-size="6.0" fill="#313030" text-anchor="middle" font-weight="normal" font-style="normal">219</text>
+<rect x="8.00" y="255.04" width="50.00" height="58.98" rx="0" fill="#f0f0ee" stroke="#000000" stroke-width="0.9"/>
+<text x="33.00" y="282.53" font-family="Georgia, 'Times New Roman', serif" font-size="7.6" fill="#1a1a1a" text-anchor="middle" font-weight="normal" font-style="normal">Block 5</text>
+<text x="33.00" y="290.53" font-family="Georgia, 'Times New Roman', serif" font-size="6.0" fill="#313030" text-anchor="middle" font-weight="normal" font-style="normal">204</text>
+<rect x="8.00" y="314.02" width="50.00" height="66.81" rx="0" fill="#f0f0ee" stroke="#000000" stroke-width="0.9"/>
+<text x="33.00" y="345.43" font-family="Georgia, 'Times New Roman', serif" font-size="7.6" fill="#1a1a1a" text-anchor="middle" font-weight="normal" font-style="normal">Block 6</text>
+<text x="33.00" y="353.43" font-family="Georgia, 'Times New Roman', serif" font-size="6.0" fill="#313030" text-anchor="middle" font-weight="normal" font-style="normal">255</text>
+<rect x="8.00" y="380.83" width="50.00" height="39.17" rx="0" fill="#f0f0ee" stroke="#000000" stroke-width="0.9"/>
+<text x="33.00" y="398.42" font-family="Georgia, 'Times New Roman', serif" font-size="7.6" fill="#1a1a1a" text-anchor="middle" font-weight="normal" font-style="normal">Block 7</text>
+<text x="33.00" y="406.42" font-family="Georgia, 'Times New Roman', serif" font-size="6.0" fill="#313030" text-anchor="middle" font-weight="normal" font-style="normal">75</text>
+<path d="M 71.00 27.75 Q 67.40 27.75 67.40 34.49 L 67.40 33.26 Q 67.40 40.00 63.00 40.00 Q 67.40 40.00 67.40 46.74 L 67.40 45.51 Q 67.40 52.25 71.00 52.25" fill="none" stroke="#0F0F00" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="82.00" y="26.65" width="98.00" height="26.70" rx="0" fill="#fbfbfa" stroke="#c4c4bf" stroke-width="0.6"/>
+<line x1="101.60" y1="26.65" x2="101.60" y2="53.35" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="121.20" y1="26.65" x2="121.20" y2="53.35" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="140.80" y1="26.65" x2="140.80" y2="53.35" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="160.40" y1="26.65" x2="160.40" y2="53.35" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="82.00" y1="26.65" x2="82.00" y2="53.35" stroke="#8c8c88" stroke-width="0.9"/>
+<rect x="82.00" y="29.25" width="70.56" height="5.00" rx="0" fill="#615394"/>
+<text x="79.00" y="33.15" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#615394" text-anchor="end" font-weight="bold" font-style="normal">E</text>
+<rect x="82.00" y="34.75" width="11.76" height="5.00" rx="0" fill="#4D8052"/>
+<text x="79.00" y="38.65" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#4D8052" text-anchor="end" font-weight="bold" font-style="normal">C</text>
+<rect x="82.00" y="40.25" width="15.68" height="5.00" rx="0" fill="#aa6182"/>
+<text x="79.00" y="44.15" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#aa6182" text-anchor="end" font-weight="bold" font-style="normal">?</text>
+<text x="79.00" y="49.65" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#91764b" text-anchor="end" font-weight="bold" font-style="normal">–</text>
+<path d="M 71.00 77.98 Q 67.40 77.98 67.40 84.71 L 67.40 83.49 Q 67.40 90.23 63.00 90.23 Q 67.40 90.23 67.40 96.96 L 67.40 95.74 Q 67.40 102.48 71.00 102.48" fill="none" stroke="#0F0F00" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="82.00" y="76.88" width="98.00" height="26.70" rx="0" fill="#fbfbfa" stroke="#c4c4bf" stroke-width="0.6"/>
+<line x1="101.60" y1="76.88" x2="101.60" y2="103.58" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="121.20" y1="76.88" x2="121.20" y2="103.58" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="140.80" y1="76.88" x2="140.80" y2="103.58" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="160.40" y1="76.88" x2="160.40" y2="103.58" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="82.00" y1="76.88" x2="82.00" y2="103.58" stroke="#8c8c88" stroke-width="0.9"/>
+<rect x="82.00" y="79.48" width="94.08" height="5.00" rx="0" fill="#615394"/>
+<text x="79.00" y="83.38" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#615394" text-anchor="end" font-weight="bold" font-style="normal">E</text>
+<rect x="82.00" y="84.98" width="3.92" height="5.00" rx="0" fill="#4D8052"/>
+<text x="79.00" y="88.88" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#4D8052" text-anchor="end" font-weight="bold" font-style="normal">C</text>
+<text x="79.00" y="94.38" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#aa6182" text-anchor="end" font-weight="bold" font-style="normal">?</text>
+<text x="79.00" y="99.88" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#91764b" text-anchor="end" font-weight="bold" font-style="normal">–</text>
+<path d="M 71.00 114.69 Q 67.40 114.69 67.40 121.42 L 67.40 120.20 Q 67.40 126.94 63.00 126.94 Q 67.40 126.94 67.40 133.67 L 67.40 132.45 Q 67.40 139.19 71.00 139.19" fill="none" stroke="#0F0F00" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="82.00" y="113.59" width="98.00" height="26.70" rx="0" fill="#fbfbfa" stroke="#c4c4bf" stroke-width="0.6"/>
+<line x1="101.60" y1="113.59" x2="101.60" y2="140.29" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="121.20" y1="113.59" x2="121.20" y2="140.29" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="140.80" y1="113.59" x2="140.80" y2="140.29" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="160.40" y1="113.59" x2="160.40" y2="140.29" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="82.00" y1="113.59" x2="82.00" y2="140.29" stroke="#8c8c88" stroke-width="0.9"/>
+<rect x="82.00" y="116.19" width="78.40" height="5.00" rx="0" fill="#615394"/>
+<text x="79.00" y="120.09" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#615394" text-anchor="end" font-weight="bold" font-style="normal">E</text>
+<rect x="82.00" y="121.69" width="19.60" height="5.00" rx="0" fill="#4D8052"/>
+<text x="79.00" y="125.59" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#4D8052" text-anchor="end" font-weight="bold" font-style="normal">C</text>
+<text x="79.00" y="131.09" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#aa6182" text-anchor="end" font-weight="bold" font-style="normal">?</text>
+<text x="79.00" y="136.59" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#91764b" text-anchor="end" font-weight="bold" font-style="normal">–</text>
+<path d="M 71.00 145.87 Q 67.40 145.87 67.40 152.60 L 67.40 151.38 Q 67.40 158.12 63.00 158.12 Q 67.40 158.12 67.40 164.85 L 67.40 163.63 Q 67.40 170.37 71.00 170.37" fill="none" stroke="#0F0F00" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="82.00" y="144.77" width="98.00" height="26.70" rx="0" fill="#fbfbfa" stroke="#c4c4bf" stroke-width="0.6"/>
+<line x1="101.60" y1="144.77" x2="101.60" y2="171.47" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="121.20" y1="144.77" x2="121.20" y2="171.47" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="140.80" y1="144.77" x2="140.80" y2="171.47" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="160.40" y1="144.77" x2="160.40" y2="171.47" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="82.00" y1="144.77" x2="82.00" y2="171.47" stroke="#8c8c88" stroke-width="0.9"/>
+<rect x="82.00" y="147.37" width="54.88" height="5.00" rx="0" fill="#615394"/>
+<text x="79.00" y="151.27" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#615394" text-anchor="end" font-weight="bold" font-style="normal">E</text>
+<rect x="82.00" y="152.87" width="39.20" height="5.00" rx="0" fill="#4D8052"/>
+<text x="79.00" y="156.77" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#4D8052" text-anchor="end" font-weight="bold" font-style="normal">C</text>
+<text x="79.00" y="162.27" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#aa6182" text-anchor="end" font-weight="bold" font-style="normal">?</text>
+<rect x="82.00" y="163.87" width="3.92" height="5.00" rx="0" fill="#91764b"/>
+<text x="79.00" y="167.77" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#91764b" text-anchor="end" font-weight="bold" font-style="normal">–</text>
+<path d="M 71.00 181.50 Q 67.40 181.50 67.40 188.24 L 67.40 187.01 Q 67.40 193.75 63.00 193.75 Q 67.40 193.75 67.40 200.49 L 67.40 199.26 Q 67.40 206.00 71.00 206.00" fill="none" stroke="#0F0F00" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="82.00" y="180.40" width="98.00" height="26.70" rx="0" fill="#fbfbfa" stroke="#c4c4bf" stroke-width="0.6"/>
+<line x1="101.60" y1="180.40" x2="101.60" y2="207.10" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="121.20" y1="180.40" x2="121.20" y2="207.10" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="140.80" y1="180.40" x2="140.80" y2="207.10" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="160.40" y1="180.40" x2="160.40" y2="207.10" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="82.00" y1="180.40" x2="82.00" y2="207.10" stroke="#8c8c88" stroke-width="0.9"/>
+<rect x="82.00" y="183.00" width="78.40" height="5.00" rx="0" fill="#615394"/>
+<text x="79.00" y="186.90" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#615394" text-anchor="end" font-weight="bold" font-style="normal">E</text>
+<rect x="82.00" y="188.50" width="19.60" height="5.00" rx="0" fill="#4D8052"/>
+<text x="79.00" y="192.40" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#4D8052" text-anchor="end" font-weight="bold" font-style="normal">C</text>
+<text x="79.00" y="197.90" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#aa6182" text-anchor="end" font-weight="bold" font-style="normal">?</text>
+<text x="79.00" y="203.40" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#91764b" text-anchor="end" font-weight="bold" font-style="normal">–</text>
+<path d="M 71.00 242.79 Q 67.40 242.79 67.40 249.52 L 67.40 248.30 Q 67.40 255.04 63.00 255.04 Q 67.40 255.04 67.40 261.77 L 67.40 260.55 Q 67.40 267.29 71.00 267.29" fill="none" stroke="#0F0F00" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="82.00" y="241.69" width="98.00" height="26.70" rx="0" fill="#fbfbfa" stroke="#c4c4bf" stroke-width="0.6"/>
+<line x1="101.60" y1="241.69" x2="101.60" y2="268.39" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="121.20" y1="241.69" x2="121.20" y2="268.39" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="140.80" y1="241.69" x2="140.80" y2="268.39" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="160.40" y1="241.69" x2="160.40" y2="268.39" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="82.00" y1="241.69" x2="82.00" y2="268.39" stroke="#8c8c88" stroke-width="0.9"/>
+<rect x="82.00" y="244.29" width="94.08" height="5.00" rx="0" fill="#615394"/>
+<text x="79.00" y="248.19" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#615394" text-anchor="end" font-weight="bold" font-style="normal">E</text>
+<rect x="82.00" y="249.79" width="3.92" height="5.00" rx="0" fill="#4D8052"/>
+<text x="79.00" y="253.69" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#4D8052" text-anchor="end" font-weight="bold" font-style="normal">C</text>
+<text x="79.00" y="259.19" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#aa6182" text-anchor="end" font-weight="bold" font-style="normal">?</text>
+<text x="79.00" y="264.69" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#91764b" text-anchor="end" font-weight="bold" font-style="normal">–</text>
+<path d="M 71.00 301.77 Q 67.40 301.77 67.40 308.51 L 67.40 307.28 Q 67.40 314.02 63.00 314.02 Q 67.40 314.02 67.40 320.76 L 67.40 319.53 Q 67.40 326.27 71.00 326.27" fill="none" stroke="#0F0F00" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="82.00" y="300.67" width="98.00" height="26.70" rx="0" fill="#fbfbfa" stroke="#c4c4bf" stroke-width="0.6"/>
+<line x1="101.60" y1="300.67" x2="101.60" y2="327.37" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="121.20" y1="300.67" x2="121.20" y2="327.37" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="140.80" y1="300.67" x2="140.80" y2="327.37" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="160.40" y1="300.67" x2="160.40" y2="327.37" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="82.00" y1="300.67" x2="82.00" y2="327.37" stroke="#8c8c88" stroke-width="0.9"/>
+<rect x="82.00" y="303.27" width="74.48" height="5.00" rx="0" fill="#615394"/>
+<text x="79.00" y="307.17" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#615394" text-anchor="end" font-weight="bold" font-style="normal">E</text>
+<rect x="82.00" y="308.77" width="23.52" height="5.00" rx="0" fill="#4D8052"/>
+<text x="79.00" y="312.67" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#4D8052" text-anchor="end" font-weight="bold" font-style="normal">C</text>
+<text x="79.00" y="318.17" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#aa6182" text-anchor="end" font-weight="bold" font-style="normal">?</text>
+<text x="79.00" y="323.67" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#91764b" text-anchor="end" font-weight="bold" font-style="normal">–</text>
+<path d="M 71.00 368.58 Q 67.40 368.58 67.40 375.32 L 67.40 374.10 Q 67.40 380.83 63.00 380.83 Q 67.40 380.83 67.40 387.57 L 67.40 386.35 Q 67.40 393.08 71.00 393.08" fill="none" stroke="#0F0F00" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="82.00" y="367.48" width="98.00" height="26.70" rx="0" fill="#fbfbfa" stroke="#c4c4bf" stroke-width="0.6"/>
+<line x1="101.60" y1="367.48" x2="101.60" y2="394.18" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="121.20" y1="367.48" x2="121.20" y2="394.18" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="140.80" y1="367.48" x2="140.80" y2="394.18" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="160.40" y1="367.48" x2="160.40" y2="394.18" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="82.00" y1="367.48" x2="82.00" y2="394.18" stroke="#8c8c88" stroke-width="0.9"/>
+<rect x="82.00" y="370.08" width="94.08" height="5.00" rx="0" fill="#615394"/>
+<text x="79.00" y="373.98" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#615394" text-anchor="end" font-weight="bold" font-style="normal">E</text>
+<text x="79.00" y="379.48" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#4D8052" text-anchor="end" font-weight="bold" font-style="normal">C</text>
+<text x="79.00" y="384.98" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#aa6182" text-anchor="end" font-weight="bold" font-style="normal">?</text>
+<rect x="82.00" y="386.58" width="3.92" height="5.00" rx="0" fill="#91764b"/>
+<text x="79.00" y="390.48" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#91764b" text-anchor="end" font-weight="bold" font-style="normal">–</text>
+<path d="M 71.00 407.75 Q 67.40 407.75 67.40 414.49 L 67.40 413.26 Q 67.40 420.00 63.00 420.00 Q 67.40 420.00 67.40 426.74 L 67.40 425.51 Q 67.40 432.25 71.00 432.25" fill="none" stroke="#0F0F00" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="82.00" y="406.65" width="98.00" height="26.70" rx="0" fill="#fbfbfa" stroke="#c4c4bf" stroke-width="0.6"/>
+<line x1="101.60" y1="406.65" x2="101.60" y2="433.35" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="121.20" y1="406.65" x2="121.20" y2="433.35" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="140.80" y1="406.65" x2="140.80" y2="433.35" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="160.40" y1="406.65" x2="160.40" y2="433.35" stroke="#e4e4e0" stroke-width="0.5"/>
+<line x1="82.00" y1="406.65" x2="82.00" y2="433.35" stroke="#8c8c88" stroke-width="0.9"/>
+<rect x="82.00" y="409.25" width="98.00" height="5.00" rx="0" fill="#615394"/>
+<text x="79.00" y="413.15" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#615394" text-anchor="end" font-weight="bold" font-style="normal">E</text>
+<text x="79.00" y="418.65" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#4D8052" text-anchor="end" font-weight="bold" font-style="normal">C</text>
+<text x="79.00" y="424.15" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#aa6182" text-anchor="end" font-weight="bold" font-style="normal">?</text>
+<text x="79.00" y="429.65" font-family="Georgia, 'Times New Roman', serif" font-size="5.6" fill="#91764b" text-anchor="end" font-weight="bold" font-style="normal">–</text>
+</g>
+<text x="87.77" y="455.95" font-family="Georgia, 'Times New Roman', serif" font-size="8" fill="#5c5c5c" text-anchor="middle" font-weight="normal" font-style="normal">(a) the C-trace</text>
+<text x="289.30" y="455.95" font-family="Georgia, 'Times New Roman', serif" font-size="8" fill="#5c5c5c" text-anchor="middle" font-weight="normal" font-style="normal">(b) the E-trace</text>
+<rect x="74.27" y="469.95" width="9.00" height="9.00" rx="0" fill="#4D8052"/>
+<text x="86.27" y="477.45" font-family="Georgia, 'Times New Roman', serif" font-size="7.2" fill="#5c5c5c" text-anchor="start" font-weight="normal" font-style="normal">answer C</text>
+<rect x="130.22" y="469.95" width="9.00" height="9.00" rx="0" fill="#615394"/>
+<text x="142.22" y="477.45" font-family="Georgia, 'Times New Roman', serif" font-size="7.2" fill="#5c5c5c" text-anchor="start" font-weight="normal" font-style="normal">answer E</text>
+<rect x="186.18" y="469.95" width="9.00" height="9.00" rx="0" fill="#aa6182"/>
+<text x="198.18" y="477.45" font-family="Georgia, 'Times New Roman', serif" font-size="7.2" fill="#5c5c5c" text-anchor="start" font-weight="normal" font-style="normal">no answer</text>
+<rect x="245.87" y="469.95" width="9.00" height="9.00" rx="0" fill="#91764b"/>
+<text x="257.87" y="477.45" font-family="Georgia, 'Times New Roman', serif" font-size="7.2" fill="#5c5c5c" text-anchor="start" font-weight="normal" font-style="normal">other answer</text>
+</svg>
