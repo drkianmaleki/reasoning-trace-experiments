@@ -1,0 +1,7 @@
+scope,first,then,XY_n,XY_count_C,XY_p_C,XY_p_C_low,XY_p_C_high,XY_count_E,XY_p_E,XY_p_E_low,XY_p_E_high,XY_count_unresolved,XY_count_other,YX_n,YX_count_C,YX_p_C,YX_p_C_low,YX_p_C_high,YX_count_E,YX_p_E,YX_p_E_low,YX_p_E_high,YX_count_unresolved,YX_count_other,XY_from_c004,XY_from_e036,YX_from_c004,YX_from_e036,diff_C,diff_C_low,diff_C_high,diff_E,diff_E_low,diff_E_high
+all,algebra,famous problem,293,171,0.5836,0.5264,0.6386,57,0.1945,0.1533,0.2437,57,8,225,35,0.1556,0.114,0.2087,183,0.8133,0.7573,0.8588,3,4,289,0,9,197,0.4281,0.35,0.497,-0.6188,-0.6802,-0.5443
+cut-0,algebra,famous problem,4,2,0.5,0.15,0.85,1,0.25,0.0456,0.6994,0,1,19,1,0.0526,0.0094,0.2464,16,0.8421,0.6243,0.9448,1,1,0,0,0,0,0.4474,0.0474,0.8,-0.5921,-0.8209,-0.0928
+all,algebra,hedge word,345,169,0.4899,0.4375,0.5424,115,0.3333,0.2857,0.3847,52,9,0,0,,,,0,,,,0,0,256,82,0,0,,,,,,
+cut-0,algebra,hedge word,7,2,0.2857,0.0822,0.6411,3,0.4286,0.1582,0.7495,1,1,0,0,,,,0,,,,0,0,0,0,0,0,,,,,,
+all,famous problem,hedge word,341,168,0.4927,0.44,0.5455,112,0.3284,0.2808,0.38,52,9,3,1,0.3333,0.0615,0.7923,2,0.6667,0.2077,0.9385,0,0,253,81,3,0,0.1593,-0.3027,0.4363,-0.3382,-0.6142,0.1237
+cut-0,famous problem,hedge word,7,2,0.2857,0.0822,0.6411,3,0.4286,0.1582,0.7495,1,1,0,0,,,,0,,,,0,0,0,0,0,0,,,,,,

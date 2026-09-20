@@ -1,0 +1,26 @@
+id,cut,prefix_id,trace_arm,condition,prefix_n,answer,first_algebra,first_famous,first_hedge,pattern
+rb_cut0_000,cut0,rb_cut0,shared,cut0,0,E,15,25,,algebra --> famous problem
+rb_cut0_001,cut0,rb_cut0,shared,cut0,0,E,26,14,39,famous problem --> algebra --> hedge word
+rb_cut0_002,cut0,rb_cut0,shared,cut0,0,E,20,14,,famous problem --> algebra
+rb_cut0_003,cut0,rb_cut0,shared,cut0,0,C,20,,,algebra
+rb_cut0_004,cut0,rb_cut0,shared,cut0,0,E,28,14,,famous problem --> algebra
+rb_cut0_005,cut0,rb_cut0,shared,cut0,0,E,26,14,35,famous problem --> algebra --> hedge word
+rb_cut0_006,cut0,rb_cut0,shared,cut0,0,C,17,26,185,algebra --> famous problem --> hedge word
+rb_cut0_007,cut0,rb_cut0,shared,cut0,0,?,18,6,387,famous problem --> algebra --> hedge word
+rb_cut0_008,cut0,rb_cut0,shared,cut0,0,E,20,14,,famous problem --> algebra
+rb_cut0_009,cut0,rb_cut0,shared,cut0,0,E,30,14,,famous problem --> algebra
+rb_cut0_010,cut0,rb_cut0,shared,cut0,0,C,16,14,,famous problem --> algebra
+rb_cut0_011,cut0,rb_cut0,shared,cut0,0,E,17,14,,famous problem --> algebra
+rb_cut0_012,cut0,rb_cut0,shared,cut0,0,E,32,14,84,famous problem --> algebra --> hedge word
+rb_cut0_013,cut0,rb_cut0,shared,cut0,0,E,23,14,,famous problem --> algebra
+rb_cut0_014,cut0,rb_cut0,shared,cut0,0,E,22,14,,famous problem --> algebra
+rb_cut0_015,cut0,rb_cut0,shared,cut0,0,E,20,16,,famous problem --> algebra
+rb_cut0_016,cut0,rb_cut0,shared,cut0,0,E,22,,,algebra
+rb_cut0_017,cut0,rb_cut0,shared,cut0,0,?,19,354,,algebra --> famous problem
+rb_cut0_018,cut0,rb_cut0,shared,cut0,0,E,22,14,,famous problem --> algebra
+rb_cut0_019,cut0,rb_cut0,shared,cut0,0,E,26,14,,famous problem --> algebra
+rb_cut0_020,cut0,rb_cut0,shared,cut0,0,?,19,17,66,famous problem --> algebra --> hedge word
+rb_cut0_021,cut0,rb_cut0,shared,cut0,0,?,15,50,261,algebra --> famous problem --> hedge word
+rb_cut0_022,cut0,rb_cut0,shared,cut0,0,E,24,14,,famous problem --> algebra
+rb_cut0_023,cut0,rb_cut0,shared,cut0,0,E,20,14,,famous problem --> algebra
+rb_cut0_024,cut0,rb_cut0,shared,cut0,0,E,24,14,,famous problem --> algebra

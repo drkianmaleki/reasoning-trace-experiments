@@ -1,0 +1,8 @@
+pattern,n,count_C,p_C,p_C_low,p_C_high,count_E,p_E,p_E_low,p_E_high,count_unresolved,count_other,from_c004,from_e036,from_cut0
+algebra --> famous problem --> hedge word,248,157,0.6331,0.5715,0.6906,36,0.1452,0.1067,0.1944,49,6,246,0,2
+famous problem --> algebra,132,24,0.1818,0.1253,0.2563,107,0.8106,0.7353,0.8683,0,1,2,116,14
+famous problem --> algebra --> hedge word,93,11,0.1183,0.0673,0.1995,76,0.8172,0.7266,0.8826,3,3,7,81,5
+algebra --> famous problem,42,13,0.3095,0.1907,0.4603,19,0.4524,0.3122,0.6005,8,2,40,0,2
+algebra,4,1,0.25,0.0456,0.6994,3,0.75,0.3006,0.9544,0,0,0,2,2
+algebra --> hedge word --> famous problem,3,1,0.3333,0.0615,0.7923,2,0.6667,0.2077,0.9385,0,0,3,0,0
+algebra --> hedge word,1,0,0.0,0.0,0.7935,1,1.0,0.2065,1.0,0,0,0,1,0

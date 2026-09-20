@@ -1,0 +1,524 @@
+id,cut,prefix_id,trace_arm,condition,prefix_n,answer,first_algebra,first_famous,first_hedge,pattern
+rb_c004_B00_000,C-B00,rb_c004_B00,c004,cut,8,?,22,10,62,famous problem --> algebra --> hedge word
+rb_c004_B00_001,C-B00,rb_c004_B00,c004,cut,8,C,14,10,91,famous problem --> algebra --> hedge word
+rb_c004_B00_002,C-B00,rb_c004_B00,c004,cut,8,?,12,10,87,famous problem --> algebra --> hedge word
+rb_c004_B00_003,C-B00,rb_c004_B00,c004,cut,8,A,12,10,556,famous problem --> algebra --> hedge word
+rb_c004_B00_004,C-B00,rb_c004_B00,c004,cut,8,C,12,10,96,famous problem --> algebra --> hedge word
+rb_c004_B00_005,C-B00,rb_c004_B00,c004,cut,8,C,13,10,,famous problem --> algebra
+rb_c004_B00_006,C-B00,rb_c004_B00,c004,cut,8,C,11,59,97,algebra --> famous problem --> hedge word
+rb_c004_B00_007,C-B00,rb_c004_B00,c004,cut,8,C,10,21,370,algebra --> famous problem --> hedge word
+rb_c004_B00_008,C-B00,rb_c004_B00,c004,cut,8,C,10,20,219,algebra --> famous problem --> hedge word
+rb_c004_B00_009,C-B00,rb_c004_B00,c004,cut,8,C,17,10,51,famous problem --> algebra --> hedge word
+rb_c004_B00_010,C-B00,rb_c004_B00,c004,cut,8,?,10,30,103,algebra --> famous problem --> hedge word
+rb_c004_B00_011,C-B00,rb_c004_B00,c004,cut,8,C,10,20,53,algebra --> famous problem --> hedge word
+rb_c004_B00_012,C-B00,rb_c004_B00,c004,cut,8,?,17,31,110,algebra --> famous problem --> hedge word
+rb_c004_B00_013,C-B00,rb_c004_B00,c004,cut,8,C,12,20,55,algebra --> famous problem --> hedge word
+rb_c004_B00_014,C-B00,rb_c004_B00,c004,cut,8,C,11,19,,algebra --> famous problem
+rb_c004_B00_015,C-B00,rb_c004_B00,c004,cut,8,C,10,15,127,algebra --> famous problem --> hedge word
+rb_c004_B00_016,C-B00,rb_c004_B00,c004,cut,8,C,22,10,169,famous problem --> algebra --> hedge word
+rb_c004_B00_017,C-B00,rb_c004_B00,c004,cut,8,C,10,40,250,algebra --> famous problem --> hedge word
+rb_c004_B00_018,C-B00,rb_c004_B00,c004,cut,8,E,15,203,162,algebra --> hedge word --> famous problem
+rb_c004_B00_019,C-B00,rb_c004_B00,c004,cut,8,E,10,35,237,algebra --> famous problem --> hedge word
+rb_c004_B00_020,C-B00,rb_c004_B00,c004,cut,8,C,11,21,233,algebra --> famous problem --> hedge word
+rb_c004_B00_021,C-B00,rb_c004_B00,c004,cut,8,B,10,25,105,algebra --> famous problem --> hedge word
+rb_c004_B00_022,C-B00,rb_c004_B00,c004,cut,8,C,10,55,87,algebra --> famous problem --> hedge word
+rb_c004_B00_023,C-B00,rb_c004_B00,c004,cut,8,C,12,10,,famous problem --> algebra
+rb_c004_B00_024,C-B00,rb_c004_B00,c004,cut,8,?,11,76,123,algebra --> famous problem --> hedge word
+rb_c004_B01_000,C-B01,rb_c004_B01,c004,cut,13,C,10,27,80,algebra --> famous problem --> hedge word
+rb_c004_B01_001,C-B01,rb_c004_B01,c004,cut,13,E,10,33,,algebra --> famous problem
+rb_c004_B01_002,C-B01,rb_c004_B01,c004,cut,13,C,10,79,106,algebra --> famous problem --> hedge word
+rb_c004_B01_003,C-B01,rb_c004_B01,c004,cut,13,C,10,31,108,algebra --> famous problem --> hedge word
+rb_c004_B01_004,C-B01,rb_c004_B01,c004,cut,13,E,10,34,659,algebra --> famous problem --> hedge word
+rb_c004_B01_005,C-B01,rb_c004_B01,c004,cut,13,C,10,13,377,algebra --> famous problem --> hedge word
+rb_c004_B01_006,C-B01,rb_c004_B01,c004,cut,13,?,10,21,116,algebra --> famous problem --> hedge word
+rb_c004_B01_007,C-B01,rb_c004_B01,c004,cut,13,?,10,38,,algebra --> famous problem
+rb_c004_B01_008,C-B01,rb_c004_B01,c004,cut,13,A,10,18,324,algebra --> famous problem --> hedge word
+rb_c004_B01_009,C-B01,rb_c004_B01,c004,cut,13,C,10,22,341,algebra --> famous problem --> hedge word
+rb_c004_B01_010,C-B01,rb_c004_B01,c004,cut,13,?,10,23,93,algebra --> famous problem --> hedge word
+rb_c004_B01_011,C-B01,rb_c004_B01,c004,cut,13,E,10,17,27,algebra --> famous problem --> hedge word
+rb_c004_B01_012,C-B01,rb_c004_B01,c004,cut,13,?,10,18,124,algebra --> famous problem --> hedge word
+rb_c004_B01_013,C-B01,rb_c004_B01,c004,cut,13,E,10,29,,algebra --> famous problem
+rb_c004_B01_014,C-B01,rb_c004_B01,c004,cut,13,C,10,17,,algebra --> famous problem
+rb_c004_B01_015,C-B01,rb_c004_B01,c004,cut,13,C,10,42,131,algebra --> famous problem --> hedge word
+rb_c004_B01_016,C-B01,rb_c004_B01,c004,cut,13,C,10,47,284,algebra --> famous problem --> hedge word
+rb_c004_B01_017,C-B01,rb_c004_B01,c004,cut,13,E,10,40,82,algebra --> famous problem --> hedge word
+rb_c004_B01_018,C-B01,rb_c004_B01,c004,cut,13,?,10,16,257,algebra --> famous problem --> hedge word
+rb_c004_B01_019,C-B01,rb_c004_B01,c004,cut,13,E,10,32,,algebra --> famous problem
+rb_c004_B01_020,C-B01,rb_c004_B01,c004,cut,13,C,10,45,148,algebra --> famous problem --> hedge word
+rb_c004_B01_021,C-B01,rb_c004_B01,c004,cut,13,?,10,35,398,algebra --> famous problem --> hedge word
+rb_c004_B01_022,C-B01,rb_c004_B01,c004,cut,13,E,10,33,212,algebra --> famous problem --> hedge word
+rb_c004_B01_023,C-B01,rb_c004_B01,c004,cut,13,?,10,23,97,algebra --> famous problem --> hedge word
+rb_c004_B01_024,C-B01,rb_c004_B01,c004,cut,13,E,10,26,164,algebra --> famous problem --> hedge word
+rb_c004_B02_000,C-B02,rb_c004_B02,c004,cut,15,C,10,16,202,algebra --> famous problem --> hedge word
+rb_c004_B02_001,C-B02,rb_c004_B02,c004,cut,15,?,10,21,546,algebra --> famous problem --> hedge word
+rb_c004_B02_002,C-B02,rb_c004_B02,c004,cut,15,C,10,27,189,algebra --> famous problem --> hedge word
+rb_c004_B02_003,C-B02,rb_c004_B02,c004,cut,15,C,10,44,161,algebra --> famous problem --> hedge word
+rb_c004_B02_004,C-B02,rb_c004_B02,c004,cut,15,E,10,16,,algebra --> famous problem
+rb_c004_B02_005,C-B02,rb_c004_B02,c004,cut,15,E,10,16,,algebra --> famous problem
+rb_c004_B02_006,C-B02,rb_c004_B02,c004,cut,15,C,10,36,180,algebra --> famous problem --> hedge word
+rb_c004_B02_007,C-B02,rb_c004_B02,c004,cut,15,C,10,15,,algebra --> famous problem
+rb_c004_B02_008,C-B02,rb_c004_B02,c004,cut,15,C,10,35,397,algebra --> famous problem --> hedge word
+rb_c004_B02_009,C-B02,rb_c004_B02,c004,cut,15,E,10,22,155,algebra --> famous problem --> hedge word
+rb_c004_B02_010,C-B02,rb_c004_B02,c004,cut,15,C,10,15,128,algebra --> famous problem --> hedge word
+rb_c004_B02_011,C-B02,rb_c004_B02,c004,cut,15,C,10,35,,algebra --> famous problem
+rb_c004_B02_012,C-B02,rb_c004_B02,c004,cut,15,C,10,25,144,algebra --> famous problem --> hedge word
+rb_c004_B02_013,C-B02,rb_c004_B02,c004,cut,15,E,10,25,170,algebra --> famous problem --> hedge word
+rb_c004_B02_014,C-B02,rb_c004_B02,c004,cut,15,C,10,41,,algebra --> famous problem
+rb_c004_B02_015,C-B02,rb_c004_B02,c004,cut,15,C,10,51,284,algebra --> famous problem --> hedge word
+rb_c004_B02_016,C-B02,rb_c004_B02,c004,cut,15,E,10,23,122,algebra --> famous problem --> hedge word
+rb_c004_B02_017,C-B02,rb_c004_B02,c004,cut,15,?,10,28,114,algebra --> famous problem --> hedge word
+rb_c004_B02_018,C-B02,rb_c004_B02,c004,cut,15,C,10,15,159,algebra --> famous problem --> hedge word
+rb_c004_B02_019,C-B02,rb_c004_B02,c004,cut,15,?,10,19,83,algebra --> famous problem --> hedge word
+rb_c004_B02_020,C-B02,rb_c004_B02,c004,cut,15,E,10,28,,algebra --> famous problem
+rb_c004_B02_021,C-B02,rb_c004_B02,c004,cut,15,?,10,40,,algebra --> famous problem
+rb_c004_B02_022,C-B02,rb_c004_B02,c004,cut,15,C,10,38,92,algebra --> famous problem --> hedge word
+rb_c004_B02_023,C-B02,rb_c004_B02,c004,cut,15,?,10,16,233,algebra --> famous problem --> hedge word
+rb_c004_B02_024,C-B02,rb_c004_B02,c004,cut,15,C,10,24,170,algebra --> famous problem --> hedge word
+rb_c004_B03_000,C-B03,rb_c004_B03,c004,cut,23,E,10,45,63,algebra --> famous problem --> hedge word
+rb_c004_B03_001,C-B03,rb_c004_B03,c004,cut,23,C,10,37,52,algebra --> famous problem --> hedge word
+rb_c004_B03_002,C-B03,rb_c004_B03,c004,cut,23,E,10,39,253,algebra --> famous problem --> hedge word
+rb_c004_B03_003,C-B03,rb_c004_B03,c004,cut,23,C,10,38,66,algebra --> famous problem --> hedge word
+rb_c004_B03_005,C-B03,rb_c004_B03,c004,cut,23,C,10,38,52,algebra --> famous problem --> hedge word
+rb_c004_B03_006,C-B03,rb_c004_B03,c004,cut,23,C,10,39,156,algebra --> famous problem --> hedge word
+rb_c004_B03_007,C-B03,rb_c004_B03,c004,cut,23,E,10,43,71,algebra --> famous problem --> hedge word
+rb_c004_B03_008,C-B03,rb_c004_B03,c004,cut,23,?,10,39,318,algebra --> famous problem --> hedge word
+rb_c004_B03_009,C-B03,rb_c004_B03,c004,cut,23,C,10,46,,algebra --> famous problem
+rb_c004_B03_010,C-B03,rb_c004_B03,c004,cut,23,C,10,42,95,algebra --> famous problem --> hedge word
+rb_c004_B03_011,C-B03,rb_c004_B03,c004,cut,23,B,10,41,,algebra --> famous problem
+rb_c004_B03_012,C-B03,rb_c004_B03,c004,cut,23,E,10,44,,algebra --> famous problem
+rb_c004_B03_013,C-B03,rb_c004_B03,c004,cut,23,C,10,63,51,algebra --> hedge word --> famous problem
+rb_c004_B03_014,C-B03,rb_c004_B03,c004,cut,23,C,10,43,193,algebra --> famous problem --> hedge word
+rb_c004_B03_015,C-B03,rb_c004_B03,c004,cut,23,C,10,38,225,algebra --> famous problem --> hedge word
+rb_c004_B03_016,C-B03,rb_c004_B03,c004,cut,23,E,10,41,115,algebra --> famous problem --> hedge word
+rb_c004_B03_017,C-B03,rb_c004_B03,c004,cut,23,?,10,42,89,algebra --> famous problem --> hedge word
+rb_c004_B03_018,C-B03,rb_c004_B03,c004,cut,23,E,10,31,65,algebra --> famous problem --> hedge word
+rb_c004_B03_019,C-B03,rb_c004_B03,c004,cut,23,E,10,34,,algebra --> famous problem
+rb_c004_B03_020,C-B03,rb_c004_B03,c004,cut,23,C,10,36,137,algebra --> famous problem --> hedge word
+rb_c004_B03_021,C-B03,rb_c004_B03,c004,cut,23,C,10,29,248,algebra --> famous problem --> hedge word
+rb_c004_B03_022,C-B03,rb_c004_B03,c004,cut,23,?,10,44,173,algebra --> famous problem --> hedge word
+rb_c004_B03_023,C-B03,rb_c004_B03,c004,cut,23,?,10,36,195,algebra --> famous problem --> hedge word
+rb_c004_B03_024,C-B03,rb_c004_B03,c004,cut,23,E,10,44,,algebra --> famous problem
+rb_c004_B04_000,C-B04,rb_c004_B04,c004,cut,31,E,10,41,,algebra --> famous problem
+rb_c004_B04_001,C-B04,rb_c004_B04,c004,cut,31,C,10,42,176,algebra --> famous problem --> hedge word
+rb_c004_B04_002,C-B04,rb_c004_B04,c004,cut,31,C,10,43,,algebra --> famous problem
+rb_c004_B04_003,C-B04,rb_c004_B04,c004,cut,31,E,10,41,,algebra --> famous problem
+rb_c004_B04_004,C-B04,rb_c004_B04,c004,cut,31,?,10,40,75,algebra --> famous problem --> hedge word
+rb_c004_B04_005,C-B04,rb_c004_B04,c004,cut,31,C,10,39,221,algebra --> famous problem --> hedge word
+rb_c004_B04_006,C-B04,rb_c004_B04,c004,cut,31,?,10,46,70,algebra --> famous problem --> hedge word
+rb_c004_B04_007,C-B04,rb_c004_B04,c004,cut,31,E,10,47,220,algebra --> famous problem --> hedge word
+rb_c004_B04_008,C-B04,rb_c004_B04,c004,cut,31,E,10,40,196,algebra --> famous problem --> hedge word
+rb_c004_B04_009,C-B04,rb_c004_B04,c004,cut,31,?,10,41,,algebra --> famous problem
+rb_c004_B04_010,C-B04,rb_c004_B04,c004,cut,31,E,10,40,61,algebra --> famous problem --> hedge word
+rb_c004_B04_011,C-B04,rb_c004_B04,c004,cut,31,E,10,42,579,algebra --> famous problem --> hedge word
+rb_c004_B04_012,C-B04,rb_c004_B04,c004,cut,31,C,10,41,106,algebra --> famous problem --> hedge word
+rb_c004_B04_013,C-B04,rb_c004_B04,c004,cut,31,?,10,34,147,algebra --> famous problem --> hedge word
+rb_c004_B04_014,C-B04,rb_c004_B04,c004,cut,31,C,10,42,172,algebra --> famous problem --> hedge word
+rb_c004_B04_015,C-B04,rb_c004_B04,c004,cut,31,E,10,46,,algebra --> famous problem
+rb_c004_B04_016,C-B04,rb_c004_B04,c004,cut,31,?,10,42,216,algebra --> famous problem --> hedge word
+rb_c004_B04_017,C-B04,rb_c004_B04,c004,cut,31,E,10,39,181,algebra --> famous problem --> hedge word
+rb_c004_B04_018,C-B04,rb_c004_B04,c004,cut,31,C,10,41,99,algebra --> famous problem --> hedge word
+rb_c004_B04_019,C-B04,rb_c004_B04,c004,cut,31,E,10,100,81,algebra --> hedge word --> famous problem
+rb_c004_B04_020,C-B04,rb_c004_B04,c004,cut,31,?,10,39,168,algebra --> famous problem --> hedge word
+rb_c004_B04_021,C-B04,rb_c004_B04,c004,cut,31,?,10,41,,algebra --> famous problem
+rb_c004_B04_022,C-B04,rb_c004_B04,c004,cut,31,C,10,41,70,algebra --> famous problem --> hedge word
+rb_c004_B04_023,C-B04,rb_c004_B04,c004,cut,31,E,10,41,65,algebra --> famous problem --> hedge word
+rb_c004_B04_024,C-B04,rb_c004_B04,c004,cut,31,E,10,41,,algebra --> famous problem
+rb_c004_B05_000,C-B05,rb_c004_B05,c004,cut,36,A,10,39,107,algebra --> famous problem --> hedge word
+rb_c004_B05_001,C-B05,rb_c004_B05,c004,cut,36,C,10,42,274,algebra --> famous problem --> hedge word
+rb_c004_B05_002,C-B05,rb_c004_B05,c004,cut,36,E,10,40,402,algebra --> famous problem --> hedge word
+rb_c004_B05_003,C-B05,rb_c004_B05,c004,cut,36,?,10,37,265,algebra --> famous problem --> hedge word
+rb_c004_B05_004,C-B05,rb_c004_B05,c004,cut,36,E,10,45,176,algebra --> famous problem --> hedge word
+rb_c004_B05_005,C-B05,rb_c004_B05,c004,cut,36,E,10,38,250,algebra --> famous problem --> hedge word
+rb_c004_B05_006,C-B05,rb_c004_B05,c004,cut,36,E,10,38,139,algebra --> famous problem --> hedge word
+rb_c004_B05_007,C-B05,rb_c004_B05,c004,cut,36,E,10,44,,algebra --> famous problem
+rb_c004_B05_008,C-B05,rb_c004_B05,c004,cut,36,?,10,51,,algebra --> famous problem
+rb_c004_B05_009,C-B05,rb_c004_B05,c004,cut,36,?,10,44,189,algebra --> famous problem --> hedge word
+rb_c004_B05_010,C-B05,rb_c004_B05,c004,cut,36,E,10,41,300,algebra --> famous problem --> hedge word
+rb_c004_B05_011,C-B05,rb_c004_B05,c004,cut,36,E,10,39,151,algebra --> famous problem --> hedge word
+rb_c004_B05_012,C-B05,rb_c004_B05,c004,cut,36,C,10,45,197,algebra --> famous problem --> hedge word
+rb_c004_B05_013,C-B05,rb_c004_B05,c004,cut,36,?,10,43,97,algebra --> famous problem --> hedge word
+rb_c004_B05_014,C-B05,rb_c004_B05,c004,cut,36,C,10,52,77,algebra --> famous problem --> hedge word
+rb_c004_B05_015,C-B05,rb_c004_B05,c004,cut,36,?,10,41,137,algebra --> famous problem --> hedge word
+rb_c004_B05_016,C-B05,rb_c004_B05,c004,cut,36,E,10,45,,algebra --> famous problem
+rb_c004_B05_017,C-B05,rb_c004_B05,c004,cut,36,?,10,45,148,algebra --> famous problem --> hedge word
+rb_c004_B05_018,C-B05,rb_c004_B05,c004,cut,36,C,10,53,316,algebra --> famous problem --> hedge word
+rb_c004_B05_019,C-B05,rb_c004_B05,c004,cut,36,C,10,45,94,algebra --> famous problem --> hedge word
+rb_c004_B05_020,C-B05,rb_c004_B05,c004,cut,36,C,10,40,,algebra --> famous problem
+rb_c004_B05_021,C-B05,rb_c004_B05,c004,cut,36,?,10,39,391,algebra --> famous problem --> hedge word
+rb_c004_B05_022,C-B05,rb_c004_B05,c004,cut,36,?,10,44,176,algebra --> famous problem --> hedge word
+rb_c004_B05_023,C-B05,rb_c004_B05,c004,cut,36,C,10,39,63,algebra --> famous problem --> hedge word
+rb_c004_B05_024,C-B05,rb_c004_B05,c004,cut,36,?,10,42,107,algebra --> famous problem --> hedge word
+rb_c004_B06_000,C-B06,rb_c004_B06,c004,cut,42,C,10,38,160,algebra --> famous problem --> hedge word
+rb_c004_B06_001,C-B06,rb_c004_B06,c004,cut,42,C,10,38,268,algebra --> famous problem --> hedge word
+rb_c004_B06_002,C-B06,rb_c004_B06,c004,cut,42,?,10,38,234,algebra --> famous problem --> hedge word
+rb_c004_B06_003,C-B06,rb_c004_B06,c004,cut,42,?,10,38,347,algebra --> famous problem --> hedge word
+rb_c004_B06_004,C-B06,rb_c004_B06,c004,cut,42,C,10,38,166,algebra --> famous problem --> hedge word
+rb_c004_B06_005,C-B06,rb_c004_B06,c004,cut,42,C,10,38,128,algebra --> famous problem --> hedge word
+rb_c004_B06_006,C-B06,rb_c004_B06,c004,cut,42,?,10,38,442,algebra --> famous problem --> hedge word
+rb_c004_B06_007,C-B06,rb_c004_B06,c004,cut,42,C,10,38,193,algebra --> famous problem --> hedge word
+rb_c004_B06_008,C-B06,rb_c004_B06,c004,cut,42,C,10,38,,algebra --> famous problem
+rb_c004_B06_009,C-B06,rb_c004_B06,c004,cut,42,E,10,38,265,algebra --> famous problem --> hedge word
+rb_c004_B06_010,C-B06,rb_c004_B06,c004,cut,42,C,10,38,113,algebra --> famous problem --> hedge word
+rb_c004_B06_011,C-B06,rb_c004_B06,c004,cut,42,C,10,38,195,algebra --> famous problem --> hedge word
+rb_c004_B06_012,C-B06,rb_c004_B06,c004,cut,42,C,10,38,233,algebra --> famous problem --> hedge word
+rb_c004_B06_013,C-B06,rb_c004_B06,c004,cut,42,C,10,38,161,algebra --> famous problem --> hedge word
+rb_c004_B06_014,C-B06,rb_c004_B06,c004,cut,42,?,10,38,104,algebra --> famous problem --> hedge word
+rb_c004_B06_015,C-B06,rb_c004_B06,c004,cut,42,C,10,38,273,algebra --> famous problem --> hedge word
+rb_c004_B06_016,C-B06,rb_c004_B06,c004,cut,42,E,10,38,211,algebra --> famous problem --> hedge word
+rb_c004_B06_017,C-B06,rb_c004_B06,c004,cut,42,C,10,38,,algebra --> famous problem
+rb_c004_B06_018,C-B06,rb_c004_B06,c004,cut,42,D,10,38,143,algebra --> famous problem --> hedge word
+rb_c004_B06_019,C-B06,rb_c004_B06,c004,cut,42,C,10,38,593,algebra --> famous problem --> hedge word
+rb_c004_B06_020,C-B06,rb_c004_B06,c004,cut,42,C,10,38,116,algebra --> famous problem --> hedge word
+rb_c004_B06_021,C-B06,rb_c004_B06,c004,cut,42,?,10,38,194,algebra --> famous problem --> hedge word
+rb_c004_B06_022,C-B06,rb_c004_B06,c004,cut,42,C,10,38,543,algebra --> famous problem --> hedge word
+rb_c004_B06_023,C-B06,rb_c004_B06,c004,cut,42,C,10,38,174,algebra --> famous problem --> hedge word
+rb_c004_B06_024,C-B06,rb_c004_B06,c004,cut,42,C,10,38,165,algebra --> famous problem --> hedge word
+rb_c004_B07_000,C-B07,rb_c004_B07,c004,cut,43,?,10,38,,algebra --> famous problem
+rb_c004_B07_001,C-B07,rb_c004_B07,c004,cut,43,C,10,38,105,algebra --> famous problem --> hedge word
+rb_c004_B07_002,C-B07,rb_c004_B07,c004,cut,43,C,10,38,187,algebra --> famous problem --> hedge word
+rb_c004_B07_003,C-B07,rb_c004_B07,c004,cut,43,?,10,38,124,algebra --> famous problem --> hedge word
+rb_c004_B07_004,C-B07,rb_c004_B07,c004,cut,43,E,10,38,250,algebra --> famous problem --> hedge word
+rb_c004_B07_005,C-B07,rb_c004_B07,c004,cut,43,E,10,38,,algebra --> famous problem
+rb_c004_B07_006,C-B07,rb_c004_B07,c004,cut,43,C,10,38,105,algebra --> famous problem --> hedge word
+rb_c004_B07_007,C-B07,rb_c004_B07,c004,cut,43,E,10,38,106,algebra --> famous problem --> hedge word
+rb_c004_B07_008,C-B07,rb_c004_B07,c004,cut,43,C,10,38,163,algebra --> famous problem --> hedge word
+rb_c004_B07_009,C-B07,rb_c004_B07,c004,cut,43,C,10,38,170,algebra --> famous problem --> hedge word
+rb_c004_B07_010,C-B07,rb_c004_B07,c004,cut,43,C,10,38,181,algebra --> famous problem --> hedge word
+rb_c004_B07_011,C-B07,rb_c004_B07,c004,cut,43,?,10,38,94,algebra --> famous problem --> hedge word
+rb_c004_B07_012,C-B07,rb_c004_B07,c004,cut,43,?,10,38,193,algebra --> famous problem --> hedge word
+rb_c004_B07_013,C-B07,rb_c004_B07,c004,cut,43,C,10,38,225,algebra --> famous problem --> hedge word
+rb_c004_B07_014,C-B07,rb_c004_B07,c004,cut,43,C,10,38,64,algebra --> famous problem --> hedge word
+rb_c004_B07_015,C-B07,rb_c004_B07,c004,cut,43,?,10,38,81,algebra --> famous problem --> hedge word
+rb_c004_B07_016,C-B07,rb_c004_B07,c004,cut,43,B,10,38,125,algebra --> famous problem --> hedge word
+rb_c004_B07_017,C-B07,rb_c004_B07,c004,cut,43,C,10,38,,algebra --> famous problem
+rb_c004_B07_018,C-B07,rb_c004_B07,c004,cut,43,?,10,38,171,algebra --> famous problem --> hedge word
+rb_c004_B07_019,C-B07,rb_c004_B07,c004,cut,43,C,10,38,64,algebra --> famous problem --> hedge word
+rb_c004_B07_020,C-B07,rb_c004_B07,c004,cut,43,C,10,38,109,algebra --> famous problem --> hedge word
+rb_c004_B07_021,C-B07,rb_c004_B07,c004,cut,43,?,10,38,598,algebra --> famous problem --> hedge word
+rb_c004_B07_022,C-B07,rb_c004_B07,c004,cut,43,?,10,38,337,algebra --> famous problem --> hedge word
+rb_c004_B07_023,C-B07,rb_c004_B07,c004,cut,43,C,10,38,,algebra --> famous problem
+rb_c004_B07_024,C-B07,rb_c004_B07,c004,cut,43,?,10,38,,algebra --> famous problem
+rb_c004_B08_000,C-B08,rb_c004_B08,c004,cut,58,E,10,38,,algebra --> famous problem
+rb_c004_B08_002,C-B08,rb_c004_B08,c004,cut,58,E,10,38,290,algebra --> famous problem --> hedge word
+rb_c004_B08_003,C-B08,rb_c004_B08,c004,cut,58,E,10,38,,algebra --> famous problem
+rb_c004_B08_004,C-B08,rb_c004_B08,c004,cut,58,E,10,38,146,algebra --> famous problem --> hedge word
+rb_c004_B08_005,C-B08,rb_c004_B08,c004,cut,58,C,10,38,63,algebra --> famous problem --> hedge word
+rb_c004_B08_006,C-B08,rb_c004_B08,c004,cut,58,C,10,38,74,algebra --> famous problem --> hedge word
+rb_c004_B08_007,C-B08,rb_c004_B08,c004,cut,58,C,10,38,169,algebra --> famous problem --> hedge word
+rb_c004_B08_008,C-B08,rb_c004_B08,c004,cut,58,C,10,38,534,algebra --> famous problem --> hedge word
+rb_c004_B08_009,C-B08,rb_c004_B08,c004,cut,58,C,10,38,254,algebra --> famous problem --> hedge word
+rb_c004_B08_010,C-B08,rb_c004_B08,c004,cut,58,?,10,38,71,algebra --> famous problem --> hedge word
+rb_c004_B08_011,C-B08,rb_c004_B08,c004,cut,58,?,10,38,,algebra --> famous problem
+rb_c004_B08_012,C-B08,rb_c004_B08,c004,cut,58,E,10,38,64,algebra --> famous problem --> hedge word
+rb_c004_B08_013,C-B08,rb_c004_B08,c004,cut,58,?,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B08_014,C-B08,rb_c004_B08,c004,cut,58,E,10,38,123,algebra --> famous problem --> hedge word
+rb_c004_B08_015,C-B08,rb_c004_B08,c004,cut,58,F,10,38,63,algebra --> famous problem --> hedge word
+rb_c004_B08_016,C-B08,rb_c004_B08,c004,cut,58,C,10,38,430,algebra --> famous problem --> hedge word
+rb_c004_B08_017,C-B08,rb_c004_B08,c004,cut,58,E,10,38,123,algebra --> famous problem --> hedge word
+rb_c004_B08_018,C-B08,rb_c004_B08,c004,cut,58,C,10,38,,algebra --> famous problem
+rb_c004_B08_019,C-B08,rb_c004_B08,c004,cut,58,E,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B08_020,C-B08,rb_c004_B08,c004,cut,58,C,10,38,296,algebra --> famous problem --> hedge word
+rb_c004_B08_021,C-B08,rb_c004_B08,c004,cut,58,?,10,38,135,algebra --> famous problem --> hedge word
+rb_c004_B08_022,C-B08,rb_c004_B08,c004,cut,58,?,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B08_023,C-B08,rb_c004_B08,c004,cut,58,?,10,38,190,algebra --> famous problem --> hedge word
+rb_c004_B08_024,C-B08,rb_c004_B08,c004,cut,58,C,10,38,149,algebra --> famous problem --> hedge word
+rb_c004_B09_000,C-B09,rb_c004_B09,c004,cut,79,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B09_001,C-B09,rb_c004_B09,c004,cut,79,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B09_002,C-B09,rb_c004_B09,c004,cut,79,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B09_003,C-B09,rb_c004_B09,c004,cut,79,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B09_004,C-B09,rb_c004_B09,c004,cut,79,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B09_005,C-B09,rb_c004_B09,c004,cut,79,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B09_006,C-B09,rb_c004_B09,c004,cut,79,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B09_007,C-B09,rb_c004_B09,c004,cut,79,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B09_008,C-B09,rb_c004_B09,c004,cut,79,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B09_009,C-B09,rb_c004_B09,c004,cut,79,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B09_010,C-B09,rb_c004_B09,c004,cut,79,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B09_011,C-B09,rb_c004_B09,c004,cut,79,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B09_012,C-B09,rb_c004_B09,c004,cut,79,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B09_013,C-B09,rb_c004_B09,c004,cut,79,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B09_014,C-B09,rb_c004_B09,c004,cut,79,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B09_015,C-B09,rb_c004_B09,c004,cut,79,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B09_016,C-B09,rb_c004_B09,c004,cut,79,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B09_017,C-B09,rb_c004_B09,c004,cut,79,?,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B09_018,C-B09,rb_c004_B09,c004,cut,79,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B09_019,C-B09,rb_c004_B09,c004,cut,79,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B09_020,C-B09,rb_c004_B09,c004,cut,79,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B09_021,C-B09,rb_c004_B09,c004,cut,79,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B09_022,C-B09,rb_c004_B09,c004,cut,79,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B09_023,C-B09,rb_c004_B09,c004,cut,79,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B09_024,C-B09,rb_c004_B09,c004,cut,79,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B10_000,C-B10,rb_c004_B10,c004,cut,98,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B10_001,C-B10,rb_c004_B10,c004,cut,98,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B10_002,C-B10,rb_c004_B10,c004,cut,98,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B10_003,C-B10,rb_c004_B10,c004,cut,98,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B10_004,C-B10,rb_c004_B10,c004,cut,98,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B10_005,C-B10,rb_c004_B10,c004,cut,98,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B10_006,C-B10,rb_c004_B10,c004,cut,98,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B10_007,C-B10,rb_c004_B10,c004,cut,98,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B10_008,C-B10,rb_c004_B10,c004,cut,98,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B10_009,C-B10,rb_c004_B10,c004,cut,98,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B10_010,C-B10,rb_c004_B10,c004,cut,98,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B10_011,C-B10,rb_c004_B10,c004,cut,98,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B10_012,C-B10,rb_c004_B10,c004,cut,98,?,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B10_013,C-B10,rb_c004_B10,c004,cut,98,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B10_014,C-B10,rb_c004_B10,c004,cut,98,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B10_015,C-B10,rb_c004_B10,c004,cut,98,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B10_016,C-B10,rb_c004_B10,c004,cut,98,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B10_017,C-B10,rb_c004_B10,c004,cut,98,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B10_018,C-B10,rb_c004_B10,c004,cut,98,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B10_019,C-B10,rb_c004_B10,c004,cut,98,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B10_020,C-B10,rb_c004_B10,c004,cut,98,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B10_021,C-B10,rb_c004_B10,c004,cut,98,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B10_022,C-B10,rb_c004_B10,c004,cut,98,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B10_023,C-B10,rb_c004_B10,c004,cut,98,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B10_024,C-B10,rb_c004_B10,c004,cut,98,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B11_000,C-B11,rb_c004_B11,c004,cut,107,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B11_001,C-B11,rb_c004_B11,c004,cut,107,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B11_002,C-B11,rb_c004_B11,c004,cut,107,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B11_003,C-B11,rb_c004_B11,c004,cut,107,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B11_004,C-B11,rb_c004_B11,c004,cut,107,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B11_005,C-B11,rb_c004_B11,c004,cut,107,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B11_006,C-B11,rb_c004_B11,c004,cut,107,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B11_007,C-B11,rb_c004_B11,c004,cut,107,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B11_008,C-B11,rb_c004_B11,c004,cut,107,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B11_009,C-B11,rb_c004_B11,c004,cut,107,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B11_010,C-B11,rb_c004_B11,c004,cut,107,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B11_011,C-B11,rb_c004_B11,c004,cut,107,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B11_012,C-B11,rb_c004_B11,c004,cut,107,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B11_013,C-B11,rb_c004_B11,c004,cut,107,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B11_014,C-B11,rb_c004_B11,c004,cut,107,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B11_015,C-B11,rb_c004_B11,c004,cut,107,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B11_016,C-B11,rb_c004_B11,c004,cut,107,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B11_017,C-B11,rb_c004_B11,c004,cut,107,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B11_018,C-B11,rb_c004_B11,c004,cut,107,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B11_019,C-B11,rb_c004_B11,c004,cut,107,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B11_020,C-B11,rb_c004_B11,c004,cut,107,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B11_021,C-B11,rb_c004_B11,c004,cut,107,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B11_022,C-B11,rb_c004_B11,c004,cut,107,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B11_023,C-B11,rb_c004_B11,c004,cut,107,C,10,38,65,algebra --> famous problem --> hedge word
+rb_c004_B11_024,C-B11,rb_c004_B11,c004,cut,107,C,10,38,65,algebra --> famous problem --> hedge word
+rb_cut0_000,cut0,rb_cut0,shared,cut0,0,E,15,25,,algebra --> famous problem
+rb_cut0_001,cut0,rb_cut0,shared,cut0,0,E,26,14,39,famous problem --> algebra --> hedge word
+rb_cut0_002,cut0,rb_cut0,shared,cut0,0,E,20,14,,famous problem --> algebra
+rb_cut0_003,cut0,rb_cut0,shared,cut0,0,C,20,,,algebra
+rb_cut0_004,cut0,rb_cut0,shared,cut0,0,E,28,14,,famous problem --> algebra
+rb_cut0_005,cut0,rb_cut0,shared,cut0,0,E,26,14,35,famous problem --> algebra --> hedge word
+rb_cut0_006,cut0,rb_cut0,shared,cut0,0,C,17,26,185,algebra --> famous problem --> hedge word
+rb_cut0_007,cut0,rb_cut0,shared,cut0,0,?,18,6,387,famous problem --> algebra --> hedge word
+rb_cut0_008,cut0,rb_cut0,shared,cut0,0,E,20,14,,famous problem --> algebra
+rb_cut0_009,cut0,rb_cut0,shared,cut0,0,E,30,14,,famous problem --> algebra
+rb_cut0_010,cut0,rb_cut0,shared,cut0,0,C,16,14,,famous problem --> algebra
+rb_cut0_011,cut0,rb_cut0,shared,cut0,0,E,17,14,,famous problem --> algebra
+rb_cut0_012,cut0,rb_cut0,shared,cut0,0,E,32,14,84,famous problem --> algebra --> hedge word
+rb_cut0_013,cut0,rb_cut0,shared,cut0,0,E,23,14,,famous problem --> algebra
+rb_cut0_014,cut0,rb_cut0,shared,cut0,0,E,22,14,,famous problem --> algebra
+rb_cut0_015,cut0,rb_cut0,shared,cut0,0,E,20,16,,famous problem --> algebra
+rb_cut0_016,cut0,rb_cut0,shared,cut0,0,E,22,,,algebra
+rb_cut0_017,cut0,rb_cut0,shared,cut0,0,B,19,354,,algebra --> famous problem
+rb_cut0_018,cut0,rb_cut0,shared,cut0,0,E,22,14,,famous problem --> algebra
+rb_cut0_019,cut0,rb_cut0,shared,cut0,0,E,26,14,,famous problem --> algebra
+rb_cut0_020,cut0,rb_cut0,shared,cut0,0,B,19,17,66,famous problem --> algebra --> hedge word
+rb_cut0_021,cut0,rb_cut0,shared,cut0,0,C,15,50,261,algebra --> famous problem --> hedge word
+rb_cut0_022,cut0,rb_cut0,shared,cut0,0,E,24,14,,famous problem --> algebra
+rb_cut0_023,cut0,rb_cut0,shared,cut0,0,E,20,14,,famous problem --> algebra
+rb_cut0_024,cut0,rb_cut0,shared,cut0,0,E,24,14,,famous problem --> algebra
+rb_e036_B00_000,E-B00,rb_e036_B00,e036,cut,12,E,22,14,,famous problem --> algebra
+rb_e036_B00_001,E-B00,rb_e036_B00,e036,cut,12,E,24,14,,famous problem --> algebra
+rb_e036_B00_002,E-B00,rb_e036_B00,e036,cut,12,E,26,14,,famous problem --> algebra
+rb_e036_B00_003,E-B00,rb_e036_B00,e036,cut,12,E,18,14,,famous problem --> algebra
+rb_e036_B00_004,E-B00,rb_e036_B00,e036,cut,12,E,20,16,,famous problem --> algebra
+rb_e036_B00_005,E-B00,rb_e036_B00,e036,cut,12,E,20,14,,famous problem --> algebra
+rb_e036_B00_006,E-B00,rb_e036_B00,e036,cut,12,E,20,,,algebra
+rb_e036_B00_007,E-B00,rb_e036_B00,e036,cut,12,E,26,14,,famous problem --> algebra
+rb_e036_B00_008,E-B00,rb_e036_B00,e036,cut,12,E,22,14,,famous problem --> algebra
+rb_e036_B00_009,E-B00,rb_e036_B00,e036,cut,12,E,27,14,,famous problem --> algebra
+rb_e036_B00_010,E-B00,rb_e036_B00,e036,cut,12,E,22,14,,famous problem --> algebra
+rb_e036_B00_011,E-B00,rb_e036_B00,e036,cut,12,E,20,,228,algebra --> hedge word
+rb_e036_B00_012,E-B00,rb_e036_B00,e036,cut,12,E,23,16,,famous problem --> algebra
+rb_e036_B00_013,E-B00,rb_e036_B00,e036,cut,12,E,27,14,,famous problem --> algebra
+rb_e036_B00_014,E-B00,rb_e036_B00,e036,cut,12,E,22,14,,famous problem --> algebra
+rb_e036_B00_015,E-B00,rb_e036_B00,e036,cut,12,E,19,16,,famous problem --> algebra
+rb_e036_B00_016,E-B00,rb_e036_B00,e036,cut,12,C,29,16,,famous problem --> algebra
+rb_e036_B00_017,E-B00,rb_e036_B00,e036,cut,12,E,20,16,,famous problem --> algebra
+rb_e036_B00_018,E-B00,rb_e036_B00,e036,cut,12,E,18,16,,famous problem --> algebra
+rb_e036_B00_019,E-B00,rb_e036_B00,e036,cut,12,E,26,14,,famous problem --> algebra
+rb_e036_B00_020,E-B00,rb_e036_B00,e036,cut,12,E,22,14,,famous problem --> algebra
+rb_e036_B00_021,E-B00,rb_e036_B00,e036,cut,12,E,26,,,algebra
+rb_e036_B00_022,E-B00,rb_e036_B00,e036,cut,12,E,24,14,,famous problem --> algebra
+rb_e036_B00_023,E-B00,rb_e036_B00,e036,cut,12,E,32,22,,famous problem --> algebra
+rb_e036_B00_024,E-B00,rb_e036_B00,e036,cut,12,E,23,14,,famous problem --> algebra
+rb_e036_B01_000,E-B01,rb_e036_B01,e036,cut,16,E,16,14,,famous problem --> algebra
+rb_e036_B01_001,E-B01,rb_e036_B01,e036,cut,16,E,17,14,,famous problem --> algebra
+rb_e036_B01_002,E-B01,rb_e036_B01,e036,cut,16,E,16,14,,famous problem --> algebra
+rb_e036_B01_003,E-B01,rb_e036_B01,e036,cut,16,C,17,14,,famous problem --> algebra
+rb_e036_B01_004,E-B01,rb_e036_B01,e036,cut,16,E,17,14,,famous problem --> algebra
+rb_e036_B01_005,E-B01,rb_e036_B01,e036,cut,16,C,27,14,,famous problem --> algebra
+rb_e036_B01_006,E-B01,rb_e036_B01,e036,cut,16,E,23,14,,famous problem --> algebra
+rb_e036_B01_007,E-B01,rb_e036_B01,e036,cut,16,E,17,14,,famous problem --> algebra
+rb_e036_B01_008,E-B01,rb_e036_B01,e036,cut,16,C,17,14,,famous problem --> algebra
+rb_e036_B01_009,E-B01,rb_e036_B01,e036,cut,16,E,31,14,,famous problem --> algebra
+rb_e036_B01_010,E-B01,rb_e036_B01,e036,cut,16,E,16,14,,famous problem --> algebra
+rb_e036_B01_011,E-B01,rb_e036_B01,e036,cut,16,E,16,14,,famous problem --> algebra
+rb_e036_B01_012,E-B01,rb_e036_B01,e036,cut,16,E,16,14,,famous problem --> algebra
+rb_e036_B01_013,E-B01,rb_e036_B01,e036,cut,16,E,16,14,,famous problem --> algebra
+rb_e036_B01_014,E-B01,rb_e036_B01,e036,cut,16,E,36,14,,famous problem --> algebra
+rb_e036_B01_015,E-B01,rb_e036_B01,e036,cut,16,E,17,14,,famous problem --> algebra
+rb_e036_B01_016,E-B01,rb_e036_B01,e036,cut,16,E,32,14,,famous problem --> algebra
+rb_e036_B01_017,E-B01,rb_e036_B01,e036,cut,16,E,17,14,,famous problem --> algebra
+rb_e036_B01_018,E-B01,rb_e036_B01,e036,cut,16,E,34,14,,famous problem --> algebra
+rb_e036_B01_019,E-B01,rb_e036_B01,e036,cut,16,E,17,14,,famous problem --> algebra
+rb_e036_B01_020,E-B01,rb_e036_B01,e036,cut,16,C,17,14,,famous problem --> algebra
+rb_e036_B01_021,E-B01,rb_e036_B01,e036,cut,16,E,17,14,,famous problem --> algebra
+rb_e036_B01_022,E-B01,rb_e036_B01,e036,cut,16,C,17,14,,famous problem --> algebra
+rb_e036_B01_023,E-B01,rb_e036_B01,e036,cut,16,E,17,14,,famous problem --> algebra
+rb_e036_B01_024,E-B01,rb_e036_B01,e036,cut,16,E,30,14,58,famous problem --> algebra --> hedge word
+rb_e036_B02_000,E-B02,rb_e036_B02,e036,cut,19,E,17,14,105,famous problem --> algebra --> hedge word
+rb_e036_B02_001,E-B02,rb_e036_B02,e036,cut,19,E,17,14,,famous problem --> algebra
+rb_e036_B02_002,E-B02,rb_e036_B02,e036,cut,19,E,17,14,,famous problem --> algebra
+rb_e036_B02_003,E-B02,rb_e036_B02,e036,cut,19,E,17,14,,famous problem --> algebra
+rb_e036_B02_004,E-B02,rb_e036_B02,e036,cut,19,E,17,14,111,famous problem --> algebra --> hedge word
+rb_e036_B02_005,E-B02,rb_e036_B02,e036,cut,19,C,17,14,,famous problem --> algebra
+rb_e036_B02_006,E-B02,rb_e036_B02,e036,cut,19,E,17,14,,famous problem --> algebra
+rb_e036_B02_007,E-B02,rb_e036_B02,e036,cut,19,E,17,14,,famous problem --> algebra
+rb_e036_B02_008,E-B02,rb_e036_B02,e036,cut,19,C,17,14,,famous problem --> algebra
+rb_e036_B02_009,E-B02,rb_e036_B02,e036,cut,19,C,17,14,104,famous problem --> algebra --> hedge word
+rb_e036_B02_010,E-B02,rb_e036_B02,e036,cut,19,C,17,14,,famous problem --> algebra
+rb_e036_B02_011,E-B02,rb_e036_B02,e036,cut,19,E,17,14,,famous problem --> algebra
+rb_e036_B02_012,E-B02,rb_e036_B02,e036,cut,19,E,17,14,,famous problem --> algebra
+rb_e036_B02_013,E-B02,rb_e036_B02,e036,cut,19,E,17,14,,famous problem --> algebra
+rb_e036_B02_014,E-B02,rb_e036_B02,e036,cut,19,C,17,14,,famous problem --> algebra
+rb_e036_B02_015,E-B02,rb_e036_B02,e036,cut,19,A,17,14,,famous problem --> algebra
+rb_e036_B02_016,E-B02,rb_e036_B02,e036,cut,19,C,17,14,,famous problem --> algebra
+rb_e036_B02_017,E-B02,rb_e036_B02,e036,cut,19,E,17,14,,famous problem --> algebra
+rb_e036_B02_018,E-B02,rb_e036_B02,e036,cut,19,C,17,14,,famous problem --> algebra
+rb_e036_B02_019,E-B02,rb_e036_B02,e036,cut,19,C,17,14,,famous problem --> algebra
+rb_e036_B02_020,E-B02,rb_e036_B02,e036,cut,19,E,17,14,,famous problem --> algebra
+rb_e036_B02_021,E-B02,rb_e036_B02,e036,cut,19,C,17,14,,famous problem --> algebra
+rb_e036_B02_022,E-B02,rb_e036_B02,e036,cut,19,E,17,14,,famous problem --> algebra
+rb_e036_B02_023,E-B02,rb_e036_B02,e036,cut,19,E,17,14,,famous problem --> algebra
+rb_e036_B02_024,E-B02,rb_e036_B02,e036,cut,19,C,17,14,,famous problem --> algebra
+rb_e036_B03_000,E-B03,rb_e036_B03,e036,cut,20,E,17,14,,famous problem --> algebra
+rb_e036_B03_001,E-B03,rb_e036_B03,e036,cut,20,E,17,14,,famous problem --> algebra
+rb_e036_B03_002,E-B03,rb_e036_B03,e036,cut,20,C,17,14,,famous problem --> algebra
+rb_e036_B03_003,E-B03,rb_e036_B03,e036,cut,20,E,17,14,,famous problem --> algebra
+rb_e036_B03_004,E-B03,rb_e036_B03,e036,cut,20,C,17,14,,famous problem --> algebra
+rb_e036_B03_005,E-B03,rb_e036_B03,e036,cut,20,E,17,14,,famous problem --> algebra
+rb_e036_B03_006,E-B03,rb_e036_B03,e036,cut,20,E,17,14,,famous problem --> algebra
+rb_e036_B03_007,E-B03,rb_e036_B03,e036,cut,20,E,17,14,,famous problem --> algebra
+rb_e036_B03_008,E-B03,rb_e036_B03,e036,cut,20,E,17,14,,famous problem --> algebra
+rb_e036_B03_009,E-B03,rb_e036_B03,e036,cut,20,E,17,14,,famous problem --> algebra
+rb_e036_B03_010,E-B03,rb_e036_B03,e036,cut,20,E,17,14,65,famous problem --> algebra --> hedge word
+rb_e036_B03_011,E-B03,rb_e036_B03,e036,cut,20,E,17,14,,famous problem --> algebra
+rb_e036_B03_012,E-B03,rb_e036_B03,e036,cut,20,E,17,14,,famous problem --> algebra
+rb_e036_B03_013,E-B03,rb_e036_B03,e036,cut,20,E,17,14,,famous problem --> algebra
+rb_e036_B03_014,E-B03,rb_e036_B03,e036,cut,20,E,17,14,,famous problem --> algebra
+rb_e036_B03_015,E-B03,rb_e036_B03,e036,cut,20,E,17,14,,famous problem --> algebra
+rb_e036_B03_016,E-B03,rb_e036_B03,e036,cut,20,E,17,14,,famous problem --> algebra
+rb_e036_B03_017,E-B03,rb_e036_B03,e036,cut,20,C,17,14,,famous problem --> algebra
+rb_e036_B03_018,E-B03,rb_e036_B03,e036,cut,20,C,17,14,,famous problem --> algebra
+rb_e036_B03_019,E-B03,rb_e036_B03,e036,cut,20,C,17,14,,famous problem --> algebra
+rb_e036_B03_020,E-B03,rb_e036_B03,e036,cut,20,E,17,14,,famous problem --> algebra
+rb_e036_B03_021,E-B03,rb_e036_B03,e036,cut,20,E,17,14,,famous problem --> algebra
+rb_e036_B03_022,E-B03,rb_e036_B03,e036,cut,20,E,17,14,,famous problem --> algebra
+rb_e036_B03_023,E-B03,rb_e036_B03,e036,cut,20,E,17,14,,famous problem --> algebra
+rb_e036_B03_024,E-B03,rb_e036_B03,e036,cut,20,E,17,14,,famous problem --> algebra
+rb_e036_B04_000,E-B04,rb_e036_B04,e036,cut,42,E,17,14,,famous problem --> algebra
+rb_e036_B04_001,E-B04,rb_e036_B04,e036,cut,42,E,17,14,,famous problem --> algebra
+rb_e036_B04_002,E-B04,rb_e036_B04,e036,cut,42,C,17,14,,famous problem --> algebra
+rb_e036_B04_003,E-B04,rb_e036_B04,e036,cut,42,E,17,14,,famous problem --> algebra
+rb_e036_B04_004,E-B04,rb_e036_B04,e036,cut,42,E,17,14,,famous problem --> algebra
+rb_e036_B04_005,E-B04,rb_e036_B04,e036,cut,42,E,17,14,,famous problem --> algebra
+rb_e036_B04_006,E-B04,rb_e036_B04,e036,cut,42,E,17,14,,famous problem --> algebra
+rb_e036_B04_007,E-B04,rb_e036_B04,e036,cut,42,E,17,14,,famous problem --> algebra
+rb_e036_B04_008,E-B04,rb_e036_B04,e036,cut,42,E,17,14,,famous problem --> algebra
+rb_e036_B04_009,E-B04,rb_e036_B04,e036,cut,42,E,17,14,,famous problem --> algebra
+rb_e036_B04_010,E-B04,rb_e036_B04,e036,cut,42,E,17,14,,famous problem --> algebra
+rb_e036_B04_011,E-B04,rb_e036_B04,e036,cut,42,E,17,14,,famous problem --> algebra
+rb_e036_B04_012,E-B04,rb_e036_B04,e036,cut,42,E,17,14,,famous problem --> algebra
+rb_e036_B04_013,E-B04,rb_e036_B04,e036,cut,42,E,17,14,,famous problem --> algebra
+rb_e036_B04_014,E-B04,rb_e036_B04,e036,cut,42,E,17,14,,famous problem --> algebra
+rb_e036_B04_015,E-B04,rb_e036_B04,e036,cut,42,E,17,14,,famous problem --> algebra
+rb_e036_B04_016,E-B04,rb_e036_B04,e036,cut,42,E,17,14,,famous problem --> algebra
+rb_e036_B04_017,E-B04,rb_e036_B04,e036,cut,42,E,17,14,157,famous problem --> algebra --> hedge word
+rb_e036_B04_018,E-B04,rb_e036_B04,e036,cut,42,E,17,14,,famous problem --> algebra
+rb_e036_B04_019,E-B04,rb_e036_B04,e036,cut,42,E,17,14,,famous problem --> algebra
+rb_e036_B04_020,E-B04,rb_e036_B04,e036,cut,42,E,17,14,,famous problem --> algebra
+rb_e036_B04_021,E-B04,rb_e036_B04,e036,cut,42,E,17,14,,famous problem --> algebra
+rb_e036_B04_022,E-B04,rb_e036_B04,e036,cut,42,E,17,14,,famous problem --> algebra
+rb_e036_B04_023,E-B04,rb_e036_B04,e036,cut,42,E,17,14,,famous problem --> algebra
+rb_e036_B04_024,E-B04,rb_e036_B04,e036,cut,42,E,17,14,,famous problem --> algebra
+rb_e036_B05_000,E-B05,rb_e036_B05,e036,cut,53,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B05_001,E-B05,rb_e036_B05,e036,cut,53,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B05_002,E-B05,rb_e036_B05,e036,cut,53,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B05_003,E-B05,rb_e036_B05,e036,cut,53,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B05_004,E-B05,rb_e036_B05,e036,cut,53,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B05_005,E-B05,rb_e036_B05,e036,cut,53,C,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B05_006,E-B05,rb_e036_B05,e036,cut,53,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B05_007,E-B05,rb_e036_B05,e036,cut,53,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B05_008,E-B05,rb_e036_B05,e036,cut,53,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B05_009,E-B05,rb_e036_B05,e036,cut,53,C,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B05_010,E-B05,rb_e036_B05,e036,cut,53,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B05_011,E-B05,rb_e036_B05,e036,cut,53,C,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B05_012,E-B05,rb_e036_B05,e036,cut,53,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B05_013,E-B05,rb_e036_B05,e036,cut,53,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B05_014,E-B05,rb_e036_B05,e036,cut,53,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B05_015,E-B05,rb_e036_B05,e036,cut,53,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B05_016,E-B05,rb_e036_B05,e036,cut,53,C,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B05_017,E-B05,rb_e036_B05,e036,cut,53,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B05_018,E-B05,rb_e036_B05,e036,cut,53,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B05_019,E-B05,rb_e036_B05,e036,cut,53,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B05_020,E-B05,rb_e036_B05,e036,cut,53,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B05_021,E-B05,rb_e036_B05,e036,cut,53,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B05_022,E-B05,rb_e036_B05,e036,cut,53,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B05_023,E-B05,rb_e036_B05,e036,cut,53,C,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B05_024,E-B05,rb_e036_B05,e036,cut,53,C,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B06_000,E-B06,rb_e036_B06,e036,cut,71,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B06_001,E-B06,rb_e036_B06,e036,cut,71,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B06_002,E-B06,rb_e036_B06,e036,cut,71,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B06_003,E-B06,rb_e036_B06,e036,cut,71,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B06_004,E-B06,rb_e036_B06,e036,cut,71,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B06_005,E-B06,rb_e036_B06,e036,cut,71,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B06_006,E-B06,rb_e036_B06,e036,cut,71,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B06_007,E-B06,rb_e036_B06,e036,cut,71,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B06_008,E-B06,rb_e036_B06,e036,cut,71,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B06_009,E-B06,rb_e036_B06,e036,cut,71,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B06_010,E-B06,rb_e036_B06,e036,cut,71,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B06_011,E-B06,rb_e036_B06,e036,cut,71,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B06_012,E-B06,rb_e036_B06,e036,cut,71,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B06_013,E-B06,rb_e036_B06,e036,cut,71,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B06_014,E-B06,rb_e036_B06,e036,cut,71,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B06_015,E-B06,rb_e036_B06,e036,cut,71,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B06_016,E-B06,rb_e036_B06,e036,cut,71,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B06_017,E-B06,rb_e036_B06,e036,cut,71,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B06_018,E-B06,rb_e036_B06,e036,cut,71,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B06_019,E-B06,rb_e036_B06,e036,cut,71,F,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B06_020,E-B06,rb_e036_B06,e036,cut,71,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B06_021,E-B06,rb_e036_B06,e036,cut,71,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B06_022,E-B06,rb_e036_B06,e036,cut,71,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B06_023,E-B06,rb_e036_B06,e036,cut,71,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B06_024,E-B06,rb_e036_B06,e036,cut,71,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B07_000,E-B07,rb_e036_B07,e036,cut,75,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B07_001,E-B07,rb_e036_B07,e036,cut,75,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B07_002,E-B07,rb_e036_B07,e036,cut,75,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B07_003,E-B07,rb_e036_B07,e036,cut,75,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B07_004,E-B07,rb_e036_B07,e036,cut,75,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B07_005,E-B07,rb_e036_B07,e036,cut,75,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B07_006,E-B07,rb_e036_B07,e036,cut,75,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B07_007,E-B07,rb_e036_B07,e036,cut,75,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B07_008,E-B07,rb_e036_B07,e036,cut,75,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B07_009,E-B07,rb_e036_B07,e036,cut,75,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B07_010,E-B07,rb_e036_B07,e036,cut,75,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B07_011,E-B07,rb_e036_B07,e036,cut,75,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B07_012,E-B07,rb_e036_B07,e036,cut,75,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B07_013,E-B07,rb_e036_B07,e036,cut,75,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B07_014,E-B07,rb_e036_B07,e036,cut,75,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B07_015,E-B07,rb_e036_B07,e036,cut,75,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B07_016,E-B07,rb_e036_B07,e036,cut,75,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B07_017,E-B07,rb_e036_B07,e036,cut,75,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B07_018,E-B07,rb_e036_B07,e036,cut,75,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B07_019,E-B07,rb_e036_B07,e036,cut,75,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B07_020,E-B07,rb_e036_B07,e036,cut,75,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B07_021,E-B07,rb_e036_B07,e036,cut,75,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B07_022,E-B07,rb_e036_B07,e036,cut,75,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B07_023,E-B07,rb_e036_B07,e036,cut,75,E,17,14,46,famous problem --> algebra --> hedge word
+rb_e036_B07_024,E-B07,rb_e036_B07,e036,cut,75,E,17,14,46,famous problem --> algebra --> hedge word

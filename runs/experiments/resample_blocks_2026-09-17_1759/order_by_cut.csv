@@ -1,0 +1,46 @@
+cut,pattern,n,count_C,p_C,p_C_low,p_C_high,count_E,p_E,p_E_low,p_E_high,count_unresolved,count_other
+C-B00,algebra --> famous problem,1,1,1.0,0.2065,1.0,0,0.0,0.0,0.7935,0,0
+C-B00,algebra --> famous problem --> hedge word,14,9,0.6429,0.3876,0.8366,1,0.0714,0.0127,0.3147,3,1
+C-B00,algebra --> hedge word --> famous problem,1,0,0.0,0.0,0.7935,1,1.0,0.2065,1.0,0,0
+C-B00,famous problem --> algebra,2,2,1.0,0.3424,1.0,0,0.0,0.0,0.6576,0,0
+C-B00,famous problem --> algebra --> hedge word,7,4,0.5714,0.2505,0.8418,0,0.0,0.0,0.3543,2,1
+C-B01,algebra --> famous problem,5,1,0.2,0.0362,0.6245,3,0.6,0.2307,0.8824,1,0
+C-B01,algebra --> famous problem --> hedge word,20,8,0.4,0.2188,0.6134,5,0.25,0.1119,0.4687,6,1
+C-B02,algebra --> famous problem,7,3,0.4286,0.1582,0.7495,3,0.4286,0.1582,0.7495,1,0
+C-B02,algebra --> famous problem --> hedge word,18,11,0.6111,0.3862,0.7969,3,0.1667,0.0584,0.3922,4,0
+C-B03,algebra --> famous problem,5,1,0.2,0.0362,0.6245,3,0.6,0.2307,0.8824,0,1
+C-B03,algebra --> famous problem --> hedge word,18,9,0.5,0.2903,0.7097,5,0.2778,0.125,0.5087,4,0
+C-B03,algebra --> hedge word --> famous problem,1,1,1.0,0.2065,1.0,0,0.0,0.0,0.7935,0,0
+C-B04,algebra --> famous problem,7,1,0.1429,0.0257,0.5131,4,0.5714,0.2505,0.8418,2,0
+C-B04,algebra --> famous problem --> hedge word,17,6,0.3529,0.1731,0.587,6,0.3529,0.1731,0.587,5,0
+C-B04,algebra --> hedge word --> famous problem,1,0,0.0,0.0,0.7935,1,1.0,0.2065,1.0,0,0
+C-B05,algebra --> famous problem,4,1,0.25,0.0456,0.6994,2,0.5,0.15,0.85,1,0
+C-B05,algebra --> famous problem --> hedge word,21,6,0.2857,0.1381,0.4996,6,0.2857,0.1381,0.4996,8,1
+C-B06,algebra --> famous problem,2,2,1.0,0.3424,1.0,0,0.0,0.0,0.6576,0,0
+C-B06,algebra --> famous problem --> hedge word,23,15,0.6522,0.4489,0.8119,2,0.087,0.0242,0.268,5,1
+C-B07,algebra --> famous problem,5,2,0.4,0.1176,0.7693,1,0.2,0.0362,0.6245,2,0
+C-B07,algebra --> famous problem --> hedge word,20,10,0.5,0.2993,0.7007,2,0.1,0.0279,0.301,7,1
+C-B08,algebra --> famous problem,4,1,0.25,0.0456,0.6994,2,0.5,0.15,0.85,1,0
+C-B08,algebra --> famous problem --> hedge word,20,8,0.4,0.2188,0.6134,6,0.3,0.1455,0.519,5,1
+C-B09,algebra --> famous problem --> hedge word,25,24,0.96,0.8046,0.9929,0,0.0,0.0,0.1332,1,0
+C-B10,algebra --> famous problem --> hedge word,25,24,0.96,0.8046,0.9929,0,0.0,0.0,0.1332,1,0
+C-B11,algebra --> famous problem --> hedge word,25,25,1.0,0.8668,1.0,0,0.0,0.0,0.1332,0,0
+E-B00,algebra,2,0,0.0,0.0,0.6576,2,1.0,0.3424,1.0,0,0
+E-B00,algebra --> hedge word,1,0,0.0,0.0,0.7935,1,1.0,0.2065,1.0,0,0
+E-B00,famous problem --> algebra,22,1,0.0455,0.0081,0.218,21,0.9545,0.782,0.9919,0,0
+E-B01,famous problem --> algebra,24,5,0.2083,0.0924,0.4047,19,0.7917,0.5953,0.9076,0,0
+E-B01,famous problem --> algebra --> hedge word,1,0,0.0,0.0,0.7935,1,1.0,0.2065,1.0,0,0
+E-B02,famous problem --> algebra,22,9,0.4091,0.2326,0.6127,12,0.5455,0.3466,0.7308,0,1
+E-B02,famous problem --> algebra --> hedge word,3,1,0.3333,0.0615,0.7923,2,0.6667,0.2077,0.9385,0,0
+E-B03,famous problem --> algebra,24,5,0.2083,0.0924,0.4047,19,0.7917,0.5953,0.9076,0,0
+E-B03,famous problem --> algebra --> hedge word,1,0,0.0,0.0,0.7935,1,1.0,0.2065,1.0,0,0
+E-B04,famous problem --> algebra,24,1,0.0417,0.0074,0.2024,23,0.9583,0.7976,0.9926,0,0
+E-B04,famous problem --> algebra --> hedge word,1,0,0.0,0.0,0.7935,1,1.0,0.2065,1.0,0,0
+E-B05,famous problem --> algebra --> hedge word,25,6,0.24,0.115,0.4343,19,0.76,0.5657,0.885,0,0
+E-B06,famous problem --> algebra --> hedge word,25,0,0.0,0.0,0.1332,24,0.96,0.8046,0.9929,0,1
+E-B07,famous problem --> algebra --> hedge word,25,0,0.0,0.0,0.1332,25,1.0,0.8668,1.0,0,0
+cut0,algebra,2,1,0.5,0.0945,0.9055,1,0.5,0.0945,0.9055,0,0
+cut0,algebra --> famous problem,2,0,0.0,0.0,0.6576,1,0.5,0.0945,0.9055,0,1
+cut0,algebra --> famous problem --> hedge word,2,2,1.0,0.3424,1.0,0,0.0,0.0,0.6576,0,0
+cut0,famous problem --> algebra,14,1,0.0714,0.0127,0.3147,13,0.9286,0.6853,0.9873,0,0
+cut0,famous problem --> algebra --> hedge word,5,0,0.0,0.0,0.4345,3,0.6,0.2307,0.8824,1,1
