@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""fig1_instrument.py -- the instrument, in two panels, on one portrait letter page.
+"""fig1_instrument.py -- the instrument: one block opened out.
 
-  Fig a.  The trace as a chain of blocks running down the page. At each block's foot the trace is
-          cut and resampled; the 25 continuations reach the answers shown, with their shares on
-          the lines. The dashed segment stands for the blocks not drawn, and the circle at the
-          foot is the trace's own answer.
-  Fig b.  One block opened out. One row per sentence; the three columns are that same span of
+  2026-09-24: the former panel (a), the chain of blocks with its fans of continuations, is no
+  longer drawn, because Figure 2 shows the same information; its code (FIG_A, draw_fig_a) is
+  kept below for reference, and the panel label "b)" is no longer drawn either.
+
+  The figure. One block opened out. One row per sentence; the three columns are that same span of
           text described at Level 1, Level 2 and Level 3, and the sentence itself is at the right.
           A Level 3 box is drawn only where the label has a third level.
 
@@ -18,7 +18,7 @@ however the text is edited.
                                                             a caption and body text at 10 pt
 
 Units are PostScript points: the page is 612 x 792 pt, so 10 pt here is 10 pt on paper.
-LAYOUT holds every coordinate, FIG_A and FIG_B the content, HUES and STYLE the colours.
+LAYOUT holds every coordinate, FIG_B the content (FIG_A is retained but unused), HUES and STYLE the colours.
 """
 from __future__ import annotations
 
@@ -110,7 +110,7 @@ HUES = {
 NEUTRAL = ("#8c8c88", "#c3c3bf", "#e4e4e0")
 
 # Answer colours in Fig a.
-ANSWER_HUES = {"C": "#6a55a0", "E": "#b0567f", "?": "#8c8c88"}
+ANSWER_HUES = {"C": "#4D8052", "E": "#615394", "?": "#91764b"}
 
 # ============================================================================
 # CONTENT
@@ -347,8 +347,9 @@ def draw_fig_b(s: Svg):
     h = inner_h + 2 * L["pad_y"]
     x0 = L["x"] - L["w"] / 2
     y0 = L["y"] - h / 2
-    s.text(x0, y0 + LAYOUT["label_dy"], FIG_B["label"], STYLE["fs_panel"], STYLE["mid"],
-           anchor="start", style="italic")
+    # panel label "b)" removed 2026-09-24, the figure has one panel now
+    # s.text(x0, y0 + LAYOUT["label_dy"], FIG_B["label"], STYLE["fs_panel"], STYLE["mid"],
+    #        anchor="start", style="italic")
     s.rect(x0, y0, L["w"], h, STYLE["panel_fill"], STYLE["panel_stroke"], STYLE["block_sw"] + 0.3, rx=4)
 
     xs, x = [], x0 + L["pad_x"]
@@ -428,7 +429,7 @@ def build(proof: bool, crop_pad: float | None) -> str:
     if proof:
         m = PAGE["margin"]
         s.rect(m, m, PAGE["w"] - 2 * m, PAGE["h"] - 2 * m, "none", "#e6e6e6", 0.7, rx=0, dash="3 4")
-    draw_fig_a(s)
+    # draw_fig_a(s)   # panel (a) removed 2026-09-24; Figure 2 shows the same information
     bottom = draw_fig_b(s)
     if proof:
         y = bottom + 26
