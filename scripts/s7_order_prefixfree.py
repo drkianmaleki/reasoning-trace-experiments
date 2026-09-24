@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """s7_order_prefixfree.py -- the order of algebra and constraint import in the 69 prefix-free texts.
+Superseded 2026-09-24 by the label reading in scripts/s6_order.py --prefix-free (Kian's decision); kept as a record of the text rule.
 
 Reproduces, from code, the analysis of results v2 Section 8 (2026-09-19), whose numbers were first
 computed by hand: on texts written with no prefix -- the 25 continuations of cut 0 of the resampling

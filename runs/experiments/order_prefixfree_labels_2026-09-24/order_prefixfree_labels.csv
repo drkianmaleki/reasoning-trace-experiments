@@ -1,0 +1,70 @@
+id,batch,answer,first_algebra,first_famous,first_hedge,arm,pattern
+rb_cut0_000,cut0,E,15,25,,algebra first,algebra --> famous problem
+rb_cut0_001,cut0,E,26,14,39,famous first,famous problem --> algebra --> hedge word
+rb_cut0_002,cut0,E,20,14,,famous first,famous problem --> algebra
+rb_cut0_003,cut0,C,20,,,undefined,algebra
+rb_cut0_004,cut0,E,28,14,,famous first,famous problem --> algebra
+rb_cut0_005,cut0,E,26,14,35,famous first,famous problem --> algebra --> hedge word
+rb_cut0_006,cut0,C,17,26,185,algebra first,algebra --> famous problem --> hedge word
+rb_cut0_007,cut0,?,18,6,387,famous first,famous problem --> algebra --> hedge word
+rb_cut0_008,cut0,E,20,14,,famous first,famous problem --> algebra
+rb_cut0_009,cut0,E,30,14,,famous first,famous problem --> algebra
+rb_cut0_010,cut0,C,16,14,,famous first,famous problem --> algebra
+rb_cut0_011,cut0,E,17,14,,famous first,famous problem --> algebra
+rb_cut0_012,cut0,E,32,14,84,famous first,famous problem --> algebra --> hedge word
+rb_cut0_013,cut0,E,23,14,,famous first,famous problem --> algebra
+rb_cut0_014,cut0,E,22,14,,famous first,famous problem --> algebra
+rb_cut0_015,cut0,E,20,16,,famous first,famous problem --> algebra
+rb_cut0_016,cut0,E,22,,,undefined,algebra
+rb_cut0_017,cut0,?,19,354,,algebra first,algebra --> famous problem
+rb_cut0_018,cut0,E,22,14,,famous first,famous problem --> algebra
+rb_cut0_019,cut0,E,26,14,,famous first,famous problem --> algebra
+rb_cut0_020,cut0,?,19,17,66,famous first,famous problem --> algebra --> hedge word
+rb_cut0_021,cut0,?,15,50,261,algebra first,algebra --> famous problem --> hedge word
+rb_cut0_022,cut0,E,24,14,,famous first,famous problem --> algebra
+rb_cut0_023,cut0,E,20,14,,famous first,famous problem --> algebra
+rb_cut0_024,cut0,E,24,14,,famous first,famous problem --> algebra
+s0819_eval0multi0_001,sweep44,E,25,14,,famous first,famous problem --> algebra
+s0819_eval0multi0_002,sweep44,E,26,16,,famous first,famous problem --> algebra
+s0819_eval0multi0_003,sweep44,E,17,14,,famous first,famous problem --> algebra
+s0819_eval0multi0_004,sweep44,C,10,38,65,algebra first,algebra --> famous problem --> hedge word
+s0819_eval0multi0_005,sweep44,E,20,14,,famous first,famous problem --> algebra
+s0819_eval0multi0_006,sweep44,E,10,16,,algebra first,algebra --> famous problem
+s0819_eval0multi0_007,sweep44,E,11,38,141,algebra first,algebra --> famous problem --> hedge word
+s0819_eval0multi0_008,sweep44,E,20,14,,famous first,famous problem --> algebra
+s0819_eval0multi0_009,sweep44,C,21,17,,famous first,famous problem --> algebra
+s0819_eval0multi0_010,sweep44,E,17,14,,famous first,famous problem --> algebra
+s0819_eval0multi0_011,sweep44,E,26,14,,famous first,famous problem --> algebra
+s0819_eval0multi0_012,sweep44,E,14,11,,famous first,famous problem --> algebra
+s0819_eval0multi0_013,sweep44,E,28,14,,famous first,famous problem --> algebra
+s0819_eval0multi0_014,sweep44,E,20,14,,famous first,famous problem --> algebra
+s0819_eval0multi0_015,sweep44,E,25,14,,famous first,famous problem --> algebra
+s0819_eval0multi0_016,sweep44,E,12,15,,algebra first,algebra --> famous problem
+s0819_eval0multi0_017,sweep44,E,17,14,,famous first,famous problem --> algebra
+s0819_eval0multi0_018,sweep44,E,24,14,,famous first,famous problem --> algebra
+s0819_eval0multi0_019,sweep44,E,23,11,,famous first,famous problem --> algebra
+s0819_eval0multi0_020,sweep44,C,5,64,272,algebra first,algebra --> famous problem --> hedge word
+s0819_eval0multi0_021,sweep44,E,26,18,52,famous first,famous problem --> algebra --> hedge word
+s0819_eval0multi0_022,sweep44,E,20,16,,famous first,famous problem --> algebra
+s0819_eval0multi0_023,sweep44,E,20,14,83,famous first,famous problem --> algebra --> hedge word
+s0819_eval0multi0_024,sweep44,E,26,14,,famous first,famous problem --> algebra
+s0819_eval0multi0_025,sweep44,E,26,58,68,algebra first,algebra --> famous problem --> hedge word
+s0819_eval0multi0_026,sweep44,E,24,14,,famous first,famous problem --> algebra
+s0819_eval0multi0_027,sweep44,E,27,14,,famous first,famous problem --> algebra
+s0819_eval0multi0_028,sweep44,?,14,3,,famous first,famous problem --> algebra
+s0819_eval0multi0_029,sweep44,E,25,14,,famous first,famous problem --> algebra
+s0819_eval0multi0_030,sweep44,E,21,14,,famous first,famous problem --> algebra
+s0819_eval0multi0_031,sweep44,E,20,14,,famous first,famous problem --> algebra
+s0819_eval0multi0_032,sweep44,E,25,16,,famous first,famous problem --> algebra
+s0819_eval0multi0_033,sweep44,E,19,25,218,algebra first,algebra --> famous problem --> hedge word
+s0819_eval0multi0_034,sweep44,E,28,14,,famous first,famous problem --> algebra
+s0819_eval0multi0_035,sweep44,E,17,14,,famous first,famous problem --> algebra
+s0819_eval0multi0_036,sweep44,E,17,14,,famous first,famous problem --> algebra
+s0819_eval0multi0_037,sweep44,E,20,14,,famous first,famous problem --> algebra
+s0819_eval0multi0_038,sweep44,E,25,14,40,famous first,famous problem --> algebra --> hedge word
+s0819_eval0multi0_039,sweep44,E,16,18,,algebra first,algebra --> famous problem
+s0819_eval0multi0_040,sweep44,E,23,,37,undefined,algebra --> hedge word
+s0819_eval0multi0_041,sweep44,E,20,16,,famous first,famous problem --> algebra
+s0819_eval0multi0_042,sweep44,E,23,,,undefined,algebra
+s0819_eval0multi0_043,sweep44,E,11,5,104,famous first,famous problem --> algebra --> hedge word
+s0819_eval0multi0_044,sweep44,C,4,11,72,algebra first,algebra --> famous problem --> hedge word

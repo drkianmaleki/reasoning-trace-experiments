@@ -358,6 +358,113 @@ def run_one(run_dir: Path, judge_dir: Path, out_dir: Path, scoring: str, log=pri
             "pooled": pooled, "pairs": pairs}
 
 
+
+# ---------------------------------------------------------------------------------------------------
+# Prefix-free texts (added 2026-09-24, Kian's decision of the same day): the order of the judge's
+# algebra leaf and famous-problem leaf in the 69 texts written with no prefix -- the 25 continuations
+# of cut 0 of the run and the 44 earlier traces of the same prompt (runs/experiments/judge_sweep44_*),
+# all labeled by the same judge -- against the completed answer.  Nothing is read from the text; the
+# two events are the leaves as the judge applied them.  Supersedes the hand reading of results v2
+# Section 8 and the text rule of scripts/s7_order_prefixfree.py.
+# ---------------------------------------------------------------------------------------------------
+SWEEP_FILE = Path(__file__).resolve().parents[1] / "archive/decided-mid-thought/runs/sweep_items_batball_2026-08-19_1623.jsonl"
+SWEEP_CONDITION = "eval0_multi0"
+OPTION_TEXT = {"C": "There is not enough information, but the answer is most likely $0.05", "E": "The question is not well posed"}
+
+
+
+def fisher_two_sided(a: int, b: int, c: int, d: int) -> float:
+    """Fisher's exact test for [[a, b], [c, d]], two-sided as the sum of the probabilities of every table
+    with the same margins whose probability is at most the observed one (the convention of scipy)."""
+    from math import comb
+    n1, n2, k = a + b, c + d, a + c
+    if n1 == 0 or n2 == 0:
+        return float("nan")
+    total = comb(n1 + n2, k)
+    def pr(x: int) -> float:
+        return comb(n1, x) * comb(n2, k - x) / total
+    p0 = pr(a)
+    return sum(pr(x) for x in range(max(0, k - n2), min(k, n1) + 1) if pr(x) <= p0 * (1 + 1e-9))
+
+def load_sweep44_kinds(judge_sweep_dir: Path) -> dict[str, dict[int, set[str]]]:
+    """{trace_id: {s: kinds}} from labels_sweep44_judge.jsonl of a judge_sweep44_* run."""
+    path = judge_sweep_dir / "labels_sweep44_judge.jsonl"
+    kinds: dict[str, dict[int, set[str]]] = defaultdict(dict)
+    for d in read_jsonl(path):
+        kinds[d["trace_id"]][int(d["s"])] = kinds_of_sentence(d.get("labels"))
+    return dict(kinds)
+
+
+def sweep44_answers(sweep_file: Path = SWEEP_FILE) -> dict[str, str]:
+    """{trace_id: 'C' | 'E' | '?'} for the 44 earlier traces, ids numbered in file order as s0_split does."""
+    rows = [r for r in read_jsonl(sweep_file) if r.get("condition") == SWEEP_CONDITION]
+    out = {}
+    for k, r in enumerate(rows, start=1):
+        chosen = r.get("chosen") or []
+        out[f"s0819_{SWEEP_CONDITION.replace('_', '')}_{k:03d}"] = "C" if OPTION_TEXT["C"] in chosen else "E" if OPTION_TEXT["E"] in chosen else "?"
+    return out
+
+
+def order_arm(first: dict[str, int | None]) -> str:
+    a, f = first.get("algebra"), first.get("famous")
+    if a is None or f is None:
+        return "undefined"
+    return "algebra first" if a < f else "famous first" if f < a else "tie"
+
+
+def prefix_free(run_dir: Path, judge_dir: Path, judge_sweep_dir: Path, out: Path, scoring: str) -> dict:
+    """Write order_prefixfree_labels.csv (one row per text) and order_prefixfree_summary.md into out."""
+    if out.exists():
+        raise SystemExit(f"refusing to overwrite {out}")
+    cont_kinds, meta = load_continuation_kinds(judge_dir)
+    answers = answers_of_run(run_dir, scoring)
+    rows = []
+    for cid in sorted(c for c in cont_kinds if c.startswith("rb_cut0_")):
+        first = first_indices({}, 0, cont_kinds[cid])
+        rows.append({"id": cid, "batch": "cut0", "answer": answers[cid]["answer"], "first_algebra": first["algebra"],
+                     "first_famous": first["famous"], "first_hedge": first["hedge"], "arm": order_arm(first), "pattern": pattern_of(first)})
+    sweep_kinds = load_sweep44_kinds(judge_sweep_dir)
+    sweep_ans = sweep44_answers()
+    for tid in sorted(sweep_kinds):
+        first = first_indices({}, 0, sweep_kinds[tid])
+        rows.append({"id": tid, "batch": "sweep44", "answer": sweep_ans[tid], "first_algebra": first["algebra"],
+                     "first_famous": first["famous"], "first_hedge": first["hedge"], "arm": order_arm(first), "pattern": pattern_of(first)})
+    assert len(rows) == 69, len(rows)
+    out.mkdir(parents=True)
+    write_csv(out / "order_prefixfree_labels.csv", rows)
+
+    def counts(rs):
+        return {"n": len(rs), "C": sum(r["answer"] == "C" for r in rs), "E": sum(r["answer"] == "E" for r in rs),
+                "?": sum(r["answer"] not in ("C", "E") for r in rs)}
+    A = [r for r in rows if r["arm"] == "algebra first"]; F = [r for r in rows if r["arm"] == "famous first"]
+    U = [r for r in rows if r["arm"] == "undefined"]; T = [r for r in rows if r["arm"] == "tie"]
+    cA, cF, cU = counts(A), counts(F), counts(U)
+    lo_a, hi_a = ST.wilson(cA["C"], cA["n"]); lo_f, hi_f = ST.wilson(cF["C"], cF["n"])
+    d = cA["C"] / cA["n"] - cF["C"] / cF["n"]; dlo, dhi = ST.newcombe(cA["C"], cA["n"], cF["C"], cF["n"])
+    p = fisher_two_sided(cA["C"], cA["n"] - cA["C"], cF["C"], cF["n"] - cF["C"])
+    p_adverse = fisher_two_sided(cA["C"], cA["n"] - cA["C"], cF["C"] + cF["?"], cF["n"] - cF["C"] - cF["?"])
+    p_undef_as_famous = fisher_two_sided(cA["C"], cA["n"] - cA["C"], cF["C"] + cU["C"], cF["n"] + cU["n"] - cF["C"] - cU["C"])
+    nA, nF = cA["n"] - cA["?"], cF["n"] - cF["?"]
+    p_answered = fisher_two_sided(cA["C"], nA - cA["C"], cF["C"], nF - cF["C"])
+    lines = ["# Order of the judge's algebra leaf and famous-problem leaf in the 69 prefix-free texts", "",
+             f"run {run_dir.name}, judge {judge_dir.name}, sweep44 judge {judge_sweep_dir.name}, scoring {scoring}", "",
+             "| arm | n | C | E | ? | P(C) [Wilson 95%] |", "|---|---|---|---|---|---|",
+             f"| algebra first | {cA['n']} | {cA['C']} | {cA['E']} | {cA['?']} | {cA['C']/cA['n']:.2f} [{lo_a:.2f}, {hi_a:.2f}] |",
+             f"| famous problem first | {cF['n']} | {cF['C']} | {cF['E']} | {cF['?']} | {cF['C']/cF['n']:.2f} [{lo_f:.2f}, {hi_f:.2f}] |",
+             f"| undefined (a leaf absent) | {cU['n']} | {cU['C']} | {cU['E']} | {cU['?']} | |",
+             f"| tie | {len(T)} | | | | |", "",
+             f"difference {d:+.2f} [{dlo:.2f}, {dhi:.2f}]; Fisher two-sided p = {p:.4f} (unresolved counted as not C); "
+             f"most adverse assignment of the unresolved p = {p_adverse:.4f}; undefined texts counted with famous first p = {p_undef_as_famous:.4f}; "
+             f"answered only {cA['C']}/{nA} vs {cF['C']}/{nF} p = {p_answered:.4f}", ""]
+    for b in ("cut0", "sweep44"):
+        rb = [r for r in rows if r["batch"] == b]
+        Ab = counts([r for r in rb if r["arm"] == "algebra first"]); Fb = counts([r for r in rb if r["arm"] == "famous first"])
+        pb = fisher_two_sided(Ab["C"], Ab["n"] - Ab["C"], Fb["C"], Fb["n"] - Fb["C"]) if Ab["n"] and Fb["n"] else float("nan")
+        lines.append(f"{b}: algebra first {Ab['C']}/{Ab['n']} vs famous first {Fb['C']}/{Fb['n']}, p = {pb:.4f}")
+    (out / "order_prefixfree_summary.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    print("\n".join(lines))
+    return {"rows": rows}
+
 def main(argv=None) -> int:
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -366,11 +473,19 @@ def main(argv=None) -> int:
     ap.add_argument("--judge", help="judge folder of the run; default: the run's newest judge_* folder")
     ap.add_argument("--out", help="output folder; default: the run folder (registered) and <run>_strict (strict)")
     ap.add_argument("--scoring", choices=("strict", "registered", "both"), default="strict")
+    ap.add_argument("--prefix-free", metavar="JUDGE_SWEEP44_DIR",
+                    help="instead of the pooled tables: the 69 prefix-free texts (cut-0 continuations of --run plus the 44 traces "
+                         "labeled in this judge_sweep44_* folder); writes into --out, which must not exist")
     args = ap.parse_args(argv)
     run_dir = Path(args.run)
     judge = Path(args.judge) if args.judge else next(iter(sorted(run_dir.glob("judge_*"), reverse=True)), None)
     if judge is None:
         raise SystemExit(f"no judge folder under {run_dir}")
+    if args.prefix_free:
+        if not args.out:
+            raise SystemExit("--prefix-free needs --out")
+        prefix_free(run_dir, judge, Path(args.prefix_free), Path(args.out), "strict" if args.scoring == "both" else args.scoring)
+        return 0
     wanted = ("registered", "strict") if args.scoring == "both" else (args.scoring,)
     results = []
     for scoring in wanted:
