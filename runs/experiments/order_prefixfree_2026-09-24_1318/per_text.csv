@@ -1,0 +1,70 @@
+id,batch,source_trace,answer,n_sentences,first_A,first_K,pattern,A_text,K_text
+rb_cut0_000,cut0,,E,221,15,18,A first,"⏎   - The intuitive/impulsive answer is $0.05 for the ball (since bat + ball = $1.10, bat = $1.05, total = $1.10).","then bat costs $1.00 more than ball, not just ""more than the ball""."
+rb_cut0_001,cut0,,E,205,26,17,K first,"⏎   - Without the ""$1.00 more"" constraint, there are infinitely many solutions.",The bat costs $1.00 more than the ball.
+rb_cut0_002,cut0,,E,237,20,17,K first,"If ball = $0.05,",The bat costs $1.00 more than the ball.
+rb_cut0_003,cut0,,C,173,23,17,K first,"Ball = $0.05,",The bat costs $1.00 more than the ball.
+rb_cut0_004,cut0,,E,169,15,15,tie,"⏎   - The intuitive/wrong answer is $0.05 (because $1.05 + $0.05 = $1.10, but then bat = ball, violating ""bat costs more than ball"" or actually bat costs exactly $1.00 more?","⏎   - The intuitive/wrong answer is $0.05 (because $1.05 + $0.05 = $1.10, but then bat = ball, violating ""bat costs more than ball"" or actually bat costs exactly $1.00 more?"
+rb_cut0_005,cut0,,E,212,26,17,K first,"Without the ""$1.00 more"" constraint, there are infinitely many solutions where the ball costs $x and the bat costs $1.10 - $x, with the only constraint being $1.10 - $x > $x (i.e., $x < $0.55).",The bat costs $1.00 more than the ball.
+rb_cut0_006,cut0,,C,354,14,16,A first,"Because $1.10 - $0.10 = $1.00,",It feels right because of the difference of $1.00 often implied in similar puzzles.
+rb_cut0_007,cut0,,?,1098,18,20,A first,⏎    *   $Bat + Ball = 1.10$,"⏎    *   The problem *does not* explicitly state the specific difference between the cost of the bat and the ball (e.g., ""The bat costs $1.00 more than the ball"")."
+rb_cut0_008,cut0,,E,175,20,17,K first,"(Bat = $1.05, Ball = $0.05, Total = $1.10, Difference = $1.00)",The bat costs $1.00 more than the ball.
+rb_cut0_009,cut0,,E,190,35,17,K first,⏎   - There are infinitely many solutions:,The bat costs $1.00 more than the ball.
+rb_cut0_010,cut0,,C,210,17,23,A first,"if ball = $0.05,","The bat costs $1.00 more than the ball."" In the classic version, the answer is $0.05 for the ball?"
+rb_cut0_011,cut0,,E,177,17,20,A first,"Wait, if ball = $0.10,","But the problem usually states ""The bat costs $1.00 *more* than the ball."" Let me check the exact wording provided:"
+rb_cut0_012,cut0,,E,179,20,17,K first,"Ball = $0.05,",The bat costs $1.00 more than the ball.
+rb_cut0_013,cut0,,E,167,23,17,K first,"Without the ""$1.00 more"" constraint, there are infinitely many solutions.",The bat costs $1.00 more than the ball.
+rb_cut0_014,cut0,,E,148,22,17,K first,"With only ""more than"", there are infinitely many solutions (e.g., ball = $0.01, bat = $1.09; ball = $0.50, bat = $0.60; ball = $0.001, bat = $1.099, etc.), as long as ball > 0 and bat > ball and sum = 1.10.",The bat costs $1.00 more than the ball.
+rb_cut0_015,cut0,,E,221,20,17,K first,"(Ball = x, Bat = x + 1, Total = 2x + 1 = 1.10 => 2x = 0.10 => x = 0.05)",The bat costs $1.00 more than the ball.
+rb_cut0_016,cut0,,E,157,22,17,K first,"If ball = $0.05,",The bat costs $1.00 more than the ball.
+rb_cut0_017,cut0,,?,1047,20,19,K first,Total = $1.10.,"If the ball is $0.10, the bat is $1.00 (since it costs $1.00 more than the ball)."
+rb_cut0_018,cut0,,E,213,22,17,K first,"If ball = $0.05,",The bat costs $1.00 more than the ball.
+rb_cut0_019,cut0,,E,179,27,17,K first,"With only ""more than"", there are infinitely many solutions.",The bat costs $1.00 more than the ball.
+rb_cut0_020,cut0,,?,1121,28,19,K first,$B + b = 1.10$,"⏎    *   *Checking the Intuition:* If the ball is \$0.05, and the bat is ""more than"" (specifically, usually implied to be \$1.00 more in the classic version, though the prompt here is slightly ambiguous), let's look at the math."
+rb_cut0_021,cut0,,?,1040,14,12,K first,(Because $1.00 + $0.05 = $1.05 $\neq$ $1.10).,"The bat costs $1.00 more than the ball."""
+rb_cut0_022,cut0,,E,154,24,17,K first,"Without the ""$1.00 more"" constraint, there are infinitely many solutions.",The bat costs $1.00 more than the ball.
+rb_cut0_023,cut0,,E,133,20,17,K first,"(Let ball = x, bat = x + 1.00.",The bat costs $1.00 more than the ball.
+rb_cut0_024,cut0,,E,204,27,17,K first,B + b = 1.10,The bat costs $1.00 more than the ball.
+s0819_eval0multi0_001,sweep44,,E,158,20,18,K first,"⏎   - The classic answer is $0.05, because if ball = $0.05,",The bat costs $1.00 more than the ball.
+s0819_eval0multi0_002,sweep44,,E,181,26,17,K first,"B + b = 1.10,",The bat costs $1.00 more than the ball.
+s0819_eval0multi0_003,sweep44,,E,210,17,18,A first,"If ball = $0.05,",bat = $1.05 (since bat costs $1.00 more than ball in the original CRT version?
+s0819_eval0multi0_004,sweep44,c004,C,375,10,42,A first,⏎    *   *Equation 1:* Bat + Ball = 1.10,"But wait, the problem usually adds the constraint ""The bat costs **\$1.00 more than the ball**."""
+s0819_eval0multi0_005,sweep44,,E,354,22,17,K first,"So if ball = x,",The bat costs $1.00 more than the ball.
+s0819_eval0multi0_006,sweep44,,E,1178,7,10,A first,⏎*   Bat cost ($B$) > Ball cost ($b$),"The prompt *doesn't* explicitly state ""The bat costs $1.00 more than the ball."" It just says ""The bat costs more than the ball."""
+s0819_eval0multi0_007,sweep44,,E,839,12,41,A first,⏎    *   $B + b = 1.10$,"""The bat costs $1.00 *more* than the ball."""
+s0819_eval0multi0_008,sweep44,,E,215,19,17,K first,"⏎   - The *correct* answer to the classic version is $0.05 (ball), because bat = ball + 1.00,",The bat costs $1.00 more than the ball.
+s0819_eval0multi0_009,sweep44,,C,576,21,18,K first,"(Because $1.00 + $0.05 = $1.05, not $1.10).",The bat costs \$1.00 more than the ball.
+s0819_eval0multi0_010,sweep44,,E,177,20,22,A first,x + y = 1.10,y = x + 1.00
+s0819_eval0multi0_011,sweep44,,E,212,26,17,K first,"⏎   - Without the ""$1.00 more"" constraint, there are infinitely many solutions.",The bat costs $1.00 more than the ball.
+s0819_eval0multi0_012,sweep44,,E,581,12,19,A first,"⏎    *   *The Trap:* Many people immediately think the ball costs $0.05 because $0.05 + $1.05 (or just $1.00 if they don't calculate the bat's cost correctly) feels intuitively right, or they confuse the difference with the total.",$B = b + 1.00$
+s0819_eval0multi0_013,sweep44,,E,169,28,17,K first,"⏎   - If it just says ""more than"", then there are infinitely many solutions.",The bat costs $1.00 more than the ball.
+s0819_eval0multi0_014,sweep44,,E,172,20,17,K first,"Let x = ball,",The bat costs $1.00 more than the ball.
+s0819_eval0multi0_015,sweep44,,E,153,25,17,K first,"⏎   - Without the specific difference ($1.00 more), there are infinitely many solutions.",The bat costs $1.00 more than the ball.
+s0819_eval0multi0_016,sweep44,,E,237,12,17,A first,"⏎""A bat and a ball cost $1.10 in total."" -> B + b = 1.10","But if the ball is $0.05, the bat is $1.05 (since bat costs $1.00 more than ball?"
+s0819_eval0multi0_017,sweep44,,E,180,17,18,A first,"If ball = $0.05,",then bat = $1.05 (since bat costs $1 more?
+s0819_eval0multi0_018,sweep44,,E,262,16,17,A first,"Many people intuitively say $0.10, but that's wrong because $0.10 + $1.00 = $1.10,","but the bat would then cost exactly $1.00 more than the ball, not just ""more than the ball""."
+s0819_eval0multi0_019,sweep44,,E,172,23,14,K first,"Without the ""$1.00 more"" constraint, there are infinitely many solutions where bat > ball and bat + ball = 1.10.",The bat costs $1.00 more than the ball.
+s0819_eval0multi0_020,sweep44,,C,1037,5,6,A first,⏎*   Bat cost ($B$) + Ball cost ($b$) = $1.10$,⏎*   Bat costs $1.00 more than the ball:
+s0819_eval0multi0_021,sweep44,,E,632,28,19,K first,$B + b = 1.10$,The bat costs $1.00 more than the ball.
+s0819_eval0multi0_022,sweep44,,E,144,20,21,A first,"If ball = $0.10,",bat = ball + $1.00 = $1.10.
+s0819_eval0multi0_023,sweep44,,E,200,22,17,K first,"Let ball = x,",The bat costs $1.00 more than the ball.
+s0819_eval0multi0_024,sweep44,,E,194,26,17,K first,"⏎   - Without the ""$1.00 more"" constraint, there are infinitely many solutions.",The bat costs $1.00 more than the ball.
+s0819_eval0multi0_025,sweep44,,E,192,26,17,K first,"⏎   - With only ""more than"", there are infinitely many solutions.",The bat costs $1.00 more than the ball.
+s0819_eval0multi0_026,sweep44,,E,172,15,15,tie,"⏎   - The intuitive/incorrect answer is $0.05 (because $0.05 + $1.05 = $1.10, but wait, the bat costs $1.00 more than the ball, not $1.00 total?","⏎   - The intuitive/incorrect answer is $0.05 (because $0.05 + $1.05 = $1.10, but wait, the bat costs $1.00 more than the ball, not $1.00 total?"
+s0819_eval0multi0_027,sweep44,,E,184,27,17,K first,"Without the ""$1.00 more"" constraint, there are infinitely many solutions where bat + ball = 1.10 and bat > ball.",The bat costs $1.00 more than the ball.
+s0819_eval0multi0_028,sweep44,,?,1124,14,5,K first,"⏎    *   *Constraint Check:* If the difference isn't specified (e.g., \$1.00), mathematically, there are infinite solutions where $Ball > 0$,",The bat costs \$1.00 more than the ball.
+s0819_eval0multi0_029,sweep44,,E,162,24,17,K first,"⏎   - Without the ""$1.00 more"" constraint, there are infinitely many solutions.","The bat costs $1.00 more than the ball."""
+s0819_eval0multi0_030,sweep44,,E,162,21,17,K first,"⏎   - Without the specific difference ($1.00 more), there are infinitely many solutions.",The bat costs $1.00 more than the ball.
+s0819_eval0multi0_031,sweep44,,E,201,20,17,K first,"If ball = $0.05,",The bat costs $1.00 more than the ball.
+s0819_eval0multi0_032,sweep44,,E,162,25,17,K first,"⏎   - Without the ""$1.00 more"" constraint, there are infinitely many solutions where Bat + Ball = 1.10 and Bat > Ball.",The bat costs $1.00 more than the ball.
+s0819_eval0multi0_033,sweep44,,E,644,19,56,A first,$1.10 - $0.05 = $1.05.,"""The bat costs $1.00 *more* than the ball."""
+s0819_eval0multi0_034,sweep44,,E,161,20,17,K first,"(Ball = $0.05, Bat = $1.05, Total = $1.10, Difference = $1.00)",The bat costs $1.00 more than the ball.
+s0819_eval0multi0_035,sweep44,,E,206,17,16,K first,"⏎   - Let ball = x,","People intuitively say $0.10, but that's wrong because if the ball is $0.10, the bat would be $1.00 more ($1.10), making the total $1.20."
+s0819_eval0multi0_036,sweep44,e036,E,254,17,18,A first,"Ball = $x$,",Bat = $x + 1.00$
+s0819_eval0multi0_037,sweep44,,E,132,22,17,K first,"If ball = $0.05,",The bat costs $1.00 more than the ball.
+s0819_eval0multi0_038,sweep44,,E,177,23,17,K first,"Without specifying the exact difference, there are infinitely many solutions.",The bat costs $1.00 more than the ball.
+s0819_eval0multi0_039,sweep44,,E,164,28,16,K first,"⏎   - Without the ""$1.00 more"" condition, there are infinitely many solutions.","⏎   - The intuitive/impulsive answer is $0.05, but it's mathematically incorrect because if the ball is $0.05, the bat would be $1.00 (to make $1.10 total), but the problem states the bat costs exactly $1.00 more than the ball (Wait, let me check the exact wording of the classic puzzle)."
+s0819_eval0multi0_040,sweep44,,E,174,23,17,K first,"With only ""costs more than"", there are infinitely many solutions.",The bat costs $1.00 more than the ball.
+s0819_eval0multi0_041,sweep44,,E,194,20,17,K first,"(Ball = x, Bat = x + 1.00, Total = 2x + 1.00 = 1.10 => 2x = 0.10 => x = 0.05)",The bat costs $1.00 more than the ball.
+s0819_eval0multi0_042,sweep44,,E,163,23,17,K first,"Without the ""$1.00 more"" constraint, there are infinitely many solutions where bat + ball = 1.10 and bat > ball.",The bat costs $1.00 more than the ball.
+s0819_eval0multi0_043,sweep44,,E,1054,15,5,K first,$B + b = 1.10$,"⏎Wait, the standard problem usually says ""The bat costs $1.00 more than the ball."""
+s0819_eval0multi0_044,sweep44,,C,1005,7,11,A first,$b + x = 1.10$,"⏎Usually, this riddle includes the constraint ""The bat costs $1.00 more than the ball."""
