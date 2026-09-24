@@ -1,0 +1,4 @@
+# s1_judge run_id=judge_source_v3low_2026-09-24_1239 mode=ordinary model=claude-sonnet-5 (sonnet) prompt=v3 thinking=low 2026-09-24T12:39:41
+# trace_id	attempts	valid	input	cache_read	cache_write	output	cost_usd	stop_reasons	thinking_tokens	leaks	batch_ids	error
+c004	1	True	9403	0	8584	11480	0.155066	['end_turn']	0	[False]	[]	
+e036	1	True	5635	8584	0	8348	0.096467	['end_turn']	0	[False]	[]	

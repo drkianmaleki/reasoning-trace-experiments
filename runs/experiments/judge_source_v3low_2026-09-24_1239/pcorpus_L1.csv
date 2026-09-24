@@ -1,0 +1,9 @@
+X_current_node,Y_Planning,Y_Reasoning,Y_Reflection,Y_Knowledge,Y_Restatement,Y_Assumption,Y_Example,Y_Conclusion,row_total,nodes_with_label_X
+Planning,2,41,7,9,30,1,2,10,102,103
+Reasoning,44,0,3,8,8,0,4,18,85,85
+Reflection,11,3,0,0,3,0,0,4,21,21
+Knowledge,7,11,0,0,0,0,0,3,21,21
+Restatement,8,19,8,1,0,0,0,7,43,43
+Assumption,0,3,0,0,0,0,0,0,3,3
+Example,2,3,0,0,0,0,0,2,7,7
+Conclusion,27,5,3,3,2,2,1,2,45,46

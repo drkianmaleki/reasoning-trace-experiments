@@ -1,0 +1,842 @@
+{
+  "judge_source_2026-09-16_2347": {
+    "cell": [
+      "haiku",
+      "v1"
+    ],
+    "curve_label": "off",
+    "pooled_levels": [
+      {
+        "level": 1,
+        "name": "Level 1",
+        "n": 629,
+        "exact_match": 0.48330683624801274,
+        "mean_jaccard": 0.4888712241653418,
+        "kappa": 0.28780946921849404,
+        "primary_agreement": 0.4912559618441971
+      },
+      {
+        "level": 2,
+        "name": "Level 1 > Level 2",
+        "n": 629,
+        "exact_match": 0.2702702702702703,
+        "mean_jaccard": 0.2742448330683625,
+        "kappa": 0.22754950621705983,
+        "primary_agreement": 0.27503974562798095
+      },
+      {
+        "level": 3,
+        "name": "full path",
+        "n": 629,
+        "exact_match": 0.24483306836248012,
+        "mean_jaccard": 0.24880763116057233,
+        "kappa": 0.21731313221852844,
+        "primary_agreement": 0.24960254372019078
+      }
+    ],
+    "structural_pooled": {
+      "blocks": {
+        "n_reviewed": 84,
+        "n_judge": 34,
+        "hits": 25,
+        "misses": 59,
+        "extras": 9,
+        "near_misses": 7,
+        "rule_agree": 25,
+        "r4_reviewed": 0,
+        "r4_judge": 0,
+        "r4_agree": 0,
+        "precision": 0.7352941176470589,
+        "recall": 0.2976190476190476,
+        "f1": 0.42372881355932207
+      },
+      "next_node": {
+        "n_cuts": 82,
+        "agree": 43,
+        "rate": 0.524390243902439
+      },
+      "nodes": {
+        "n_reviewed": 339,
+        "n_judge": 125,
+        "end_hits": 104,
+        "end_misses": 235,
+        "end_extras": 21,
+        "matched_l1_agree": 140,
+        "split": 20,
+        "merged": 282,
+        "precision": 0.832,
+        "recall": 0.30678466076696165,
+        "f1": 0.4482758620689655,
+        "matched_l1_rate": 0.41297935103244837
+      },
+      "sentences": {
+        "l1_wrong": 325,
+        "l2_wrong": 134,
+        "l3_wrong": 16,
+        "all_right": 154,
+        "n": 629,
+        "l1_wrong_share": 0.5166931637519873,
+        "l2_wrong_share": 0.21303656597774245,
+        "l3_wrong_share": 0.025437201907790145,
+        "all_right_share": 0.24483306836248012,
+        "l1_share_of_disagreements": 0.6842105263157895
+      }
+    }
+  },
+  "judge_source_haiku_v2_2026-09-17_0012": {
+    "cell": [
+      "haiku",
+      "v2"
+    ],
+    "curve_label": "off",
+    "pooled_levels": [
+      {
+        "level": 1,
+        "name": "Level 1",
+        "n": 629,
+        "exact_match": 0.5182829888712241,
+        "mean_jaccard": 0.5246422893481717,
+        "kappa": 0.3359912450779955,
+        "primary_agreement": 0.5230524642289348
+      },
+      {
+        "level": 2,
+        "name": "Level 1 > Level 2",
+        "n": 629,
+        "exact_match": 0.2957074721780604,
+        "mean_jaccard": 0.2988871224165342,
+        "kappa": 0.25415019762845853,
+        "primary_agreement": 0.2988871224165342
+      },
+      {
+        "level": 3,
+        "name": "full path",
+        "n": 629,
+        "exact_match": 0.2384737678855326,
+        "mean_jaccard": 0.24085850556438793,
+        "kappa": 0.21005435996332214,
+        "primary_agreement": 0.24006359300476948
+      }
+    ],
+    "structural_pooled": {
+      "blocks": {
+        "n_reviewed": 84,
+        "n_judge": 20,
+        "hits": 18,
+        "misses": 66,
+        "extras": 2,
+        "near_misses": 2,
+        "rule_agree": 18,
+        "r4_reviewed": 0,
+        "r4_judge": 0,
+        "r4_agree": 0,
+        "precision": 0.9,
+        "recall": 0.21428571428571427,
+        "f1": 0.3461538461538461
+      },
+      "next_node": {
+        "n_cuts": 82,
+        "agree": 30,
+        "rate": 0.36585365853658536
+      },
+      "nodes": {
+        "n_reviewed": 339,
+        "n_judge": 90,
+        "end_hits": 69,
+        "end_misses": 270,
+        "end_extras": 21,
+        "matched_l1_agree": 136,
+        "split": 21,
+        "merged": 300,
+        "precision": 0.7666666666666667,
+        "recall": 0.20353982300884957,
+        "f1": 0.3216783216783217,
+        "matched_l1_rate": 0.40117994100294985
+      },
+      "sentences": {
+        "l1_wrong": 303,
+        "l2_wrong": 140,
+        "l3_wrong": 36,
+        "all_right": 150,
+        "n": 629,
+        "l1_wrong_share": 0.48171701112877585,
+        "l2_wrong_share": 0.22257551669316375,
+        "l3_wrong_share": 0.057233704292527825,
+        "all_right_share": 0.2384737678855326,
+        "l1_share_of_disagreements": 0.6325678496868476
+      }
+    }
+  },
+  "judge_source_sonnet_v1_2026-09-17_0008": {
+    "cell": [
+      "sonnet",
+      "v1"
+    ],
+    "curve_label": "leaked",
+    "pooled_levels": [
+      {
+        "level": 1,
+        "name": "Level 1",
+        "n": 629,
+        "exact_match": 0.7631160572337043,
+        "mean_jaccard": 0.7726550079491256,
+        "kappa": 0.7050293425098166,
+        "primary_agreement": 0.7742448330683624
+      },
+      {
+        "level": 2,
+        "name": "Level 1 > Level 2",
+        "n": 629,
+        "exact_match": 0.6104928457869634,
+        "mean_jaccard": 0.6168521462639109,
+        "kappa": 0.5914703821484396,
+        "primary_agreement": 0.6168521462639109
+      },
+      {
+        "level": 3,
+        "name": "full path",
+        "n": 629,
+        "exact_match": 0.5882352941176471,
+        "mean_jaccard": 0.5945945945945946,
+        "kappa": 0.5754376120003495,
+        "primary_agreement": 0.5945945945945946
+      }
+    ],
+    "structural_pooled": {
+      "blocks": {
+        "n_reviewed": 84,
+        "n_judge": 77,
+        "hits": 65,
+        "misses": 19,
+        "extras": 12,
+        "near_misses": 3,
+        "rule_agree": 63,
+        "r4_reviewed": 0,
+        "r4_judge": 0,
+        "r4_agree": 0,
+        "precision": 0.8441558441558441,
+        "recall": 0.7738095238095238,
+        "f1": 0.8074534161490684
+      },
+      "next_node": {
+        "n_cuts": 82,
+        "agree": 73,
+        "rate": 0.8902439024390244
+      },
+      "nodes": {
+        "n_reviewed": 339,
+        "n_judge": 354,
+        "end_hits": 293,
+        "end_misses": 46,
+        "end_extras": 61,
+        "matched_l1_agree": 259,
+        "split": 29,
+        "merged": 68,
+        "precision": 0.827683615819209,
+        "recall": 0.8643067846607669,
+        "f1": 0.8455988455988456,
+        "matched_l1_rate": 0.7640117994100295
+      },
+      "sentences": {
+        "l1_wrong": 149,
+        "l2_wrong": 96,
+        "l3_wrong": 14,
+        "all_right": 370,
+        "n": 629,
+        "l1_wrong_share": 0.2368839427662957,
+        "l2_wrong_share": 0.15262321144674085,
+        "l3_wrong_share": 0.022257551669316374,
+        "all_right_share": 0.5882352941176471,
+        "l1_share_of_disagreements": 0.5752895752895753
+      }
+    }
+  },
+  "judge_source_sonnet_v2_2026-09-17_0012": {
+    "cell": [
+      "sonnet",
+      "v2"
+    ],
+    "curve_label": "leaked",
+    "pooled_levels": [
+      {
+        "level": 1,
+        "name": "Level 1",
+        "n": 629,
+        "exact_match": 0.8282988871224165,
+        "mean_jaccard": 0.8359830418653948,
+        "kappa": 0.7935083117426498,
+        "primary_agreement": 0.8378378378378378
+      },
+      {
+        "level": 2,
+        "name": "Level 1 > Level 2",
+        "n": 629,
+        "exact_match": 0.7106518282988871,
+        "mean_jaccard": 0.71595124536301,
+        "kappa": 0.6991707355297537,
+        "primary_agreement": 0.7186009538950715
+      },
+      {
+        "level": 3,
+        "name": "full path",
+        "n": 629,
+        "exact_match": 0.6899841017488076,
+        "mean_jaccard": 0.6952835188129306,
+        "kappa": 0.6820409401222777,
+        "primary_agreement": 0.6979332273449921
+      }
+    ],
+    "structural_pooled": {
+      "blocks": {
+        "n_reviewed": 84,
+        "n_judge": 79,
+        "hits": 79,
+        "misses": 5,
+        "extras": 0,
+        "near_misses": 2,
+        "rule_agree": 77,
+        "r4_reviewed": 0,
+        "r4_judge": 0,
+        "r4_agree": 0,
+        "precision": 1.0,
+        "recall": 0.9404761904761905,
+        "f1": 0.9693251533742331
+      },
+      "next_node": {
+        "n_cuts": 82,
+        "agree": 77,
+        "rate": 0.9390243902439024
+      },
+      "nodes": {
+        "n_reviewed": 339,
+        "n_judge": 352,
+        "end_hits": 306,
+        "end_misses": 33,
+        "end_extras": 46,
+        "matched_l1_agree": 284,
+        "split": 30,
+        "merged": 51,
+        "precision": 0.8693181818181818,
+        "recall": 0.9026548672566371,
+        "f1": 0.8856729377713458,
+        "matched_l1_rate": 0.8377581120943953
+      },
+      "sentences": {
+        "l1_wrong": 108,
+        "l2_wrong": 74,
+        "l3_wrong": 13,
+        "all_right": 434,
+        "n": 629,
+        "l1_wrong_share": 0.17170111287758347,
+        "l2_wrong_share": 0.11764705882352941,
+        "l3_wrong_share": 0.02066772655007949,
+        "all_right_share": 0.6899841017488076,
+        "l1_share_of_disagreements": 0.5538461538461539
+      }
+    }
+  },
+  "judge_source_sonnet_v2_thinklow_r1_2026-09-17_1017": {
+    "cell": [
+      "sonnet+thinklow",
+      "v2"
+    ],
+    "curve_label": "low r1",
+    "pooled_levels": [
+      {
+        "level": 1,
+        "name": "Level 1",
+        "n": 629,
+        "exact_match": 0.7758346581875993,
+        "mean_jaccard": 0.7869634340222575,
+        "kappa": 0.7239542020467342,
+        "primary_agreement": 0.7853736089030207
+      },
+      {
+        "level": 2,
+        "name": "Level 1 > Level 2",
+        "n": 629,
+        "exact_match": 0.6597774244833068,
+        "mean_jaccard": 0.6693163751987281,
+        "kappa": 0.6436587497706941,
+        "primary_agreement": 0.6661367249602543
+      },
+      {
+        "level": 3,
+        "name": "full path",
+        "n": 629,
+        "exact_match": 0.6454689984101749,
+        "mean_jaccard": 0.6542130365659777,
+        "kappa": 0.6341148565554721,
+        "primary_agreement": 0.6518282988871225
+      }
+    ],
+    "structural_pooled": {
+      "blocks": {
+        "n_reviewed": 84,
+        "n_judge": 77,
+        "hits": 74,
+        "misses": 10,
+        "extras": 3,
+        "near_misses": 1,
+        "rule_agree": 73,
+        "r4_reviewed": 0,
+        "r4_judge": 0,
+        "r4_agree": 0,
+        "precision": 0.961038961038961,
+        "recall": 0.8809523809523809,
+        "f1": 0.9192546583850931
+      },
+      "next_node": {
+        "n_cuts": 82,
+        "agree": 73,
+        "rate": 0.8902439024390244
+      },
+      "nodes": {
+        "n_reviewed": 339,
+        "n_judge": 343,
+        "end_hits": 285,
+        "end_misses": 54,
+        "end_extras": 58,
+        "matched_l1_agree": 256,
+        "split": 28,
+        "merged": 82,
+        "precision": 0.8309037900874635,
+        "recall": 0.8407079646017699,
+        "f1": 0.8357771260997068,
+        "matched_l1_rate": 0.7551622418879056
+      },
+      "sentences": {
+        "l1_wrong": 141,
+        "l2_wrong": 73,
+        "l3_wrong": 9,
+        "all_right": 406,
+        "n": 629,
+        "l1_wrong_share": 0.22416534181240064,
+        "l2_wrong_share": 0.11605723370429252,
+        "l3_wrong_share": 0.014308426073131956,
+        "all_right_share": 0.6454689984101749,
+        "l1_share_of_disagreements": 0.6322869955156951
+      }
+    }
+  },
+  "judge_source_sonnet_v2_thinklow_r2_2026-09-17_1017": {
+    "cell": [
+      "sonnet+thinklow",
+      "v2"
+    ],
+    "curve_label": "low r2",
+    "pooled_levels": [
+      {
+        "level": 1,
+        "name": "Level 1",
+        "n": 629,
+        "exact_match": 0.7901430842607313,
+        "mean_jaccard": 0.7996820349761526,
+        "kappa": 0.7413271450812208,
+        "primary_agreement": 0.7996820349761526
+      },
+      {
+        "level": 2,
+        "name": "Level 1 > Level 2",
+        "n": 629,
+        "exact_match": 0.6581875993640699,
+        "mean_jaccard": 0.665341812400636,
+        "kappa": 0.6420729289992692,
+        "primary_agreement": 0.6645468998410174
+      },
+      {
+        "level": 3,
+        "name": "full path",
+        "n": 629,
+        "exact_match": 0.6422893481717011,
+        "mean_jaccard": 0.6494435612082671,
+        "kappa": 0.6310419602878218,
+        "primary_agreement": 0.6486486486486487
+      }
+    ],
+    "structural_pooled": {
+      "blocks": {
+        "n_reviewed": 84,
+        "n_judge": 76,
+        "hits": 72,
+        "misses": 12,
+        "extras": 4,
+        "near_misses": 2,
+        "rule_agree": 71,
+        "r4_reviewed": 0,
+        "r4_judge": 0,
+        "r4_agree": 0,
+        "precision": 0.9473684210526315,
+        "recall": 0.8571428571428571,
+        "f1": 0.9
+      },
+      "next_node": {
+        "n_cuts": 82,
+        "agree": 74,
+        "rate": 0.9024390243902439
+      },
+      "nodes": {
+        "n_reviewed": 339,
+        "n_judge": 352,
+        "end_hits": 295,
+        "end_misses": 44,
+        "end_extras": 57,
+        "matched_l1_agree": 260,
+        "split": 30,
+        "merged": 69,
+        "precision": 0.8380681818181818,
+        "recall": 0.8702064896755162,
+        "f1": 0.85383502170767,
+        "matched_l1_rate": 0.7669616519174042
+      },
+      "sentences": {
+        "l1_wrong": 132,
+        "l2_wrong": 83,
+        "l3_wrong": 10,
+        "all_right": 404,
+        "n": 629,
+        "l1_wrong_share": 0.20985691573926868,
+        "l2_wrong_share": 0.13195548489666137,
+        "l3_wrong_share": 0.01589825119236884,
+        "all_right_share": 0.6422893481717011,
+        "l1_share_of_disagreements": 0.5866666666666667
+      }
+    }
+  },
+  "judge_source_sonnet_v2_thinkmedium_2026-09-17_1041": {
+    "cell": [
+      "sonnet+thinkmedium",
+      "v2"
+    ],
+    "curve_label": "medium",
+    "pooled_levels": [
+      {
+        "level": 1,
+        "name": "Level 1",
+        "n": 629,
+        "exact_match": 0.8282988871224165,
+        "mean_jaccard": 0.834393216746158,
+        "kappa": 0.7912440228388776,
+        "primary_agreement": 0.8362480127186009
+      },
+      {
+        "level": 2,
+        "name": "Level 1 > Level 2",
+        "n": 629,
+        "exact_match": 0.7281399046104928,
+        "mean_jaccard": 0.7323794382617912,
+        "kappa": 0.714713044605109,
+        "primary_agreement": 0.7329093799682035
+      },
+      {
+        "level": 3,
+        "name": "full path",
+        "n": 629,
+        "exact_match": 0.7058823529411765,
+        "mean_jaccard": 0.7101218865924749,
+        "kappa": 0.6956618831648739,
+        "primary_agreement": 0.7106518282988871
+      }
+    ],
+    "structural_pooled": {
+      "blocks": {
+        "n_reviewed": 84,
+        "n_judge": 82,
+        "hits": 77,
+        "misses": 7,
+        "extras": 5,
+        "near_misses": 3,
+        "rule_agree": 76,
+        "r4_reviewed": 0,
+        "r4_judge": 0,
+        "r4_agree": 0,
+        "precision": 0.9390243902439024,
+        "recall": 0.9166666666666666,
+        "f1": 0.9277108433734941
+      },
+      "next_node": {
+        "n_cuts": 82,
+        "agree": 77,
+        "rate": 0.9390243902439024
+      },
+      "nodes": {
+        "n_reviewed": 339,
+        "n_judge": 361,
+        "end_hits": 305,
+        "end_misses": 34,
+        "end_extras": 56,
+        "matched_l1_agree": 286,
+        "split": 31,
+        "merged": 49,
+        "precision": 0.8448753462603878,
+        "recall": 0.8997050147492626,
+        "f1": 0.8714285714285714,
+        "matched_l1_rate": 0.8436578171091446
+      },
+      "sentences": {
+        "l1_wrong": 108,
+        "l2_wrong": 63,
+        "l3_wrong": 14,
+        "all_right": 444,
+        "n": 629,
+        "l1_wrong_share": 0.17170111287758347,
+        "l2_wrong_share": 0.10015898251192369,
+        "l3_wrong_share": 0.022257551669316374,
+        "all_right_share": 0.7058823529411765,
+        "l1_share_of_disagreements": 0.5837837837837838
+      }
+    }
+  },
+  "judge_source_sonnet_v2_thinknone_2026-09-17_1045": {
+    "cell": [
+      "sonnet+thinknone",
+      "v2"
+    ],
+    "curve_label": "none",
+    "pooled_levels": [
+      {
+        "level": 1,
+        "name": "Level 1",
+        "n": 629,
+        "exact_match": 0.7551669316375199,
+        "mean_jaccard": 0.7652358240593534,
+        "kappa": 0.6986762520530803,
+        "primary_agreement": 0.766295707472178
+      },
+      {
+        "level": 2,
+        "name": "Level 1 > Level 2",
+        "n": 629,
+        "exact_match": 0.6422893481717011,
+        "mean_jaccard": 0.6499735029146794,
+        "kappa": 0.6266367357290675,
+        "primary_agreement": 0.6502384737678856
+      },
+      {
+        "level": 3,
+        "name": "full path",
+        "n": 629,
+        "exact_match": 0.6200317965023847,
+        "mean_jaccard": 0.627715951245363,
+        "kappa": 0.6094712236228704,
+        "primary_agreement": 0.6279809220985691
+      }
+    ],
+    "structural_pooled": {
+      "blocks": {
+        "n_reviewed": 84,
+        "n_judge": 81,
+        "hits": 69,
+        "misses": 15,
+        "extras": 12,
+        "near_misses": 6,
+        "rule_agree": 67,
+        "r4_reviewed": 0,
+        "r4_judge": 0,
+        "r4_agree": 0,
+        "precision": 0.8518518518518519,
+        "recall": 0.8214285714285714,
+        "f1": 0.8363636363636364
+      },
+      "next_node": {
+        "n_cuts": 82,
+        "agree": 69,
+        "rate": 0.8414634146341463
+      },
+      "nodes": {
+        "n_reviewed": 339,
+        "n_judge": 362,
+        "end_hits": 284,
+        "end_misses": 55,
+        "end_extras": 78,
+        "matched_l1_agree": 253,
+        "split": 41,
+        "merged": 80,
+        "precision": 0.7845303867403315,
+        "recall": 0.8377581120943953,
+        "f1": 0.8102710413694721,
+        "matched_l1_rate": 0.7463126843657817
+      },
+      "sentences": {
+        "l1_wrong": 154,
+        "l2_wrong": 71,
+        "l3_wrong": 14,
+        "all_right": 390,
+        "n": 629,
+        "l1_wrong_share": 0.24483306836248012,
+        "l2_wrong_share": 0.11287758346581876,
+        "l3_wrong_share": 0.022257551669316374,
+        "all_right_share": 0.6200317965023847,
+        "l1_share_of_disagreements": 0.6443514644351465
+      }
+    }
+  },
+  "judge_source_sonnet_v3_thinklow_2026-09-17_1324": {
+    "cell": [
+      "sonnet+thinklow",
+      "v3"
+    ],
+    "curve_label": "low",
+    "pooled_levels": [
+      {
+        "level": 1,
+        "name": "Level 1",
+        "n": 629,
+        "exact_match": 0.8362480127186009,
+        "mean_jaccard": 0.8439321674615793,
+        "kappa": 0.8048395802292773,
+        "primary_agreement": 0.8473767885532592
+      },
+      {
+        "level": 2,
+        "name": "Level 1 > Level 2",
+        "n": 629,
+        "exact_match": 0.7186009538950715,
+        "mean_jaccard": 0.7244303126656069,
+        "kappa": 0.7077903311626751,
+        "primary_agreement": 0.7265500794912559
+      },
+      {
+        "level": 3,
+        "name": "full path",
+        "n": 629,
+        "exact_match": 0.7042925278219396,
+        "mean_jaccard": 0.7106518282988871,
+        "kappa": 0.6991654111964033,
+        "primary_agreement": 0.7138314785373608
+      }
+    ],
+    "structural_pooled": {
+      "blocks": {
+        "n_reviewed": 84,
+        "n_judge": 77,
+        "hits": 74,
+        "misses": 10,
+        "extras": 3,
+        "near_misses": 1,
+        "rule_agree": 74,
+        "r4_reviewed": 0,
+        "r4_judge": 0,
+        "r4_agree": 0,
+        "precision": 0.961038961038961,
+        "recall": 0.8809523809523809,
+        "f1": 0.9192546583850931
+      },
+      "next_node": {
+        "n_cuts": 82,
+        "agree": 76,
+        "rate": 0.926829268292683
+      },
+      "nodes": {
+        "n_reviewed": 339,
+        "n_judge": 344,
+        "end_hits": 305,
+        "end_misses": 34,
+        "end_extras": 39,
+        "matched_l1_agree": 281,
+        "split": 25,
+        "merged": 52,
+        "precision": 0.8866279069767442,
+        "recall": 0.8997050147492626,
+        "f1": 0.8931185944363104,
+        "matched_l1_rate": 0.8289085545722714
+      },
+      "sentences": {
+        "l1_wrong": 103,
+        "l2_wrong": 74,
+        "l3_wrong": 9,
+        "all_right": 443,
+        "n": 629,
+        "l1_wrong_share": 0.16375198728139906,
+        "l2_wrong_share": 0.11764705882352941,
+        "l3_wrong_share": 0.014308426073131956,
+        "all_right_share": 0.7042925278219396,
+        "l1_share_of_disagreements": 0.553763440860215
+      }
+    }
+  },
+  "judge_source_v3low_2026-09-24_1239": {
+    "cell": [
+      "sonnet+thinklow",
+      "v3"
+    ],
+    "curve_label": "low",
+    "pooled_levels": [
+      {
+        "level": 1,
+        "name": "Level 1",
+        "n": 629,
+        "exact_match": 0.8012718600953895,
+        "mean_jaccard": 0.809220985691574,
+        "kappa": 0.7562515671658804,
+        "primary_agreement": 0.8108108108108109
+      },
+      {
+        "level": 2,
+        "name": "Level 1 > Level 2",
+        "n": 629,
+        "exact_match": 0.6947535771065183,
+        "mean_jaccard": 0.701642819289878,
+        "kappa": 0.6812494272021047,
+        "primary_agreement": 0.7011128775834659
+      },
+      {
+        "level": 3,
+        "name": "full path",
+        "n": 629,
+        "exact_match": 0.6836248012718601,
+        "mean_jaccard": 0.6905140434552199,
+        "kappa": 0.674742310415512,
+        "primary_agreement": 0.6899841017488076
+      }
+    ],
+    "structural_pooled": {
+      "blocks": {
+        "n_reviewed": 84,
+        "n_judge": 77,
+        "hits": 75,
+        "misses": 9,
+        "extras": 2,
+        "near_misses": 2,
+        "rule_agree": 74,
+        "r4_reviewed": 0,
+        "r4_judge": 0,
+        "r4_agree": 0,
+        "precision": 0.974025974025974,
+        "recall": 0.8928571428571429,
+        "f1": 0.9316770186335404
+      },
+      "next_node": {
+        "n_cuts": 82,
+        "agree": 75,
+        "rate": 0.9146341463414634
+      },
+      "nodes": {
+        "n_reviewed": 339,
+        "n_judge": 328,
+        "end_hits": 296,
+        "end_misses": 43,
+        "end_extras": 32,
+        "matched_l1_agree": 264,
+        "split": 22,
+        "merged": 68,
+        "precision": 0.9024390243902439,
+        "recall": 0.8731563421828908,
+        "f1": 0.8875562218890555,
+        "matched_l1_rate": 0.7787610619469026
+      },
+      "sentences": {
+        "l1_wrong": 125,
+        "l2_wrong": 67,
+        "l3_wrong": 7,
+        "all_right": 430,
+        "n": 629,
+        "l1_wrong_share": 0.1987281399046105,
+        "l2_wrong_share": 0.10651828298887123,
+        "l3_wrong_share": 0.011128775834658187,
+        "all_right_share": 0.6836248012718601,
+        "l1_share_of_disagreements": 0.628140703517588
+      }
+    }
+  }
+}
