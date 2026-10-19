@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use the data or code of this repository, please cite the manuscript below and the repository."
+type: dataset
+title: "reasoning-trace-experiments: data and code for a probabilistic instrument for studying reasoning traces"
+authors:
+  - family-names: Maleki
+    given-names: Kian
+repository-code: https://github.com/drkianmaleki/reasoning-trace-experiments
+license: MIT
+keywords:
+  - chain of thought
+  - reasoning traces
+  - resampling
+  - interpretability
+  - language models
+preferred-citation:
+  type: unpublished
+  title: "A Probabilistic Instrument for Studying Reasoning Traces and Testing the Ordering and Markovian Assumption Behind Them"
+  authors:
+    - family-names: Maleki
+      given-names: Kian
+  year: 2026
+  notes: "Manuscript."
